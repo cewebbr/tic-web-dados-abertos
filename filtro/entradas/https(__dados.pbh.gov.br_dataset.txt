@@ -1,0 +1,3079 @@
+
+<!DOCTYPE html>
+<!--[if IE 9]> <html lang="pt_BR" class="ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="pt_BR"> <!--<![endif]-->
+  <head>
+    <link rel="stylesheet" type="text/css" href="/fanstatic/vendor/:version:2020-12-02T18:24:28.10/select2/select2.min.css" />
+<link rel="stylesheet" type="text/css" href="/fanstatic/css/:version:2020-12-02T18:24:27.65/green.min.css" />
+<link rel="stylesheet" type="text/css" href="/fanstatic/vendor/:version:2020-12-02T18:24:28.10/font-awesome/css/font-awesome.min.css" />
+
+    <meta charset="utf-8" />
+      <meta name="generator" content="ckan 2.8.6" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conjuntos de dados - Portal de Dados Abertos</title>
+
+    
+    
+    <link rel="shortcut icon" href="/base/images/ckan.ico" />
+    
+    
+        <script type="text/javascript">
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-223450919-2', 'auto', {});
+     
+  ga('set', 'anonymizeIp', true);
+  ga('send', 'pageview');
+</script>
+    
+
+      
+    
+
+    
+      
+      
+    <style>
+        /* Producao 28-Dez-2017 */
+
+/* ----------------------------------------------------------------------------- */
+/* Tooltip from:   https://chrisbracco.com/a-simple-css-tooltip/  */
+
+/* Add this attribute to the element that needs a tooltip */
+[data-tooltip] {
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+}
+/* Hide the tooltip content by default */
+[data-tooltip]:before,
+[data-tooltip]:after {
+  visibility: hidden;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  pointer-events: none;
+}
+/* Position tooltip above the element */
+[data-tooltip]:before {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-bottom: 5px;
+  margin-left: -80px;
+  padding: 7px;
+  width: 220px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 10px;
+  background-color: #000;
+  background-color: hsla(0, 0%, 20%, 1);
+  color: #fff;
+  content: attr(data-tooltip);
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.2;
+}
+/* Triangle hack to make tooltip look like a speech bubble */
+[data-tooltip]:after {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  width: 0;
+  border-top: 5px solid #000;
+  border-top: 5px solid hsla(0, 0%, 20%, 0.9);
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+  content: " ";
+  font-size: 0;
+  line-height: 0;
+}
+/* Show tooltip content on hover */
+[data-tooltip]:hover:before,
+[data-tooltip]:hover:after {
+  visibility: visible;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+/* -------------------------------------------------------- */
+/* -- Font family -- */
+@font-face {
+    font-family: 'DINPro-Black';
+    src: url(/base/fonts/DINPro-Black.eot);
+    src: local('?'),url(/base/fonts/DINPro-Black.woff) format('woff'),url(/base/fonts/DINPro-Black.ttf) format('truetype'),url(/base/fonts/DINPro-Black.svg) format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'DINPro-Bold';
+    src: url(/base/fonts/DINPro-Bold.eot);
+    src: local('?'),url(/base/fonts/DINPro-Bold.woff) format('woff'),url(/base/fonts/DINPro-Bold.ttf) format('truetype'),url(/base/fonts/DINPro-Bold.svg) format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'DINPro-Light';
+    src: url(/base/fonts/DINPro-Light.eot);
+    src: local('?'),url(/base/fonts/DINPro-Light.woff) format('woff'),url(/base/fonts/DINPro-Light.ttf) format('truetype'),url(/base/fonts/DINPro-Light.svg) format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'DINPro-Medium';
+    src: url(/base/fonts/DINPro-Medium.eot);
+    src: local('?'),url(/base/fonts/DINPro-Medium.woff) format('woff'),url(/base/fonts/DINPro-Medium.ttf) format('truetype'),url(/base/fonts/DINPro-Medium.svg) format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'DINPro-Regular';
+    src: url(/base/fonts/DINPro-Regular.eot);
+    src: local('?'),url(/base/fonts/DINPro-Regular.woff) format('woff'),url(/base/fonts/DINPro-Regular.ttf) format('truetype'),url(/base/fonts/DINPro-Regular.svg) format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/* -------------------------------------------------------- */
+/* -- Definicoes iniciais -- */
+body {
+	font-family: 'DINPro-Regular', Arial, Helvetica, sans-serif;
+    background-image: none;
+}
+body, .main {
+	background-color: #168942;
+}
+.wrapper {
+    box-shadow: none;
+    border-radius: 0;
+    border: 1px solid #eee;
+}
+.ir-topo {
+    text-align:right; 
+    font-size:0.75em; 
+    line-height:0; 
+    margin-top:0; margin-bottom:0;
+}
+
+/* ---------- Menu superior ---------- */
+.account-masthead {
+    min-height: 30px;
+    color: #ffffff;
+    background: #006f3c url("../../../base/images/bg.png");
+}
+.account-masthead .account .fa {
+    color: #fff;
+}
+
+/* ----------  Topo  ---------- */
+.masthead {
+    background-color: #168942;
+    background-image: url(/base/images/cabecalho.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.masthead a {
+    font-family: DINPro-Bold,Arial,Sans-Serif;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.masthead .navigation .nav-pills li a:hover, .masthead .navigation .nav-pills li a:focus, .masthead .navigation .nav-pills li.active a {
+	background-color: #CBDB2A;
+	color: #006F3C;
+}
+.masthead .navigation {
+    margin-right: 15px;
+    margin-bottom: 5px;
+}
+.masthead .nav-collapse {
+    padding-top: 1px; 
+}
+.navbar .nav>li>a {
+    padding: 8px 12px ; 
+   margin-left: 7px;
+}
+
+a.logo img {
+    padding-top: 5px;
+    padding-bottom: 0;
+}
+
+/* Botao exibir menu em media pequena  */
+.masthead .btn-navbar, .masthead .btn-navbar:hover, 
+.masthead .btn-navbar:focus, .masthead .btn-navbar:active, 
+.masthead .btn-navbar.active, 
+.masthead .btn-navbar.disabled, .masthead .btn-navbar[disabled] {
+    background-color: #cbdb2a;
+    background-image: none;
+    border: 2px solid #146C36;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    text-shadow: none;
+    margin-top: 15px;
+}
+
+/* ---------- Homepage---------- */
+.homepage .module-search {
+    padding: 0;
+    border-radius: 0;
+}
+.homepage .module-search .module-content {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    background-color: #2f9b45;
+    border-bottom: none;
+}
+.homepage .module-search .tags {
+    border-radius: 0;
+}
+.homepage .module-search .tag {
+    color: #ffffff;
+    background-color: transparent;
+    padding: 1px 10px;
+    border: 2px solid #CBDB2A;
+    -webkit-box-shadow: nobe;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+.homepage .module-search a.tag:hover {
+    text-decoration: none;
+    color: #069;
+    background-color: #CBDB2A;
+    border: 2px solid #CBDB2A;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+.homepage .stats ul li {
+    color: #168942;
+    float: left;
+    font-weight: bold;
+    width: 25%;
+}
+.context-info h1.heading  {
+    word-break: normal;
+}
+
+.media-item  .media-heading  {
+    word-break: keep-all;
+}
+
+.box {
+    background-color: /*#FFF*/ transparent;
+    border: /*1px solid #C1E0B7*/ 0;
+    -webkit-border-radius: /*4px*/ 0;
+    -moz-border-radius:/*4px*/ 0;
+    border-radius: /*4px*/ 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+.homepage .box.stats h3 {
+    border-bottom:  2px solid #C1E0B7;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.homepage .module-content.box  {
+    padding: 0 0 0 20px;
+}
+.homepage .module-content.box header p {
+    font-size: 16px;
+}
+homepage .module-content:first-child {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.homepage .box .inner {
+    padding: 20px;
+    padding-top: 0;
+    padding-right: 15px;
+}
+
+/* ---------- Formulario ---------- */
+.form-actions .control-required-message {
+    float: left;
+    margin-left: 1px;
+    margin-bottom: 0;
+    line-height: 1px;
+    text-align: left;
+}
+.form-actions a.pull-left {
+    float: right;
+    margin-left: 3px;
+}
+
+.control-required {
+    color: #c6898b;
+    font-size: 1.80em;
+    line-height: 0.10em;
+    vertical-align: middle;
+}
+
+.form-actions .action-info.small {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.js .image-upload .btn-remove-url {
+    position: absolute;
+    margin-right: 0;
+    top: 3px;
+    right: 5px;
+    padding: 2px 10px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+}
+
+input[type="text"]:focus, input[type="password"]:focus, 
+textarea:focus, select:focus,
+input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="date"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus, input[type="number"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="color"]:focus, .uneditable-input:focus {
+    border: 1px solid #096;
+    outline: 0;
+    outline: thin dotted \9;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+background-color: #f9fff2;
+}
+
+/* ---------- Botoes ---------- */
+.btn {
+    display: inline-block;
+    padding: 4px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    color: #333333;
+    text-shadow: 0 1px 1px rgba(255,255,255,0.75);
+    background-color: #f7f7f7;
+    background-image: -moz-linear-gradient(top,#ffffff,#eaeaea);
+    background-image: -webkit-gradient(linear,0 0,0 100%,from(#ffffff),to(#eaeaea));
+    background-image: -webkit-linear-gradient(top,#ffffff,#eaeaea);
+    background-image: -o-linear-gradient(top,#ffffff,#eaeaea);
+    background-image: linear-gradient(to bottom,#ffffff,#eaeaea);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff',endColorstr='#ffeaeaea',GradientType=0);
+    border-color: #eaeaea #eaeaea #c4c4c4;
+    border-color: rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+    border: 1px solid #cccccc;
+    border-bottom-color: #b3b3b3;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.2),0 1px 2px rgba(0,0,0,.05);
+    -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.2),0 1px 2px rgba(0,0,0,.05);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.2),0 1px 2px rgba(0,0,0,.05);
+}
+
+.btn {
+    background-image: none;
+    border: 0;
+    border-radius: 6px;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    text-shadow: 0 0 0 rgba(255,255,255,0.75);
+    padding: 5px 11px;
+    text-transform: uppercase;
+    font-family: DINPro-Medium, Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.btn-danger {
+    background-color: #E53935;
+    color: #ffffff;
+}
+.btn-danger:hover {
+    background-color: #B71C1C;
+}
+.btn-primary {
+    color: #ffffff;
+    background-color: #43A047;
+}
+.btn-primary:hover {
+    background-color: #1B5E20;
+}
+
+/* ---------- Tabelas ---------- */
+.table-bordered {
+    border-radius: 0;
+}
+
+/* ----------              ---------- */
+[role=main] {
+    min-height: 200px;
+    background-color: #F6F9ED;
+    background-image: none;
+}
+.hero {
+    background-image: none;
+}
+
+/* ---------- Breadcrumb ---------- */
+.toolbar .breadcrumb a {
+    color: #168942;
+    font-family: DINPro-Medium, Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+ .toolbar .breadcrumb .fa {
+    color: #168942;
+}
+.toolbar .breadcrumb li:after {
+    color: #168942;
+}
+
+/* ---------- Datasets ---------- */
+.dataset-list .label, .dataset-list .badge {
+    /*background-color: #999999;*/
+    color: #ffffff;
+    display: inline-block;
+    font-size: 11.844px;
+    font-weight: bold;
+    line-height: 14px;
+    padding: 8px 8px;
+    text-shadow: none;
+    border-radius: 0;
+    /* border-radius: 0 10px 0 0; */
+    background-image:  url(/base/images/ico-arquivo.png); 
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    width: 25px !important; height: 11px !important;
+letter-spacing: 0.2px;
+}
+
+.stages {
+    color: #aeaeae;
+    counter-reset: stage;
+    list-style: outside none none;
+    margin: -10px -25px 20px;
+    overflow: hidden;
+}
+
+.stages .active { 
+    font-weight: bold;
+}
+
+/* ---------- Abas ---------- */
+.nav-tabs { }
+.nav-tabs li  {
+    board-radius: 0;
+    -webkit-border-top-left-radius: 2px;
+    -webkit-border-top-right-radius: 2px;
+    -moz-border-radius-topleft: 2px;
+    -moz-border-radius-topright: 2px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    font-weight: bold
+}
+.nav-tabs li a, .nav-tabs .fa {
+    color: #666;
+}
+
+.page-header .nav-tabs a:hover, .page-header .nav-tabs a:hover  .fa {
+    color: #168942;
+}
+.nav-tabs > li.active .fa  {
+    color: #168942;
+}
+.nav-tabs > li.active a {
+    font-weight: bold;
+    color: #168942;
+}
+
+/* ---------- Modulos---------- */
+
+/* .module-content .media-overlay .media-heading,
+.module-content .media-overlay img {
+    display: none; 
+} */
+
+.module-content:first-child {
+    margin-top: 0;
+    padding-top: 10px;
+}
+
+.module-heading {
+    font-family: DINPro-Bold,Arial,Sans-Serif;
+    text-transform: uppercase;
+    background: #c1e0b7;
+    color: #2B2B2B;
+}
+.module-heading  i {
+    display: none;
+}
+.module:first-child .module-heading {
+    border-radius: 0;
+}
+
+.media-item .media-image {
+    margin-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    /*width: 120px;*/
+}
+
+aside.secondary .module.context-info 
+section.module-content 
+div.image img { 
+    max-width: 189px; 
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+/* ---------- Rodape---------- */
+.site-footer {
+    background: #168942 url(/base/images/arabescos.jpg);
+    background-repeat: repeat-x;
+    color: #ffffff;
+    padding: 50px 0 20px 0;
+}
+.site-footer a {
+    color: #ffffff;
+}
+div.attribution form.form-select { display: none; }
+div.attribution { font-size: 85%;  }
+
+/* ----------             ---------- */
+section.featured.media-overlay.hidden-phone { 
+    display:none;
+}
+
+.search-form .search-input.search-giant button {
+    margin-top: -15px;
+}
+
+/* ----------  Media queries ---------- */
+@media (max-width: 979px)
+{
+body {
+    background-color: #f6f9ed !important;
+}
+}
+@media (max-width: 767px)
+{
+body {
+    background-color: #f6f9ed !important;
+}
+}
+
+/* ==--------------------------------------------==  */
+/* Modifica exibicao da caixa de estatisticas */
+
+.homepage .stats ul li {
+    font-weight: 700;
+    font-size:1.30em;
+    width: auto;
+    display: initial;
+    float: initial;
+}
+.homepage .stats ul li a b {
+    display: inline-block;
+    font-size: 1.50em;
+}
+.homepage .stats ul li a b span {
+    padding-right: 3px;
+}
+
+.homepage .stats ul li a {
+    border-bottom: 1px solid transparent;
+}
+.homepage .stats ul li a:hover {
+    border-bottom: 1px solid #eee;
+}
+
+/* ==-------------------------------------------------== */
+/* 07-12-2017                                                    */
+/* Modifica exibicao das caixas de organizacao */
+
+.media-item .media-heading {
+    word-break: keep-all;
+    text-align: center;
+    /* display: block; */
+    margin: 0;
+}
+
+.media-item p {
+    text-align: center;
+}
+
+.media-item strong.count, .media-item span.count {
+   display: block;
+   text-align: center;
+}
+
+/* ==-------------------------------------------------== */
+/* 28-12-2017                                                    */
+/* Modifica exibicao da organizacao na coluna esquerda */
+.context-info h1.heading {
+    word-break: normal;
+   display: block;
+   text-align: center;
+}
+.context-info  p {
+   text-align: center;
+}
+
+.context-info .nums dl {
+   float: initial;
+   width: 100%;
+   margin: 5px 0 10px 0;
+}
+.context-info .nums dl dt {
+   display: inline-block;
+   padding-left: 5px;
+   line-height: 1.7;
+   font-size: 16px;
+   color: #168942;
+}
+.context-info .nums dl dd {
+    display: inline-block;
+    font-size: 22px;
+    font-weight: bol2d;
+    line-height: 1;
+    margin-left: 0;
+    float: left;
+   color: #168942;
+}
+
+.module-shallow .module-content:last-child {
+    padding-bottom: 0;
+}
+
+/* ----------------------------------- */
+/* 28 Maio 2019                                    */
+
+.homepage .module-search {
+    margin-top: 20px;
+}
+
+section.featured.media-overlay {
+    display: none;
+}
+
+.homepage .stats ul li {
+    color: #168942;
+    font-weight: 700;
+    font-size: 1.30em;
+    width: auto;
+    display: initial;
+    float: initial;
+}
+
+.homepage .stats ul li a strong {
+    display: inline-block;
+    font-size: 1.50em;
+    line-height: 1.5;
+}
+
+a {
+    color: #2f9b45;
+    text-decoration: none;
+}
+
+.masthead {
+    padding: 0;
+    padding-top: 0 !important;
+}
+.masthead .logo img {
+    max-height: initial;
+    max-width: 100%;
+}
+
+/* 29 de Maio 2019 */
+
+.masthead .navbar-collapse {
+    padding: 0;
+}
+.masthead .site-search {
+    margin: 1px 8px 4px 0;
+}
+
+.homepage .module-search .module-content {
+    border-radius: 5px 5px 0 0;
+}
+.homepage .module-search .tags {
+    border-radius: 0 0 5px 5px;
+}
+
+.homepage .module-search .tag {
+    font-weight: bold;
+}
+
+.badge {
+    background-color: #43A047;
+    border: 1px solid #fff;
+    margin-left: 5px;
+}
+
+.dataset-list .label /*, .dataset-list .badge */ {
+    /* background-color: #999999; */
+    color: #ffffff;
+    display: inline-block;
+    font-size: 11.844px;
+    font-weight: bold;
+    line-height: 14px;
+    padding: 8px 8px;
+    text-shadow: none;
+    border-radius: 0;
+    /* border-radius: 0 10px 0 0; */
+    background-image: url(/base/images/ico-arquivo.png);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    width: 40px !important; 
+    height: 25px !important; 
+    letter-spacing: 0.2px;
+}
+
+.input-group-btn:last-child>.btn, .input-group-btn:last-child>.btn-group {
+    margin-left: 0px;
+    height: 46px;
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.3333333;
+border: 1px solid #ccc; border-left:0;
+}
+
+.input-lg {
+    height: 46px;
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.3333333;
+    border-radius: 6px;
+}
+
+.dataset-list .label[data-format=html]  {
+    padding-left: 5px;
+}
+
+/* 30 de Maio 2019 */
+
+.dataset-resources {
+    margin-top: 4px;
+}
+
+.pagination>li>a, .pagination>li>span {
+    position: relative;
+    float: left;
+    padding: 6px 12px;
+    line-height: 1.42857143;
+    text-decoration: none;
+    color:  #2f9b45;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    margin-left: -1px;
+}
+
+.pagination>.active>a, .pagination>.active>span, 
+.pagination>.active>a:hover, .pagination>.active>span:hover, 
+.pagination>.active>a:focus, .pagination>.active>span:focus {
+    z-index: 3;
+    color: #fff;
+    background-color: #2f9b45;
+    border-color: #2f9b45;
+    cursor: default;
+}
+
+.pagination>li>a:hover, .pagination>li>span:hover, 
+.pagination>li>a:focus, .pagination>li>span:focus {
+    z-index: 2;
+    color: #fff;
+    background-color: #2f9b45;
+    border-color: #2f9b45;
+}
+
+.format-label[data-format=html], 
+.format-label[data-format*=html] {
+    width: 30px;
+    height: 35px;
+}
+
+/*  -- modifica select com pesquisa -- */
+.select2-container .select2-choice {
+    height: 34px;
+    padding: 0 0 0 8px;
+    border: 1px solid #aaa;
+    line-height: 26px;
+    color: #444;
+    text-decoration: none;
+    border-radius: 4px;
+    background-color: #fff;
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #fff), color-stop(0.5, #fff));
+    background-image: -webkit-linear-gradient(center bottom, #fff0%, #fff 50%);
+    background-image: -moz-linear-gradient(center bottom, #fff0%, #fff 50%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#ffffff', endColorstr = '#ffffff', GradientType = 0);
+    background-image: linear-gradient(to top, #fff0%, #fff 50%);
+}
+.select2-container .select2-choice .select2-arrow {
+    width: 18px;
+    height: 100%;
+    border-left: 1px solid #fff;
+    border-radius: 0 4px 4px 0;
+    background-clip: padding-box;
+    background: #fff;
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #fff), color-stop(0.6, #fff));
+    background-image: -webkit-linear-gradient(center bottom, #fff0%, #fff60%);
+    background-image: -moz-linear-gradient(center bottom, #fff0%, #eee 60%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#eeeeee', endColorstr = '#ffffff', GradientType = 0);
+    background-image: linear-gradient(to top, #fff0%, #fff 60%);
+}
+
+/* 31 Maio 2019 */
+
+.homepage .module-search .search-giant input {
+    border-color: transparent;
+}
+
+.label-default[href]:hover, .label-default[href]:focus {
+    background-color: #ddd;
+    color: #333;
+}
+
+.label.label-default[data-format=csv]:hover {
+    background-color: #ffcc07;
+    color: #333;
+}
+.label.label-default[data-format=html]:hover {
+    background-color: #73b2d7;
+    color: #333;
+}
+.label.label-default[data-format=gtfs] {
+    background-color: #bbb;
+    color: #fff;
+    padding-left: 6px;
+}
+.label.label-default[data-format=rtf] {
+    background-color: #bbb;
+    color: #fff;
+}
+.label.label-default[data-format=gtfs]:hover, 
+.label.label-default[data-format=rtf]:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+.dataset-heading span.dataset-private.label.label-inverse { 
+    width: 75px !important; 
+    background-image: none !important; 
+    margin-right: 0px !important; 
+    padding-bottom: 4px;
+ }
+
+.dataset-resources {
+    margin-top: 1px;
+}
+
+.context-info .follow_button {
+    margin-top: 5px
+}
+
+/* 03 Junho 2019 */
+
+.account-masthead .account ul li a.sub {
+    display: none;
+}
+
+.account-masthead .account ul li {
+     border-left: 1px solid transparent;
+}
+.account-masthead .account ul li a {
+    font-size: 14px;
+    font-weight: normal;
+}
+.account-masthead .account .notifications a span.badge {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.wrapper {
+    border: 1px solid #fff;
+    min-height: 52vh
+}
+
+.media-grid {
+    background-image: none;
+    background: #e6f2e2;
+     border-width: 0 0;
+}
+
+.page-header {
+    margin-top: 30px;
+    border-bottom: 1px solid #dddddd;
+    background-color: #e6f2e2;
+    border-radius: 0 3px 0 0;
+}
+.page-header .content_action {
+    margin-top: 5px;
+}
+
+.module-content:first-child {
+    padding-top: 5px;
+}
+
+/* 04 Maio 2019 */
+
+.homepage .module-content.box {
+    padding: 20px;
+    padding-top: 3px;
+   padding-bottom: 0;
+}
+.homepage .module-content.box header p {
+    font-size: 17px;
+}
+.wrapper {
+    min-height: 51vh
+}
+
+      </style>
+    
+  </head>
+
+  
+  <body data-site-root="https://ckan.pbh.gov.br/" data-locale-root="https://ckan.pbh.gov.br/" >
+
+    
+    <div class="sr-only sr-only-focusable"><a href="#content">Pular para o conteúdo</a></div>
+  
+
+  
+     
+<header class="account-masthead">
+  <div class="container">
+     
+    <nav class="account not-authed">
+      <ul class="list-unstyled">
+        
+        <li><a href="/user/login">Entrar</a></li>
+         
+      </ul>
+    </nav>
+     
+  </div>
+</header>
+
+<header class="navbar navbar-static-top masthead">
+    
+  <div class="container">
+    <div class="navbar-right">
+      <button data-target="#main-navigation-toggle" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
+        <span class="fa fa-bars"></span>
+      </button>
+    </div>
+    <hgroup class="header-image navbar-left">
+       
+      <a class="logo" href="/"><img src="/uploads/admin/2017-12-07-103710.408141logopbh-dados-abertos-2.png" alt="Portal de Dados Abertos" title="Portal de Dados Abertos" /></a>
+       
+    </hgroup>
+
+    <div class="collapse navbar-collapse" id="main-navigation-toggle">
+      
+      <nav class="section navigation">
+        <ul class="nav nav-pills">
+           <li class="active"><a href="/dataset">Conjuntos de dados</a></li><li><a href="/organization">Organizações</a></li><li><a href="/group">Grupos</a></li><li><a href="/about">Sobre</a></li> 
+        </ul>
+      </nav>
+       
+      <form class="section site-search simple-input" action="/dataset" method="get">
+        <div class="field">
+          <label for="field-sitewide-search">Buscar conjunto de dados</label>
+          <input id="field-sitewide-search" type="text" class="form-control" name="q" placeholder="Pesquisar" />
+          <button class="btn-search" type="submit"><i class="fa fa-search"></i></button>
+        </div>
+      </form>
+      
+    </div>
+  </div>
+</header>
+
+  
+    <div role="main">
+      <div id="content" class="container">
+        
+          
+            <div class="flash-messages">
+              
+                
+              
+            </div>
+          
+
+          
+            <div class="toolbar">
+              
+                
+                  <ol class="breadcrumb">
+                    
+<li class="home"><a href="/"><i class="fa fa-home"></i><span> Início</span></a></li>
+                    
+  <li class="active"><a class=" active" href="/dataset">Conjuntos de dados</a></li>
+
+                  </ol>
+                
+              
+            </div>
+          
+
+          <div class="row wrapper">
+            
+            
+            
+
+            
+              <aside class="secondary col-sm-3">
+                
+                
+<div class="filters">
+  <div>
+    
+      
+
+  
+  
+    
+      
+      
+        <section class="module module-narrow module-shallow">
+          
+            <h2 class="module-heading">
+              <i class="fa fa-filter"></i>
+              
+              Organizações
+            </h2>
+          
+          
+            
+            
+              <nav>
+                <ul class="list-unstyled nav nav-simple nav-facet">
+                  
+                    
+                    
+                    
+                    
+                      <li class="nav-item">
+                        <a href="/dataset?organization=smpu" title="">
+                          <span class="item-label">SMPU</span>
+                          <span class="hidden separator"> - </span>
+                          <span class="item-count badge">33</span>
+                        </a>
+                      </li>
+                  
+                    
+                    
+                    
+                    
+                      <li class="nav-item">
+                        <a href="/dataset?organization=prodabel_pbh" title="Empresa de Informática e Informação de Belo Horizonte">
+                          <span class="item-label">Empresa de Informát...</span>
+                          <span class="hidden separator"> - </span>
+                          <span class="item-count badge">30</span>
+                        </a>
+                      </li>
+                  
+                    
+                    
+                    
+                    
+                      <li class="nav-item">
+                        <a href="/dataset?organization=smfa" title="">
+                          <span class="item-label">SMFA</span>
+                          <span class="hidden separator"> - </span>
+                          <span class="item-count badge">30</span>
+                        </a>
+                      </li>
+                  
+                    
+                    
+                    
+                    
+                      <li class="nav-item">
+                        <a href="/dataset?organization=bhtrans" title="Empresa de Transporte e Trânsito de Belo Horizonte">
+                          <span class="item-label">Empresa de Transpor...</span>
+                          <span class="hidden separator"> - </span>
+                          <span class="item-count badge">22</span>
+                        </a>
+                      </li>
+                  
+                    
+                    
+                    
+                    
+                      <li class="nav-item">
+                        <a href="/dataset?organization=smasac" title="">
+                          <span class="item-label">SMASAC</span>
+                          <span class="hidden separator"> - </span>
+                          <span class="item-count badge">14</span>
+                        </a>
+                      </li>
+                  
+                    
+                    
+                    
+                    
+                      <li class="nav-item">
+                        <a href="/dataset?organization=smpog" title="">
+                          <span class="item-label">SMPOG</span>
+                          <span class="hidden separator"> - </span>
+                          <span class="item-count badge">9</span>
+                        </a>
+                      </li>
+                  
+                    
+                    
+                    
+                    
+                      <li class="nav-item">
+                        <a href="/dataset?organization=smed" title="">
+                          <span class="item-label">SMED</span>
+                          <span class="hidden separator"> - </span>
+                          <span class="item-count badge">7</span>
+                        </a>
+                      </li>
+                  
+                    
+                    
+                    
+                    
+                      <li class="nav-item">
+                        <a href="/dataset?organization=superintendencia-de-limpeza-urbana" title="Superintendência de Limpeza Urbana">
+                          <span class="item-label">Superintendência de...</span>
+                          <span class="hidden separator"> - </span>
+                          <span class="item-count badge">7</span>
+                        </a>
+                      </li>
+                  
+                    
+                    
+                    
+                    
+                      <li class="nav-item">
+                        <a href="/dataset?organization=belotur" title="Empresa Municipal de Turismo de Belo Horizonte">
+                          <span class="item-label">Empresa Municipal d...</span>
+                          <span class="hidden separator"> - </span>
+                          <span class="item-count badge">6</span>
+                        </a>
+                      </li>
+                  
+                    
+                    
+                    
+                    
+                      <li class="nav-item">
+                        <a href="/dataset?organization=urbel" title="">
+                          <span class="item-label">URBEL</span>
+                          <span class="hidden separator"> - </span>
+                          <span class="item-count badge">6</span>
+                        </a>
+                      </li>
+                  
+                </ul>
+              </nav>
+
+              <p class="module-footer">
+                
+                  
+                    <a href="/dataset?_organization_limit=0" class="read-more">Mostrar mais Organizações</a>
+                  
+                
+              </p>
+            
+            
+          
+        </section>
+      
+    
+  
+
+    
+      
+
+  
+  
+    
+      
+      
+        <section class="module module-narrow module-shallow">
+          
+            <h2 class="module-heading">
+              <i class="fa fa-filter"></i>
+              
+              Grupos
+            </h2>
+          
+          
+            
+            
+              <nav>
+                <ul class="list-unstyled nav nav-simple nav-facet">
+                  
+                    
+                    
+                    
+                    
+                      <li class="nav-item">
+                        <a href="/dataset?groups=mobilidade-urbana" title="">
+                          <span class="item-label">Mobilidade Urbana</span>
+                          <span class="hidden separator"> - </span>
+                          <span class="item-count badge">18</span>
+                        </a>
+                      </li>
+                  
+                    
+                    
+                    
+                    
+                      <li class="nav-item">
+                        <a href="/dataset?groups=tecnologia-e-informacao" title="Tecnologia e Informação">
+                          <span class="item-label">Tecnologia e Inform...</span>
+                          <span class="hidden separator"> - </span>
+                          <span class="item-count badge">10</span>
+                        </a>
+                      </li>
+                  
+                    
+                    
+                    
+                    
+                      <li class="nav-item">
+                        <a href="/dataset?groups=educacao" title="">
+                          <span class="item-label">Educação</span>
+                          <span class="hidden separator"> - </span>
+                          <span class="item-count badge">7</span>
+                        </a>
+                      </li>
+                  
+                    
+                    
+                    
+                    
+                      <li class="nav-item">
+                        <a href="/dataset?groups=politicas-sociais" title="">
+                          <span class="item-label">Políticas Sociais</span>
+                          <span class="hidden separator"> - </span>
+                          <span class="item-count badge">7</span>
+                        </a>
+                      </li>
+                  
+                    
+                    
+                    
+                    
+                      <li class="nav-item">
+                        <a href="/dataset?groups=desenvolvimento-humano" title="">
+                          <span class="item-label">Desenvolvimento Humano</span>
+                          <span class="hidden separator"> - </span>
+                          <span class="item-count badge">4</span>
+                        </a>
+                      </li>
+                  
+                    
+                    
+                    
+                    
+                      <li class="nav-item">
+                        <a href="/dataset?groups=planejamento" title="">
+                          <span class="item-label">Planejamento</span>
+                          <span class="hidden separator"> - </span>
+                          <span class="item-count badge">3</span>
+                        </a>
+                      </li>
+                  
+                    
+                    
+                    
+                    
+                      <li class="nav-item">
+                        <a href="/dataset?groups=estrategico" title="">
+                          <span class="item-label">Estratégico</span>
+                          <span class="hidden separator"> - </span>
+                          <span class="item-count badge">2</span>
+                        </a>
+                      </li>
+                  
+                    
+                    
+                    
+                    
+                      <li class="nav-item">
+                        <a href="/dataset?groups=estruturante" title="">
+                          <span class="item-label">Estruturante</span>
+                          <span class="hidden separator"> - </span>
+                          <span class="item-count badge">2</span>
+                        </a>
+                      </li>
+                  
+                    
+                    
+                    
+                    
+                      <li class="nav-item">
+                        <a href="/dataset?groups=meio-ambiente" title="">
+                          <span class="item-label">Meio Ambiente</span>
+                          <span class="hidden separator"> - </span>
+                          <span class="item-count badge">2</span>
+                        </a>
+                      </li>
+                  
+                    
+                    
+                    
+                    
+                      <li class="nav-item">
+                        <a href="/dataset?groups=saude" title="">
+                          <span class="item-label">Saúde</span>
+                          <span class="hidden separator"> - </span>
+                          <span class="item-count badge">1</span>
+                        </a>
+                      </li>
+                  
+                </ul>
+              </nav>
+
+              <p class="module-footer">
+                
+                  
+                
+              </p>
+            
+            
+          
+        </section>
+      
+    
+  
+
+    
+      
+
+  
+  
+    
+      
+      
+        <section class="module module-narrow module-shallow">
+          
+            <h2 class="module-heading">
+              <i class="fa fa-filter"></i>
+              
+              Etiquetas
+            </h2>
+          
+          
+            
+            
+              <nav>
+                <ul class="list-unstyled nav nav-simple nav-facet">
+                  
+                    
+                    
+                    
+                    
+                      <li class="nav-item">
+                        <a href="/dataset?tags=pol%C3%ADtica+urbana" title="">
+                          <span class="item-label">política urbana</span>
+                          <span class="hidden separator"> - </span>
+                          <span class="item-count badge">29</span>
+                        </a>
+                      </li>
+                  
+                    
+                    
+                    
+                    
+                      <li class="nav-item">
+                        <a href="/dataset?tags=legisla%C3%A7%C3%A3o+urban%C3%ADstica" title="">
+                          <span class="item-label">legislação urbanística</span>
+                          <span class="hidden separator"> - </span>
+                          <span class="item-count badge">27</span>
+                        </a>
+                      </li>
+                  
+                    
+                    
+                    
+                    
+                      <li class="nav-item">
+                        <a href="/dataset?tags=instrumento+urban%C3%ADstico" title="instrumento urbanístico">
+                          <span class="item-label">instrumento urbanís...</span>
+                          <span class="hidden separator"> - </span>
+                          <span class="item-count badge">26</span>
+                        </a>
+                      </li>
+                  
+                    
+                    
+                    
+                    
+                      <li class="nav-item">
+                        <a href="/dataset?tags=planejamento+urbano" title="">
+                          <span class="item-label">planejamento urbano</span>
+                          <span class="hidden separator"> - </span>
+                          <span class="item-count badge">26</span>
+                        </a>
+                      </li>
+                  
+                    
+                    
+                    
+                    
+                      <li class="nav-item">
+                        <a href="/dataset?tags=ordenamento+territorial" title="ordenamento territorial">
+                          <span class="item-label">ordenamento territo...</span>
+                          <span class="hidden separator"> - </span>
+                          <span class="item-count badge">16</span>
+                        </a>
+                      </li>
+                  
+                    
+                    
+                    
+                    
+                      <li class="nav-item">
+                        <a href="/dataset?tags=planejamento" title="">
+                          <span class="item-label">planejamento</span>
+                          <span class="hidden separator"> - </span>
+                          <span class="item-count badge">14</span>
+                        </a>
+                      </li>
+                  
+                    
+                    
+                    
+                    
+                      <li class="nav-item">
+                        <a href="/dataset?tags=Endere%C3%A7o" title="">
+                          <span class="item-label">Endereço</span>
+                          <span class="hidden separator"> - </span>
+                          <span class="item-count badge">10</span>
+                        </a>
+                      </li>
+                  
+                    
+                    
+                    
+                    
+                      <li class="nav-item">
+                        <a href="/dataset?tags=plano+de+dados+abertos" title="">
+                          <span class="item-label">plano de dados abertos</span>
+                          <span class="hidden separator"> - </span>
+                          <span class="item-count badge">9</span>
+                        </a>
+                      </li>
+                  
+                    
+                    
+                    
+                    
+                      <li class="nav-item">
+                        <a href="/dataset?tags=Belo+Horizonte" title="">
+                          <span class="item-label">Belo Horizonte</span>
+                          <span class="hidden separator"> - </span>
+                          <span class="item-count badge">8</span>
+                        </a>
+                      </li>
+                  
+                    
+                    
+                    
+                    
+                      <li class="nav-item">
+                        <a href="/dataset?tags=Regional" title="">
+                          <span class="item-label">Regional</span>
+                          <span class="hidden separator"> - </span>
+                          <span class="item-count badge">8</span>
+                        </a>
+                      </li>
+                  
+                </ul>
+              </nav>
+
+              <p class="module-footer">
+                
+                  
+                    <a href="/dataset?_tags_limit=0" class="read-more">Mostrar mais Etiquetas</a>
+                  
+                
+              </p>
+            
+            
+          
+        </section>
+      
+    
+  
+
+    
+      
+
+  
+  
+    
+      
+      
+        <section class="module module-narrow module-shallow">
+          
+            <h2 class="module-heading">
+              <i class="fa fa-filter"></i>
+              
+              Formatos
+            </h2>
+          
+          
+            
+            
+              <nav>
+                <ul class="list-unstyled nav nav-simple nav-facet">
+                  
+                    
+                    
+                    
+                    
+                      <li class="nav-item">
+                        <a href="/dataset?res_format=CSV" title="">
+                          <span class="item-label">CSV</span>
+                          <span class="hidden separator"> - </span>
+                          <span class="item-count badge">147</span>
+                        </a>
+                      </li>
+                  
+                    
+                    
+                    
+                    
+                      <li class="nav-item">
+                        <a href="/dataset?res_format=PDF" title="">
+                          <span class="item-label">PDF</span>
+                          <span class="hidden separator"> - </span>
+                          <span class="item-count badge">132</span>
+                        </a>
+                      </li>
+                  
+                    
+                    
+                    
+                    
+                      <li class="nav-item">
+                        <a href="/dataset?res_format=JSON" title="">
+                          <span class="item-label">JSON</span>
+                          <span class="hidden separator"> - </span>
+                          <span class="item-count badge">15</span>
+                        </a>
+                      </li>
+                  
+                    
+                    
+                    
+                    
+                      <li class="nav-item">
+                        <a href="/dataset?res_format=HTML" title="">
+                          <span class="item-label">HTML</span>
+                          <span class="hidden separator"> - </span>
+                          <span class="item-count badge">6</span>
+                        </a>
+                      </li>
+                  
+                    
+                    
+                    
+                    
+                      <li class="nav-item">
+                        <a href="/dataset?res_format=DAT" title="">
+                          <span class="item-label">DAT</span>
+                          <span class="hidden separator"> - </span>
+                          <span class="item-count badge">2</span>
+                        </a>
+                      </li>
+                  
+                    
+                    
+                    
+                    
+                      <li class="nav-item">
+                        <a href="/dataset?res_format=ID" title="">
+                          <span class="item-label">ID</span>
+                          <span class="hidden separator"> - </span>
+                          <span class="item-count badge">2</span>
+                        </a>
+                      </li>
+                  
+                    
+                    
+                    
+                    
+                      <li class="nav-item">
+                        <a href="/dataset?res_format=LOG" title="">
+                          <span class="item-label">LOG</span>
+                          <span class="hidden separator"> - </span>
+                          <span class="item-count badge">2</span>
+                        </a>
+                      </li>
+                  
+                    
+                    
+                    
+                    
+                      <li class="nav-item">
+                        <a href="/dataset?res_format=MAP" title="">
+                          <span class="item-label">MAP</span>
+                          <span class="hidden separator"> - </span>
+                          <span class="item-count badge">2</span>
+                        </a>
+                      </li>
+                  
+                    
+                    
+                    
+                    
+                      <li class="nav-item">
+                        <a href="/dataset?res_format=TAB" title="">
+                          <span class="item-label">TAB</span>
+                          <span class="hidden separator"> - </span>
+                          <span class="item-count badge">2</span>
+                        </a>
+                      </li>
+                  
+                    
+                    
+                    
+                    
+                      <li class="nav-item">
+                        <a href="/dataset?res_format=URL" title="">
+                          <span class="item-label">URL</span>
+                          <span class="hidden separator"> - </span>
+                          <span class="item-count badge">2</span>
+                        </a>
+                      </li>
+                  
+                </ul>
+              </nav>
+
+              <p class="module-footer">
+                
+                  
+                    <a href="/dataset?_res_format_limit=0" class="read-more">Mostrar mais Formatos</a>
+                  
+                
+              </p>
+            
+            
+          
+        </section>
+      
+    
+  
+
+    
+      
+
+  
+  
+    
+      
+      
+        <section class="module module-narrow module-shallow">
+          
+            <h2 class="module-heading">
+              <i class="fa fa-filter"></i>
+              
+              Licenças
+            </h2>
+          
+          
+            
+            
+              <nav>
+                <ul class="list-unstyled nav nav-simple nav-facet">
+                  
+                    
+                    
+                    
+                    
+                      <li class="nav-item">
+                        <a href="/dataset?license_id=cc-by" title="Creative Commons Atribuição">
+                          <span class="item-label">Creative Commons At...</span>
+                          <span class="hidden separator"> - </span>
+                          <span class="item-count badge">160</span>
+                        </a>
+                      </li>
+                  
+                    
+                    
+                    
+                    
+                      <li class="nav-item">
+                        <a href="/dataset?license_id=odc-odbl" title="Licença Aberta para Bases de Dados (ODbL) do Open Data Commons">
+                          <span class="item-label">Licença Aberta para...</span>
+                          <span class="hidden separator"> - </span>
+                          <span class="item-count badge">20</span>
+                        </a>
+                      </li>
+                  
+                </ul>
+              </nav>
+
+              <p class="module-footer">
+                
+                  
+                
+              </p>
+            
+            
+          
+        </section>
+      
+    
+  
+
+    
+  </div>
+  <a class="close no-text hide-filters"><i class="fa fa-times-circle"></i><span class="text">close</span></a>
+</div>
+
+              </aside>
+            
+
+            
+              <div class="primary col-sm-9 col-xs-12">
+                
+                
+  <section class="module">
+    <div class="module-content">
+      
+        
+      
+      
+        
+        
+        
+
+
+
+
+
+
+
+<form id="dataset-search-form" class="search-form" method="get" data-module="select-switch">
+
+  
+    <div class="input-group search-input-group">
+      <input aria-label="Search datasets..." id="field-giant-search" type="text" class="form-control input-lg" name="q" value="" autocomplete="off" placeholder="Search datasets...">
+      
+      <span class="input-group-btn">
+        <button class="btn btn-default btn-lg" type="submit" value="search">
+          <i class="fa fa-search"></i>
+        </button>
+      </span>
+      
+    </div>
+  
+
+  
+    
+  
+
+  
+    
+      <div class="form-select form-group control-order-by">
+        <label for="field-order-by">Ordenar por</label>
+        <select id="field-order-by" name="sort" class="form-control">
+          
+            
+              <option value="score desc, metadata_modified desc" selected="selected">Relevância</option>
+            
+          
+            
+              <option value="title_string asc">Nome Crescente</option>
+            
+          
+            
+              <option value="title_string desc">Nome Descrescente</option>
+            
+          
+            
+              <option value="metadata_modified desc">Modificada pela última vez</option>
+            
+          
+            
+          
+        </select>
+        
+        <button class="btn btn-default js-hide" type="submit">Ir</button>
+        
+      </div>
+    
+  
+
+  
+    
+      <h2>
+
+  
+  
+  
+  
+
+180 conjuntos de dados encontrados</h2>
+    
+  
+
+  
+    
+      <p class="filter-list">
+        
+      </p>
+      <a class="show-filters btn btn-default">Filtrar Resultados</a>
+    
+  
+
+</form>
+
+
+
+
+      
+      
+        
+
+  
+    <ul class="dataset-list list-unstyled">
+    	
+	      
+	        
+
+
+
+
+
+
+  <li class="dataset-item">
+    
+      <div class="dataset-content">
+        
+          <h3 class="dataset-heading">
+            
+              
+            
+            
+              <a href="/dataset/dados-da-estrutura-organizacional-da-pmbh">Dados da Estrutura Organizacional da PMBH</a>
+            
+            
+              
+              
+            
+          </h3>
+        
+        
+          
+        
+        
+          
+            <div>Contém os dados de endereço, titular, e-mail e telefone de todos os órgãos e entidades da administração direta e indireta da estrutura administrativa da Prefeitura Municipal de...</div>
+          
+        
+      </div>
+      
+        
+          
+            <ul class="dataset-resources list-unstyled">
+              
+                
+                <li>
+                  <a href="/dataset/dados-da-estrutura-organizacional-da-pmbh" class="label label-default" data-format="csv">CSV</a>
+                </li>
+                
+                <li>
+                  <a href="/dataset/dados-da-estrutura-organizacional-da-pmbh" class="label label-default" data-format="pdf">PDF</a>
+                </li>
+                
+              
+            </ul>
+          
+        
+      
+    
+  </li>
+
+	      
+	        
+
+
+
+
+
+
+  <li class="dataset-item">
+    
+      <div class="dataset-content">
+        
+          <h3 class="dataset-heading">
+            
+              
+            
+            
+              <a href="/dataset/feed-gtfs-estatico-do-sistema-suplementar">GTFS Estático do Sistema Suplementar</a>
+            
+            
+              
+              
+            
+          </h3>
+        
+        
+          
+        
+        
+          
+            <div>Conjunto de arquivos em padrão GTFS contendo a especificação dos serviços do sistema de transporte suplementar.  A sobreposição de arquivo ocorre sem aviso prévio, e o intervalo...</div>
+          
+        
+      </div>
+      
+        
+          
+            <ul class="dataset-resources list-unstyled">
+              
+                
+                <li>
+                  <a href="/dataset/feed-gtfs-estatico-do-sistema-suplementar" class="label label-default" data-format="url">URL</a>
+                </li>
+                
+                <li>
+                  <a href="/dataset/feed-gtfs-estatico-do-sistema-suplementar" class="label label-default" data-format="zip">ZIP</a>
+                </li>
+                
+              
+            </ul>
+          
+        
+      
+    
+  </li>
+
+	      
+	        
+
+
+
+
+
+
+  <li class="dataset-item">
+    
+      <div class="dataset-content">
+        
+          <h3 class="dataset-heading">
+            
+              
+            
+            
+              <a href="/dataset/vilas-e-conjuntos-em-zeis">Regularização Fundiária de Vilas e Conjuntos em Zeis</a>
+            
+            
+              
+              
+            
+          </h3>
+        
+        
+          
+        
+        
+          
+            <div>Descrição de Dados de Domicílios Regularizados em ZEIS
+O conjunto de dados apresenta o número de domicílios regularizados em vilas ou favelas (ocupações urbanas desordenadas e...</div>
+          
+        
+      </div>
+      
+        
+          
+            <ul class="dataset-resources list-unstyled">
+              
+                
+                <li>
+                  <a href="/dataset/vilas-e-conjuntos-em-zeis" class="label label-default" data-format="csv">CSV</a>
+                </li>
+                
+                <li>
+                  <a href="/dataset/vilas-e-conjuntos-em-zeis" class="label label-default" data-format="pdf">PDF</a>
+                </li>
+                
+              
+            </ul>
+          
+        
+      
+    
+  </li>
+
+	      
+	        
+
+
+
+
+
+
+  <li class="dataset-item">
+    
+      <div class="dataset-content">
+        
+          <h3 class="dataset-heading">
+            
+              
+            
+            
+              <a href="/dataset/matriz-tarifaria">Matriz Tarifária</a>
+            
+            
+              
+              
+            
+          </h3>
+        
+        
+          
+        
+        
+          
+            <div>Relação das integrações tarifárias entre as linhas, contendo o valor pago no primeiro embarque e o complemento tarifário exigido para um novo embarque que complemente a viagem....</div>
+          
+        
+      </div>
+      
+        
+          
+            <ul class="dataset-resources list-unstyled">
+              
+                
+                <li>
+                  <a href="/dataset/matriz-tarifaria" class="label label-default" data-format="csv">CSV</a>
+                </li>
+                
+                <li>
+                  <a href="/dataset/matriz-tarifaria" class="label label-default" data-format="cvs">cvs</a>
+                </li>
+                
+              
+            </ul>
+          
+        
+      
+    
+  </li>
+
+	      
+	        
+
+
+
+
+
+
+  <li class="dataset-item">
+    
+      <div class="dataset-content">
+        
+          <h3 class="dataset-heading">
+            
+              
+            
+            
+              <a href="/dataset/estimativa-de-embarque-nos-pontos-de-parada">Estimativa de embarque nos pontos de parada por linha/sublinha do sistema con...</a>
+            
+            
+              
+              
+            
+          </h3>
+        
+        
+          
+        
+        
+          
+            <div>Estimativa de embarques de passageiros de um dia útil típico do mês vigente por ponto de parada de acordo com os dados da bilhetagem eletrônica.
+OBSERVAÇÃO: Os dados entre junho...</div>
+          
+        
+      </div>
+      
+        
+          
+            <ul class="dataset-resources list-unstyled">
+              
+                
+                <li>
+                  <a href="/dataset/estimativa-de-embarque-nos-pontos-de-parada" class="label label-default" data-format="pdf">PDF</a>
+                </li>
+                
+                <li>
+                  <a href="/dataset/estimativa-de-embarque-nos-pontos-de-parada" class="label label-default" data-format="csv">CSV</a>
+                </li>
+                
+              
+            </ul>
+          
+        
+      
+    
+  </li>
+
+	      
+	        
+
+
+
+
+
+
+  <li class="dataset-item">
+    
+      <div class="dataset-content">
+        
+          <h3 class="dataset-heading">
+            
+              
+            
+            
+              <a href="/dataset/licitacoes-sualog-smfa">LICITAÇÕES PUBLICADAS SUALOG-SMFA</a>
+            
+            
+              
+              
+            
+          </h3>
+        
+        
+          
+        
+        
+          
+            <div>Divulgação dos certames licitatórios realizados pela Diretoria Central de Compras SUALOG / SMFA tais como, pregões eletrônicos, pregões presenciais, concorrências, tomadas de...</div>
+          
+        
+      </div>
+      
+        
+          
+            <ul class="dataset-resources list-unstyled">
+              
+                
+                <li>
+                  <a href="/dataset/licitacoes-sualog-smfa" class="label label-default" data-format="pdf">PDF</a>
+                </li>
+                
+                <li>
+                  <a href="/dataset/licitacoes-sualog-smfa" class="label label-default" data-format="csv">CSV</a>
+                </li>
+                
+              
+            </ul>
+          
+        
+      
+    
+  </li>
+
+	      
+	        
+
+
+
+
+
+
+  <li class="dataset-item">
+    
+      <div class="dataset-content">
+        
+          <h3 class="dataset-heading">
+            
+              
+            
+            
+              <a href="/dataset/gtfs-estatico-do-sistema-convencional">GTFS Estático do Sistema Convencional</a>
+            
+            
+              
+              
+            
+          </h3>
+        
+        
+          
+        
+        
+          
+            <div>Conjunto de arquivos em padrão GTFS contendo a especificação dos serviços do sistema de transporte convencional (incluso o MOVE), atualizado a cada 3 meses.</div>
+          
+        
+      </div>
+      
+        
+          
+            <ul class="dataset-resources list-unstyled">
+              
+                
+                <li>
+                  <a href="/dataset/gtfs-estatico-do-sistema-convencional" class="label label-default" data-format="url">URL</a>
+                </li>
+                
+                <li>
+                  <a href="/dataset/gtfs-estatico-do-sistema-convencional" class="label label-default" data-format="zip">ZIP</a>
+                </li>
+                
+              
+            </ul>
+          
+        
+      
+    
+  </li>
+
+	      
+	        
+
+
+
+
+
+
+  <li class="dataset-item">
+    
+      <div class="dataset-content">
+        
+          <h3 class="dataset-heading">
+            
+              
+            
+            
+              <a href="/dataset/execucao-orcamentaria">Execução Orçamentária</a>
+            
+            
+              
+              
+            
+          </h3>
+        
+        
+          
+        
+        
+          
+            <div>Dados sobre a execução orçamentária da PRODABEL agrupada por fonte de recurso.</div>
+          
+        
+      </div>
+      
+        
+          
+            <ul class="dataset-resources list-unstyled">
+              
+                
+                <li>
+                  <a href="/dataset/execucao-orcamentaria" class="label label-default" data-format="csv">CSV</a>
+                </li>
+                
+                <li>
+                  <a href="/dataset/execucao-orcamentaria" class="label label-default" data-format="pdf">PDF</a>
+                </li>
+                
+              
+            </ul>
+          
+        
+      
+    
+  </li>
+
+	      
+	        
+
+
+
+
+
+
+  <li class="dataset-item">
+    
+      <div class="dataset-content">
+        
+          <h3 class="dataset-heading">
+            
+              
+            
+            
+              <a href="/dataset/smpu-taxa-de-permeabilidade-lei-11-181-2019">SMPU - Taxa de Permeabilidade - Lei 11.181/2019</a>
+            
+            
+              
+              
+            
+          </h3>
+        
+        
+          
+        
+        
+          
+            <div>Conjunto de delimitações territoriais presente na legislação urbanística da categoria taxa de permeabilidade da Lei 11.181/2019, que aprova o Plano Diretor do município. Porções...</div>
+          
+        
+      </div>
+      
+        
+          
+            <ul class="dataset-resources list-unstyled">
+              
+                
+                <li>
+                  <a href="/dataset/smpu-taxa-de-permeabilidade-lei-11-181-2019" class="label label-default" data-format="pdf">PDF</a>
+                </li>
+                
+                <li>
+                  <a href="/dataset/smpu-taxa-de-permeabilidade-lei-11-181-2019" class="label label-default" data-format="json">JSON</a>
+                </li>
+                
+              
+            </ul>
+          
+        
+      
+    
+  </li>
+
+	      
+	        
+
+
+
+
+
+
+  <li class="dataset-item">
+    
+      <div class="dataset-content">
+        
+          <h3 class="dataset-heading">
+            
+              
+            
+            
+              <a href="/dataset/smpu-conexao-de-fundo-de-vale-lei-11-181-2019">SMPU - Conexão de Fundo de Vale - Lei 11.181/2019</a>
+            
+            
+              
+              
+            
+          </h3>
+        
+        
+          
+        
+        
+          
+            <div>Conjunto de delimitações territoriais presente na legislação urbanística da categoria conexão de fundo de vale da Lei 11.181/2019, que aprova o Plano Diretor do município....</div>
+          
+        
+      </div>
+      
+        
+          
+            <ul class="dataset-resources list-unstyled">
+              
+                
+                <li>
+                  <a href="/dataset/smpu-conexao-de-fundo-de-vale-lei-11-181-2019" class="label label-default" data-format="pdf">PDF</a>
+                </li>
+                
+                <li>
+                  <a href="/dataset/smpu-conexao-de-fundo-de-vale-lei-11-181-2019" class="label label-default" data-format="json">JSON</a>
+                </li>
+                
+              
+            </ul>
+          
+        
+      
+    
+  </li>
+
+	      
+	        
+
+
+
+
+
+
+  <li class="dataset-item">
+    
+      <div class="dataset-content">
+        
+          <h3 class="dataset-heading">
+            
+              
+            
+            
+              <a href="/dataset/smpu-areas-de-diretrizes-especiais-lei-11-181-2019">SMPU - Áreas de Diretrizes Especiais - Lei 11.181/2019</a>
+            
+            
+              
+              
+            
+          </h3>
+        
+        
+          
+        
+        
+          
+            <div>Conjunto de delimitações territoriais presente na legislação urbanística da categoria áreas de diretrizes especiais da Lei 11.181/2019, que aprova o Plano Diretor do município....</div>
+          
+        
+      </div>
+      
+        
+          
+            <ul class="dataset-resources list-unstyled">
+              
+                
+                <li>
+                  <a href="/dataset/smpu-areas-de-diretrizes-especiais-lei-11-181-2019" class="label label-default" data-format="pdf">PDF</a>
+                </li>
+                
+                <li>
+                  <a href="/dataset/smpu-areas-de-diretrizes-especiais-lei-11-181-2019" class="label label-default" data-format="json">JSON</a>
+                </li>
+                
+              
+            </ul>
+          
+        
+      
+    
+  </li>
+
+	      
+	        
+
+
+
+
+
+
+  <li class="dataset-item">
+    
+      <div class="dataset-content">
+        
+          <h3 class="dataset-heading">
+            
+              
+            
+            
+              <a href="/dataset/smpu-classificacao-viaria-lei-11-181-2019">SMPU - Classificação Viária - Lei 11.181/2019</a>
+            
+            
+              
+              
+            
+          </h3>
+        
+        
+          
+        
+        
+          
+            <div>Conjunto de delimitações territoriais presente na legislação urbanística da categoria classificação viária da Lei 11.181/2019, que aprova o Plano Diretor do município....</div>
+          
+        
+      </div>
+      
+        
+          
+            <ul class="dataset-resources list-unstyled">
+              
+                
+                <li>
+                  <a href="/dataset/smpu-classificacao-viaria-lei-11-181-2019" class="label label-default" data-format="csv">CSV</a>
+                </li>
+                
+                <li>
+                  <a href="/dataset/smpu-classificacao-viaria-lei-11-181-2019" class="label label-default" data-format="pdf">PDF</a>
+                </li>
+                
+              
+            </ul>
+          
+        
+      
+    
+  </li>
+
+	      
+	        
+
+
+
+
+
+
+  <li class="dataset-item">
+    
+      <div class="dataset-content">
+        
+          <h3 class="dataset-heading">
+            
+              
+            
+            
+              <a href="/dataset/smpu-conexao-verde-lei-11-181-2019">SMPU - Conexão Verde - Lei 11.181/2019</a>
+            
+            
+              
+              
+            
+          </h3>
+        
+        
+          
+        
+        
+          
+            <div>Conjunto de delimitações territoriais presente na legislação urbanística da categoria conexão verde da Lei 11.181/2019, que aprova o Plano Diretor do município. Porções do...</div>
+          
+        
+      </div>
+      
+        
+          
+            <ul class="dataset-resources list-unstyled">
+              
+                
+                <li>
+                  <a href="/dataset/smpu-conexao-verde-lei-11-181-2019" class="label label-default" data-format="csv">CSV</a>
+                </li>
+                
+                <li>
+                  <a href="/dataset/smpu-conexao-verde-lei-11-181-2019" class="label label-default" data-format="pdf">PDF</a>
+                </li>
+                
+              
+            </ul>
+          
+        
+      
+    
+  </li>
+
+	      
+	        
+
+
+
+
+
+
+  <li class="dataset-item">
+    
+      <div class="dataset-content">
+        
+          <h3 class="dataset-heading">
+            
+              
+            
+            
+              <a href="/dataset/smpu-recuo-de-alinhamento-lei-11-181-2019">SMPU - Recuo de Alinhamento - Lei 11.181/2019</a>
+            
+            
+              
+              
+            
+          </h3>
+        
+        
+          
+        
+        
+          
+            <div>Conjunto de delimitações territoriais presente na legislação urbanística da categoria recuo de alinhamento da Lei 11.181/2019, que aprova o Plano Diretor do município. Porções...</div>
+          
+        
+      </div>
+      
+        
+          
+            <ul class="dataset-resources list-unstyled">
+              
+                
+                <li>
+                  <a href="/dataset/smpu-recuo-de-alinhamento-lei-11-181-2019" class="label label-default" data-format="csv">CSV</a>
+                </li>
+                
+                <li>
+                  <a href="/dataset/smpu-recuo-de-alinhamento-lei-11-181-2019" class="label label-default" data-format="pdf">PDF</a>
+                </li>
+                
+              
+            </ul>
+          
+        
+      
+    
+  </li>
+
+	      
+	        
+
+
+
+
+
+
+  <li class="dataset-item">
+    
+      <div class="dataset-content">
+        
+          <h3 class="dataset-heading">
+            
+              
+            
+            
+              <a href="/dataset/smpu-projeto-viario-prioritario-lei-11-181-2019">SMPU - Projeto Viário Prioritário - Lei 11.181/2019</a>
+            
+            
+              
+              
+            
+          </h3>
+        
+        
+          
+        
+        
+          
+            <div>Conjunto de delimitações territoriais presente na legislação urbanística da categoria projetos viários prioritários da Lei 11.181/2019, que aprova o Plano Diretor do município....</div>
+          
+        
+      </div>
+      
+        
+          
+            <ul class="dataset-resources list-unstyled">
+              
+                
+                <li>
+                  <a href="/dataset/smpu-projeto-viario-prioritario-lei-11-181-2019" class="label label-default" data-format="csv">CSV</a>
+                </li>
+                
+                <li>
+                  <a href="/dataset/smpu-projeto-viario-prioritario-lei-11-181-2019" class="label label-default" data-format="pdf">PDF</a>
+                </li>
+                
+              
+            </ul>
+          
+        
+      
+    
+  </li>
+
+	      
+	        
+
+
+
+
+
+
+  <li class="dataset-item">
+    
+      <div class="dataset-content">
+        
+          <h3 class="dataset-heading">
+            
+              
+            
+            
+              <a href="/dataset/smpu-permissividade-especifica-de-uso-lotes-lei-11-181-2019">SMPU - Permissividade Específica de Uso Lotes - Lei 11.181/2019</a>
+            
+            
+              
+              
+            
+          </h3>
+        
+        
+          
+        
+        
+          
+            <div>Conjunto de delimitações territoriais presente na legislação urbanística da categoria permissividade específica de uso da Lei 11.181/2019, que aprova o Plano Diretor do...</div>
+          
+        
+      </div>
+      
+        
+          
+            <ul class="dataset-resources list-unstyled">
+              
+                
+                <li>
+                  <a href="/dataset/smpu-permissividade-especifica-de-uso-lotes-lei-11-181-2019" class="label label-default" data-format="csv">CSV</a>
+                </li>
+                
+                <li>
+                  <a href="/dataset/smpu-permissividade-especifica-de-uso-lotes-lei-11-181-2019" class="label label-default" data-format="pdf">PDF</a>
+                </li>
+                
+              
+            </ul>
+          
+        
+      
+    
+  </li>
+
+	      
+	        
+
+
+
+
+
+
+  <li class="dataset-item">
+    
+      <div class="dataset-content">
+        
+          <h3 class="dataset-heading">
+            
+              
+            
+            
+              <a href="/dataset/smpu-operacao-urbana-lei-11-181-2019">SMPU - Operação Urbana - Lei 11.181/2019</a>
+            
+            
+              
+              
+            
+          </h3>
+        
+        
+          
+        
+        
+          
+            <div>Conjunto de delimitações territoriais presente na legislação urbanística da categoria operação urbana da Lei 11.181/2019, que aprova o Plano Diretor do município. Porções do...</div>
+          
+        
+      </div>
+      
+        
+          
+            <ul class="dataset-resources list-unstyled">
+              
+                
+                <li>
+                  <a href="/dataset/smpu-operacao-urbana-lei-11-181-2019" class="label label-default" data-format="csv">CSV</a>
+                </li>
+                
+                <li>
+                  <a href="/dataset/smpu-operacao-urbana-lei-11-181-2019" class="label label-default" data-format="pdf">PDF</a>
+                </li>
+                
+              
+            </ul>
+          
+        
+      
+    
+  </li>
+
+	      
+	        
+
+
+
+
+
+
+  <li class="dataset-item">
+    
+      <div class="dataset-content">
+        
+          <h3 class="dataset-heading">
+            
+              
+            
+            
+              <a href="/dataset/smpu-operacao-urbana-transicao-lei-11-181-2019">SMPU - Operação Urbana Transição - Lei 11.181/2019</a>
+            
+            
+              
+              
+            
+          </h3>
+        
+        
+          
+        
+        
+          
+            <div>Conjunto de delimitações territoriais presente na legislação urbanística da categoria operação urbana da Lei 11.181/2019, que aprova o Plano Diretor do município. Porções do...</div>
+          
+        
+      </div>
+      
+        
+          
+            <ul class="dataset-resources list-unstyled">
+              
+                
+                <li>
+                  <a href="/dataset/smpu-operacao-urbana-transicao-lei-11-181-2019" class="label label-default" data-format="csv">CSV</a>
+                </li>
+                
+                <li>
+                  <a href="/dataset/smpu-operacao-urbana-transicao-lei-11-181-2019" class="label label-default" data-format="pdf">PDF</a>
+                </li>
+                
+              
+            </ul>
+          
+        
+      
+    
+  </li>
+
+	      
+	        
+
+
+
+
+
+
+  <li class="dataset-item">
+    
+      <div class="dataset-content">
+        
+          <h3 class="dataset-heading">
+            
+              
+            
+            
+              <a href="/dataset/smpu-permissividade-de-uso-especifica-lei-11-181-2019">SMPU - Permissividade Específica de Uso  - Lei 11.181/2019</a>
+            
+            
+              
+              
+            
+          </h3>
+        
+        
+          
+        
+        
+          
+            <div>Conjunto de delimitações territoriais presente na legislação urbanística da categoria permissividade específica de uso da Lei 11.181/2019, que aprova o Plano Diretor do...</div>
+          
+        
+      </div>
+      
+        
+          
+            <ul class="dataset-resources list-unstyled">
+              
+                
+                <li>
+                  <a href="/dataset/smpu-permissividade-de-uso-especifica-lei-11-181-2019" class="label label-default" data-format="csv">CSV</a>
+                </li>
+                
+                <li>
+                  <a href="/dataset/smpu-permissividade-de-uso-especifica-lei-11-181-2019" class="label label-default" data-format="pdf">PDF</a>
+                </li>
+                
+              
+            </ul>
+          
+        
+      
+    
+  </li>
+
+	      
+	        
+
+
+
+
+
+
+  <li class="dataset-item">
+    
+      <div class="dataset-content">
+        
+          <h3 class="dataset-heading">
+            
+              
+            
+            
+              <a href="/dataset/smpu-centralidade-local-lei-11-181-2019">SMPU - Centralidade Local - Lei 11.181/2019</a>
+            
+            
+              
+              
+            
+          </h3>
+        
+        
+          
+        
+        
+          
+            <div>Conjunto de delimitações territoriais presente na legislação urbanística da categoria centralidade local da Lei 11.181/2019, que aprova o Plano Diretor do município. Porções do...</div>
+          
+        
+      </div>
+      
+        
+          
+            <ul class="dataset-resources list-unstyled">
+              
+                
+                <li>
+                  <a href="/dataset/smpu-centralidade-local-lei-11-181-2019" class="label label-default" data-format="csv">CSV</a>
+                </li>
+                
+                <li>
+                  <a href="/dataset/smpu-centralidade-local-lei-11-181-2019" class="label label-default" data-format="pdf">PDF</a>
+                </li>
+                
+              
+            </ul>
+          
+        
+      
+    
+  </li>
+
+	      
+	    
+    </ul>
+  
+
+      
+    </div>
+
+    
+      <div class='pagination-wrapper'><ul class='pagination'> <li class="active"><a href="/dataset?page=1">1</a></li> <li><a href="/dataset?page=2">2</a></li> <li><a href="/dataset?page=3">3</a></li> <li class="disabled"><a href="#">...</a></li> <li><a href="/dataset?page=9">9</a></li> <li><a href="/dataset?page=2">»</a></li></ul></div>
+    
+  </section>
+
+  
+  <section class="module">
+    <div class="module-content">
+      
+      <small>
+        
+        
+        
+           Você também pode ter acesso a esses registros usando a <a href="/api/3">API</a> (veja <a href="http://docs.ckan.org/en/2.8/api/">Documentação da API</a>). 
+      </small>
+      
+    </div>
+  </section>
+  
+
+              </div>
+            
+          </div>
+        
+      </div>
+    </div>
+  
+    <footer class="site-footer">
+  <div class="container">
+    
+    <div class="row">
+      <div class="col-md-8 footer-links">
+        
+          <ul class="list-unstyled">
+            
+              <li><a href="/about">Sobre Portal de Dados Abertos</a></li>
+            
+          </ul>
+          <ul class="list-unstyled">
+            
+              
+              <li><a href="http://docs.ckan.org/en/2.8/api/">API do CKAN</a></li>
+              <li><a href="http://www.ckan.org/">Associação CKAN</a></li>
+              <li><a href="http://www.opendefinition.org/okd/"><img src="/base/images/od_80x15_blue.png" alt="Open Data"></a></li>
+            
+          </ul>
+        
+      </div>
+      <div class="col-md-4 attribution">
+        
+          <p><strong>Impulsionado por</strong> <a class="hide-text ckan-footer-logo" href="http://ckan.org">CKAN</a></p>
+        
+        
+          
+<form class="form-inline form-select lang-select" action="/util/redirect" data-module="select-switch" method="POST">
+  <label for="field-lang-select">Idioma</label>
+  <select id="field-lang-select" name="url" data-module="autocomplete" data-module-dropdown-class="lang-dropdown" data-module-container-class="lang-container">
+    
+      <option value="/pt_BR/dataset" selected="selected">
+        português (Brasil)
+      </option>
+    
+  </select>
+  <button class="btn btn-default js-hide" type="submit">Ir</button>
+</form>
+        
+      </div>
+    </div>
+    
+  </div>
+
+  
+    
+  
+</footer>
+  
+    
+    
+    
+  
+    
+    
+    
+        
+        
+        <div class="js-hide" data-module="google-analytics"
+             data-module-googleanalytics_resource_prefix="">
+        </div>
+    
+
+
+      
+  <script>document.getElementsByTagName('html')[0].className += ' js';</script>
+<script type="text/javascript" src="/fanstatic/vendor/:version:2020-12-02T18:24:28.10/jquery.min.js"></script>
+<script type="text/javascript" src="/fanstatic/vendor/:version:2020-12-02T18:24:28.10/:bundle:bootstrap/js/bootstrap.min.js;jed.min.js;moment-with-locales.min.js;select2/select2.min.js"></script>
+<script type="text/javascript" src="/fanstatic/base/:version:2020-12-02T18:24:27.78/:bundle:plugins/jquery.inherit.min.js;plugins/jquery.proxy-all.min.js;plugins/jquery.url-helpers.min.js;plugins/jquery.date-helpers.min.js;plugins/jquery.slug.min.js;plugins/jquery.slug-preview.min.js;plugins/jquery.truncator.min.js;plugins/jquery.masonry.min.js;plugins/jquery.form-warning.min.js;plugins/jquery.images-loaded.min.js;sandbox.min.js;module.min.js;pubsub.min.js;client.min.js;notify.min.js;i18n.min.js;main.min.js;modules/select-switch.min.js;modules/slug-preview.min.js;modules/basic-form.min.js;modules/confirm-action.min.js;modules/api-info.min.js;modules/autocomplete.min.js;modules/custom-fields.min.js;modules/data-viewer.min.js;modules/table-selectable-rows.min.js;modules/resource-form.min.js;modules/resource-upload-field.min.js;modules/resource-reorder.min.js;modules/resource-view-reorder.min.js;modules/follow.min.js;modules/activity-stream.min.js;modules/dashboard.min.js;modules/resource-view-embed.min.js;view-filters.min.js;modules/resource-view-filters-form.min.js;modules/resource-view-filters.min.js;modules/table-toggle-more.min.js;modules/dataset-visibility.min.js;modules/media-grid.min.js;modules/image-upload.min.js;modules/followers-counter.min.js"></script>
+<script type="text/javascript" src="/fanstatic/ckanext-googleanalytics/:version:2022-03-30T12:01:29.92/googleanalytics_event_tracking.js"></script></body>
+</html>

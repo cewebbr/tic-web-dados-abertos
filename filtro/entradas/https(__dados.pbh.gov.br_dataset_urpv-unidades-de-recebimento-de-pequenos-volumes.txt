@@ -1,0 +1,1799 @@
+
+<!DOCTYPE html>
+<!--[if IE 9]> <html lang="pt_BR" class="ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="pt_BR"> <!--<![endif]-->
+  <head>
+    <link rel="stylesheet" type="text/css" href="/fanstatic/vendor/:version:2020-12-02T18:24:28.10/select2/select2.min.css" />
+<link rel="stylesheet" type="text/css" href="/fanstatic/css/:version:2020-12-02T18:24:27.65/green.min.css" />
+<link rel="stylesheet" type="text/css" href="/fanstatic/vendor/:version:2020-12-02T18:24:28.10/font-awesome/css/font-awesome.min.css" />
+
+    <meta charset="utf-8" />
+      <meta name="generator" content="ckan 2.8.6" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URPV - Unidades de Recebimento de Pequenos Volumes - Conjuntos de dados - Portal de Dados Abertos</title>
+
+    
+    
+    <link rel="shortcut icon" href="/base/images/ckan.ico" />
+    
+    
+        <script type="text/javascript">
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-223450919-2', 'auto', {});
+     
+  ga('set', 'anonymizeIp', true);
+  ga('send', 'pageview');
+</script>
+    
+
+      
+    
+
+    
+      
+      
+    
+  
+  <meta property="og:title" content="URPV - Unidades de Recebimento de Pequenos Volumes - Portal de Dados Abertos">
+  <meta property="og:description" content="Informaçõe sobre localização e equipamentos em Unidades de Recebimento de Pequenos Volumes">
+<style>
+        /* Producao 28-Dez-2017 */
+
+/* ----------------------------------------------------------------------------- */
+/* Tooltip from:   https://chrisbracco.com/a-simple-css-tooltip/  */
+
+/* Add this attribute to the element that needs a tooltip */
+[data-tooltip] {
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+}
+/* Hide the tooltip content by default */
+[data-tooltip]:before,
+[data-tooltip]:after {
+  visibility: hidden;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  pointer-events: none;
+}
+/* Position tooltip above the element */
+[data-tooltip]:before {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-bottom: 5px;
+  margin-left: -80px;
+  padding: 7px;
+  width: 220px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 10px;
+  background-color: #000;
+  background-color: hsla(0, 0%, 20%, 1);
+  color: #fff;
+  content: attr(data-tooltip);
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.2;
+}
+/* Triangle hack to make tooltip look like a speech bubble */
+[data-tooltip]:after {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  width: 0;
+  border-top: 5px solid #000;
+  border-top: 5px solid hsla(0, 0%, 20%, 0.9);
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+  content: " ";
+  font-size: 0;
+  line-height: 0;
+}
+/* Show tooltip content on hover */
+[data-tooltip]:hover:before,
+[data-tooltip]:hover:after {
+  visibility: visible;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+/* -------------------------------------------------------- */
+/* -- Font family -- */
+@font-face {
+    font-family: 'DINPro-Black';
+    src: url(/base/fonts/DINPro-Black.eot);
+    src: local('?'),url(/base/fonts/DINPro-Black.woff) format('woff'),url(/base/fonts/DINPro-Black.ttf) format('truetype'),url(/base/fonts/DINPro-Black.svg) format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'DINPro-Bold';
+    src: url(/base/fonts/DINPro-Bold.eot);
+    src: local('?'),url(/base/fonts/DINPro-Bold.woff) format('woff'),url(/base/fonts/DINPro-Bold.ttf) format('truetype'),url(/base/fonts/DINPro-Bold.svg) format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'DINPro-Light';
+    src: url(/base/fonts/DINPro-Light.eot);
+    src: local('?'),url(/base/fonts/DINPro-Light.woff) format('woff'),url(/base/fonts/DINPro-Light.ttf) format('truetype'),url(/base/fonts/DINPro-Light.svg) format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'DINPro-Medium';
+    src: url(/base/fonts/DINPro-Medium.eot);
+    src: local('?'),url(/base/fonts/DINPro-Medium.woff) format('woff'),url(/base/fonts/DINPro-Medium.ttf) format('truetype'),url(/base/fonts/DINPro-Medium.svg) format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'DINPro-Regular';
+    src: url(/base/fonts/DINPro-Regular.eot);
+    src: local('?'),url(/base/fonts/DINPro-Regular.woff) format('woff'),url(/base/fonts/DINPro-Regular.ttf) format('truetype'),url(/base/fonts/DINPro-Regular.svg) format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/* -------------------------------------------------------- */
+/* -- Definicoes iniciais -- */
+body {
+	font-family: 'DINPro-Regular', Arial, Helvetica, sans-serif;
+    background-image: none;
+}
+body, .main {
+	background-color: #168942;
+}
+.wrapper {
+    box-shadow: none;
+    border-radius: 0;
+    border: 1px solid #eee;
+}
+.ir-topo {
+    text-align:right; 
+    font-size:0.75em; 
+    line-height:0; 
+    margin-top:0; margin-bottom:0;
+}
+
+/* ---------- Menu superior ---------- */
+.account-masthead {
+    min-height: 30px;
+    color: #ffffff;
+    background: #006f3c url("../../../base/images/bg.png");
+}
+.account-masthead .account .fa {
+    color: #fff;
+}
+
+/* ----------  Topo  ---------- */
+.masthead {
+    background-color: #168942;
+    background-image: url(/base/images/cabecalho.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.masthead a {
+    font-family: DINPro-Bold,Arial,Sans-Serif;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.masthead .navigation .nav-pills li a:hover, .masthead .navigation .nav-pills li a:focus, .masthead .navigation .nav-pills li.active a {
+	background-color: #CBDB2A;
+	color: #006F3C;
+}
+.masthead .navigation {
+    margin-right: 15px;
+    margin-bottom: 5px;
+}
+.masthead .nav-collapse {
+    padding-top: 1px; 
+}
+.navbar .nav>li>a {
+    padding: 8px 12px ; 
+   margin-left: 7px;
+}
+
+a.logo img {
+    padding-top: 5px;
+    padding-bottom: 0;
+}
+
+/* Botao exibir menu em media pequena  */
+.masthead .btn-navbar, .masthead .btn-navbar:hover, 
+.masthead .btn-navbar:focus, .masthead .btn-navbar:active, 
+.masthead .btn-navbar.active, 
+.masthead .btn-navbar.disabled, .masthead .btn-navbar[disabled] {
+    background-color: #cbdb2a;
+    background-image: none;
+    border: 2px solid #146C36;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    text-shadow: none;
+    margin-top: 15px;
+}
+
+/* ---------- Homepage---------- */
+.homepage .module-search {
+    padding: 0;
+    border-radius: 0;
+}
+.homepage .module-search .module-content {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    background-color: #2f9b45;
+    border-bottom: none;
+}
+.homepage .module-search .tags {
+    border-radius: 0;
+}
+.homepage .module-search .tag {
+    color: #ffffff;
+    background-color: transparent;
+    padding: 1px 10px;
+    border: 2px solid #CBDB2A;
+    -webkit-box-shadow: nobe;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+.homepage .module-search a.tag:hover {
+    text-decoration: none;
+    color: #069;
+    background-color: #CBDB2A;
+    border: 2px solid #CBDB2A;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+.homepage .stats ul li {
+    color: #168942;
+    float: left;
+    font-weight: bold;
+    width: 25%;
+}
+.context-info h1.heading  {
+    word-break: normal;
+}
+
+.media-item  .media-heading  {
+    word-break: keep-all;
+}
+
+.box {
+    background-color: /*#FFF*/ transparent;
+    border: /*1px solid #C1E0B7*/ 0;
+    -webkit-border-radius: /*4px*/ 0;
+    -moz-border-radius:/*4px*/ 0;
+    border-radius: /*4px*/ 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+.homepage .box.stats h3 {
+    border-bottom:  2px solid #C1E0B7;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.homepage .module-content.box  {
+    padding: 0 0 0 20px;
+}
+.homepage .module-content.box header p {
+    font-size: 16px;
+}
+homepage .module-content:first-child {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.homepage .box .inner {
+    padding: 20px;
+    padding-top: 0;
+    padding-right: 15px;
+}
+
+/* ---------- Formulario ---------- */
+.form-actions .control-required-message {
+    float: left;
+    margin-left: 1px;
+    margin-bottom: 0;
+    line-height: 1px;
+    text-align: left;
+}
+.form-actions a.pull-left {
+    float: right;
+    margin-left: 3px;
+}
+
+.control-required {
+    color: #c6898b;
+    font-size: 1.80em;
+    line-height: 0.10em;
+    vertical-align: middle;
+}
+
+.form-actions .action-info.small {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.js .image-upload .btn-remove-url {
+    position: absolute;
+    margin-right: 0;
+    top: 3px;
+    right: 5px;
+    padding: 2px 10px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+}
+
+input[type="text"]:focus, input[type="password"]:focus, 
+textarea:focus, select:focus,
+input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="date"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus, input[type="number"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="color"]:focus, .uneditable-input:focus {
+    border: 1px solid #096;
+    outline: 0;
+    outline: thin dotted \9;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+background-color: #f9fff2;
+}
+
+/* ---------- Botoes ---------- */
+.btn {
+    display: inline-block;
+    padding: 4px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    color: #333333;
+    text-shadow: 0 1px 1px rgba(255,255,255,0.75);
+    background-color: #f7f7f7;
+    background-image: -moz-linear-gradient(top,#ffffff,#eaeaea);
+    background-image: -webkit-gradient(linear,0 0,0 100%,from(#ffffff),to(#eaeaea));
+    background-image: -webkit-linear-gradient(top,#ffffff,#eaeaea);
+    background-image: -o-linear-gradient(top,#ffffff,#eaeaea);
+    background-image: linear-gradient(to bottom,#ffffff,#eaeaea);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff',endColorstr='#ffeaeaea',GradientType=0);
+    border-color: #eaeaea #eaeaea #c4c4c4;
+    border-color: rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+    border: 1px solid #cccccc;
+    border-bottom-color: #b3b3b3;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.2),0 1px 2px rgba(0,0,0,.05);
+    -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.2),0 1px 2px rgba(0,0,0,.05);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.2),0 1px 2px rgba(0,0,0,.05);
+}
+
+.btn {
+    background-image: none;
+    border: 0;
+    border-radius: 6px;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    text-shadow: 0 0 0 rgba(255,255,255,0.75);
+    padding: 5px 11px;
+    text-transform: uppercase;
+    font-family: DINPro-Medium, Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.btn-danger {
+    background-color: #E53935;
+    color: #ffffff;
+}
+.btn-danger:hover {
+    background-color: #B71C1C;
+}
+.btn-primary {
+    color: #ffffff;
+    background-color: #43A047;
+}
+.btn-primary:hover {
+    background-color: #1B5E20;
+}
+
+/* ---------- Tabelas ---------- */
+.table-bordered {
+    border-radius: 0;
+}
+
+/* ----------              ---------- */
+[role=main] {
+    min-height: 200px;
+    background-color: #F6F9ED;
+    background-image: none;
+}
+.hero {
+    background-image: none;
+}
+
+/* ---------- Breadcrumb ---------- */
+.toolbar .breadcrumb a {
+    color: #168942;
+    font-family: DINPro-Medium, Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+ .toolbar .breadcrumb .fa {
+    color: #168942;
+}
+.toolbar .breadcrumb li:after {
+    color: #168942;
+}
+
+/* ---------- Datasets ---------- */
+.dataset-list .label, .dataset-list .badge {
+    /*background-color: #999999;*/
+    color: #ffffff;
+    display: inline-block;
+    font-size: 11.844px;
+    font-weight: bold;
+    line-height: 14px;
+    padding: 8px 8px;
+    text-shadow: none;
+    border-radius: 0;
+    /* border-radius: 0 10px 0 0; */
+    background-image:  url(/base/images/ico-arquivo.png); 
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    width: 25px !important; height: 11px !important;
+letter-spacing: 0.2px;
+}
+
+.stages {
+    color: #aeaeae;
+    counter-reset: stage;
+    list-style: outside none none;
+    margin: -10px -25px 20px;
+    overflow: hidden;
+}
+
+.stages .active { 
+    font-weight: bold;
+}
+
+/* ---------- Abas ---------- */
+.nav-tabs { }
+.nav-tabs li  {
+    board-radius: 0;
+    -webkit-border-top-left-radius: 2px;
+    -webkit-border-top-right-radius: 2px;
+    -moz-border-radius-topleft: 2px;
+    -moz-border-radius-topright: 2px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    font-weight: bold
+}
+.nav-tabs li a, .nav-tabs .fa {
+    color: #666;
+}
+
+.page-header .nav-tabs a:hover, .page-header .nav-tabs a:hover  .fa {
+    color: #168942;
+}
+.nav-tabs > li.active .fa  {
+    color: #168942;
+}
+.nav-tabs > li.active a {
+    font-weight: bold;
+    color: #168942;
+}
+
+/* ---------- Modulos---------- */
+
+/* .module-content .media-overlay .media-heading,
+.module-content .media-overlay img {
+    display: none; 
+} */
+
+.module-content:first-child {
+    margin-top: 0;
+    padding-top: 10px;
+}
+
+.module-heading {
+    font-family: DINPro-Bold,Arial,Sans-Serif;
+    text-transform: uppercase;
+    background: #c1e0b7;
+    color: #2B2B2B;
+}
+.module-heading  i {
+    display: none;
+}
+.module:first-child .module-heading {
+    border-radius: 0;
+}
+
+.media-item .media-image {
+    margin-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    /*width: 120px;*/
+}
+
+aside.secondary .module.context-info 
+section.module-content 
+div.image img { 
+    max-width: 189px; 
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+/* ---------- Rodape---------- */
+.site-footer {
+    background: #168942 url(/base/images/arabescos.jpg);
+    background-repeat: repeat-x;
+    color: #ffffff;
+    padding: 50px 0 20px 0;
+}
+.site-footer a {
+    color: #ffffff;
+}
+div.attribution form.form-select { display: none; }
+div.attribution { font-size: 85%;  }
+
+/* ----------             ---------- */
+section.featured.media-overlay.hidden-phone { 
+    display:none;
+}
+
+.search-form .search-input.search-giant button {
+    margin-top: -15px;
+}
+
+/* ----------  Media queries ---------- */
+@media (max-width: 979px)
+{
+body {
+    background-color: #f6f9ed !important;
+}
+}
+@media (max-width: 767px)
+{
+body {
+    background-color: #f6f9ed !important;
+}
+}
+
+/* ==--------------------------------------------==  */
+/* Modifica exibicao da caixa de estatisticas */
+
+.homepage .stats ul li {
+    font-weight: 700;
+    font-size:1.30em;
+    width: auto;
+    display: initial;
+    float: initial;
+}
+.homepage .stats ul li a b {
+    display: inline-block;
+    font-size: 1.50em;
+}
+.homepage .stats ul li a b span {
+    padding-right: 3px;
+}
+
+.homepage .stats ul li a {
+    border-bottom: 1px solid transparent;
+}
+.homepage .stats ul li a:hover {
+    border-bottom: 1px solid #eee;
+}
+
+/* ==-------------------------------------------------== */
+/* 07-12-2017                                                    */
+/* Modifica exibicao das caixas de organizacao */
+
+.media-item .media-heading {
+    word-break: keep-all;
+    text-align: center;
+    /* display: block; */
+    margin: 0;
+}
+
+.media-item p {
+    text-align: center;
+}
+
+.media-item strong.count, .media-item span.count {
+   display: block;
+   text-align: center;
+}
+
+/* ==-------------------------------------------------== */
+/* 28-12-2017                                                    */
+/* Modifica exibicao da organizacao na coluna esquerda */
+.context-info h1.heading {
+    word-break: normal;
+   display: block;
+   text-align: center;
+}
+.context-info  p {
+   text-align: center;
+}
+
+.context-info .nums dl {
+   float: initial;
+   width: 100%;
+   margin: 5px 0 10px 0;
+}
+.context-info .nums dl dt {
+   display: inline-block;
+   padding-left: 5px;
+   line-height: 1.7;
+   font-size: 16px;
+   color: #168942;
+}
+.context-info .nums dl dd {
+    display: inline-block;
+    font-size: 22px;
+    font-weight: bol2d;
+    line-height: 1;
+    margin-left: 0;
+    float: left;
+   color: #168942;
+}
+
+.module-shallow .module-content:last-child {
+    padding-bottom: 0;
+}
+
+/* ----------------------------------- */
+/* 28 Maio 2019                                    */
+
+.homepage .module-search {
+    margin-top: 20px;
+}
+
+section.featured.media-overlay {
+    display: none;
+}
+
+.homepage .stats ul li {
+    color: #168942;
+    font-weight: 700;
+    font-size: 1.30em;
+    width: auto;
+    display: initial;
+    float: initial;
+}
+
+.homepage .stats ul li a strong {
+    display: inline-block;
+    font-size: 1.50em;
+    line-height: 1.5;
+}
+
+a {
+    color: #2f9b45;
+    text-decoration: none;
+}
+
+.masthead {
+    padding: 0;
+    padding-top: 0 !important;
+}
+.masthead .logo img {
+    max-height: initial;
+    max-width: 100%;
+}
+
+/* 29 de Maio 2019 */
+
+.masthead .navbar-collapse {
+    padding: 0;
+}
+.masthead .site-search {
+    margin: 1px 8px 4px 0;
+}
+
+.homepage .module-search .module-content {
+    border-radius: 5px 5px 0 0;
+}
+.homepage .module-search .tags {
+    border-radius: 0 0 5px 5px;
+}
+
+.homepage .module-search .tag {
+    font-weight: bold;
+}
+
+.badge {
+    background-color: #43A047;
+    border: 1px solid #fff;
+    margin-left: 5px;
+}
+
+.dataset-list .label /*, .dataset-list .badge */ {
+    /* background-color: #999999; */
+    color: #ffffff;
+    display: inline-block;
+    font-size: 11.844px;
+    font-weight: bold;
+    line-height: 14px;
+    padding: 8px 8px;
+    text-shadow: none;
+    border-radius: 0;
+    /* border-radius: 0 10px 0 0; */
+    background-image: url(/base/images/ico-arquivo.png);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    width: 40px !important; 
+    height: 25px !important; 
+    letter-spacing: 0.2px;
+}
+
+.input-group-btn:last-child>.btn, .input-group-btn:last-child>.btn-group {
+    margin-left: 0px;
+    height: 46px;
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.3333333;
+border: 1px solid #ccc; border-left:0;
+}
+
+.input-lg {
+    height: 46px;
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.3333333;
+    border-radius: 6px;
+}
+
+.dataset-list .label[data-format=html]  {
+    padding-left: 5px;
+}
+
+/* 30 de Maio 2019 */
+
+.dataset-resources {
+    margin-top: 4px;
+}
+
+.pagination>li>a, .pagination>li>span {
+    position: relative;
+    float: left;
+    padding: 6px 12px;
+    line-height: 1.42857143;
+    text-decoration: none;
+    color:  #2f9b45;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    margin-left: -1px;
+}
+
+.pagination>.active>a, .pagination>.active>span, 
+.pagination>.active>a:hover, .pagination>.active>span:hover, 
+.pagination>.active>a:focus, .pagination>.active>span:focus {
+    z-index: 3;
+    color: #fff;
+    background-color: #2f9b45;
+    border-color: #2f9b45;
+    cursor: default;
+}
+
+.pagination>li>a:hover, .pagination>li>span:hover, 
+.pagination>li>a:focus, .pagination>li>span:focus {
+    z-index: 2;
+    color: #fff;
+    background-color: #2f9b45;
+    border-color: #2f9b45;
+}
+
+.format-label[data-format=html], 
+.format-label[data-format*=html] {
+    width: 30px;
+    height: 35px;
+}
+
+/*  -- modifica select com pesquisa -- */
+.select2-container .select2-choice {
+    height: 34px;
+    padding: 0 0 0 8px;
+    border: 1px solid #aaa;
+    line-height: 26px;
+    color: #444;
+    text-decoration: none;
+    border-radius: 4px;
+    background-color: #fff;
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #fff), color-stop(0.5, #fff));
+    background-image: -webkit-linear-gradient(center bottom, #fff0%, #fff 50%);
+    background-image: -moz-linear-gradient(center bottom, #fff0%, #fff 50%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#ffffff', endColorstr = '#ffffff', GradientType = 0);
+    background-image: linear-gradient(to top, #fff0%, #fff 50%);
+}
+.select2-container .select2-choice .select2-arrow {
+    width: 18px;
+    height: 100%;
+    border-left: 1px solid #fff;
+    border-radius: 0 4px 4px 0;
+    background-clip: padding-box;
+    background: #fff;
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #fff), color-stop(0.6, #fff));
+    background-image: -webkit-linear-gradient(center bottom, #fff0%, #fff60%);
+    background-image: -moz-linear-gradient(center bottom, #fff0%, #eee 60%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#eeeeee', endColorstr = '#ffffff', GradientType = 0);
+    background-image: linear-gradient(to top, #fff0%, #fff 60%);
+}
+
+/* 31 Maio 2019 */
+
+.homepage .module-search .search-giant input {
+    border-color: transparent;
+}
+
+.label-default[href]:hover, .label-default[href]:focus {
+    background-color: #ddd;
+    color: #333;
+}
+
+.label.label-default[data-format=csv]:hover {
+    background-color: #ffcc07;
+    color: #333;
+}
+.label.label-default[data-format=html]:hover {
+    background-color: #73b2d7;
+    color: #333;
+}
+.label.label-default[data-format=gtfs] {
+    background-color: #bbb;
+    color: #fff;
+    padding-left: 6px;
+}
+.label.label-default[data-format=rtf] {
+    background-color: #bbb;
+    color: #fff;
+}
+.label.label-default[data-format=gtfs]:hover, 
+.label.label-default[data-format=rtf]:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+.dataset-heading span.dataset-private.label.label-inverse { 
+    width: 75px !important; 
+    background-image: none !important; 
+    margin-right: 0px !important; 
+    padding-bottom: 4px;
+ }
+
+.dataset-resources {
+    margin-top: 1px;
+}
+
+.context-info .follow_button {
+    margin-top: 5px
+}
+
+/* 03 Junho 2019 */
+
+.account-masthead .account ul li a.sub {
+    display: none;
+}
+
+.account-masthead .account ul li {
+     border-left: 1px solid transparent;
+}
+.account-masthead .account ul li a {
+    font-size: 14px;
+    font-weight: normal;
+}
+.account-masthead .account .notifications a span.badge {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.wrapper {
+    border: 1px solid #fff;
+    min-height: 52vh
+}
+
+.media-grid {
+    background-image: none;
+    background: #e6f2e2;
+     border-width: 0 0;
+}
+
+.page-header {
+    margin-top: 30px;
+    border-bottom: 1px solid #dddddd;
+    background-color: #e6f2e2;
+    border-radius: 0 3px 0 0;
+}
+.page-header .content_action {
+    margin-top: 5px;
+}
+
+.module-content:first-child {
+    padding-top: 5px;
+}
+
+/* 04 Maio 2019 */
+
+.homepage .module-content.box {
+    padding: 20px;
+    padding-top: 3px;
+   padding-bottom: 0;
+}
+.homepage .module-content.box header p {
+    font-size: 17px;
+}
+.wrapper {
+    min-height: 51vh
+}
+
+      </style>
+    
+  </head>
+
+  
+  <body data-site-root="https://ckan.pbh.gov.br/" data-locale-root="https://ckan.pbh.gov.br/" >
+
+    
+    <div class="sr-only sr-only-focusable"><a href="#content">Pular para o conteúdo</a></div>
+  
+
+  
+     
+<header class="account-masthead">
+  <div class="container">
+     
+    <nav class="account not-authed">
+      <ul class="list-unstyled">
+        
+        <li><a href="/user/login">Entrar</a></li>
+         
+      </ul>
+    </nav>
+     
+  </div>
+</header>
+
+<header class="navbar navbar-static-top masthead">
+    
+  <div class="container">
+    <div class="navbar-right">
+      <button data-target="#main-navigation-toggle" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
+        <span class="fa fa-bars"></span>
+      </button>
+    </div>
+    <hgroup class="header-image navbar-left">
+       
+      <a class="logo" href="/"><img src="/uploads/admin/2017-12-07-103710.408141logopbh-dados-abertos-2.png" alt="Portal de Dados Abertos" title="Portal de Dados Abertos" /></a>
+       
+    </hgroup>
+
+    <div class="collapse navbar-collapse" id="main-navigation-toggle">
+      
+      <nav class="section navigation">
+        <ul class="nav nav-pills">
+           <li><a href="/dataset">Conjuntos de dados</a></li><li><a href="/organization">Organizações</a></li><li><a href="/group">Grupos</a></li><li><a href="/about">Sobre</a></li> 
+        </ul>
+      </nav>
+       
+      <form class="section site-search simple-input" action="/dataset" method="get">
+        <div class="field">
+          <label for="field-sitewide-search">Buscar conjunto de dados</label>
+          <input id="field-sitewide-search" type="text" class="form-control" name="q" placeholder="Pesquisar" />
+          <button class="btn-search" type="submit"><i class="fa fa-search"></i></button>
+        </div>
+      </form>
+      
+    </div>
+  </div>
+</header>
+
+  
+    <div role="main">
+      <div id="content" class="container">
+        
+          
+            <div class="flash-messages">
+              
+                
+              
+            </div>
+          
+
+          
+            <div class="toolbar">
+              
+                
+                  <ol class="breadcrumb">
+                    
+<li class="home"><a href="/"><i class="fa fa-home"></i><span> Início</span></a></li>
+                    
+  
+    
+    
+      
+      
+      <li><a href="/organization">Organizações</a></li>
+      <li><a href="/organization/superintendencia-de-limpeza-urbana">Superintendência de ...</a></li>
+    
+    <li class="active"><a class=" active" href="/dataset/urpv-unidades-de-recebimento-de-pequenos-volumes">URPV - Unidades de ...</a></li>
+  
+
+                  </ol>
+                
+              
+            </div>
+          
+
+          <div class="row wrapper">
+            
+            
+            
+
+            
+              <aside class="secondary col-sm-3">
+                
+                
+
+  
+
+  
+    
+
+  
+    <section class="module module-narrow">
+      <div class="module context-info">
+        <div class="module-content">
+          
+            
+              <h1 class="heading">URPV - Unidades de Recebimento de Pequenos Volumes</h1>
+            
+            
+              
+              <div class="nums">
+                <dl>
+                  <dt>Seguidores</dt>
+                  <dd data-module="followers-counter" data-module-id="0533eaca-b44c-4680-9620-b2e80270b72a" data-module-num_followers="0"><span>0</span></dd>
+                </dl>
+              </div>
+            
+            
+              
+                <div class="follow_button">
+                  
+                </div>
+              
+            
+          
+        </div>
+      </div>
+    </section>
+  
+
+  
+
+  
+    
+      
+      
+
+
+
+
+  
+  <div class="module module-narrow module-shallow context-info">
+    
+      <h2 class="module-heading"><i class="fa fa-building-o"></i> Organização</h2>
+    
+    <section class="module-content">
+      
+      
+        <div class="image">
+          <a href="/organization/superintendencia-de-limpeza-urbana">
+            <img src="https://ckan.pbh.gov.br/uploads/group/2020-07-30-191504.125050th.jpg" width="200" alt="superintendencia-de-limpeza-urbana" />
+          </a>
+        </div>
+      
+      
+      <h1 class="heading">Superintendência de Limpeza Urbana
+        
+      </h1>
+      
+      
+      
+        <p class="empty">Não há descrição para essa organização</p>
+      
+      
+      
+      
+    </section>
+  </div>
+  
+    
+  
+
+  
+    
+
+  <section class="module module-narrow social">
+    
+      <h2 class="module-heading"><i class="fa fa-share-square-o"></i> Social</h2>
+    
+    
+      <ul class="nav nav-simple">
+        <li class="nav-item"><a href="https://twitter.com/share?url=https://ckan.pbh.gov.br/dataset/urpv-unidades-de-recebimento-de-pequenos-volumes" target="_blank"><i class="fa fa-twitter-square"></i> Twitter</a></li>
+        <li class="nav-item"><a href="https://www.facebook.com/sharer.php?u=https://ckan.pbh.gov.br/dataset/urpv-unidades-de-recebimento-de-pequenos-volumes" target="_blank"><i class="fa fa-facebook-square"></i> Facebook</a></li>
+      </ul>
+    
+  </section>
+
+  
+
+  
+    
+
+
+  
+    
+      
+        <section class="module module-narrow module-shallow license">
+          
+            <h2 class="module-heading"><i class="fa fa-lock"></i> Licença</h2>
+          
+          
+            <p class="module-content">
+              
+                
+  
+    <a href="http://www.opendefinition.org/licenses/cc-by" rel="dc:rights">Creative Commons Atribuição</a>
+  
+
+                
+                  <a href="http://opendefinition.org/okd/" title="Este conjunto de dados satisfaz a Definição de Aberto - Open Definition.">
+                      <img class="open-data" src="/base/images/od_80x15_blue.png" alt="[Open Data]" />
+                  </a>
+                
+              
+            </p>
+          
+        </section>
+      
+    
+  
+
+  
+
+
+              </aside>
+            
+
+            
+              <div class="primary col-sm-9 col-xs-12">
+                
+                
+                  <article class="module">
+                    
+                      <header class="module-content page-header">
+                        
+                        <ul class="nav nav-tabs">
+                          
+  <li class="active"><a href="/dataset/urpv-unidades-de-recebimento-de-pequenos-volumes"><i class="fa fa-sitemap"></i> Conjunto de dados</a></li>
+  <li><a href="/dataset/groups/urpv-unidades-de-recebimento-de-pequenos-volumes"><i class="fa fa-users"></i> Grupos</a></li>
+  <li><a href="/dataset/activity/urpv-unidades-de-recebimento-de-pequenos-volumes"><i class="fa fa-clock-o"></i> Fluxo de Atividades</a></li>
+
+                        </ul>
+                      </header>
+                    
+                    <div class="module-content">
+                      
+                      
+  
+    
+      
+    
+
+  
+    
+    <h1>
+      
+        URPV - Unidades de Recebimento de Pequenos Volumes
+        
+        
+      
+    </h1>
+    
+      
+        <div class="notes embedded-content">
+          <p>Informaçõe sobre localização e equipamentos em Unidades de Recebimento de Pequenos Volumes</p>
+        </div>
+      
+    
+    
+    <span class="insert-comment-thread"></span>
+  
+
+  
+    
+<section id="dataset-resources" class="resources">
+  <h3>Dados e recursos</h3>
+  
+    
+      <ul class="resource-list">
+        
+          
+          
+            
+
+
+<li class="resource-item" data-id="7cc26d01-5524-4853-adca-5764423702b7">
+  
+  <a class="heading" href="/dataset/urpv-unidades-de-recebimento-de-pequenos-volumes/resource/7cc26d01-5524-4853-adca-5764423702b7" title="URPV.csv">
+    URPV.csv<span class="format-label" property="dc:format" data-format="csv">CSV</span>
+    
+
+  </a>
+  
+  
+    <p class="description">
+      
+        Arquivo com endereço e equipamentos em Unidades de Recebimento de Pequenos...
+      
+    </p>
+  
+  
+  
+  <div class="dropdown btn-group">
+    <a href="#" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+      <i class="fa fa-share"></i>
+      Explorar
+      <span class="caret"></span>
+    </a>
+    <ul class="dropdown-menu">
+      
+      <li>
+        <a href="/dataset/urpv-unidades-de-recebimento-de-pequenos-volumes/resource/7cc26d01-5524-4853-adca-5764423702b7">
+          
+            <i class="fa fa-bar-chart-o"></i>
+            Pré-visualização
+          
+        </a>
+      </li>
+      
+      <li>
+        <a href="https://ckan.pbh.gov.br/dataset/0533eaca-b44c-4680-9620-b2e80270b72a/resource/7cc26d01-5524-4853-adca-5764423702b7/download/urpv.csv" class="resource-url-analytics" target="_blank">
+          
+            <i class="fa fa-arrow-circle-o-down"></i>
+            Baixar
+          
+        </a>
+      </li>
+      
+      
+      
+    </ul>
+  </div>
+  
+  
+</li>
+          
+            
+
+
+<li class="resource-item" data-id="85d9db33-9adb-4e54-a915-05deb79c83b5">
+  
+  <a class="heading" href="/dataset/urpv-unidades-de-recebimento-de-pequenos-volumes/resource/85d9db33-9adb-4e54-a915-05deb79c83b5" title="Dicionário de dados da tabela URPV.pdf">
+    Dicionário de dados da tabela URPV.pdf<span class="format-label" property="dc:format" data-format="pdf">PDF</span>
+    
+
+  </a>
+  
+  
+    <p class="description">
+      
+        Dicionário de dados do arquivo CSV
+      
+    </p>
+  
+  
+  
+  <div class="dropdown btn-group">
+    <a href="#" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+      <i class="fa fa-share"></i>
+      Explorar
+      <span class="caret"></span>
+    </a>
+    <ul class="dropdown-menu">
+      
+      <li>
+        <a href="/dataset/urpv-unidades-de-recebimento-de-pequenos-volumes/resource/85d9db33-9adb-4e54-a915-05deb79c83b5">
+          
+            <i class="fa fa-bar-chart-o"></i>
+            Pré-visualização
+          
+        </a>
+      </li>
+      
+      <li>
+        <a href="https://ckan.pbh.gov.br/dataset/0533eaca-b44c-4680-9620-b2e80270b72a/resource/85d9db33-9adb-4e54-a915-05deb79c83b5/download/dicionario-de-dados-da-tabela-urpv.pdf" class="resource-url-analytics" target="_blank">
+          
+            <i class="fa fa-arrow-circle-o-down"></i>
+            Baixar
+          
+        </a>
+      </li>
+      
+      
+      
+    </ul>
+  </div>
+  
+  
+</li>
+          
+            
+
+
+<li class="resource-item" data-id="be758957-bef3-4252-b809-3fcbdc8dab18">
+  
+  <a class="heading" href="/dataset/urpv-unidades-de-recebimento-de-pequenos-volumes/resource/be758957-bef3-4252-b809-3fcbdc8dab18" title="URPV.DAT">
+    URPV.DAT<span class="format-label" property="dc:format" data-format="dat">DAT</span>
+    
+
+  </a>
+  
+  
+    <p class="description">
+      
+        Tabela com informações geo-referenciada de Unidades de Recebimento de...
+      
+    </p>
+  
+  
+  
+  <div class="dropdown btn-group">
+    <a href="#" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+      <i class="fa fa-share"></i>
+      Explorar
+      <span class="caret"></span>
+    </a>
+    <ul class="dropdown-menu">
+      
+      <li>
+        <a href="/dataset/urpv-unidades-de-recebimento-de-pequenos-volumes/resource/be758957-bef3-4252-b809-3fcbdc8dab18">
+          
+            <i class="fa fa-info-circle"></i>
+            Mais informações
+          
+        </a>
+      </li>
+      
+      <li>
+        <a href="https://ckan.pbh.gov.br/dataset/0533eaca-b44c-4680-9620-b2e80270b72a/resource/be758957-bef3-4252-b809-3fcbdc8dab18/download/urpv.dat" class="resource-url-analytics" target="_blank">
+          
+            <i class="fa fa-arrow-circle-o-down"></i>
+            Baixar
+          
+        </a>
+      </li>
+      
+      
+      
+    </ul>
+  </div>
+  
+  
+</li>
+          
+            
+
+
+<li class="resource-item" data-id="7ffb51f8-dfab-487e-b4d7-c5cdb4cf2c60">
+  
+  <a class="heading" href="/dataset/urpv-unidades-de-recebimento-de-pequenos-volumes/resource/7ffb51f8-dfab-487e-b4d7-c5cdb4cf2c60" title="URPV.ID">
+    URPV.ID<span class="format-label" property="dc:format" data-format="data"></span>
+    
+
+  </a>
+  
+  
+    <p class="description">
+      
+        Tabela com informações geo-referenciada de Unidades de Recebimento de...
+      
+    </p>
+  
+  
+  
+  <div class="dropdown btn-group">
+    <a href="#" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+      <i class="fa fa-share"></i>
+      Explorar
+      <span class="caret"></span>
+    </a>
+    <ul class="dropdown-menu">
+      
+      <li>
+        <a href="/dataset/urpv-unidades-de-recebimento-de-pequenos-volumes/resource/7ffb51f8-dfab-487e-b4d7-c5cdb4cf2c60">
+          
+            <i class="fa fa-info-circle"></i>
+            Mais informações
+          
+        </a>
+      </li>
+      
+      <li>
+        <a href="https://ckan.pbh.gov.br/dataset/0533eaca-b44c-4680-9620-b2e80270b72a/resource/7ffb51f8-dfab-487e-b4d7-c5cdb4cf2c60/download/urpv.id" class="resource-url-analytics" target="_blank">
+          
+            <i class="fa fa-arrow-circle-o-down"></i>
+            Baixar
+          
+        </a>
+      </li>
+      
+      
+      
+    </ul>
+  </div>
+  
+  
+</li>
+          
+            
+
+
+<li class="resource-item" data-id="df1900ca-c921-4fbc-8a83-c68e7a9fd87d">
+  
+  <a class="heading" href="/dataset/urpv-unidades-de-recebimento-de-pequenos-volumes/resource/df1900ca-c921-4fbc-8a83-c68e7a9fd87d" title="URPV.IND">
+    URPV.IND<span class="format-label" property="dc:format" data-format="ind">IND</span>
+    
+
+  </a>
+  
+  
+    <p class="description">
+      
+        Tabela com informações geo-referenciada de Unidades de Recebimento de...
+      
+    </p>
+  
+  
+  
+  <div class="dropdown btn-group">
+    <a href="#" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+      <i class="fa fa-share"></i>
+      Explorar
+      <span class="caret"></span>
+    </a>
+    <ul class="dropdown-menu">
+      
+      <li>
+        <a href="/dataset/urpv-unidades-de-recebimento-de-pequenos-volumes/resource/df1900ca-c921-4fbc-8a83-c68e7a9fd87d">
+          
+            <i class="fa fa-info-circle"></i>
+            Mais informações
+          
+        </a>
+      </li>
+      
+      <li>
+        <a href="https://ckan.pbh.gov.br/dataset/0533eaca-b44c-4680-9620-b2e80270b72a/resource/df1900ca-c921-4fbc-8a83-c68e7a9fd87d/download/urpv.ind" class="resource-url-analytics" target="_blank">
+          
+            <i class="fa fa-arrow-circle-o-down"></i>
+            Baixar
+          
+        </a>
+      </li>
+      
+      
+      
+    </ul>
+  </div>
+  
+  
+</li>
+          
+            
+
+
+<li class="resource-item" data-id="ad065d73-8334-4551-8f6e-8abaa6f458a2">
+  
+  <a class="heading" href="/dataset/urpv-unidades-de-recebimento-de-pequenos-volumes/resource/ad065d73-8334-4551-8f6e-8abaa6f458a2" title="URPV.MAP">
+    URPV.MAP<span class="format-label" property="dc:format" data-format="map">MAP</span>
+    
+
+  </a>
+  
+  
+    <p class="description">
+      
+        Tabela com informações geo-referenciada de Unidades de Recebimento de...
+      
+    </p>
+  
+  
+  
+  <div class="dropdown btn-group">
+    <a href="#" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+      <i class="fa fa-share"></i>
+      Explorar
+      <span class="caret"></span>
+    </a>
+    <ul class="dropdown-menu">
+      
+      <li>
+        <a href="/dataset/urpv-unidades-de-recebimento-de-pequenos-volumes/resource/ad065d73-8334-4551-8f6e-8abaa6f458a2">
+          
+            <i class="fa fa-info-circle"></i>
+            Mais informações
+          
+        </a>
+      </li>
+      
+      <li>
+        <a href="https://ckan.pbh.gov.br/dataset/0533eaca-b44c-4680-9620-b2e80270b72a/resource/ad065d73-8334-4551-8f6e-8abaa6f458a2/download/urpv.map" class="resource-url-analytics" target="_blank">
+          
+            <i class="fa fa-arrow-circle-o-down"></i>
+            Baixar
+          
+        </a>
+      </li>
+      
+      
+      
+    </ul>
+  </div>
+  
+  
+</li>
+          
+            
+
+
+<li class="resource-item" data-id="ac64ee0e-cae9-4338-8ca7-31177d5f27aa">
+  
+  <a class="heading" href="/dataset/urpv-unidades-de-recebimento-de-pequenos-volumes/resource/ac64ee0e-cae9-4338-8ca7-31177d5f27aa" title="URPV.TAB">
+    URPV.TAB<span class="format-label" property="dc:format" data-format="data"></span>
+    
+
+  </a>
+  
+  
+    <p class="description">
+      
+        Tabela com informações geo-referenciada de Unidades de Recebimento de...
+      
+    </p>
+  
+  
+  
+  <div class="dropdown btn-group">
+    <a href="#" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+      <i class="fa fa-share"></i>
+      Explorar
+      <span class="caret"></span>
+    </a>
+    <ul class="dropdown-menu">
+      
+      <li>
+        <a href="/dataset/urpv-unidades-de-recebimento-de-pequenos-volumes/resource/ac64ee0e-cae9-4338-8ca7-31177d5f27aa">
+          
+            <i class="fa fa-info-circle"></i>
+            Mais informações
+          
+        </a>
+      </li>
+      
+      <li>
+        <a href="https://ckan.pbh.gov.br/dataset/0533eaca-b44c-4680-9620-b2e80270b72a/resource/ac64ee0e-cae9-4338-8ca7-31177d5f27aa/download/urpv.tab" class="resource-url-analytics" target="_blank">
+          
+            <i class="fa fa-arrow-circle-o-down"></i>
+            Baixar
+          
+        </a>
+      </li>
+      
+      
+      
+    </ul>
+  </div>
+  
+  
+</li>
+          
+        
+      </ul>
+    
+    
+</section>
+  
+
+  
+    
+  <section class="tags">
+    
+
+
+  <ul class="tag-list well">
+    
+      <li>
+        <a class="tag" href="/dataset?tags=RCC">RCC</a>
+      </li>
+    
+      <li>
+        <a class="tag" href="/dataset?tags=RCCV">RCCV</a>
+      </li>
+    
+      <li>
+        <a class="tag" href="/dataset?tags=Res%C3%ADduos+da+Constru%C3%A7%C3%A3o+Civil+e+Volumosos">Resíduos da Constru...</a>
+      </li>
+    
+      <li>
+        <a class="tag" href="/dataset?tags=Superintend%C3%AAncia+de+Limpeza+Urbana">Superintendência de...</a>
+      </li>
+    
+  </ul>
+
+  </section>
+
+  
+
+  
+    <section class="additional-info">
+  <h3>Informações Adicionais</h3>
+  <table class="table table-striped table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th scope="col">Campo</th>
+        <th scope="col">Valor</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        
+
+        
+          <tr>
+            <th scope="row" class="dataset-label">Autor</th>
+            <td class="dataset-details" property="dc:creator"><a href=mailto:slu@pbh.gov.br></a></td>
+          </tr>
+        
+
+        
+          <tr>
+            <th scope="row" class="dataset-label">Mantenedor</th>
+            <td class="dataset-details" property="dc:contributor"><a href=mailto:slu@pbh.gov.br>Superintendência de Limpeza Urbana - SLU</a></td>
+          </tr>
+        
+
+        
+
+        
+        
+          <tr>
+            <th scope="row" class="dataset-label">Última Atualização</th>
+            <td class="dataset-details">
+                
+<span class="automatic-local-datetime" data-datetime="2022-03-31T11:24:00-0300">
+    31 de Março de 2022, 11:24 (BRT)
+</span>
+            </td>
+          </tr>
+        
+        
+          <tr>
+            <th scope="row" class="dataset-label">Criado</th>
+
+            <td class="dataset-details">
+                
+<span class="automatic-local-datetime" data-datetime="2022-02-07T19:32:14-0200">
+    7 de Fevereiro de 2022, 19:32 (BRST)
+</span>
+            </td>
+          </tr>
+        
+
+      
+        
+      
+
+      
+    </tbody>
+  </table>
+</section>
+  
+
+
+                    </div>
+                  </article>
+                
+              </div>
+            
+          </div>
+        
+      </div>
+    </div>
+  
+    <footer class="site-footer">
+  <div class="container">
+    
+    <div class="row">
+      <div class="col-md-8 footer-links">
+        
+          <ul class="list-unstyled">
+            
+              <li><a href="/about">Sobre Portal de Dados Abertos</a></li>
+            
+          </ul>
+          <ul class="list-unstyled">
+            
+              
+              <li><a href="http://docs.ckan.org/en/2.8/api/">API do CKAN</a></li>
+              <li><a href="http://www.ckan.org/">Associação CKAN</a></li>
+              <li><a href="http://www.opendefinition.org/okd/"><img src="/base/images/od_80x15_blue.png" alt="Open Data"></a></li>
+            
+          </ul>
+        
+      </div>
+      <div class="col-md-4 attribution">
+        
+          <p><strong>Impulsionado por</strong> <a class="hide-text ckan-footer-logo" href="http://ckan.org">CKAN</a></p>
+        
+        
+          
+<form class="form-inline form-select lang-select" action="/util/redirect" data-module="select-switch" method="POST">
+  <label for="field-lang-select">Idioma</label>
+  <select id="field-lang-select" name="url" data-module="autocomplete" data-module-dropdown-class="lang-dropdown" data-module-container-class="lang-container">
+    
+      <option value="/pt_BR/dataset/urpv-unidades-de-recebimento-de-pequenos-volumes" selected="selected">
+        português (Brasil)
+      </option>
+    
+  </select>
+  <button class="btn btn-default js-hide" type="submit">Ir</button>
+</form>
+        
+      </div>
+    </div>
+    
+  </div>
+
+  
+    
+  
+</footer>
+  
+    
+    
+    
+  
+    
+    
+    
+        
+        
+        <div class="js-hide" data-module="google-analytics"
+             data-module-googleanalytics_resource_prefix="">
+        </div>
+    
+
+
+      
+  <script>document.getElementsByTagName('html')[0].className += ' js';</script>
+<script type="text/javascript" src="/fanstatic/vendor/:version:2020-12-02T18:24:28.10/jquery.min.js"></script>
+<script type="text/javascript" src="/fanstatic/vendor/:version:2020-12-02T18:24:28.10/:bundle:bootstrap/js/bootstrap.min.js;jed.min.js;moment-with-locales.min.js;select2/select2.min.js"></script>
+<script type="text/javascript" src="/fanstatic/base/:version:2020-12-02T18:24:27.78/:bundle:plugins/jquery.inherit.min.js;plugins/jquery.proxy-all.min.js;plugins/jquery.url-helpers.min.js;plugins/jquery.date-helpers.min.js;plugins/jquery.slug.min.js;plugins/jquery.slug-preview.min.js;plugins/jquery.truncator.min.js;plugins/jquery.masonry.min.js;plugins/jquery.form-warning.min.js;plugins/jquery.images-loaded.min.js;sandbox.min.js;module.min.js;pubsub.min.js;client.min.js;notify.min.js;i18n.min.js;main.min.js;modules/select-switch.min.js;modules/slug-preview.min.js;modules/basic-form.min.js;modules/confirm-action.min.js;modules/api-info.min.js;modules/autocomplete.min.js;modules/custom-fields.min.js;modules/data-viewer.min.js;modules/table-selectable-rows.min.js;modules/resource-form.min.js;modules/resource-upload-field.min.js;modules/resource-reorder.min.js;modules/resource-view-reorder.min.js;modules/follow.min.js;modules/activity-stream.min.js;modules/dashboard.min.js;modules/resource-view-embed.min.js;view-filters.min.js;modules/resource-view-filters-form.min.js;modules/resource-view-filters.min.js;modules/table-toggle-more.min.js;modules/dataset-visibility.min.js;modules/media-grid.min.js;modules/image-upload.min.js;modules/followers-counter.min.js"></script>
+<script type="text/javascript" src="/fanstatic/ckanext-googleanalytics/:version:2022-03-30T12:01:29.92/googleanalytics_event_tracking.js"></script></body>
+</html>

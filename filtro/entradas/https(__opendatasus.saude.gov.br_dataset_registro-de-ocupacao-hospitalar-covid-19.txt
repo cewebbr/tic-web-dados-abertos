@@ -1,0 +1,868 @@
+
+<!DOCTYPE html>
+<!--[if IE 9]> <html lang="pt_BR" class="ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="pt_BR"> <!--<![endif]-->
+  <head>
+    <link rel="stylesheet" type="text/css" href="/fanstatic/vendor/:version:2022-01-06T02:10:57.30/select2/select2.css" />
+<link rel="stylesheet" type="text/css" href="/fanstatic/css/:version:2022-01-06T02:10:57.07/main.min.css" />
+<link rel="stylesheet" type="text/css" href="/fanstatic/vendor/:version:2022-01-06T02:10:57.30/font-awesome/css/font-awesome.min.css" />
+
+    <meta charset="utf-8" />
+      <meta name="generator" content="ckan 2.8.3" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Ocupação Hospitalar COVID-19 - Conjuntos de dados - OPENDATASUS</title>
+
+    
+    <link rel="shortcut icon" href="/base/images/ckan.ico" />
+    
+      
+    
+
+    
+      
+      
+    
+  
+  <meta property="og:title" content="Registro de Ocupação Hospitalar COVID-19 - OPENDATASUS">
+  <meta property="og:description" content="O Ministério da Saúde, por meio da Secretaria de Atenção Especializada em Saúde (SAES), implementou, devido à pandemia, o registro das internações por meio do Sistema ESUS Notifica-Módulo...">
+
+    
+  </head>
+
+  
+  <body data-site-root="https://opendatasus.saude.gov.br/" data-locale-root="https://opendatasus.saude.gov.br/" >
+
+    
+    <div class="hide"><a href="#content">Pular para o conteúdo</a></div>
+  
+
+  
+     
+<header class="account-masthead">
+  <div class="container">
+     
+    <nav class="account not-authed">
+      <ul class="list-unstyled">
+        
+        <li><a href="/user/login">Entrar</a></li>
+        
+        <li><a class="sub" href="/user/register">Registrar</a></li>
+         
+      </ul>
+    </nav>
+     
+  </div>
+</header>
+
+<header id="main-header" class="navbar navbar-static-top masthead">
+    
+  <div class="container">
+    <div class="navbar-right">
+      <button data-target="#main-navigation-toggle" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
+        <span class="fa fa-bars"></span>
+      </button>
+    </div>
+    
+    <div class="row datasus_topo">
+      <div class="col-md-6 col-lg-8 col-xs-6 title-wrapper">
+        <hgroup class="header-image navbar-left">
+           
+          <a class="logo" href="/"><img src="/uploads/admin/2022-01-11-175249.705028OpenDatasusLogoBranca.png" alt="OPENDATASUS" title="OPENDATASUS" /></a>
+           
+        </hgroup>
+      </div>
+    </div>
+    <div class="row datasus_menu">
+
+      <div class="collapse navbar-collapse" id="main-navigation-toggle">
+        
+        <nav class="section navigation">
+          <ul class="nav nav-pills pull-left">
+             <li><a href="/dataset">Conjuntos de dados</a></li><li><a href="/organization">Organizações</a></li><li><a href="/group">Grupos</a></li><li><a href="/about">Sobre</a></li> 
+          </ul>
+        </nav>
+         
+        <form class="section site-search simple-input pull-right" action="/dataset" method="get">
+          <div class="field">
+            <label for="field-sitewide-search">Buscar conjunto de dados</label>
+            <input id="field-sitewide-search" type="text" class="form-control" name="q" placeholder="Pesquisar" />
+            <button class="btn-search" type="submit"><i class="fa fa-search"></i></button>
+          </div>
+        </form>
+        
+      </div>
+    </div>
+  </div>
+</header>
+
+  
+    <div role="main">
+      <div id="content" class="container">
+        
+          
+            <div class="flash-messages">
+              
+                
+              
+            </div>
+          
+
+          
+            <div class="toolbar">
+              
+                
+                  <ol class="breadcrumb">
+                    
+<li class="home"><a href="/"><i class="fa fa-home"></i><span> Início</span></a></li>
+                    
+  
+    
+    
+      
+      
+      <li><a href="/organization">Organizações</a></li>
+      <li><a href="/organization/ministerio-da-saude">Ministério da Saúde</a></li>
+    
+    <li class="active"><a class=" active" href="/dataset/registro-de-ocupacao-hospitalar-covid-19">Registro de Ocupação ...</a></li>
+  
+
+                  </ol>
+                
+              
+            </div>
+          
+
+          <div class="row wrapper">
+            
+            
+            
+
+            
+              <aside class="secondary col-sm-3">
+                
+                
+
+  
+
+  
+    
+
+  
+    <section class="module module-narrow">
+      <div class="module context-info">
+        <div class="module-content">
+          
+            
+              <h1 class="heading">Registro de Ocupação Hospitalar COVID-19</h1>
+            
+            
+              
+              <div class="nums">
+                <dl>
+                  <dt>Seguidores</dt>
+                  <dd data-module="followers-counter" data-module-id="95552cee-904a-468e-a72f-99f14a056734" data-module-num_followers="1"><span>1</span></dd>
+                </dl>
+              </div>
+            
+            
+              
+                <div class="follow_button">
+                  
+                </div>
+              
+            
+          
+        </div>
+      </div>
+    </section>
+  
+
+  
+
+  
+    
+      
+      
+
+
+
+
+  
+  <div class="module module-narrow module-shallow context-info">
+    
+      <h2 class="module-heading"><i class="fa fa-building-o"></i> Organização</h2>
+    
+    <section class="module-content">
+      
+      
+        <div class="image">
+          <a href="/organization/ministerio-da-saude">
+            <img src="https://opendatasus.saude.gov.br/uploads/group/2022-01-11-181122.577845logoms.png" width="200" alt="ministerio-da-saude" />
+          </a>
+        </div>
+      
+      
+      <h1 class="heading">Ministério da Saúde
+        
+      </h1>
+      
+      
+      
+        <p class="empty">Não há descrição para essa organização</p>
+      
+      
+      
+      
+    </section>
+  </div>
+  
+    
+  
+
+  
+    
+
+  <section class="module module-narrow social">
+    
+      <h2 class="module-heading"><i class="fa fa-share-square-o"></i> Social</h2>
+    
+    
+      <ul class="nav nav-simple">
+        <li class="nav-item"><a href="https://twitter.com/share?url=https://opendatasus.saude.gov.br/dataset/registro-de-ocupacao-hospitalar-covid-19" target="_blank"><i class="fa fa-twitter-square"></i> Twitter</a></li>
+        <li class="nav-item"><a href="https://www.facebook.com/sharer.php?u=https://opendatasus.saude.gov.br/dataset/registro-de-ocupacao-hospitalar-covid-19" target="_blank"><i class="fa fa-facebook-square"></i> Facebook</a></li>
+      </ul>
+    
+  </section>
+
+  
+
+  
+    
+
+
+  
+    
+      
+        <section class="module module-narrow module-shallow license">
+          
+            <h2 class="module-heading"><i class="fa fa-lock"></i> Licença</h2>
+          
+          
+            <p class="module-content">
+              
+                
+  
+    <a href="http://www.opendefinition.org/licenses/cc-by" rel="dc:rights">Creative Commons Atribuição</a>
+  
+
+                
+                  <a href="http://opendefinition.org/okd/" title="Este conjunto de dados satisfaz a Definição de Aberto - Open Definition.">
+                      <img class="open-data" src="/base/images/od_80x15_blue.png" alt="[Open Data]" />
+                  </a>
+                
+              
+            </p>
+          
+        </section>
+      
+    
+  
+
+  
+
+
+              </aside>
+            
+
+            
+              <div class="primary col-sm-9 col-xs-12">
+                
+                
+                  <article class="module">
+                    
+                      <header class="module-content page-header">
+                        
+                        <ul class="nav nav-tabs">
+                          
+  <li class="active"><a href="/dataset/registro-de-ocupacao-hospitalar-covid-19"><i class="fa fa-sitemap"></i> Conjunto de dados</a></li>
+  <li><a href="/dataset/groups/registro-de-ocupacao-hospitalar-covid-19"><i class="fa fa-users"></i> Grupos</a></li>
+  <li><a href="/dataset/activity/registro-de-ocupacao-hospitalar-covid-19"><i class="fa fa-clock-o"></i> Fluxo de Atividades</a></li>
+
+                        </ul>
+                      </header>
+                    
+                    <div class="module-content">
+                      
+                      
+  
+    
+      
+    
+
+  
+    
+    <h1>
+      
+        Registro de Ocupação Hospitalar COVID-19
+        
+        
+      
+    </h1>
+    
+      
+        <div class="notes embedded-content">
+          <p>O Ministério da Saúde, por meio da Secretaria de Atenção Especializada em Saúde (SAES), implementou, devido à pandemia, o registro das internações por meio do Sistema ESUS Notifica-Módulo Internações SUS.</p>
+<p>Esta página tem como finalidade disponibilizar o banco de dados da ocupação dos leitos, a partir da incorporação do sistema e-SUS Notifica- Módulo internações SUS, em vigor a partir de abril de 2020.</p>
+<h2>Informações disponibilizadas</h2>
+<p>O módulo Internações foi desenvolvido para registro da ocupação de leitos clínicos e de Unidade de Terapia Intensiva (UTI) SUS destinados para atendimento aos pacientes com casos suspeitos ou confirmados da COVID-19 (ocupação SRAG / COVID-19)</p>
+<p>Alguns estados apresentam sistemas próprios de registro de ocupação e para esses foi disponibilizado uma API que transfere os dados dos estados para o sistema ESUS NOTIFICA- Módulo Internações SUS.</p>
+<p>Devido ao grande número de registros pelos estabelecimentos de internações COVID-19, alguns estados já possuem mais de um milhão de registros, o que impossibilita estes dados de serem abertos no Excel, somente existe a disponibilização CSV.</p>
+<p>A partir do ano de 2022 foi acrescentado novos campos utilizados para descrever a ocupação dos leitos. Registros com ano anterior a 2022 não contém esses campos preenchidos.</p>
+        </div>
+      
+    
+    
+    <span class="insert-comment-thread"></span>
+  
+
+  
+    
+<section id="dataset-resources" class="resources">
+  <h3>Dados e recursos</h3>
+  
+    
+      <ul class="resource-list">
+        
+          
+          
+            
+
+
+<li class="resource-item" data-id="a8dc8a3f-1f96-45d0-a8a8-c279af76300f">
+  
+  <a class="heading" href="/dataset/registro-de-ocupacao-hospitalar-covid-19/resource/a8dc8a3f-1f96-45d0-a8a8-c279af76300f" title="Registro de Ocupação Hospitalar COVID-19 - 2022">
+    Registro de Ocupação Hospitalar COVID-19 - 2022<span class="format-label" property="dc:format" data-format="csv">CSV</span>
+    
+
+  </a>
+  
+  
+    <p class="description">
+      
+    </p>
+  
+  
+  
+  <div class="dropdown btn-group">
+    <a href="#" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+      <i class="fa fa-share"></i>
+      Explorar
+      <span class="caret"></span>
+    </a>
+    <ul class="dropdown-menu">
+      
+      <li>
+        <a href="/dataset/registro-de-ocupacao-hospitalar-covid-19/resource/a8dc8a3f-1f96-45d0-a8a8-c279af76300f">
+          
+            <i class="fa fa-bar-chart-o"></i>
+            Pré-visualização
+          
+        </a>
+      </li>
+      
+      <li>
+        <a href="https://s3.sa-east-1.amazonaws.com/ckan.saude.gov.br/LEITOS/2022-04-23/esus-vepi.LeitoOcupacao_2022.csv" class="resource-url-analytics" target="_blank">
+          
+            <i class="fa fa-arrow-circle-o-down"></i>
+            Baixar
+          
+        </a>
+      </li>
+      
+      
+      
+    </ul>
+  </div>
+  
+  
+</li>
+          
+            
+
+
+<li class="resource-item" data-id="1a1e9932-253f-441b-8d9c-aaf35f3022a0">
+  
+  <a class="heading" href="/dataset/registro-de-ocupacao-hospitalar-covid-19/resource/1a1e9932-253f-441b-8d9c-aaf35f3022a0" title="Registro de Ocupação Hospitalar COVID-19 - 2021">
+    Registro de Ocupação Hospitalar COVID-19 - 2021<span class="format-label" property="dc:format" data-format="csv">CSV</span>
+    
+
+  </a>
+  
+  
+    <p class="description">
+      
+    </p>
+  
+  
+  
+  <div class="dropdown btn-group">
+    <a href="#" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+      <i class="fa fa-share"></i>
+      Explorar
+      <span class="caret"></span>
+    </a>
+    <ul class="dropdown-menu">
+      
+      <li>
+        <a href="/dataset/registro-de-ocupacao-hospitalar-covid-19/resource/1a1e9932-253f-441b-8d9c-aaf35f3022a0">
+          
+            <i class="fa fa-bar-chart-o"></i>
+            Pré-visualização
+          
+        </a>
+      </li>
+      
+      <li>
+        <a href="https://s3.sa-east-1.amazonaws.com/ckan.saude.gov.br/LEITOS/2022-04-23/esus-vepi.LeitoOcupacao_2021.csv" class="resource-url-analytics" target="_blank">
+          
+            <i class="fa fa-arrow-circle-o-down"></i>
+            Baixar
+          
+        </a>
+      </li>
+      
+      
+      
+    </ul>
+  </div>
+  
+  
+</li>
+          
+            
+
+
+<li class="resource-item" data-id="a16c8d5f-dc6d-46c8-8e75-41765a18a289">
+  
+  <a class="heading" href="/dataset/registro-de-ocupacao-hospitalar-covid-19/resource/a16c8d5f-dc6d-46c8-8e75-41765a18a289" title="Registro de Ocupação Hospitalar COVID-19 - 2020">
+    Registro de Ocupação Hospitalar COVID-19 - 2020<span class="format-label" property="dc:format" data-format="csv">CSV</span>
+    
+
+  </a>
+  
+  
+    <p class="description">
+      
+    </p>
+  
+  
+  
+  <div class="dropdown btn-group">
+    <a href="#" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+      <i class="fa fa-share"></i>
+      Explorar
+      <span class="caret"></span>
+    </a>
+    <ul class="dropdown-menu">
+      
+      <li>
+        <a href="/dataset/registro-de-ocupacao-hospitalar-covid-19/resource/a16c8d5f-dc6d-46c8-8e75-41765a18a289">
+          
+            <i class="fa fa-bar-chart-o"></i>
+            Pré-visualização
+          
+        </a>
+      </li>
+      
+      <li>
+        <a href="https://s3.sa-east-1.amazonaws.com/ckan.saude.gov.br/LEITOS/2022-04-23/esus-vepi.LeitoOcupacao_2020.csv" class="resource-url-analytics" target="_blank">
+          
+            <i class="fa fa-arrow-circle-o-down"></i>
+            Baixar
+          
+        </a>
+      </li>
+      
+      
+      
+    </ul>
+  </div>
+  
+  
+</li>
+          
+        
+      </ul>
+    
+    
+</section>
+  
+
+  
+    
+  <section class="tags">
+    
+
+
+  <ul class="tag-list well">
+    
+      <li>
+        <a class="tag" href="/dataset?tags=COVID">COVID</a>
+      </li>
+    
+      <li>
+        <a class="tag" href="/dataset?tags=Dados+Demogr%C3%A1ficos">Dados Demográficos</a>
+      </li>
+    
+      <li>
+        <a class="tag" href="/dataset?tags=Hospital">Hospital</a>
+      </li>
+    
+      <li>
+        <a class="tag" href="/dataset?tags=Hospitalar">Hospitalar</a>
+      </li>
+    
+      <li>
+        <a class="tag" href="/dataset?tags=Leito">Leito</a>
+      </li>
+    
+      <li>
+        <a class="tag" href="/dataset?tags=Leitos">Leitos</a>
+      </li>
+    
+      <li>
+        <a class="tag" href="/dataset?tags=Notifica">Notifica</a>
+      </li>
+    
+      <li>
+        <a class="tag" href="/dataset?tags=covid-19">covid-19</a>
+      </li>
+    
+  </ul>
+
+  </section>
+
+  
+
+  
+    <section class="additional-info">
+  <h3>Informações Adicionais</h3>
+  <table class="table table-striped table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th scope="col">Campo</th>
+        <th scope="col">Valor</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        
+
+        
+
+        
+
+        
+
+        
+        
+          <tr>
+            <th scope="row" class="dataset-label">Última Atualização</th>
+            <td class="dataset-details">
+                
+<span class="automatic-local-datetime" data-datetime="2022-04-24T22:01:06+0000">
+    24 de Abril de 2022, 22:01 (UTC)
+</span>
+            </td>
+          </tr>
+        
+        
+          <tr>
+            <th scope="row" class="dataset-label">Criado</th>
+
+            <td class="dataset-details">
+                
+<span class="automatic-local-datetime" data-datetime="2022-01-31T15:16:16+0000">
+    31 de Janeiro de 2022, 15:16 (UTC)
+</span>
+            </td>
+          </tr>
+        
+
+      
+        
+      
+
+      
+    </tbody>
+  </table>
+</section>
+  
+
+
+                    </div>
+                  </article>
+                
+              </div>
+            
+          </div>
+        
+      </div>
+    </div>
+  
+    <footer class="site-footer">
+  <div class="container">
+    
+    <div class="row">
+      <div class="col-md-8 footer-links">
+        <img src="../../../base/images/brasil.png" width="153" alt="Logo Governo">
+      </div>
+      <div class="col-md-4 attribution">
+        
+          
+<form class="form-inline form-select lang-select" action="/util/redirect" data-module="select-switch" method="POST">
+  <label for="field-lang-select">Idioma</label>
+  <select id="field-lang-select" name="url" data-module="autocomplete" data-module-dropdown-class="lang-dropdown" data-module-container-class="lang-container">
+    
+      <option value="/pt_BR/dataset/registro-de-ocupacao-hospitalar-covid-19" selected="selected">
+        português (Brasil)
+      </option>
+    
+      <option value="/en/dataset/registro-de-ocupacao-hospitalar-covid-19" >
+        English
+      </option>
+    
+      <option value="/ja/dataset/registro-de-ocupacao-hospitalar-covid-19" >
+        日本語
+      </option>
+    
+      <option value="/it/dataset/registro-de-ocupacao-hospitalar-covid-19" >
+        italiano
+      </option>
+    
+      <option value="/cs_CZ/dataset/registro-de-ocupacao-hospitalar-covid-19" >
+        čeština (Česká republika)
+      </option>
+    
+      <option value="/ca/dataset/registro-de-ocupacao-hospitalar-covid-19" >
+        català
+      </option>
+    
+      <option value="/es/dataset/registro-de-ocupacao-hospitalar-covid-19" >
+        español
+      </option>
+    
+      <option value="/fr/dataset/registro-de-ocupacao-hospitalar-covid-19" >
+        français
+      </option>
+    
+      <option value="/el/dataset/registro-de-ocupacao-hospitalar-covid-19" >
+        Ελληνικά
+      </option>
+    
+      <option value="/sv/dataset/registro-de-ocupacao-hospitalar-covid-19" >
+        svenska
+      </option>
+    
+      <option value="/sr/dataset/registro-de-ocupacao-hospitalar-covid-19" >
+        српски
+      </option>
+    
+      <option value="/no/dataset/registro-de-ocupacao-hospitalar-covid-19" >
+        norsk bokmål (Norge)
+      </option>
+    
+      <option value="/sk/dataset/registro-de-ocupacao-hospitalar-covid-19" >
+        slovenčina
+      </option>
+    
+      <option value="/fi/dataset/registro-de-ocupacao-hospitalar-covid-19" >
+        suomi
+      </option>
+    
+      <option value="/ru/dataset/registro-de-ocupacao-hospitalar-covid-19" >
+        русский
+      </option>
+    
+      <option value="/de/dataset/registro-de-ocupacao-hospitalar-covid-19" >
+        Deutsch
+      </option>
+    
+      <option value="/pl/dataset/registro-de-ocupacao-hospitalar-covid-19" >
+        polski
+      </option>
+    
+      <option value="/nl/dataset/registro-de-ocupacao-hospitalar-covid-19" >
+        Nederlands
+      </option>
+    
+      <option value="/bg/dataset/registro-de-ocupacao-hospitalar-covid-19" >
+        български
+      </option>
+    
+      <option value="/ko_KR/dataset/registro-de-ocupacao-hospitalar-covid-19" >
+        한국어 (대한민국)
+      </option>
+    
+      <option value="/hu/dataset/registro-de-ocupacao-hospitalar-covid-19" >
+        magyar
+      </option>
+    
+      <option value="/sl/dataset/registro-de-ocupacao-hospitalar-covid-19" >
+        slovenščina
+      </option>
+    
+      <option value="/lv/dataset/registro-de-ocupacao-hospitalar-covid-19" >
+        latviešu
+      </option>
+    
+      <option value="/am/dataset/registro-de-ocupacao-hospitalar-covid-19" >
+        አማርኛ
+      </option>
+    
+      <option value="/ar/dataset/registro-de-ocupacao-hospitalar-covid-19" >
+        العربية
+      </option>
+    
+      <option value="/da_DK/dataset/registro-de-ocupacao-hospitalar-covid-19" >
+        dansk (Danmark)
+      </option>
+    
+      <option value="/en_AU/dataset/registro-de-ocupacao-hospitalar-covid-19" >
+        English (Australia)
+      </option>
+    
+      <option value="/es_AR/dataset/registro-de-ocupacao-hospitalar-covid-19" >
+        español (Argentina)
+      </option>
+    
+      <option value="/eu/dataset/registro-de-ocupacao-hospitalar-covid-19" >
+        euskara
+      </option>
+    
+      <option value="/fa_IR/dataset/registro-de-ocupacao-hospitalar-covid-19" >
+        فارسی (ایران)
+      </option>
+    
+      <option value="/gl/dataset/registro-de-ocupacao-hospitalar-covid-19" >
+        galego
+      </option>
+    
+      <option value="/he/dataset/registro-de-ocupacao-hospitalar-covid-19" >
+        עברית
+      </option>
+    
+      <option value="/hr/dataset/registro-de-ocupacao-hospitalar-covid-19" >
+        hrvatski
+      </option>
+    
+      <option value="/id/dataset/registro-de-ocupacao-hospitalar-covid-19" >
+        Indonesia
+      </option>
+    
+      <option value="/is/dataset/registro-de-ocupacao-hospitalar-covid-19" >
+        íslenska
+      </option>
+    
+      <option value="/km/dataset/registro-de-ocupacao-hospitalar-covid-19" >
+        ខ្មែរ
+      </option>
+    
+      <option value="/lt/dataset/registro-de-ocupacao-hospitalar-covid-19" >
+        lietuvių
+      </option>
+    
+      <option value="/mk/dataset/registro-de-ocupacao-hospitalar-covid-19" >
+        македонски
+      </option>
+    
+      <option value="/mn_MN/dataset/registro-de-ocupacao-hospitalar-covid-19" >
+        монгол (Монгол)
+      </option>
+    
+      <option value="/ne/dataset/registro-de-ocupacao-hospitalar-covid-19" >
+        नेपाली
+      </option>
+    
+      <option value="/pt_PT/dataset/registro-de-ocupacao-hospitalar-covid-19" >
+        português (Portugal)
+      </option>
+    
+      <option value="/ro/dataset/registro-de-ocupacao-hospitalar-covid-19" >
+        română
+      </option>
+    
+      <option value="/sq/dataset/registro-de-ocupacao-hospitalar-covid-19" >
+        shqip
+      </option>
+    
+      <option value="/sr_Latn/dataset/registro-de-ocupacao-hospitalar-covid-19" >
+        srpski (latinica)
+      </option>
+    
+      <option value="/th/dataset/registro-de-ocupacao-hospitalar-covid-19" >
+        ไทย
+      </option>
+    
+      <option value="/tl/dataset/registro-de-ocupacao-hospitalar-covid-19" >
+        Filipino (Pilipinas)
+      </option>
+    
+      <option value="/tr/dataset/registro-de-ocupacao-hospitalar-covid-19" >
+        Türkçe
+      </option>
+    
+      <option value="/uk/dataset/registro-de-ocupacao-hospitalar-covid-19" >
+        українська
+      </option>
+    
+      <option value="/uk_UA/dataset/registro-de-ocupacao-hospitalar-covid-19" >
+        українська (Україна)
+      </option>
+    
+      <option value="/vi/dataset/registro-de-ocupacao-hospitalar-covid-19" >
+        Tiếng Việt
+      </option>
+    
+      <option value="/zh_CN/dataset/registro-de-ocupacao-hospitalar-covid-19" >
+        中文 (简体, 中国)
+      </option>
+    
+      <option value="/zh_TW/dataset/registro-de-ocupacao-hospitalar-covid-19" >
+        中文 (繁體, 台灣)
+      </option>
+    
+  </select>
+  <button class="btn btn-default js-hide" type="submit">Ir</button>
+</form>
+        
+      </div>
+    </div>
+    
+  </div>
+
+  
+    
+  
+</footer>
+  
+    
+    
+    
+  
+    
+
+      
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1XYB88LPZG"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-1XYB88LPZG');
+    </script>
+  <script>document.getElementsByTagName('html')[0].className += ' js';</script>
+<script type="text/javascript" src="/fanstatic/vendor/:version:2022-01-06T02:10:57.30/jquery.min.js"></script>
+<script type="text/javascript" src="/fanstatic/vendor/:version:2022-01-06T02:10:57.30/:bundle:bootstrap/js/bootstrap.min.js;jed.min.js;moment-with-locales.js;select2/select2.min.js"></script>
+<script type="text/javascript" src="/fanstatic/base/:version:2022-01-06T02:10:57.14/:bundle:plugins/jquery.inherit.min.js;plugins/jquery.proxy-all.min.js;plugins/jquery.url-helpers.min.js;plugins/jquery.date-helpers.min.js;plugins/jquery.slug.min.js;plugins/jquery.slug-preview.min.js;plugins/jquery.truncator.min.js;plugins/jquery.masonry.min.js;plugins/jquery.form-warning.min.js;plugins/jquery.images-loaded.min.js;sandbox.min.js;module.min.js;pubsub.min.js;client.min.js;notify.min.js;i18n.min.js;main.min.js;modules/select-switch.min.js;modules/slug-preview.min.js;modules/basic-form.min.js;modules/confirm-action.min.js;modules/api-info.min.js;modules/autocomplete.min.js;modules/custom-fields.min.js;modules/data-viewer.min.js;modules/table-selectable-rows.min.js;modules/resource-form.min.js;modules/resource-upload-field.min.js;modules/resource-reorder.min.js;modules/resource-view-reorder.min.js;modules/follow.min.js;modules/activity-stream.min.js;modules/dashboard.min.js;modules/resource-view-embed.min.js;view-filters.min.js;modules/resource-view-filters-form.min.js;modules/resource-view-filters.min.js;modules/table-toggle-more.min.js;modules/dataset-visibility.min.js;modules/media-grid.min.js;modules/image-upload.min.js;modules/followers-counter.min.js"></script></body>
+</html>

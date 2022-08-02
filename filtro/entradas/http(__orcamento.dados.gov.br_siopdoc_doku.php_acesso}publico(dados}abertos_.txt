@@ -1,0 +1,325 @@
+
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr" class="no-js">
+<head>
+    <meta charset="utf-8" />
+    <title>acesso_publico:dados_abertos [Manuais do SIOP]</title>
+    <script>(function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)</script>
+    <meta name="generator" content="DokuWiki"/>
+<meta name="theme-color" content="#008800"/>
+<meta name="robots" content="index,follow"/>
+<meta name="keywords" content="acesso_publico,dados_abertos"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/siopdoc/lib/exe/opensearch.php" title="Manuais do SIOP"/>
+<link rel="start" href="/siopdoc/"/>
+<link rel="manifest" href="/siopdoc/lib/exe/manifest.php"/>
+<link rel="alternate" type="text/html" title="HTML simples" href="/siopdoc/doku.php/acesso_publico:dados_abertos?do=export_xhtml"/>
+<link rel="alternate" type="text/plain" title="Marcação wiki" href="/siopdoc/doku.php/acesso_publico:dados_abertos?do=export_raw"/>
+<link rel="canonical" href="https://intrasof/siopdoc/doku.php/acesso_publico:dados_abertos"/>
+<link rel="stylesheet" type="text/css" href="/siopdoc/lib/exe/css.php?t=dokuwiki&amp;tseed=a3a571baf01c6a8f8132d48e3f800446"/>
+<link type="text/css" rel="stylesheet" href="/siopdoc/lib/plugins/datatables/assets/datatables.net-fixedheader-dt/css/fixedHeader.dataTables.min.css"/>
+<link type="text/css" rel="stylesheet" href="/siopdoc/lib/plugins/datatables/assets/datatables.net-fixedcolumns-dt/css/fixedColumns.dataTables.min.css"/>
+<!--[if gte IE 9]><!-->
+<script type="text/javascript">/*<![CDATA[*/var NS='acesso_publico';var JSINFO = {"confirm_delete":"Tem certeza de querer excluir esta p\u00e1gina?","doku_base":"\/siopdoc\/","cg_rev":"","dw_version":50.2,"chrome_version":101,"hide_captcha_error":"none","ckg_dbl_click":"","ckg_canonical":0,"doku_url":"https:\/\/intrasof\/siopdoc\/","has_wrap":"Wrap","wrapDiv":"WRAP","wrapSpan":"wrap","ckgEdPaste":"off","rel_links":1,"ckg_template":"dokuwiki","plugin":{"datatables":{"config":[],"enableForAllTables":0}},"htmlok":1,"bookcreator":{"areToolsVisible":true,"showBookbar":"noempty"},"id":"acesso_publico:dados_abertos","namespace":"acesso_publico","ACT":"show","useHeadingNavigation":0,"useHeadingContent":0};
+/*!]]>*/</script>
+<script type="text/javascript" charset="utf-8" src="/siopdoc/lib/exe/jquery.php?tseed=23f888679b4f1dc26eef34902aca964f"></script>
+<script type="text/javascript" charset="utf-8" src="/siopdoc/lib/exe/js.php?t=dokuwiki&amp;tseed=a3a571baf01c6a8f8132d48e3f800446"></script>
+<script type="text/javascript" src="/siopdoc/lib/plugins/datatables/assets/datatables.net/js/jquery.dataTables.min.js" defer="defer"></script>
+<script type="text/javascript" src="/siopdoc/lib/plugins/datatables/assets/datatables.net-fixedheader-dt/js/fixedHeader.dataTables.min.js" defer="defer"></script>
+<script type="text/javascript" src="/siopdoc/lib/plugins/datatables/assets/datatables.net-fixedcolumns-dt/js/fixedColumns.dataTables.min.js" defer="defer"></script>
+<script type="text/javascript" src="/siopdoc/lib/plugins/datatables/assets/datatables.net-buttons/js/dataTables.buttons.min.js" defer="defer"></script>
+<script type="text/javascript" src="/siopdoc/lib/plugins/datatables/assets/datatables.net-buttons/js/buttons.html5.min.js" defer="defer"></script>
+<script type="text/javascript" src="/siopdoc/lib/plugins/datatables/assets/datatables.net-buttons/js/buttons.print.min.js" defer="defer"></script>
+<script type="text/javascript" src="/siopdoc/lib/plugins/datatables/assets/jszip/dist/jszip.min.js" defer="defer"></script>
+<script type="text/javascript" src="/siopdoc/lib/plugins/datatables/assets/pdfmake/build/pdfmake.min.js" defer="defer"></script>
+<script type="text/javascript" src="/siopdoc/lib/plugins/datatables/assets/pdfmake/build/vfs_fonts.js" defer="defer"></script>
+<script type="text/javascript" charset="utf-8" src="/siopdoc/lib/plugins/ckgedit/scripts/mediamgr.js" defer="defer"></script>
+<!--<![endif]-->
+
+    <script type="text/javascript">
+    //<![CDATA[ 
+    function LoadScript( url )
+    {
+     document.write( '<scr' + 'ipt type="text/javascript" src="' + url + '"><\/scr' + 'ipt>' ) ;        
+
+    }
+   function LoadScriptDefer( url )
+    {
+     document.write( '<scr' + 'ipt type="text/javascript" src="' + url + '" defer><\/scr' + 'ipt>' ) ;        
+
+    }
+//]]> 
+
+ </script>
+     <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="shortcut icon" href="/siopdoc/lib/tpl/dokuwiki/images/favicon.ico" />
+<link rel="apple-touch-icon" href="/siopdoc/lib/tpl/dokuwiki/images/apple-touch-icon.png" />
+    </head>
+
+<body>
+    <div id="dokuwiki__site"><div id="dokuwiki__top" class="site dokuwiki mode_show tpl_dokuwiki     ">
+
+        
+<!-- ********** HEADER ********** -->
+<div id="dokuwiki__header"><div class="pad group">
+
+    
+    <div class="headings group">
+        <ul class="a11y skip">
+            <li><a href="#dokuwiki__content">ir para o conteúdo</a></li>
+        </ul>
+
+        <h1><a href="/siopdoc/doku.php/start"  accesskey="h" title="[H]"><img src="/siopdoc/lib/exe/fetch.php/wiki:logo.png" width="526" height="165" alt="" /> <span>Manuais do SIOP</span></a></h1>
+            </div>
+
+    <div class="tools group">
+        <!-- USER TOOLS -->
+                    <div id="dokuwiki__usertools">
+                <h3 class="a11y">Ferramentas do usuário</h3>
+                <ul>
+                                    </ul>
+            </div>
+        
+        <!-- SITE TOOLS -->
+        <div id="dokuwiki__sitetools">
+            <h3 class="a11y">Ferramentas do site</h3>
+            <form action="/siopdoc/doku.php/start" method="get" role="search" class="search doku_form" id="dw__search" accept-charset="utf-8"><input type="hidden" name="do" value="search" /><input type="hidden" name="id" value="acesso_publico:dados_abertos" /><div class="no"><input name="q" type="text" class="edit" title="[F]" accesskey="f" placeholder="Pesquisar" autocomplete="on" id="qsearch__in" value="" /><button value="1" type="submit" title="Pesquisar">Pesquisar</button><div id="qsearch__out" class="ajax_qsearch JSpopup"></div></div></form>            <div class="mobileTools">
+                <form action="/siopdoc/doku.php" method="get" accept-charset="utf-8"><div class="no"><input type="hidden" name="id" value="acesso_publico:dados_abertos" /><select name="do" class="edit quickselect" title="Ferramentas"><option value="">Ferramentas</option><optgroup label="Ferramentas da página"><option value="edit">Mostrar código fonte</option><option value="export_pdf">Exportar para PDF</option><option value="plugin_bookcreator__addtobook">Adicionar a livro</option><option value="export_odt">ODT export</option><option value="backlink">Links reversos</option></optgroup><optgroup label="Ferramentas do site"></optgroup><optgroup label="Ferramentas do usuário"></optgroup></select><button type="submit">&gt;</button></div></form>            </div>
+            <ul>
+                            </ul>
+        </div>
+
+    </div>
+
+    <!-- BREADCRUMBS -->
+            <div class="breadcrumbs">
+                            <div class="youarehere"><span class="bchead">Você está aqui: </span><span class="home"><bdi><a href="/siopdoc/doku.php/start" class="wikilink1" title="start">start</a></bdi></span> » <bdi><a href="/siopdoc/doku.php/acesso_publico:start" class="wikilink2" title="acesso_publico:start" rel="nofollow">acesso_publico</a></bdi> » <bdi><span class="curid"><a href="/siopdoc/doku.php/acesso_publico:dados_abertos" class="wikilink1" title="acesso_publico:dados_abertos">dados_abertos</a></span></bdi></div>
+                                        <div class="trace"><span class="bchead">Visitou:</span> <span class="bcsep">•</span> <span class="curid"><bdi><a href="/siopdoc/doku.php/acesso_publico:dados_abertos"  class="breadcrumbs" title="acesso_publico:dados_abertos">dados_abertos</a></bdi></span></div>
+                    </div>
+    
+
+
+    <hr class="a11y" />
+</div></div><!-- /header -->
+
+        <div class="wrapper group">
+
+            
+            <!-- ********** CONTENT ********** -->
+            <div id="dokuwiki__content"><div class="pad group">
+                
+                <div class="pageId"><span>acesso_publico:dados_abertos</span></div>
+
+                <div class="page group">
+                                                            <!-- wikipage start -->
+                    <div class='bookcreator__bookbar' style='vertical-align:bottom;'><div class="bookcreator__panel" id="bookcreator__add">
+                      <b>Criação de livros</b><br>
+                      <a class="bookcreator__tglPgSelection bc__bookmarkplus" href="#">
+                       <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24" height="24" viewBox="0 0 24 24"><path d="M17,3A2,2 0 0,1 19,5V21L12,18L5,21V5C5,3.89 5.9,3 7,3H17M11,7V9H9V11H11V13H13V11H15V9H13V7H11Z" /></svg>
+                        &nbsp;Adicionar esta página ao seu livro
+                    </a>
+                  </div><div class="bookcreator__panel" id="bookcreator__remove">
+                      <b>Criação de livros</b><br>
+                      <a class="bookcreator__tglPgSelection bc__bookmarkmin" href="#">
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24" height="24" viewBox="0 0 24 24"><path d="M17,3H7A2,2 0 0,0 5,5V21L12,18L19,21V5A2,2 0 0,0 17,3M15,11H9V9H15V11Z" /></svg>
+                      &nbsp;Remover esta página de seu livro
+                      </a>&nbsp;
+                  </div><div class="bookcreator__panel" >
+                      <br>
+                      <a href="/siopdoc/doku.php/wiki:ebook" class="bc__manager">
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24" height="24" viewBox="0 0 24 24"><path d="M19.07 14.88L21.12 16.93L15.06 23H13V20.94L19.07 14.88M21.04 13.13C21.18 13.13 21.31 13.19 21.42 13.3L22.7 14.58C22.92 14.79 22.92 15.14 22.7 15.35L21.7 16.35L19.65 14.3L20.65 13.3C20.76 13.19 20.9 13.13 21.04 13.13M17 4V10L15 8L13 10V4H9V20H11V22H7C5.95 22 5 21.05 5 20V19H3V17H5V13H3V11H5V7H3V5H5V4C5 2.89 5.9 2 7 2H19C20.05 2 21 2.95 21 4V10L19 12V4H17M5 5V7H7V5H5M5 11V13H7V11H5M5 17V19H7V17H5Z" /></svg>
+                      &nbsp;Gerenciar livro(<span id="bookcreator__pages">0</span> página(s))
+                      </a>
+                  </div><div class="bookcreator__panel" style="float:right;">
+                      <a href="/siopdoc/doku.php/wiki:ebook_help" class="bc__bookmarkhelp">
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24" height="24" viewBox="0 0 24 24"><path d="M15.07,11.25L14.17,12.17C13.45,12.89 13,13.5 13,15H11V14.5C11,13.39 11.45,12.39 12.17,11.67L13.41,10.41C13.78,10.05 14,9.55 14,9C14,7.89 13.1,7 12,7A2,2 0 0,0 10,9H8A4,4 0 0,1 12,5A4,4 0 0,1 16,9C16,9.88 15.64,10.67 15.07,11.25M13,19H11V17H13M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12C22,6.47 17.5,2 12,2Z" /></svg>
+                      &nbsp;Ajuda
+                      </a>
+                  </div></div><!-- TOC START -->
+<div id="dw__toc" class="dw__toc">
+<h3 class="toggle">Tabela de conteúdos</h3>
+<div>
+
+<ul class="toc">
+<li class="level1"><div class="li"><a href="#siop_-_dados_abertos">SIOP - Dados Abertos</a></div>
+<ul class="toc">
+<li class="level2"><div class="li"><a href="#recursos_disponiveis">1. Recursos Disponíveis</a></div>
+<ul class="toc">
+<li class="level3"><div class="li"><a href="#arquivos_de_dados_em_rdf_da_execucao_do_orcamento_federal">1.1 Arquivos de Dados em RDF da Execução do Orçamento Federal</a></div></li>
+<li class="level3"><div class="li"><a href="#arquivos_de_dados_em_csv_do_acompanhamento_fisico_das_acoes_do_orcamento_federal">1.2 Arquivos de Dados em CSV do Acompanhamento Físico das Ações do Orçamento Federal</a></div></li>
+</ul>
+</li>
+<li class="level2"><div class="li"><a href="#outras_informacoes">2. Outras Informações</a></div>
+<ul class="toc">
+<li class="level3"><div class="li"><a href="#apresentacoes">2.1 Apresentações</a></div></li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+</div>
+<!-- TOC END -->
+
+<h1 class="sectionedit1" id="siop_-_dados_abertos">SIOP - Dados Abertos</h1>
+<div class="level1">
+
+<p>
+<em>Este site é a página inicial de acesso aos Dados Abertos do Orçamento publicados como dados ligados. Os dados do Orçamento Federal estão disponibilizados em formato RDF. Para facilitar o entendimento e uso deste recursos veja os links abaixo com detalhes das diversas formas de obter os dados em RDF. </em>
+</p>
+
+</div>
+
+<h2 class="sectionedit2" id="recursos_disponiveis">1. Recursos Disponíveis</h2>
+<div class="level2">
+
+<p>
+Todos os dados reportados abaixo também estão catalogados no <a href="http://dados.gov.br" class="urlextern" target="_tab" title="http://dados.gov.br" rel="nofollow noopener">site oficial de Dados Abertos do Governo Federal</a>.
+</p>
+
+</div>
+
+<h3 class="sectionedit3" id="arquivos_de_dados_em_rdf_da_execucao_do_orcamento_federal">1.1 Arquivos de Dados em RDF da Execução do Orçamento Federal</h3>
+<div class="level3">
+
+<p>
+Conheça o <a href="http://vocab.e.gov.br/2013/09/loa" class="urlextern" target="_tab" title="http://vocab.e.gov.br/2013/09/loa" rel="nofollow noopener">Modelo ontológico da Classificação das Despesas do Orçamento Federal Brasileiro</a>
+ - <a href="http://vocab.e.gov.br/2013/09/loa.owl" class="urlextern" target="_tab" title="http://vocab.e.gov.br/2013/09/loa.owl" rel="nofollow noopener">Arquivo OWL</a>
+</p>
+<ul>
+<li class="level1 node"><div class="li">  <a href="http://www1.siop.planejamento.gov.br/sparql/" class="urlextern" target="_tab" title="http://www1.siop.planejamento.gov.br/sparql/" rel="nofollow noopener">Endpoint SPARQL de Consulta aos dados do Orçamento Federal</a></div>
+<ul>
+<li class="level3"><div class="li"> <a href="/siopdoc/doku.php/acesso_publico:scripts_sparql" class="wikilink1" title="acesso_publico:scripts_sparql">Como fazer consultas nos Dados Abertos do Orçamento e Scripts SPARQL de exemplo</a></div>
+</li>
+<li class="level3"><div class="li"> <a href="/siopdoc/doku.php/acesso_publico:emendas_parlamentares_dados_abertos" class="wikilink1" title="acesso_publico:emendas_parlamentares_dados_abertos">Informações de Emendas Parlamentares nos Dados Abertos do Orçamento Federal</a>.</div>
+</li>
+<li class="level3"><div class="li"> <a href="http://jena.apache.org/tutorials/sparql.html" class="urlextern" target="_tab" title="http://jena.apache.org/tutorials/sparql.html" rel="nofollow noopener">Tutorial da linguagem SPARQL (usada para consultas ao endpoint)</a></div>
+</li>
+</ul>
+</li>
+</ul>
+<div class="table sectionedit4"><table class="inline">
+	<tr class="row0">
+		<td class="col0" colspan="8"> </td><td class="col8"><a href="http://www1.siop.planejamento.gov.br/downloads/rdf/loa2022.zip" class="urlextern" target="_tab" title="http://www1.siop.planejamento.gov.br/downloads/rdf/loa2022.zip" rel="nofollow noopener">LOA 2022</a></td><td class="col9"><a href="http://www1.siop.planejamento.gov.br/downloads/rdf/loa2021.zip" class="urlextern" target="_tab" title="http://www1.siop.planejamento.gov.br/downloads/rdf/loa2021.zip" rel="nofollow noopener">LOA 2021</a></td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><a href="http://www1.siop.planejamento.gov.br/downloads/rdf/loa2020.zip" class="urlextern" target="_tab" title="http://www1.siop.planejamento.gov.br/downloads/rdf/loa2020.zip" rel="nofollow noopener">LOA 2020</a></td><td class="col1"><a href="http://www1.siop.planejamento.gov.br/downloads/rdf/loa2019.zip" class="urlextern" target="_tab" title="http://www1.siop.planejamento.gov.br/downloads/rdf/loa2019.zip" rel="nofollow noopener">LOA 2019</a></td><td class="col2"><a href="http://www1.siop.planejamento.gov.br/downloads/rdf/loa2018.zip" class="urlextern" target="_tab" title="http://www1.siop.planejamento.gov.br/downloads/rdf/loa2018.zip" rel="nofollow noopener">LOA 2018</a></td><td class="col3"><a href="http://www1.siop.planejamento.gov.br/downloads/rdf/loa2017.zip" class="urlextern" target="_tab" title="http://www1.siop.planejamento.gov.br/downloads/rdf/loa2017.zip" rel="nofollow noopener">LOA 2017</a></td><td class="col4"><a href="http://www1.siop.planejamento.gov.br/downloads/rdf/loa2016.zip" class="urlextern" target="_tab" title="http://www1.siop.planejamento.gov.br/downloads/rdf/loa2016.zip" rel="nofollow noopener">LOA 2016</a></td><td class="col5 leftalign"><a href="http://www1.siop.planejamento.gov.br/downloads/rdf/loa2015.zip" class="urlextern" target="_tab" title="http://www1.siop.planejamento.gov.br/downloads/rdf/loa2015.zip" rel="nofollow noopener">LOA 2015</a>  </td><td class="col6 leftalign"><a href="http://www1.siop.planejamento.gov.br/downloads/rdf/loa2014.zip" class="urlextern" target="_tab" title="http://www1.siop.planejamento.gov.br/downloads/rdf/loa2014.zip" rel="nofollow noopener">LOA 2014</a>  </td><td class="col7"><a href="http://www1.siop.planejamento.gov.br/downloads/rdf/loa2013.zip" class="urlextern" target="_tab" title="http://www1.siop.planejamento.gov.br/downloads/rdf/loa2013.zip" rel="nofollow noopener">LOA 2013</a></td><td class="col8"><a href="http://www1.siop.planejamento.gov.br/downloads/rdf/loa2012.zip" class="urlextern" target="_tab" title="http://www1.siop.planejamento.gov.br/downloads/rdf/loa2012.zip" rel="nofollow noopener">LOA 2012</a></td><td class="col9"><a href="http://www1.siop.planejamento.gov.br/downloads/rdf/loa2011.zip" class="urlextern" target="_tab" title="http://www1.siop.planejamento.gov.br/downloads/rdf/loa2011.zip" rel="nofollow noopener">LOA 2011</a></td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><a href="http://www1.siop.planejamento.gov.br/downloads/rdf/loa2010.zip" class="urlextern" target="_tab" title="http://www1.siop.planejamento.gov.br/downloads/rdf/loa2010.zip" rel="nofollow noopener">LOA 2010</a></td><td class="col1"><a href="http://www1.siop.planejamento.gov.br/downloads/rdf/loa2009.zip" class="urlextern" target="_tab" title="http://www1.siop.planejamento.gov.br/downloads/rdf/loa2009.zip" rel="nofollow noopener">LOA 2009</a></td><td class="col2"><a href="http://www1.siop.planejamento.gov.br/downloads/rdf/loa2008.zip" class="urlextern" target="_tab" title="http://www1.siop.planejamento.gov.br/downloads/rdf/loa2008.zip" rel="nofollow noopener">LOA 2008</a></td><td class="col3"><a href="http://www1.siop.planejamento.gov.br/downloads/rdf/loa2007.zip" class="urlextern" target="_tab" title="http://www1.siop.planejamento.gov.br/downloads/rdf/loa2007.zip" rel="nofollow noopener">LOA 2007</a></td><td class="col4"><a href="http://www1.siop.planejamento.gov.br/downloads/rdf/loa2006.zip" class="urlextern" target="_tab" title="http://www1.siop.planejamento.gov.br/downloads/rdf/loa2006.zip" rel="nofollow noopener">LOA 2006</a></td><td class="col5"><a href="http://www1.siop.planejamento.gov.br/downloads/rdf/loa2005.zip" class="urlextern" target="_tab" title="http://www1.siop.planejamento.gov.br/downloads/rdf/loa2005.zip" rel="nofollow noopener">LOA 2005</a></td><td class="col6"><a href="http://www1.siop.planejamento.gov.br/downloads/rdf/loa2004.zip" class="urlextern" target="_tab" title="http://www1.siop.planejamento.gov.br/downloads/rdf/loa2004.zip" rel="nofollow noopener">LOA 2004</a></td><td class="col7"><a href="http://www1.siop.planejamento.gov.br/downloads/rdf/loa2003.zip" class="urlextern" target="_tab" title="http://www1.siop.planejamento.gov.br/downloads/rdf/loa2003.zip" rel="nofollow noopener">LOA 2003</a></td><td class="col8"><a href="http://www1.siop.planejamento.gov.br/downloads/rdf/loa2002.zip" class="urlextern" target="_tab" title="http://www1.siop.planejamento.gov.br/downloads/rdf/loa2002.zip" rel="nofollow noopener">LOA 2002</a></td><td class="col9"><a href="http://www1.siop.planejamento.gov.br/downloads/rdf/loa2001.zip" class="urlextern" target="_tab" title="http://www1.siop.planejamento.gov.br/downloads/rdf/loa2001.zip" rel="nofollow noopener">LOA 2001</a></td>
+	</tr>
+</table></div>
+<ul>
+<li class="level1"><div class="li"> <a href="http://dados.gov.br/dataset/orcamento-federal" class="urlextern" target="_tab" title="http://dados.gov.br/dataset/orcamento-federal" rel="nofollow noopener">Detalhes destes datasets no dados.gov.br</a></div>
+</li>
+</ul>
+
+</div>
+
+<h3 class="sectionedit5" id="arquivos_de_dados_em_csv_do_acompanhamento_fisico_das_acoes_do_orcamento_federal">1.2 Arquivos de Dados em CSV do Acompanhamento Físico das Ações do Orçamento Federal</h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> <a href="/siopdoc/lib/exe/fetch.php/acesso_publico:dados_abertos:acompanhamentoorcamentario_2021jandez_v1_20220216_ascii.zip" class="media mediafile mf_zip" title="acesso_publico:dados_abertos:acompanhamentoorcamentario_2021jandez_v1_20220216_ascii.zip (2.7 MB)">Acompanhamento Orçamentário 2021</a> - <a href="/siopdoc/lib/exe/fetch.php/acesso_publico:dados_abertos:dicionario_de_dados_acomp._orcamentario_2021.pdf" class="media mediafile mf_pdf" title="acesso_publico:dados_abertos:dicionario_de_dados_acomp._orcamentario_2021.pdf (177.7 KB)">Dicionário de Dados 2021</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="/siopdoc/lib/exe/fetch.php/acesso_publico:dados_abertos:acompanhamentoorcamentario_2020jandez.zip" class="media mediafile mf_zip" title="acesso_publico:dados_abertos:acompanhamentoorcamentario_2020jandez.zip (3.5 MB)">Acompanhamento Orçamentário 2020</a> - <a href="/siopdoc/lib/exe/fetch.php/acesso_publico:dados_abertos:dicionario_de_dados_-_acompanhamento_orcamentario_2020.pdf" class="media mediafile mf_pdf" title="acesso_publico:dados_abertos:dicionario_de_dados_-_acompanhamento_orcamentario_2020.pdf (174.3 KB)">Dicionário de Dados 2020</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="/siopdoc/lib/exe/fetch.php/acesso_publico:dados_abertos:acomp_orcamentario_jandez_2019.zip" class="media mediafile mf_zip" title="acesso_publico:dados_abertos:acomp_orcamentario_jandez_2019.zip (2.1 MB)">Acompanhamento Orçamentário 2019</a> - <a href="/siopdoc/lib/exe/fetch.php/acesso_publico:dados_abertos:dicionario_de_dados_-_acompanhamento_orcamentario_2019.pdf" class="media mediafile mf_pdf" title="acesso_publico:dados_abertos:dicionario_de_dados_-_acompanhamento_orcamentario_2019.pdf (462.7 KB)">Dicionário de Dados 2019</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="/siopdoc/lib/exe/fetch.php/dados_abertos:dataset_-_orcamento_federal_-_acompanhamento_orcamentario_2018.rar" class="media mediafile mf_rar" title="dados_abertos:dataset_-_orcamento_federal_-_acompanhamento_orcamentario_2018.rar (1.7 MB)">Acompanhamento Orçamentário 2018</a> - <a href="/siopdoc/lib/exe/fetch.php/acompanhamento_orcamentario:dicionario_de_dados_2018.pdf" class="media mediafile mf_pdf" title="acompanhamento_orcamentario:dicionario_de_dados_2018.pdf (394 KB)">Dicionário de Dados 2018</a></div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> <a href="http://dados.gov.br/dataset/orcamento-federal-acompanhamento-fisico-financeiro-das-acoes-orcamentarias" class="urlextern" target="_tab" title="http://dados.gov.br/dataset/orcamento-federal-acompanhamento-fisico-financeiro-das-acoes-orcamentarias" rel="nofollow noopener">Detalhes destes datasets no dados.gov.br</a></div>
+</li>
+</ul>
+
+</div>
+
+<h2 class="sectionedit6" id="outras_informacoes">2. Outras Informações</h2>
+<div class="level2">
+<ul>
+<li class="level1"><div class="li"> <a href="/siopdoc/lib/exe/fetch.php/dados_abertos:artigo_the_brazilian_federal_budget_ontology.pdf" class="media mediafile mf_pdf" title="dados_abertos:artigo_the_brazilian_federal_budget_ontology.pdf (269.6 KB)">Artigo &quot;The Brazilian Federal Budget Ontology&quot; - 2015</a> - <a href="/siopdoc/lib/exe/fetch.php/dados_abertos:medes_brazilian_budget_23_12_traducao_ii.pdf" class="media mediafile mf_pdf" title="dados_abertos:medes_brazilian_budget_23_12_traducao_ii.pdf (341.4 KB)">Versão em português</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://www.orcamentofederal.gov.br/biblioteca/estudos_e_pesquisas/Artigo_Ontobras_Orcamento_Aberto.pdf" class="urlextern" target="_tab" title="http://www.orcamentofederal.gov.br/biblioteca/estudos_e_pesquisas/Artigo_Ontobras_Orcamento_Aberto.pdf" rel="nofollow noopener">Artigo: &quot;Uma Ontologia das Classificações da Despesa do Orçamento Federal&quot; - Ontobrás 2014</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="/siopdoc/lib/exe/fetch.php/dados_abertos:carta_de_servicos_orcamento_federal_em_rdf.pdf" class="media mediafile mf_pdf" title="dados_abertos:carta_de_servicos_orcamento_federal_em_rdf.pdf (314.5 KB)">Carta de Serviços</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://ceweb.br/guias/web-semantica//capitulo-5/#capitulo-5-sh8" class="urlextern" target="_tab" title="http://ceweb.br/guias/web-semantica//capitulo-5/#capitulo-5-sh8" rel="nofollow noopener">Citação ao trabalho no Guia de WEB Semântica do Comitê Gestor da Internet (CGI.br)</a></div>
+</li>
+</ul>
+
+</div>
+
+<h3 class="sectionedit7" id="apresentacoes">2.1 Apresentações</h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> <a href="/siopdoc/lib/exe/fetch.php/acesso_publico:dados_abertos:apresentacao_dados_abertos_-_evento_inovacao_no_governo_tcu_2018.sozi.html" class="media mediafile mf_html" title="acesso_publico:dados_abertos:apresentacao_dados_abertos_-_evento_inovacao_no_governo_tcu_2018.sozi.html (7.5 MB)">Apresentação - Semana da Inovação do TCU 2018</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="/siopdoc/lib/exe/fetch.php/dados_abertos:dados_abertos_de_orcamento_em_rdf.zip" class="media mediafile mf_zip" title="dados_abertos:dados_abertos_de_orcamento_em_rdf.zip (15.8 MB)">Apresentação sobre RDF e a Ontologia do Orçamento</a>. Veja <a href="/siopdoc/doku.php/util:visualizar_apresentacoes_svg" class="wikilink1" title="util:visualizar_apresentacoes_svg">aqui</a> como navegar nesta apresentação.</div>
+</li>
+<li class="level1"><div class="li"> <a href="https://www.youtube.com/watch?v=MmMxh_hEZs8" class="urlextern" target="_tab" title="https://www.youtube.com/watch?v=MmMxh_hEZs8" rel="nofollow noopener">Apresentação sobre a solução de Dados Abertos do Orçamento Federal</a></div>
+</li>
+</ul>
+
+</div>
+
+
+    <script type="text/javascript">
+    //<![CDATA[ 
+
+    function createRequestValue() {
+        try{
+        var inputNode=document.createElement('input');
+        inputNode.setAttribute('type','hidden');
+        inputNode.setAttribute('value','yes');
+        inputNode.setAttribute('name','dwedit_preview');
+        inputNode.setAttribute('id','dwedit_preview');
+        var dwform = GetE("dw__editform");
+        dwform.appendChild(inputNode);
+        }catch(e) { alert(e); }
+    }
+//]]> 
+ </script>
+                    <!-- wikipage stop -->
+                                    </div>
+
+
+                            </div></div><!-- /content -->
+
+            <hr class="a11y" />
+
+            <!-- PAGE ACTIONS -->
+            <div id="dokuwiki__pagetools">
+                <h3 class="a11y">Ferramentas da página</h3>
+                <div class="tools">
+                    <ul>
+                        <li class="source"><a href="/siopdoc/doku.php/acesso_publico:dados_abertos?do=edit" title="Mostrar código fonte [v]" rel="nofollow" accesskey="v"><span>Mostrar código fonte</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M13 9h5.5L13 3.5V9M6 2h8l6 6v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4c0-1.11.89-2 2-2m.12 13.5l3.74 3.74 1.42-1.41-2.33-2.33 2.33-2.33-1.42-1.41-3.74 3.74m11.16 0l-3.74-3.74-1.42 1.41 2.33 2.33-2.33 2.33 1.42 1.41 3.74-3.74z"/></svg></a></li><li class="backlink"><a href="/siopdoc/doku.php/acesso_publico:dados_abertos?do=backlink" title="Links reversos" rel="nofollow"><span>Links reversos</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10.59 13.41c.41.39.41 1.03 0 1.42-.39.39-1.03.39-1.42 0a5.003 5.003 0 0 1 0-7.07l3.54-3.54a5.003 5.003 0 0 1 7.07 0 5.003 5.003 0 0 1 0 7.07l-1.49 1.49c.01-.82-.12-1.64-.4-2.42l.47-.48a2.982 2.982 0 0 0 0-4.24 2.982 2.982 0 0 0-4.24 0l-3.53 3.53a2.982 2.982 0 0 0 0 4.24m2.82-4.24c.39-.39 1.03-.39 1.42 0a5.003 5.003 0 0 1 0 7.07l-3.54 3.54a5.003 5.003 0 0 1-7.07 0 5.003 5.003 0 0 1 0-7.07l1.49-1.49c-.01.82.12 1.64.4 2.43l-.47.47a2.982 2.982 0 0 0 0 4.24 2.982 2.982 0 0 0 4.24 0l3.53-3.53a2.982 2.982 0 0 0 0-4.24.973.973 0 0 1 0-1.42z"/></svg></a></li><li class="export_pdf"><a href="/siopdoc/doku.php/acesso_publico:dados_abertos?do=export_pdf" title="Exportar para PDF" rel="nofollow"><span>Exportar para PDF</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M14 9h5.5L14 3.5V9M7 2h8l6 6v12a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2m4.93 10.44c.41.9.93 1.64 1.53 2.15l.41.32c-.87.16-2.07.44-3.34.93l-.11.04.5-1.04c.45-.87.78-1.66 1.01-2.4m6.48 3.81c.18-.18.27-.41.28-.66.03-.2-.02-.39-.12-.55-.29-.47-1.04-.69-2.28-.69l-1.29.07-.87-.58c-.63-.52-1.2-1.43-1.6-2.56l.04-.14c.33-1.33.64-2.94-.02-3.6a.853.853 0 0 0-.61-.24h-.24c-.37 0-.7.39-.79.77-.37 1.33-.15 2.06.22 3.27v.01c-.25.88-.57 1.9-1.08 2.93l-.96 1.8-.89.49c-1.2.75-1.77 1.59-1.88 2.12-.04.19-.02.36.05.54l.03.05.48.31.44.11c.81 0 1.73-.95 2.97-3.07l.18-.07c1.03-.33 2.31-.56 4.03-.75 1.03.51 2.24.74 3 .74.44 0 .74-.11.91-.3m-.41-.71l.09.11c-.01.1-.04.11-.09.13h-.04l-.19.02c-.46 0-1.17-.19-1.9-.51.09-.1.13-.1.23-.1 1.4 0 1.8.25 1.9.35M8.83 17c-.65 1.19-1.24 1.85-1.69 2 .05-.38.5-1.04 1.21-1.69l.48-.31m3.02-6.91c-.23-.9-.24-1.63-.07-2.05l.07-.12.15.05c.17.24.19.56.09 1.1l-.03.16-.16.82-.05.04z"/></svg></a></li><li class="plugin_bookcreator__addtobook"><a href="/siopdoc/doku.php/acesso_publico:dados_abertos?do=plugin_bookcreator__addtobook" title="Adicionar a livro" rel="nofollow"><span>Adicionar a livro</span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24" height="24" viewBox="0 0 24 24"><path class="bookmin" d="M18,22H6A2,2 0 0,1 4,20V4C4,2.89 4.9,2 6,2H7V9L9.5,7.5L12,9V2H18A2,2 0 0,1 20,4V20A2,2 0 0,1 18,22M18,18V16H12V18H18Z" /><path class="bookplus" d="M18,22H6A2,2 0 0,1 4,20V4C4,2.89 4.9,2 6,2H7V9L9.5,7.5L12,9V2H18A2,2 0 0,1 20,4V20A2,2 0 0,1 18,22M14,20H16V18H18V16H16V14H14V16H12V18H14V20Z" /></svg></a></li><li class="export_odt"><a href="/siopdoc/doku.php/acesso_publico:dados_abertos?do=export_odt" title="ODT export" rel="nofollow"><span>ODT export</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M 0.77,0 L 10.06,0 C 10.06,0 10.28,0.1 10.58,0.1 L 19.35,8.25
+ C 19.35,8.25 19.41,8.75 19.61,9.03 L 19.61,23.22 C 19.61,23.22 19.3,24.13 18.58,24
+ L 0.77,24 C 0.77,24 0.35,23.85 0,23.22 L 0,0.77 C 0,0.77 0.35,0.15 0.77,0
+ M 2,2 L 2,22 L 17.61,22 L 17.61,9.7 L 10,2 z
+ M 13.93,0 L 18.83,0 C 18.83,0 19.3,-0.1 19.61,0.77 L 19.61,5.41
+ C 19.61,5.41 19.3,6 18.58,5.93 L 13.67,1.29 C 13.67,1.29 13.4,0.5 13.93,0 z"/></svg></a></li><li class="top"><a href="#dokuwiki__top" title="Voltar ao topo [t]" rel="nofollow" accesskey="t"><span>Voltar ao topo</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"/></svg></a></li>                    </ul>
+                </div>
+            </div>
+        </div><!-- /wrapper -->
+
+        
+<!-- ********** FOOTER ********** -->
+<div id="dokuwiki__footer"><div class="pad">
+    <div class="license">Exceto onde for informado ao contrário, o conteúdo neste wiki está sob a seguinte licença: <bdi><a href="http://creativecommons.org/licenses/by-nc/4.0/" rel="license" class="urlextern" target="_tab">CC Attribution-Noncommercial 4.0 International</a></bdi></div>
+    <div class="buttons">
+        <a href="http://creativecommons.org/licenses/by-nc/4.0/" rel="license" target="_tab"><img src="/siopdoc/lib/images/license/button/cc-by-nc.png" alt="CC Attribution-Noncommercial 4.0 International" /></a>        <a href="https://www.dokuwiki.org/donate" title="Donate" target="_tab"><img
+            src="/siopdoc/lib/tpl/dokuwiki/images/button-donate.gif" width="80" height="15" alt="Donate" /></a>
+        <a href="https://php.net" title="Powered by PHP" target="_tab"><img
+            src="/siopdoc/lib/tpl/dokuwiki/images/button-php.gif" width="80" height="15" alt="Powered by PHP" /></a>
+        <a href="//validator.w3.org/check/referer" title="Valid HTML5" target="_tab"><img
+            src="/siopdoc/lib/tpl/dokuwiki/images/button-html5.png" width="80" height="15" alt="Valid HTML5" /></a>
+        <a href="//jigsaw.w3.org/css-validator/check/referer?profile=css3" title="Valid CSS" target="_tab"><img
+            src="/siopdoc/lib/tpl/dokuwiki/images/button-css.png" width="80" height="15" alt="Valid CSS" /></a>
+        <a href="https://dokuwiki.org/" title="Driven by DokuWiki" target="_tab"><img
+            src="/siopdoc/lib/tpl/dokuwiki/images/button-dw.png" width="80" height="15" alt="Driven by DokuWiki" /></a>
+    </div>
+</div></div><!-- /footer -->
+
+    </div></div><!-- /site -->
+
+    <div class="no"><img src="/siopdoc/lib/exe/indexer.php?id=acesso_publico%3Adados_abertos&amp;1652143671" width="2" height="1" alt="" /></div>
+    <div id="screen__mode" class="no"></div></body>
+</html>

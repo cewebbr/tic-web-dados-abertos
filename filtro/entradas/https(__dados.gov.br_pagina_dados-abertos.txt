@@ -1,0 +1,448 @@
+
+<!DOCTYPE html>
+<!--[if IE 7]> <html lang="pt_BR" class="ie ie7"> <![endif]-->
+<!--[if IE 8]> <html lang="pt_BR" class="ie ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="pt_BR" class="ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="pt_BR"> <!--<![endif]-->
+  <head>
+    <!--[if lte ie 8]><script type="text/javascript" src="/fanstatic/vendor/:version:2022-04-01T17:27:31/html5.min.js"></script><![endif]-->
+<link rel="stylesheet" type="text/css" href="/fanstatic/vendor/:version:2022-04-01T17:27:31/select2/select2.css" />
+<link rel="stylesheet" type="text/css" href="/fanstatic/css/:version:2022-04-01T17:27:31/main.min.css" />
+<link rel="stylesheet" type="text/css" href="/fanstatic/vendor/:version:2022-04-01T17:27:31/font-awesome/css/font-awesome.min.css" />
+<!--[if ie 7]><link rel="stylesheet" type="text/css" href="/fanstatic/vendor/:version:2022-04-01T17:27:31/font-awesome/css/font-awesome-ie7.min.css" /><![endif]-->
+<link rel="stylesheet" type="text/css" href="/fanstatic/ckanext-harvest/:version:2022-04-01T18:44:14/styles/harvest.css" />
+
+    
+        <meta charset="utf-8" />
+      <meta name="generator" content="ckan 2.6.8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" value="O Portal Brasileiro de Dados Abertos (dados.gov.br) é o sítio eletrônico de referência para a busca e o acesso aos dados públicos, seus metadados, informações, aplicativos e serviços relacionados." />
+      
+    <title>O que são dados abertos? - Portal Brasileiro de Dados Abertos</title>
+
+    
+    <link rel="shortcut icon" href="/img/dadosgovbr.ico" />
+    
+  
+        
+      
+    
+
+        <!-- CSS Basic UI - Governo Brasileiro -->
+        <link rel="stylesheet" href="/css/application.css" />
+
+        <!-- CSS Bootstrap 3 - Grid and Responsive -->
+        <link rel="stylesheet" href="/css/bootstrap3-grid.min.css" />
+        <link rel="stylesheet" href="/css/bootstrap3-responsive.min.css" />
+
+        <!-- JS jQuery 3 -->
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+        
+          <!-- Semantic UI -->
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.css" />
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.js"></script>
+        
+
+        <!-- CSS Main CSS - dados.gov.br -->
+        <link rel="stylesheet" href="/css/extra.min.css" />
+
+        <!-- CSS Font Awesome -->
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" sizes="57x57" href="/img/favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="/img/favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="/img/favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="/img/favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="/img/favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="/img/favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="/img/favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="/img/favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="/img/favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
+        <link rel="manifest" href="/img/favicon/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+      
+  
+
+
+    
+      
+      
+    
+    
+  </head>
+
+  
+  <body data-site-root="https://dados.gov.br/" data-locale-root="https://dados.gov.br/" >
+
+    
+    <div class="hide"><a href="#content">Pular para o conteúdo</a></div>
+  
+
+  
+    
+<div id="barra-brasil">
+    <a href="http://brasil.gov.br" style="background:#7F7F7F; height: 20px; padding:4px 0 4px 10px; display: block; font-family:sans,sans-serif; text-decoration:none; color:white; ">Portal do
+Governo Brasileiro</a>
+</div>
+
+  
+
+<header class="masthead">
+  
+    
+  
+  <div class="container">
+    
+    <ul id="accessibility">
+      <li>
+        <a id="link-conteudo" href="#content" accesskey="1">
+          Ir para o conteúdo
+          <span>1</span>
+        </a>
+      </li>
+      <li>
+        <a id="link-navegacao" href="#menu-horizontal" accesskey="2">
+          Ir para o menu
+          <span>2</span>
+        </a>
+      </li>
+      <li>
+        <a id="link-buscar" href="#search" accesskey="3">
+          Ir para a busca
+          <span>3</span>
+        </a>
+      </li>
+      <li>
+        <a id="link-rodape" href="#footer" onclick="window.scrollTo(0,document.body.scrollHeight)" accesskey="4">
+          Ir para o rodapé
+          <span>4</span>
+        </a>
+      </li>
+    </ul>
+    
+    
+    <hgroup id="site_logo" class="header-text-logo-tagline">
+
+      
+          <h1>
+            <a href="/" title="Portal Brasileiro de Dados Abertos"><span id="portal-title">dados.gov.br</span></a>
+          </h1>
+          <h2><span id="portal-description">Portal Brasileiro de Dados Abertos</span></h2>
+      
+
+    </hgroup>
+
+
+      
+
+
+
+
+  <form action="/dataset" class="search-form " method="get" data-module="select-switch">
+    
+      <div class="search-input control-group ">
+        <input type="text" class="search" name="q" value="" autocomplete="off" placeholder="Pesquisar conjuntos de dados...">
+        
+        <button type="submit" value="search">
+          <i class="icon-search"></i>
+          <span>Enviar</span>
+        </button>
+        
+      </div>
+    
+
+    
+      
+    
+  </form>
+
+    
+    <!--
+    <ul id="news">
+      <li id="feed"><a rel="feed" href="/wp/feed/" title="Inscrever-se no feed de notícias">feed</a></li>
+      <li id="twitter"><a href="http://twitter.com/dadosgovbr" title="Microblog no Twitter">twitter</a></li>
+      <li id="github"><a href="https://github.com/dadosgovbr" title="Códigos fonte de projetos do dados.gov.br no Github">Códigos fonte de projetos do dados.gov.br no Github</a></li>
+     </ul>
+    -->
+      <a id="news" style="padding-left: 5em;" href="/user/login">Login</a>
+    
+
+    <div class="content hidden">
+
+      
+        <form class="section site-search simple-input" action="/dataset" method="get">
+          <div class="field">
+            <label for="field-sitewide-search">Buscar conjunto de dados</label>
+            <input id="field-sitewide-search" type="text" name="q" placeholder="Pesquisar conjuntos de dados..." />
+            <button class="btn-search" type="submit"><i class="icon-search"></i></button>
+          </div>
+        </form>
+      
+
+    </div>
+    </div>
+    <div id="barra-menu">
+    </div>
+      
+        <nav id="menu-horizontal" class="section navigation">
+          <ul class="barra-apoio">
+           
+                        <li class="first link-dados"><a href="/dataset/">Dados</a></li>
+                        <li class="link-organizacoes"><a href="/organization/">Organizações</a></li>
+                        <li class="link-aplicativos"><a href="/group">Temas</a></li>
+                        <li class="link-aplicativos"><a href="/aplicativos/">Aplicativos</a></li>
+                        <li class="link-inventarios"><a href="/pagina/manuais-e-orientacoes/">Manuais e orientações</a></li>
+                <li class="link-wiki"><a href="http://wiki.dados.gov.br/">Política de Dados Abertos</a></li>
+                <li class="link-perguntas-frequentes"><a href="/pagina/faq/">Perguntas frequentes</a></li>
+                <li class="link-statistics"><a href="/statistics/reports/statistics.html">Estatísticas</a></li>
+                <li class="link-contato"><a href="/pagina/contato/">Contato</a></li>
+                <!-- <li class="link-sobre"><a href="/user/login">Login</a></li> -->
+          </ul>
+        </nav>
+      
+</header>
+
+  
+    <div role="main" id="pagina">
+      <div id="content" class="container">
+        
+          
+            <div class="flash-messages">
+              
+                
+              
+            </div>
+          
+
+          
+            <div class="toolbar">
+              
+                
+              
+            </div>
+          
+
+          <div class="row wrapper no-nav">
+
+            
+            
+            
+
+            
+  <div class="secondary">
+    
+    
+      <article class="module">
+        
+          <header class="module-content page-header">
+            <h1>O que são dados abertos?</h1>
+          </header>
+        
+        <div class="module-content">
+          <p><section class="conteudo">Segundo a <a href="http://opendefinition.org/" target="_blank">definição</a> da <a href="https://okfn.org" target="_blank">Open Knowledge Internacional</a>, em suma,</p>
+<blockquote><p>dados são abertos quando qualquer pessoa pode livremente acessá-los, utilizá-los, modificá-los e compartilhá-los para qualquer finalidade, estando sujeito a, no máximo, a exigências que visem preservar sua proveniência e sua abertura.</p></blockquote>
+<p>Isso geralmente é satisfeito pela publicação dos dados em formato aberto e sob uma <a href="http://opendefinition.org/licenses/" target="_blank">licença aberta</a>.</p>
+<p>Os dados abertos também são pautados pelas três leis  e oito princípios.</p>
+<h2><i class="icon-check"></i> As três leis</h2>
+<p>As chamadas <a href="http://eaves.ca/2009/09/30/three-law-of-open-government-data/" target="_blank">três &#8220;leis&#8221; dos dados abertos</a> não são leis no sentido literal, promulgadas por algum Estado. São, em suma, um conjunto de testes para avaliar se um dado pode, de fato, ser considerado aberto. Elas foram propostas pelo especialista em políticas públicas, ativista dos dados abertos e palestrante de políticas públicas na Harvard Kennedy School of Government <a href="http://eaves.ca/about/" target="_blank">David Eaves</a>. São elas:</p>
+<ol>
+<li>Se o dado não pode ser encontrado e indexado na Web, ele não existe;</li>
+<li>Se não estiver aberto e disponível em formato compreensível por máquina, ele não pode ser reaproveitado; e</li>
+<li>Se algum dispositivo legal não permitir sua replicação, ele não é útil.</li>
+</ol>
+<p>As leis foram propostas para os dados abertos governamentais, mas pode-se dizer que elas se aplicam aos dados abertos de forma geral, mesmo fora de ambientes governamentais. Por exemplo, em empresas privadas, organizações da sociedade civil e organismos internacionais.</p>
+<p><i class="icon-lightbulb"></i> <strong>Você sabia?</strong> Dados também podem ser abertos voluntariamente por organizações privadas, por diversos motivos. Nos últimos anos, especialistas têm discutido a abertura de dados pelo setor privado para ações que beneficiam o <a href="https://www.techatbloomberg.com/blog/stefaan-verhulst-unlocking-private-data-public-good/" target="_blank">interesse</a> <a href="https://thelivinglib.org/how-the-data-that-internet-companies-collect-can-be-used-for-the-public-good/" target="_blank">público</a>, os chamados &#8220;<a href="http://datacollaboratives.org/" target="_blank">colaborativos de dados</a>&#8220;.</p>
+<h2><i class="icon-list-ol"></i> Os oito princípios</h2>
+<p>Em 2007, um <a href="http://www.opengovdata.org/" target="_blank">grupo de trabalho</a> de 30 pessoas reuniu-se na Califórnia, Estados Unidos da América, para definir os princípios dos Dados Abertos Governamentais. Chegaram num consenso sobre os seguintes <a href="https://public.resource.org/8_principles.html" target="_blank">8 princípios</a>:</p>
+<ol>
+<li><strong>Completos.</strong> Todos os dados públicos são disponibilizados. Dados são informações eletronicamente gravadas, incluindo, mas não se limitando a, documentos, bancos de dados, transcrições e gravações audiovisuais. Dados públicos são dados que não estão sujeitos a limitações válidas de privacidade, segurança ou controle de acesso, reguladas por estatutos.</li>
+<li><strong>Primários.</strong> Os dados são publicados na forma coletada na fonte, com a mais fina granularidade possível, e não de forma agregada ou transformada.</li>
+<li><strong>Atuais.</strong> Os dados são disponibilizados o quão rapidamente seja necessário para preservar o seu valor.</li>
+<li><strong>Acessíveis.</strong> Os dados são disponibilizados para o público mais amplo possível e para os propósitos mais variados possíveis.</li>
+<li><strong>Processáveis por máquina.</strong> Os dados são razoavelmente estruturados para possibilitar o seu processamento automatizado.</li>
+<li><strong>Acesso não discriminatório.</strong> Os dados estão disponíveis a todos, sem que seja necessária identificação ou registro.</li>
+<li><strong>Formatos não proprietários.</strong> Os dados estão disponíveis em um formato sobre o qual nenhum ente tenha controle exclusivo.</li>
+<li><strong>Licenças livres.</strong> Os dados não estão sujeitos a restrições por regulações de direitos autorais, marcas, patentes ou segredo industrial. Restrições razoáveis de privacidade, segurança e controle de acesso podem ser permitidas na forma regulada por estatutos.</li>
+</ol>
+<p>Além disso, o grupo afirmou que a conformidade com esses princípios precisa ser verificável e uma pessoa deve ser designada como contato responsável pelos dados.</p>
+<h2><i class="icon-puzzle-piece"></i> Os cinco motivos para abertura dos dados</h2>
+<div style="float: right; margin: 0 0 1em 1em;"></div>
+<p>A publicação <em><a href="https://portal.tcu.gov.br/biblioteca-digital/cinco-motivos-para-a-abertura-de-dados-na-administracao-publica.htm" target="_blank">5 motivos para a abertura de dados na Administração Pública</a></em> elaborada pelo Tribunal de Contas da União, apresenta razões para que as organizações públicas invistam em iniciativas de abertura de dados governamentais.</p>
+<p>Os cinco motivos para a abertura dos dados são:</p>
+<ol>
+<li>Transparência na gestão pública;</li>
+<li>Contribuição da sociedade com serviços inovadores ao cidadão;</li>
+<li>Aprimoramento na qualidade dos dados governamentais;</li>
+<li>Viabilização de novos negócios;</li>
+<li>Obrigatoriedade por lei.</li>
+</ol>
+<h2><i class="fa fa-balance-scale"></i> Abrir dados é uma obrigação legal?</h2>
+<p>Para a administração pública, sim. A <a href="https://www.lexml.gov.br/urn/urn:lex:br:federal:lei:2011-11-18;12527" target="_blank">Lei de Acesso à Informação</a> – LAI se aplica aos órgãos públicos da administração direta e entes da administração indireta dos Poderes Executivo, Legislativo, incluindo as Cortes de Contas, e Judiciário e do Ministério Público, em todas as esferas (art. 1ª, parágrafo único).</p>
+<p>No que diz respeito à transparência ativa, a LAI traz consigo conceitos de dados abertos, em especial em seu art. 8º:</p>
+<blockquote><p>Art. 8º É dever dos órgãos e entidades públicas promover, independentemente de requerimentos, a divulgação em local de fácil acesso, no âmbito de suas competências, de informações de interesse coletivo ou geral por eles produzidas ou custodiadas.</p>
+<p>(&#8230;)</p>
+<p>§ 2º Para cumprimento do disposto no caput, os órgãos e entidades públicas deverão utilizar todos os meios e instrumentos legítimos de que dispuserem, sendo obrigatória a divulgação em sítios oficiais da rede mundial de computadores (internet).</p>
+<p>§ 3º Os sítios de que trata o § 2º deverão, na forma de regulamento, atender, entre outros, aos seguintes requisitos:</p>
+<p>(&#8230;)</p>
+<p>II &#8211; possibilitar a gravação de relatórios em diversos formatos eletrônicos, inclusive abertos e não proprietários, tais como planilhas e texto, de modo a facilitar a análise das informações;</p>
+<p>III &#8211; possibilitar o acesso automatizado por sistemas externos em formatos abertos, estruturados e legíveis por máquina;</p></blockquote>
+<p>A lei também define as hipóteses de sigilo e de informações pessoais, que são consideradas exceções à regra geral de que os dados devem ser abertos.</p>
+<h2><i class="icon-coffee"></i> Quem usa dados abertos?</h2>
+<p>Qualquer pessoa com conhecimentos técnicos básicos de tratamento de dados, o chamado &#8220;<a href="https://en.wikipedia.org/wiki/Data_literacy" target="_blank">letramento de dados&#8221;</a>. Existem diversos cursos na internet voltados a ensinar essas habilidades, como, por exemplo, os da <a href="https://escoladedados.org/" target="_blank">Escola de Dados</a>, que são direcionados ao uso de dados abertos. Exemplos de perfis de pessoas que usam dados abertos são acadêmicos, <a href="https://pt.wikipedia.org/wiki/Jornalismo_guiado_por_dados" target="_blank">jornalistas</a>, <a href="https://pt.wikipedia.org/wiki/Ci%C3%AAncia_de_dados" target="_blank">cientistas de dados</a> em <a href="http://www.opendata500.com/" target="_blank">empresas privadas</a>, organizações da sociedade civil e nas diversas instâncias de governo. Para conhecer alguns exemplos de uso de dados, como visualizações, infográficos e análises, veja a seção &#8220;<a href="/aplicativos">aplicativos</a>&#8220;.</p>
+<h2><i class="icon-flag"></i> Dados abertos no Brasil</h2>
+<p>Além da iniciativa nacional <a href="/pagina/sobre">deste portal</a>, há diversos <a href="/pagina/outras-iniciativas/">programas de dados abertos</a> que têm sido implementados nas diversas esferas e poderes da administração pública no Brasil.</p>
+<h2></h2>
+</section>
+</p>
+        </div>
+      </article>
+    
+  </div>
+
+
+            
+
+          </div>
+        
+      </div>
+    </div>
+  
+    
+
+<div class="container">
+  
+  <div class="footer outer">
+    <div class="footer inner bs3">
+      <footer>
+        <!-- Navegação do Rodapé -->
+        <div class="row">
+          <div class="col-md-4" id="portal">
+            <h3> O Portal </h3>
+            <ul>
+              <li>
+                <a href="/dataset/"> Cat&aacute;logo de Dados </a>
+              </li>
+              <li>
+                <a href="/organization/"> Organizações </a>
+              </li>
+              <li>
+                <a href="/aplicativos/"> Aplicativos </a>
+              </li>
+              <li>
+                <a href="/pagina/manuais-e-orientacoes/"> Manuais e orientações </a>
+              </li>
+              <li>
+                <a href="/pagina/faq/"> Perguntas frequentes </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4" id="about">
+            <h3> Saiba mais </h3>
+            <ul>
+              <li>
+                <a target="_blank" href="/pagina/dados-abertos"> O que são dados abertos? </a>
+              </li>
+              <li>
+                <a target="_blank" href="http://wiki.dados.gov.br/"> Política de Dados Abertos  </a>
+              </li>
+              <li>
+                <a target="_blank" href="https://www.gov.br/acessoainformacao/pt-br"> Lei de acesso a informação </a>
+              </li>
+              <li>
+                <a href="https://formularios.cgu.gov.br/index.php/survey/index/sid/361217/newtest/Y/lang/pt-BR"> Formulário eletrônico para publicação de Planos de Dados Abertos </a>
+              </li>
+              <li>
+                <a target="_blank" href="http://paineis.cgu.gov.br/dadosabertos/index.htm"> Painel de Monitoramento de Dados Abertos </a>
+              </li>
+              <li>
+                <a target="_blank" href="https://www.gov.br/cgu/pt-br/governo-aberto"> Parceria para Governo Aberto </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-12 visible-sm" style="text-align: center">
+            <hr class="divisor">
+          </div>
+          <div class="col-md-4" id="manuais">
+            <h3> Contato </h3>
+             <ul>
+              <li>
+                <a href="/pagina/contato"> Entre em contato </a>
+              </li>
+              <li>
+                <a target="_blank" href="https://falabr.cgu.gov.br/"> Faça um pedido de informação ou manifestação de ouvidoria  </a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+        <!-- FIM Navegação do Rodapé -->
+
+            <div class="attribution">
+              
+              <p><strong>Impulsionado por</strong> <a class="hide-text ckan-footer-logo" href="http://ckan.org">CKAN</a></p>
+              
+            </div>
+          </div><!-- /.col-xs-6 -->
+
+
+          <div class="col-xs-6">
+            <div>
+              <a href="http://www.brasil.gov.br/" id="logo-brasil">
+                <!-- <img src="/img/brasil2.png" alt="Brasil - Governo Federal"/> -->
+              </a>
+            </div>
+          </div><!-- /.col-xs-6 -->
+
+        </div><!-- /.row -->
+
+      </footer>
+    </div>
+  </div>
+  
+</div>
+
+    
+    
+    
+</div>
+
+
+
+  <script src="https://barra.brasil.gov.br/barra.js" type="text/javascript"></script>
+
+
+  <!-- GA -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-1665737-34"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-1665737-34');
+</script>
+  <!-- End GA -->
+  
+    
+    
+    
+  
+
+      
+      
+
+      
+
+      
+  <script>document.getElementsByTagName('html')[0].className += ' js';</script>
+<script type="text/javascript" src="/fanstatic/vendor/:version:2022-04-01T17:27:31/jquery.min.js"></script>
+<script type="text/javascript" src="/fanstatic/vendor/:version:2022-04-01T17:27:31/:bundle:bootstrap/js/bootstrap.min.js;jed.min.js;moment-with-locales.js;select2/select2.min.js"></script>
+<script type="text/javascript" src="/fanstatic/base/:version:2022-04-01T17:27:31/:bundle:plugins/jquery.inherit.min.js;plugins/jquery.proxy-all.min.js;plugins/jquery.url-helpers.min.js;plugins/jquery.date-helpers.min.js;plugins/jquery.slug.min.js;plugins/jquery.slug-preview.min.js;plugins/jquery.truncator.min.js;plugins/jquery.masonry.min.js;plugins/jquery.form-warning.min.js;sandbox.min.js;module.min.js;pubsub.min.js;client.min.js;notify.min.js;i18n.min.js;main.min.js;modules/select-switch.min.js;modules/slug-preview.min.js;modules/basic-form.min.js;modules/confirm-action.min.js;modules/api-info.min.js;modules/autocomplete.min.js;modules/custom-fields.min.js;modules/data-viewer.min.js;modules/table-selectable-rows.min.js;modules/resource-form.min.js;modules/resource-upload-field.min.js;modules/resource-reorder.min.js;modules/resource-view-reorder.min.js;modules/follow.min.js;modules/activity-stream.min.js;modules/dashboard.min.js;modules/resource-view-embed.min.js;view-filters.min.js;modules/resource-view-filters-form.min.js;modules/resource-view-filters.min.js;modules/table-toggle-more.min.js;modules/dataset-visibility.min.js;modules/media-grid.min.js;modules/image-upload.min.js"></script></body>
+</html>

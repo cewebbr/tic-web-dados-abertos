@@ -1,0 +1,1016 @@
+
+<!DOCTYPE html>
+<!--[if IE 9]> <html lang="pt_BR" class="ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="pt_BR"> <!--<![endif]-->
+  <head>
+    <link rel="stylesheet" type="text/css" href="/fanstatic/vendor/:version:2022-01-06T02:10:57.30/select2/select2.css" />
+<link rel="stylesheet" type="text/css" href="/fanstatic/css/:version:2022-01-06T02:10:57.07/main.min.css" />
+<link rel="stylesheet" type="text/css" href="/fanstatic/vendor/:version:2022-01-06T02:10:57.30/font-awesome/css/font-awesome.min.css" />
+
+    <meta charset="utf-8" />
+      <meta name="generator" content="ckan 2.8.3" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campanha Nacional de Vacinação contra Covid-19 - Conjuntos de dados - OPENDATASUS</title>
+
+    
+    <link rel="shortcut icon" href="/base/images/ckan.ico" />
+    
+      
+    
+
+    
+      
+      
+    
+  
+  <meta property="og:title" content="Campanha Nacional de Vacinação contra Covid-19 - OPENDATASUS">
+  <meta property="og:description" content="Contexto
+O Ministério da Saúde, por meio do Sistema de Informação do Programa Nacional de Imunizações (SI-PNI), disponibiliza nesta página dados referentes à Campanha Nacional de Vacinação contra...">
+
+    
+  </head>
+
+  
+  <body data-site-root="https://opendatasus.saude.gov.br/" data-locale-root="https://opendatasus.saude.gov.br/" >
+
+    
+    <div class="hide"><a href="#content">Pular para o conteúdo</a></div>
+  
+
+  
+     
+<header class="account-masthead">
+  <div class="container">
+     
+    <nav class="account not-authed">
+      <ul class="list-unstyled">
+        
+        <li><a href="/user/login">Entrar</a></li>
+        
+        <li><a class="sub" href="/user/register">Registrar</a></li>
+         
+      </ul>
+    </nav>
+     
+  </div>
+</header>
+
+<header id="main-header" class="navbar navbar-static-top masthead">
+    
+  <div class="container">
+    <div class="navbar-right">
+      <button data-target="#main-navigation-toggle" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
+        <span class="fa fa-bars"></span>
+      </button>
+    </div>
+    
+    <div class="row datasus_topo">
+      <div class="col-md-6 col-lg-8 col-xs-6 title-wrapper">
+        <hgroup class="header-image navbar-left">
+           
+          <a class="logo" href="/"><img src="/uploads/admin/2022-01-11-175249.705028OpenDatasusLogoBranca.png" alt="OPENDATASUS" title="OPENDATASUS" /></a>
+           
+        </hgroup>
+      </div>
+    </div>
+    <div class="row datasus_menu">
+
+      <div class="collapse navbar-collapse" id="main-navigation-toggle">
+        
+        <nav class="section navigation">
+          <ul class="nav nav-pills pull-left">
+             <li><a href="/dataset">Conjuntos de dados</a></li><li><a href="/organization">Organizações</a></li><li><a href="/group">Grupos</a></li><li><a href="/about">Sobre</a></li> 
+          </ul>
+        </nav>
+         
+        <form class="section site-search simple-input pull-right" action="/dataset" method="get">
+          <div class="field">
+            <label for="field-sitewide-search">Buscar conjunto de dados</label>
+            <input id="field-sitewide-search" type="text" class="form-control" name="q" placeholder="Pesquisar" />
+            <button class="btn-search" type="submit"><i class="fa fa-search"></i></button>
+          </div>
+        </form>
+        
+      </div>
+    </div>
+  </div>
+</header>
+
+  
+    <div role="main">
+      <div id="content" class="container">
+        
+          
+            <div class="flash-messages">
+              
+                
+              
+            </div>
+          
+
+          
+            <div class="toolbar">
+              
+                
+                  <ol class="breadcrumb">
+                    
+<li class="home"><a href="/"><i class="fa fa-home"></i><span> Início</span></a></li>
+                    
+  
+    
+    
+      
+      
+      <li><a href="/organization">Organizações</a></li>
+      <li><a href="/organization/ministerio-da-saude">Ministério da Saúde</a></li>
+    
+    <li class="active"><a class=" active" href="/dataset/covid-19-vacinacao">Campanha Nacional de ...</a></li>
+  
+
+                  </ol>
+                
+              
+            </div>
+          
+
+          <div class="row wrapper">
+            
+            
+            
+
+            
+              <aside class="secondary col-sm-3">
+                
+                
+
+  
+
+  
+    
+
+  
+    <section class="module module-narrow">
+      <div class="module context-info">
+        <div class="module-content">
+          
+            
+              <h1 class="heading">Campanha Nacional de Vacinação contra Covid-19</h1>
+            
+            
+              
+              <div class="nums">
+                <dl>
+                  <dt>Seguidores</dt>
+                  <dd data-module="followers-counter" data-module-id="8e0c325d-2586-4b11-8925-4ba51acd6e6d" data-module-num_followers="2"><span>2</span></dd>
+                </dl>
+              </div>
+            
+            
+              
+                <div class="follow_button">
+                  
+                </div>
+              
+            
+          
+        </div>
+      </div>
+    </section>
+  
+
+  
+
+  
+    
+      
+      
+
+
+
+
+  
+  <div class="module module-narrow module-shallow context-info">
+    
+      <h2 class="module-heading"><i class="fa fa-building-o"></i> Organização</h2>
+    
+    <section class="module-content">
+      
+      
+        <div class="image">
+          <a href="/organization/ministerio-da-saude">
+            <img src="https://opendatasus.saude.gov.br/uploads/group/2022-01-11-181122.577845logoms.png" width="200" alt="ministerio-da-saude" />
+          </a>
+        </div>
+      
+      
+      <h1 class="heading">Ministério da Saúde
+        
+      </h1>
+      
+      
+      
+        <p class="empty">Não há descrição para essa organização</p>
+      
+      
+      
+      
+    </section>
+  </div>
+  
+    
+  
+
+  
+    
+
+  <section class="module module-narrow social">
+    
+      <h2 class="module-heading"><i class="fa fa-share-square-o"></i> Social</h2>
+    
+    
+      <ul class="nav nav-simple">
+        <li class="nav-item"><a href="https://twitter.com/share?url=https://opendatasus.saude.gov.br/dataset/covid-19-vacinacao" target="_blank"><i class="fa fa-twitter-square"></i> Twitter</a></li>
+        <li class="nav-item"><a href="https://www.facebook.com/sharer.php?u=https://opendatasus.saude.gov.br/dataset/covid-19-vacinacao" target="_blank"><i class="fa fa-facebook-square"></i> Facebook</a></li>
+      </ul>
+    
+  </section>
+
+  
+
+  
+    
+
+
+  
+    
+      
+        <section class="module module-narrow module-shallow license">
+          
+            <h2 class="module-heading"><i class="fa fa-lock"></i> Licença</h2>
+          
+          
+            <p class="module-content">
+              
+                
+  
+    <a href="http://www.opendefinition.org/licenses/cc-by" rel="dc:rights">Creative Commons Atribuição</a>
+  
+
+                
+                  <a href="http://opendefinition.org/okd/" title="Este conjunto de dados satisfaz a Definição de Aberto - Open Definition.">
+                      <img class="open-data" src="/base/images/od_80x15_blue.png" alt="[Open Data]" />
+                  </a>
+                
+              
+            </p>
+          
+        </section>
+      
+    
+  
+
+  
+
+
+              </aside>
+            
+
+            
+              <div class="primary col-sm-9 col-xs-12">
+                
+                
+                  <article class="module">
+                    
+                      <header class="module-content page-header">
+                        
+                        <ul class="nav nav-tabs">
+                          
+  <li class="active"><a href="/dataset/covid-19-vacinacao"><i class="fa fa-sitemap"></i> Conjunto de dados</a></li>
+  <li><a href="/dataset/groups/covid-19-vacinacao"><i class="fa fa-users"></i> Grupos</a></li>
+  <li><a href="/dataset/activity/covid-19-vacinacao"><i class="fa fa-clock-o"></i> Fluxo de Atividades</a></li>
+
+                        </ul>
+                      </header>
+                    
+                    <div class="module-content">
+                      
+                      
+  
+    
+      
+    
+
+  
+    
+    <h1>
+      
+        Campanha Nacional de Vacinação contra Covid-19
+        
+        
+      
+    </h1>
+    
+      
+        <div class="notes embedded-content">
+          <h3>Contexto</h3>
+<p>O Ministério da Saúde, por meio do Sistema de Informação do Programa Nacional de Imunizações (SI-PNI), disponibiliza nesta página dados referentes à Campanha Nacional de Vacinação contra Covid-19 para análise de instituições interessadas e do público.</p>
+<h3>Objetivo</h3>
+<p>Esta página tem como finalidade disponibilizar os registros de vacinação contra Covid-19, sem identificação do cidadão (anonimizados), contidos na Rede Nacional de Dados em Saúde (RNDS), desde o início da Campanha. São dados disponibilizados pela SI-PNI, e-SUS APS e dos sistemas próprios de estados e municípios que estão devidamente integrados com a RNDS. Os dados disponíveis no OpenDatasus englobam o número de doses aplicadas, por UF e municípios, por um determinado período, por gênero, por faixa etária e por tipo de vacina. Consta ainda com o percentual de vacinados, as coberturas vacinais (CV) do Brasil, das UF e dos municípios, CV em um determinado período, por gênero, por faixa etária e o mapa de distribuição espacial das coberturas vacinais segundo as UF e municípios.</p>
+<p>Os registros de vacinação foram coletados com base nos seguintes instrumentos normativos:</p>
+<p>Medida Provisória nº 1.026, de 6 de janeiro de 2021, dispõe sobre as medidas excepcionais relativas à aquisição de vacinas, insumos, bens e serviços de logística, tecnologia da informação e comunicação, comunicação social e publicitária e treinamentos destinados à vacinação contra a covid-19 e sobre o Plano Nacional de Operacionalização da Vacinação contra a Covid-19.</p>
+<p>Portaria GM/MS nº 69, de 14 de janeiro de 2021 – institui a obrigatoriedade de registro de aplicação de vacinas contra Covid-19 nos sistemas de informação do Ministério da Saúde.</p>
+<p>Nota Informativa nº 1/2021 – CGPNI/DEIDT/SVS/MS, de 10 de janeiro de 2021, dispõe sobre as orientações para o registro de vacinas no sistema de informação e sobre acesso às informações referentes à vacinação contra Covid-19.</p>
+<h3>Avisos</h3>
+<p>A disseminação do conjunto de dados de Vacinação da COVID-19 está suspensa para manutenção técnica. A previsão de retorno é terça-feira (17/08/2021).</p>
+        </div>
+      
+    
+    
+    <span class="insert-comment-thread"></span>
+  
+
+  
+    
+<section id="dataset-resources" class="resources">
+  <h3>Dados e recursos</h3>
+  
+    
+      <ul class="resource-list">
+        
+          
+          
+            
+
+
+<li class="resource-item" data-id="a8308b58-8898-4c6d-8119-400c722c71b5">
+  
+  <a class="heading" href="/dataset/covid-19-vacinacao/resource/a8308b58-8898-4c6d-8119-400c722c71b5" title="Dicionário de Dados">
+    Dicionário de Dados<span class="format-label" property="dc:format" data-format="pdf">PDF</span>
+    
+
+  </a>
+  
+  
+    <p class="description">
+      
+    </p>
+  
+  
+  
+  <div class="dropdown btn-group">
+    <a href="#" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+      <i class="fa fa-share"></i>
+      Explorar
+      <span class="caret"></span>
+    </a>
+    <ul class="dropdown-menu">
+      
+      <li>
+        <a href="/dataset/covid-19-vacinacao/resource/a8308b58-8898-4c6d-8119-400c722c71b5">
+          
+            <i class="fa fa-info-circle"></i>
+            Mais informações
+          
+        </a>
+      </li>
+      
+      <li>
+        <a href="https://opendatasus.saude.gov.br/dataset/8e0c325d-2586-4b11-8925-4ba51acd6e6d/resource/a8308b58-8898-4c6d-8119-400c722c71b5/download/dicionario-de-dados-vacinacao.pdf" class="resource-url-analytics" target="_blank">
+          
+            <i class="fa fa-arrow-circle-o-down"></i>
+            Baixar
+          
+        </a>
+      </li>
+      
+      
+      
+    </ul>
+  </div>
+  
+  
+</li>
+          
+            
+
+
+<li class="resource-item" data-id="84707ab9-8497-4f2f-8a0d-b873489a63bf">
+  
+  <a class="heading" href="/dataset/covid-19-vacinacao/resource/84707ab9-8497-4f2f-8a0d-b873489a63bf" title="Manual para Consumo da API">
+    Manual para Consumo da API<span class="format-label" property="dc:format" data-format="pdf">PDF</span>
+    
+
+  </a>
+  
+  
+    <p class="description">
+      
+    </p>
+  
+  
+  
+  <div class="dropdown btn-group">
+    <a href="#" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+      <i class="fa fa-share"></i>
+      Explorar
+      <span class="caret"></span>
+    </a>
+    <ul class="dropdown-menu">
+      
+      <li>
+        <a href="/dataset/covid-19-vacinacao/resource/84707ab9-8497-4f2f-8a0d-b873489a63bf">
+          
+            <i class="fa fa-info-circle"></i>
+            Mais informações
+          
+        </a>
+      </li>
+      
+      <li>
+        <a href="https://opendatasus.saude.gov.br/dataset/8e0c325d-2586-4b11-8925-4ba51acd6e6d/resource/84707ab9-8497-4f2f-8a0d-b873489a63bf/download/manual_api_vacina_covid-19.pdf" class="resource-url-analytics" target="_blank">
+          
+            <i class="fa fa-arrow-circle-o-down"></i>
+            Baixar
+          
+        </a>
+      </li>
+      
+      
+      
+    </ul>
+  </div>
+  
+  
+</li>
+          
+            
+
+
+<li class="resource-item" data-id="82743aa8-a77a-40d4-9bb6-6a733c5e57ee">
+  
+  <a class="heading" href="/dataset/covid-19-vacinacao/resource/82743aa8-a77a-40d4-9bb6-6a733c5e57ee" title="Registros de Vacinação COVID19">
+    Registros de Vacinação COVID19<span class="format-label" property="dc:format" data-format="api">API</span>
+    
+
+  </a>
+  
+  
+    <p class="description">
+      
+        Nome do índice: desc-imunizacao
+API com os registros de vacinação em todo o...
+      
+    </p>
+  
+  
+  
+  <div class="dropdown btn-group">
+    <a href="#" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+      <i class="fa fa-share"></i>
+      Explorar
+      <span class="caret"></span>
+    </a>
+    <ul class="dropdown-menu">
+      
+      <li>
+        <a href="/dataset/covid-19-vacinacao/resource/82743aa8-a77a-40d4-9bb6-6a733c5e57ee">
+          
+            <i class="fa fa-info-circle"></i>
+            Mais informações
+          
+        </a>
+      </li>
+      
+      <li>
+        <a href="https://imunizacao-es.saude.gov.br/desc-imunizacao/_search" class="resource-url-analytics" target="_blank">
+          
+            <i class="fa fa-external-link"></i>
+            Ir para recurso
+          
+        </a>
+      </li>
+      
+      
+      
+    </ul>
+  </div>
+  
+  
+</li>
+          
+            
+
+
+<li class="resource-item" data-id="301983f2-aa50-4977-8fec-cfab0806cb0b">
+  
+  <a class="heading" href="/dataset/covid-19-vacinacao/resource/301983f2-aa50-4977-8fec-cfab0806cb0b" title="Registros de Vacinação COVID19 - Dados Completos">
+    Registros de Vacinação COVID19 - Dados Completos<span class="format-label" property="dc:format" data-format="csv">CSV</span>
+    
+
+  </a>
+  
+  
+    <p class="description">
+      
+            - [Dados Completos - Parte...
+      
+    </p>
+  
+  
+  
+  <div class="dropdown btn-group">
+    <a href="#" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+      <i class="fa fa-share"></i>
+      Explorar
+      <span class="caret"></span>
+    </a>
+    <ul class="dropdown-menu">
+      
+      <li>
+        <a href="/dataset/covid-19-vacinacao/resource/301983f2-aa50-4977-8fec-cfab0806cb0b">
+          
+            <i class="fa fa-bar-chart-o"></i>
+            Pré-visualização
+          
+        </a>
+      </li>
+      
+      
+      
+    </ul>
+  </div>
+  
+  
+</li>
+          
+            
+
+
+<li class="resource-item" data-id="5093679f-12c3-4d6b-b7bd-07694de54173">
+  
+  <a class="heading" href="/dataset/covid-19-vacinacao/resource/5093679f-12c3-4d6b-b7bd-07694de54173" title="Registros de Vacinação COVID19 - AC até MT">
+    Registros de Vacinação COVID19 - AC até MT<span class="format-label" property="dc:format" data-format="csv">CSV</span>
+    
+
+  </a>
+  
+  
+    <p class="description">
+      
+        - [Dados AC - Parte...
+      
+    </p>
+  
+  
+  
+  <div class="dropdown btn-group">
+    <a href="#" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+      <i class="fa fa-share"></i>
+      Explorar
+      <span class="caret"></span>
+    </a>
+    <ul class="dropdown-menu">
+      
+      <li>
+        <a href="/dataset/covid-19-vacinacao/resource/5093679f-12c3-4d6b-b7bd-07694de54173">
+          
+            <i class="fa fa-bar-chart-o"></i>
+            Pré-visualização
+          
+        </a>
+      </li>
+      
+      
+      
+    </ul>
+  </div>
+  
+  
+</li>
+          
+            
+
+
+<li class="resource-item" data-id="10aed154-04c8-4cf4-b78a-8f0fa1bc5af4">
+  
+  <a class="heading" href="/dataset/covid-19-vacinacao/resource/10aed154-04c8-4cf4-b78a-8f0fa1bc5af4" title="Registros de Vacinação COVID19 - PA até TO">
+    Registros de Vacinação COVID19 - PA até TO<span class="format-label" property="dc:format" data-format="csv">CSV</span>
+    
+
+  </a>
+  
+  
+    <p class="description">
+      
+        - [Dados PA - Parte...
+      
+    </p>
+  
+  
+  
+  <div class="dropdown btn-group">
+    <a href="#" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+      <i class="fa fa-share"></i>
+      Explorar
+      <span class="caret"></span>
+    </a>
+    <ul class="dropdown-menu">
+      
+      <li>
+        <a href="/dataset/covid-19-vacinacao/resource/10aed154-04c8-4cf4-b78a-8f0fa1bc5af4">
+          
+            <i class="fa fa-bar-chart-o"></i>
+            Pré-visualização
+          
+        </a>
+      </li>
+      
+      
+      
+    </ul>
+  </div>
+  
+  
+</li>
+          
+        
+      </ul>
+    
+    
+</section>
+  
+
+  
+    
+  
+
+  
+    <section class="additional-info">
+  <h3>Informações Adicionais</h3>
+  <table class="table table-striped table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th scope="col">Campo</th>
+        <th scope="col">Valor</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        
+
+        
+
+        
+
+        
+
+        
+        
+          <tr>
+            <th scope="row" class="dataset-label">Última Atualização</th>
+            <td class="dataset-details">
+                
+<span class="automatic-local-datetime" data-datetime="2022-05-30T00:53:04+0000">
+    30 de Maio de 2022, 00:53 (UTC)
+</span>
+            </td>
+          </tr>
+        
+        
+          <tr>
+            <th scope="row" class="dataset-label">Criado</th>
+
+            <td class="dataset-details">
+                
+<span class="automatic-local-datetime" data-datetime="2022-01-11T18:34:33+0000">
+    11 de Janeiro de 2022, 18:34 (UTC)
+</span>
+            </td>
+          </tr>
+        
+
+      
+        
+          
+          <tr rel="dc:relation" resource="_:extra">
+            <th scope="row" class="dataset-label" property="rdfs:label">Cobertura Geográfica</th>
+            <td class="dataset-details" property="rdf:value">Nacional</td>
+          </tr>
+        
+          
+          <tr rel="dc:relation" resource="_:extra">
+            <th scope="row" class="dataset-label" property="rdfs:label">Cobertura Temporal</th>
+            <td class="dataset-details" property="rdf:value">A partir de 18 de janeiro de 2021</td>
+          </tr>
+        
+          
+          <tr rel="dc:relation" resource="_:extra">
+            <th scope="row" class="dataset-label" property="rdfs:label">Contato</th>
+            <td class="dataset-details" property="rdf:value">dadosabertos@saude.gov.br</td>
+          </tr>
+        
+          
+          <tr rel="dc:relation" resource="_:extra">
+            <th scope="row" class="dataset-label" property="rdfs:label">Frequência Atualização</th>
+            <td class="dataset-details" property="rdf:value">Diária</td>
+          </tr>
+        
+          
+          <tr rel="dc:relation" resource="_:extra">
+            <th scope="row" class="dataset-label" property="rdfs:label">Granularidade Geográfica</th>
+            <td class="dataset-details" property="rdf:value">Município</td>
+          </tr>
+        
+          
+          <tr rel="dc:relation" resource="_:extra">
+            <th scope="row" class="dataset-label" property="rdfs:label">Granularidade temporal</th>
+            <td class="dataset-details" property="rdf:value">Dia</td>
+          </tr>
+        
+          
+          <tr rel="dc:relation" resource="_:extra">
+            <th scope="row" class="dataset-label" property="rdfs:label">Referências</th>
+            <td class="dataset-details" property="rdf:value">Classificação Brasileira de Ocupações (MTE), Tabela de Código de Municípios (IBGE), Cadastro Nacional de Estabelecimentos de Saúde (CNES).</td>
+          </tr>
+        
+          
+          <tr rel="dc:relation" resource="_:extra">
+            <th scope="row" class="dataset-label" property="rdfs:label">Área Responsável</th>
+            <td class="dataset-details" property="rdf:value">Coordenação-Geral do Programa Nacional de Imunizações (CGPNI/DEIDT/SVS/MS)</td>
+          </tr>
+        
+      
+
+      
+    </tbody>
+  </table>
+</section>
+  
+
+
+                    </div>
+                  </article>
+                
+              </div>
+            
+          </div>
+        
+      </div>
+    </div>
+  
+    <footer class="site-footer">
+  <div class="container">
+    
+    <div class="row">
+      <div class="col-md-8 footer-links">
+        <img src="../../../base/images/brasil.png" width="153" alt="Logo Governo">
+      </div>
+      <div class="col-md-4 attribution">
+        
+          
+<form class="form-inline form-select lang-select" action="/util/redirect" data-module="select-switch" method="POST">
+  <label for="field-lang-select">Idioma</label>
+  <select id="field-lang-select" name="url" data-module="autocomplete" data-module-dropdown-class="lang-dropdown" data-module-container-class="lang-container">
+    
+      <option value="/pt_BR/dataset/covid-19-vacinacao" selected="selected">
+        português (Brasil)
+      </option>
+    
+      <option value="/en/dataset/covid-19-vacinacao" >
+        English
+      </option>
+    
+      <option value="/ja/dataset/covid-19-vacinacao" >
+        日本語
+      </option>
+    
+      <option value="/it/dataset/covid-19-vacinacao" >
+        italiano
+      </option>
+    
+      <option value="/cs_CZ/dataset/covid-19-vacinacao" >
+        čeština (Česká republika)
+      </option>
+    
+      <option value="/ca/dataset/covid-19-vacinacao" >
+        català
+      </option>
+    
+      <option value="/es/dataset/covid-19-vacinacao" >
+        español
+      </option>
+    
+      <option value="/fr/dataset/covid-19-vacinacao" >
+        français
+      </option>
+    
+      <option value="/el/dataset/covid-19-vacinacao" >
+        Ελληνικά
+      </option>
+    
+      <option value="/sv/dataset/covid-19-vacinacao" >
+        svenska
+      </option>
+    
+      <option value="/sr/dataset/covid-19-vacinacao" >
+        српски
+      </option>
+    
+      <option value="/no/dataset/covid-19-vacinacao" >
+        norsk bokmål (Norge)
+      </option>
+    
+      <option value="/sk/dataset/covid-19-vacinacao" >
+        slovenčina
+      </option>
+    
+      <option value="/fi/dataset/covid-19-vacinacao" >
+        suomi
+      </option>
+    
+      <option value="/ru/dataset/covid-19-vacinacao" >
+        русский
+      </option>
+    
+      <option value="/de/dataset/covid-19-vacinacao" >
+        Deutsch
+      </option>
+    
+      <option value="/pl/dataset/covid-19-vacinacao" >
+        polski
+      </option>
+    
+      <option value="/nl/dataset/covid-19-vacinacao" >
+        Nederlands
+      </option>
+    
+      <option value="/bg/dataset/covid-19-vacinacao" >
+        български
+      </option>
+    
+      <option value="/ko_KR/dataset/covid-19-vacinacao" >
+        한국어 (대한민국)
+      </option>
+    
+      <option value="/hu/dataset/covid-19-vacinacao" >
+        magyar
+      </option>
+    
+      <option value="/sl/dataset/covid-19-vacinacao" >
+        slovenščina
+      </option>
+    
+      <option value="/lv/dataset/covid-19-vacinacao" >
+        latviešu
+      </option>
+    
+      <option value="/am/dataset/covid-19-vacinacao" >
+        አማርኛ
+      </option>
+    
+      <option value="/ar/dataset/covid-19-vacinacao" >
+        العربية
+      </option>
+    
+      <option value="/da_DK/dataset/covid-19-vacinacao" >
+        dansk (Danmark)
+      </option>
+    
+      <option value="/en_AU/dataset/covid-19-vacinacao" >
+        English (Australia)
+      </option>
+    
+      <option value="/es_AR/dataset/covid-19-vacinacao" >
+        español (Argentina)
+      </option>
+    
+      <option value="/eu/dataset/covid-19-vacinacao" >
+        euskara
+      </option>
+    
+      <option value="/fa_IR/dataset/covid-19-vacinacao" >
+        فارسی (ایران)
+      </option>
+    
+      <option value="/gl/dataset/covid-19-vacinacao" >
+        galego
+      </option>
+    
+      <option value="/he/dataset/covid-19-vacinacao" >
+        עברית
+      </option>
+    
+      <option value="/hr/dataset/covid-19-vacinacao" >
+        hrvatski
+      </option>
+    
+      <option value="/id/dataset/covid-19-vacinacao" >
+        Indonesia
+      </option>
+    
+      <option value="/is/dataset/covid-19-vacinacao" >
+        íslenska
+      </option>
+    
+      <option value="/km/dataset/covid-19-vacinacao" >
+        ខ្មែរ
+      </option>
+    
+      <option value="/lt/dataset/covid-19-vacinacao" >
+        lietuvių
+      </option>
+    
+      <option value="/mk/dataset/covid-19-vacinacao" >
+        македонски
+      </option>
+    
+      <option value="/mn_MN/dataset/covid-19-vacinacao" >
+        монгол (Монгол)
+      </option>
+    
+      <option value="/ne/dataset/covid-19-vacinacao" >
+        नेपाली
+      </option>
+    
+      <option value="/pt_PT/dataset/covid-19-vacinacao" >
+        português (Portugal)
+      </option>
+    
+      <option value="/ro/dataset/covid-19-vacinacao" >
+        română
+      </option>
+    
+      <option value="/sq/dataset/covid-19-vacinacao" >
+        shqip
+      </option>
+    
+      <option value="/sr_Latn/dataset/covid-19-vacinacao" >
+        srpski (latinica)
+      </option>
+    
+      <option value="/th/dataset/covid-19-vacinacao" >
+        ไทย
+      </option>
+    
+      <option value="/tl/dataset/covid-19-vacinacao" >
+        Filipino (Pilipinas)
+      </option>
+    
+      <option value="/tr/dataset/covid-19-vacinacao" >
+        Türkçe
+      </option>
+    
+      <option value="/uk/dataset/covid-19-vacinacao" >
+        українська
+      </option>
+    
+      <option value="/uk_UA/dataset/covid-19-vacinacao" >
+        українська (Україна)
+      </option>
+    
+      <option value="/vi/dataset/covid-19-vacinacao" >
+        Tiếng Việt
+      </option>
+    
+      <option value="/zh_CN/dataset/covid-19-vacinacao" >
+        中文 (简体, 中国)
+      </option>
+    
+      <option value="/zh_TW/dataset/covid-19-vacinacao" >
+        中文 (繁體, 台灣)
+      </option>
+    
+  </select>
+  <button class="btn btn-default js-hide" type="submit">Ir</button>
+</form>
+        
+      </div>
+    </div>
+    
+  </div>
+
+  
+    
+  
+</footer>
+  
+    
+    
+    
+  
+    
+
+      
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1XYB88LPZG"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-1XYB88LPZG');
+    </script>
+  <script>document.getElementsByTagName('html')[0].className += ' js';</script>
+<script type="text/javascript" src="/fanstatic/vendor/:version:2022-01-06T02:10:57.30/jquery.min.js"></script>
+<script type="text/javascript" src="/fanstatic/vendor/:version:2022-01-06T02:10:57.30/:bundle:bootstrap/js/bootstrap.min.js;jed.min.js;moment-with-locales.js;select2/select2.min.js"></script>
+<script type="text/javascript" src="/fanstatic/base/:version:2022-01-06T02:10:57.14/:bundle:plugins/jquery.inherit.min.js;plugins/jquery.proxy-all.min.js;plugins/jquery.url-helpers.min.js;plugins/jquery.date-helpers.min.js;plugins/jquery.slug.min.js;plugins/jquery.slug-preview.min.js;plugins/jquery.truncator.min.js;plugins/jquery.masonry.min.js;plugins/jquery.form-warning.min.js;plugins/jquery.images-loaded.min.js;sandbox.min.js;module.min.js;pubsub.min.js;client.min.js;notify.min.js;i18n.min.js;main.min.js;modules/select-switch.min.js;modules/slug-preview.min.js;modules/basic-form.min.js;modules/confirm-action.min.js;modules/api-info.min.js;modules/autocomplete.min.js;modules/custom-fields.min.js;modules/data-viewer.min.js;modules/table-selectable-rows.min.js;modules/resource-form.min.js;modules/resource-upload-field.min.js;modules/resource-reorder.min.js;modules/resource-view-reorder.min.js;modules/follow.min.js;modules/activity-stream.min.js;modules/dashboard.min.js;modules/resource-view-embed.min.js;view-filters.min.js;modules/resource-view-filters-form.min.js;modules/resource-view-filters.min.js;modules/table-toggle-more.min.js;modules/dataset-visibility.min.js;modules/media-grid.min.js;modules/image-upload.min.js;modules/followers-counter.min.js"></script></body>
+</html>

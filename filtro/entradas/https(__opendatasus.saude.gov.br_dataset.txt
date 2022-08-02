@@ -1,0 +1,1665 @@
+
+<!DOCTYPE html>
+<!--[if IE 9]> <html lang="pt_BR" class="ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="pt_BR"> <!--<![endif]-->
+  <head>
+    <link rel="stylesheet" type="text/css" href="/fanstatic/vendor/:version:2022-01-06T02:10:57.30/select2/select2.css" />
+<link rel="stylesheet" type="text/css" href="/fanstatic/css/:version:2022-01-06T02:10:57.07/main.min.css" />
+<link rel="stylesheet" type="text/css" href="/fanstatic/vendor/:version:2022-01-06T02:10:57.30/font-awesome/css/font-awesome.min.css" />
+
+    <meta charset="utf-8" />
+      <meta name="generator" content="ckan 2.8.3" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conjuntos de dados - OPENDATASUS</title>
+
+    
+    <link rel="shortcut icon" href="/base/images/ckan.ico" />
+    
+      
+    
+
+    
+      
+      
+    
+    
+  </head>
+
+  
+  <body data-site-root="https://opendatasus.saude.gov.br/" data-locale-root="https://opendatasus.saude.gov.br/" >
+
+    
+    <div class="hide"><a href="#content">Pular para o conteúdo</a></div>
+  
+
+  
+     
+<header class="account-masthead">
+  <div class="container">
+     
+    <nav class="account not-authed">
+      <ul class="list-unstyled">
+        
+        <li><a href="/user/login">Entrar</a></li>
+        
+        <li><a class="sub" href="/user/register">Registrar</a></li>
+         
+      </ul>
+    </nav>
+     
+  </div>
+</header>
+
+<header id="main-header" class="navbar navbar-static-top masthead">
+    
+  <div class="container">
+    <div class="navbar-right">
+      <button data-target="#main-navigation-toggle" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
+        <span class="fa fa-bars"></span>
+      </button>
+    </div>
+    
+    <div class="row datasus_topo">
+      <div class="col-md-6 col-lg-8 col-xs-6 title-wrapper">
+        <hgroup class="header-image navbar-left">
+           
+          <a class="logo" href="/"><img src="/uploads/admin/2022-01-11-175249.705028OpenDatasusLogoBranca.png" alt="OPENDATASUS" title="OPENDATASUS" /></a>
+           
+        </hgroup>
+      </div>
+    </div>
+    <div class="row datasus_menu">
+
+      <div class="collapse navbar-collapse" id="main-navigation-toggle">
+        
+        <nav class="section navigation">
+          <ul class="nav nav-pills pull-left">
+             <li class="active"><a href="/dataset">Conjuntos de dados</a></li><li><a href="/organization">Organizações</a></li><li><a href="/group">Grupos</a></li><li><a href="/about">Sobre</a></li> 
+          </ul>
+        </nav>
+         
+        <form class="section site-search simple-input pull-right" action="/dataset" method="get">
+          <div class="field">
+            <label for="field-sitewide-search">Buscar conjunto de dados</label>
+            <input id="field-sitewide-search" type="text" class="form-control" name="q" placeholder="Pesquisar" />
+            <button class="btn-search" type="submit"><i class="fa fa-search"></i></button>
+          </div>
+        </form>
+        
+      </div>
+    </div>
+  </div>
+</header>
+
+  
+    <div role="main">
+      <div id="content" class="container">
+        
+          
+            <div class="flash-messages">
+              
+                
+              
+            </div>
+          
+
+          
+            <div class="toolbar">
+              
+                
+                  <ol class="breadcrumb">
+                    
+<li class="home"><a href="/"><i class="fa fa-home"></i><span> Início</span></a></li>
+                    
+  <li class="active"><a class=" active" href="/dataset">Conjuntos de dados</a></li>
+
+                  </ol>
+                
+              
+            </div>
+          
+
+          <div class="row wrapper">
+            
+            
+            
+
+            
+              <aside class="secondary col-sm-3">
+                
+                
+<div class="filters">
+  <div>
+    
+      
+
+  
+  
+    
+      
+      
+        <section class="module module-narrow module-shallow">
+          
+            <h2 class="module-heading">
+              <i class="fa fa-filter"></i>
+              
+              Organizações
+            </h2>
+          
+          
+            
+            
+              <nav>
+                <ul class="list-unstyled nav nav-simple nav-facet">
+                  
+                    
+                    
+                    
+                    
+                      <li class="nav-item">
+                        <a href="/dataset?organization=ministerio-da-saude" title="">
+                          <span class="item-label">Ministério da Saúde</span>
+                          <span class="hidden separator"> - </span>
+                          <span class="item-count badge">13</span>
+                        </a>
+                      </li>
+                  
+                </ul>
+              </nav>
+
+              <p class="module-footer">
+                
+                  
+                
+              </p>
+            
+            
+          
+        </section>
+      
+    
+  
+
+    
+      
+
+  
+  
+    
+      
+      
+        <section class="module module-narrow module-shallow">
+          
+            <h2 class="module-heading">
+              <i class="fa fa-filter"></i>
+              
+              Grupos
+            </h2>
+          
+          
+            
+            
+              <nav>
+                <ul class="list-unstyled nav nav-simple nav-facet">
+                  
+                    
+                    
+                    
+                    
+                      <li class="nav-item">
+                        <a href="/dataset?groups=dados-sobre-srag" title="Vigilância de Síndrome Respiratória Aguda Grave (SRAG)">
+                          <span class="item-label">Vigilância de Síndr...</span>
+                          <span class="hidden separator"> - </span>
+                          <span class="item-count badge">2</span>
+                        </a>
+                      </li>
+                  
+                    
+                    
+                    
+                    
+                      <li class="nav-item">
+                        <a href="/dataset?groups=dados-do-coranavirus" title="">
+                          <span class="item-label">Dados do CoranaVirus</span>
+                          <span class="hidden separator"> - </span>
+                          <span class="item-count badge">1</span>
+                        </a>
+                      </li>
+                  
+                </ul>
+              </nav>
+
+              <p class="module-footer">
+                
+                  
+                
+              </p>
+            
+            
+          
+        </section>
+      
+    
+  
+
+    
+      
+
+  
+  
+    
+      
+      
+        <section class="module module-narrow module-shallow">
+          
+            <h2 class="module-heading">
+              <i class="fa fa-filter"></i>
+              
+              Etiquetas
+            </h2>
+          
+          
+            
+            
+              <nav>
+                <ul class="list-unstyled nav nav-simple nav-facet">
+                  
+                    
+                    
+                    
+                    
+                      <li class="nav-item">
+                        <a href="/dataset?tags=Dados+Demogr%C3%A1ficos" title="">
+                          <span class="item-label">Dados Demográficos</span>
+                          <span class="hidden separator"> - </span>
+                          <span class="item-count badge">5</span>
+                        </a>
+                      </li>
+                  
+                    
+                    
+                    
+                    
+                      <li class="nav-item">
+                        <a href="/dataset?tags=Notifica" title="">
+                          <span class="item-label">Notifica</span>
+                          <span class="hidden separator"> - </span>
+                          <span class="item-count badge">5</span>
+                        </a>
+                      </li>
+                  
+                    
+                    
+                    
+                    
+                      <li class="nav-item">
+                        <a href="/dataset?tags=SRAG" title="">
+                          <span class="item-label">SRAG</span>
+                          <span class="hidden separator"> - </span>
+                          <span class="item-count badge">5</span>
+                        </a>
+                      </li>
+                  
+                    
+                    
+                    
+                    
+                      <li class="nav-item">
+                        <a href="/dataset?tags=Condi%C3%A7%C3%B5es" title="">
+                          <span class="item-label">Condições</span>
+                          <span class="hidden separator"> - </span>
+                          <span class="item-count badge">4</span>
+                        </a>
+                      </li>
+                  
+                    
+                    
+                    
+                    
+                      <li class="nav-item">
+                        <a href="/dataset?tags=Confirma%C3%A7%C3%A3o+do+Caso" title="">
+                          <span class="item-label">Confirmação do Caso</span>
+                          <span class="hidden separator"> - </span>
+                          <span class="item-count badge">4</span>
+                        </a>
+                      </li>
+                  
+                    
+                    
+                    
+                    
+                      <li class="nav-item">
+                        <a href="/dataset?tags=Corona" title="">
+                          <span class="item-label">Corona</span>
+                          <span class="hidden separator"> - </span>
+                          <span class="item-count badge">4</span>
+                        </a>
+                      </li>
+                  
+                    
+                    
+                    
+                    
+                      <li class="nav-item">
+                        <a href="/dataset?tags=covid" title="">
+                          <span class="item-label">covid</span>
+                          <span class="hidden separator"> - </span>
+                          <span class="item-count badge">4</span>
+                        </a>
+                      </li>
+                  
+                    
+                    
+                    
+                    
+                      <li class="nav-item">
+                        <a href="/dataset?tags=Covid" title="">
+                          <span class="item-label">Covid</span>
+                          <span class="hidden separator"> - </span>
+                          <span class="item-count badge">4</span>
+                        </a>
+                      </li>
+                  
+                    
+                    
+                    
+                    
+                      <li class="nav-item">
+                        <a href="/dataset?tags=Covid-19" title="">
+                          <span class="item-label">Covid-19</span>
+                          <span class="hidden separator"> - </span>
+                          <span class="item-count badge">4</span>
+                        </a>
+                      </li>
+                  
+                    
+                    
+                    
+                    
+                      <li class="nav-item">
+                        <a href="/dataset?tags=Diagn%C3%B3sticos" title="">
+                          <span class="item-label">Diagnósticos</span>
+                          <span class="hidden separator"> - </span>
+                          <span class="item-count badge">4</span>
+                        </a>
+                      </li>
+                  
+                </ul>
+              </nav>
+
+              <p class="module-footer">
+                
+                  
+                    <a href="/dataset?_tags_limit=0" class="read-more">Mostrar mais Etiquetas</a>
+                  
+                
+              </p>
+            
+            
+          
+        </section>
+      
+    
+  
+
+    
+      
+
+  
+  
+    
+      
+      
+        <section class="module module-narrow module-shallow">
+          
+            <h2 class="module-heading">
+              <i class="fa fa-filter"></i>
+              
+              Formatos
+            </h2>
+          
+          
+            
+            
+              <nav>
+                <ul class="list-unstyled nav nav-simple nav-facet">
+                  
+                    
+                    
+                    
+                    
+                      <li class="nav-item">
+                        <a href="/dataset?res_format=CSV" title="">
+                          <span class="item-label">CSV</span>
+                          <span class="hidden separator"> - </span>
+                          <span class="item-count badge">12</span>
+                        </a>
+                      </li>
+                  
+                    
+                    
+                    
+                    
+                      <li class="nav-item">
+                        <a href="/dataset?res_format=PDF" title="">
+                          <span class="item-label">PDF</span>
+                          <span class="hidden separator"> - </span>
+                          <span class="item-count badge">12</span>
+                        </a>
+                      </li>
+                  
+                    
+                    
+                    
+                    
+                      <li class="nav-item">
+                        <a href="/dataset?res_format=API" title="">
+                          <span class="item-label">API</span>
+                          <span class="hidden separator"> - </span>
+                          <span class="item-count badge">2</span>
+                        </a>
+                      </li>
+                  
+                </ul>
+              </nav>
+
+              <p class="module-footer">
+                
+                  
+                
+              </p>
+            
+            
+          
+        </section>
+      
+    
+  
+
+    
+      
+
+  
+  
+    
+      
+      
+        <section class="module module-narrow module-shallow">
+          
+            <h2 class="module-heading">
+              <i class="fa fa-filter"></i>
+              
+              Licenças
+            </h2>
+          
+          
+            
+            
+              <nav>
+                <ul class="list-unstyled nav nav-simple nav-facet">
+                  
+                    
+                    
+                    
+                    
+                      <li class="nav-item">
+                        <a href="/dataset?license_id=cc-by" title="Creative Commons Atribuição">
+                          <span class="item-label">Creative Commons At...</span>
+                          <span class="hidden separator"> - </span>
+                          <span class="item-count badge">13</span>
+                        </a>
+                      </li>
+                  
+                </ul>
+              </nav>
+
+              <p class="module-footer">
+                
+                  
+                
+              </p>
+            
+            
+          
+        </section>
+      
+    
+  
+
+    
+  </div>
+  <a class="close no-text hide-filters"><i class="fa fa-times-circle"></i><span class="text">close</span></a>
+</div>
+
+              </aside>
+            
+
+            
+              <div class="primary col-sm-9 col-xs-12">
+                
+                
+  <section class="module">
+    <div class="module-content">
+      
+        
+      
+      
+        
+        
+        
+
+
+
+
+
+
+
+<form id="dataset-search-form" class="search-form" method="get" data-module="select-switch">
+
+  
+    <div class="input-group search-input-group">
+      <input aria-label="Search datasets..." id="field-giant-search" type="text" class="form-control input-lg" name="q" value="" autocomplete="off" placeholder="Search datasets...">
+      
+      <span class="input-group-btn">
+        <button class="btn btn-default btn-lg" type="submit" value="search">
+          <i class="fa fa-search"></i>
+        </button>
+      </span>
+      
+    </div>
+  
+
+  
+    
+  
+
+  
+    
+      <div class="form-select form-group control-order-by">
+        <label for="field-order-by">Ordenar por</label>
+        <select id="field-order-by" name="sort" class="form-control">
+          
+            
+              <option value="score desc, metadata_modified desc" selected="selected">Relevância</option>
+            
+          
+            
+              <option value="title_string asc">Nome Crescente</option>
+            
+          
+            
+              <option value="title_string desc">Nome Descrescente</option>
+            
+          
+            
+              <option value="metadata_modified desc">Modificada pela última vez</option>
+            
+          
+            
+          
+        </select>
+        
+        <button class="btn btn-default js-hide" type="submit">Ir</button>
+        
+      </div>
+    
+  
+
+  
+    
+      <h2>
+
+  
+  
+  
+  
+
+13 conjuntos de dados encontrados</h2>
+    
+  
+
+  
+    
+      <p class="filter-list">
+        
+      </p>
+      <a class="show-filters btn btn-default">Filtrar Resultados</a>
+    
+  
+
+</form>
+
+
+
+
+      
+      
+        
+
+  
+    <ul class="dataset-list list-unstyled">
+    	
+	      
+	        
+
+
+
+
+
+
+  <li class="dataset-item">
+    
+      <div class="dataset-content">
+        
+          <h3 class="dataset-heading">
+            
+              
+            
+            
+              <a href="/dataset/covid-19-vacinacao">Campanha Nacional de Vacinação contra Covid-19</a>
+            
+            
+              
+              
+            
+          </h3>
+        
+        
+          
+        
+        
+          
+            <div>Contexto
+O Ministério da Saúde, por meio do Sistema de Informação do Programa Nacional de Imunizações (SI-PNI), disponibiliza nesta página dados referentes à Campanha Nacional...</div>
+          
+        
+      </div>
+      
+        
+          
+            <ul class="dataset-resources list-unstyled">
+              
+                
+                <li>
+                  <a href="/dataset/covid-19-vacinacao" class="label label-default" data-format="pdf">PDF</a>
+                </li>
+                
+                <li>
+                  <a href="/dataset/covid-19-vacinacao" class="label label-default" data-format="api">API</a>
+                </li>
+                
+                <li>
+                  <a href="/dataset/covid-19-vacinacao" class="label label-default" data-format="csv">CSV</a>
+                </li>
+                
+              
+            </ul>
+          
+        
+      
+    
+  </li>
+
+	      
+	        
+
+
+
+
+
+
+  <li class="dataset-item">
+    
+      <div class="dataset-content">
+        
+          <h3 class="dataset-heading">
+            
+              
+            
+            
+              <a href="/dataset/registro-de-ocupacao-hospitalar-covid-19">Registro de Ocupação Hospitalar COVID-19</a>
+            
+            
+              
+              
+            
+          </h3>
+        
+        
+          
+        
+        
+          
+            <div>O Ministério da Saúde, por meio da Secretaria de Atenção Especializada em Saúde (SAES), implementou, devido à pandemia, o registro das internações por meio do Sistema ESUS...</div>
+          
+        
+      </div>
+      
+        
+          
+            <ul class="dataset-resources list-unstyled">
+              
+                
+                <li>
+                  <a href="/dataset/registro-de-ocupacao-hospitalar-covid-19" class="label label-default" data-format="csv">CSV</a>
+                </li>
+                
+              
+            </ul>
+          
+        
+      
+    
+  </li>
+
+	      
+	        
+
+
+
+
+
+
+  <li class="dataset-item">
+    
+      <div class="dataset-content">
+        
+          <h3 class="dataset-heading">
+            
+              
+            
+            
+              <a href="/dataset/notificacoes-de-sindrome-gripal-leve-2022">Notificações de Síndrome Gripal - 2022</a>
+            
+            
+              
+              
+            
+          </h3>
+        
+        
+          
+        
+        
+          
+            <div>Definição:
+O Ministério da Saúde, por meio da Secretaria de Vigilância em Saúde (SVS), implementou, devido à pandemia, a vigilância da Síndrome Gripal (SG) de casos leves a...</div>
+          
+        
+      </div>
+      
+        
+          
+            <ul class="dataset-resources list-unstyled">
+              
+                
+                <li>
+                  <a href="/dataset/notificacoes-de-sindrome-gripal-leve-2022" class="label label-default" data-format="pdf">PDF</a>
+                </li>
+                
+                <li>
+                  <a href="/dataset/notificacoes-de-sindrome-gripal-leve-2022" class="label label-default" data-format="csv">CSV</a>
+                </li>
+                
+              
+            </ul>
+          
+        
+      
+    
+  </li>
+
+	      
+	        
+
+
+
+
+
+
+  <li class="dataset-item">
+    
+      <div class="dataset-content">
+        
+          <h3 class="dataset-heading">
+            
+              
+            
+            
+              <a href="/dataset/srag-2021-e-2022">SRAG 2021 e 2022 - Banco de Dados de Síndrome Respiratória Aguda Grave - incl...</a>
+            
+            
+              
+              
+            
+          </h3>
+        
+        
+          
+        
+        
+          
+            <div>O Ministério da Saúde (MS), por meio da Secretaria de Vigilância em Saúde (SVS), desenvolve a vigilância da Síndrome Respiratória Aguda Grave (SRAG) no Brasil, desde a pandemia...</div>
+          
+        
+      </div>
+      
+        
+          
+            <ul class="dataset-resources list-unstyled">
+              
+                
+                <li>
+                  <a href="/dataset/srag-2021-e-2022" class="label label-default" data-format="pdf">PDF</a>
+                </li>
+                
+                <li>
+                  <a href="/dataset/srag-2021-e-2022" class="label label-default" data-format="csv">CSV</a>
+                </li>
+                
+              
+            </ul>
+          
+        
+      
+    
+  </li>
+
+	      
+	        
+
+
+
+
+
+
+  <li class="dataset-item">
+    
+      <div class="dataset-content">
+        
+          <h3 class="dataset-heading">
+            
+              
+            
+            
+              <a href="/dataset/srag-2020">SRAG 2020 - Banco de Dados de Síndrome Respiratória Aguda Grave - incluindo d...</a>
+            
+            
+              
+              
+            
+          </h3>
+        
+        
+          
+        
+        
+          
+            <div>O Ministério da Saúde (MS), por meio da Secretaria de Vigilância em Saúde (SVS), desenvolve a vigilância da Síndrome Respiratória Aguda Grave (SRAG) no Brasil, fortalecida desde...</div>
+          
+        
+      </div>
+      
+        
+          
+            <ul class="dataset-resources list-unstyled">
+              
+                
+                <li>
+                  <a href="/dataset/srag-2020" class="label label-default" data-format="pdf">PDF</a>
+                </li>
+                
+                <li>
+                  <a href="/dataset/srag-2020" class="label label-default" data-format="csv">CSV</a>
+                </li>
+                
+              
+            </ul>
+          
+        
+      
+    
+  </li>
+
+	      
+	        
+
+
+
+
+
+
+  <li class="dataset-item">
+    
+      <div class="dataset-content">
+        
+          <h3 class="dataset-heading">
+            
+              
+            
+            
+              <a href="/dataset/notificacoes-de-sindrome-gripal-leve-2021">Notificações de Síndrome Gripal - 2021</a>
+            
+            
+              
+              
+            
+          </h3>
+        
+        
+          
+        
+        
+          
+            <div>Definição:
+O Ministério da Saúde, por meio da Secretaria de Vigilância em Saúde (SVS), implementou, devido à pandemia, a vigilância da Síndrome Gripal (SG) de casos leves a...</div>
+          
+        
+      </div>
+      
+        
+          
+            <ul class="dataset-resources list-unstyled">
+              
+                
+                <li>
+                  <a href="/dataset/notificacoes-de-sindrome-gripal-leve-2021" class="label label-default" data-format="pdf">PDF</a>
+                </li>
+                
+                <li>
+                  <a href="/dataset/notificacoes-de-sindrome-gripal-leve-2021" class="label label-default" data-format="csv">CSV</a>
+                </li>
+                
+              
+            </ul>
+          
+        
+      
+    
+  </li>
+
+	      
+	        
+
+
+
+
+
+
+  <li class="dataset-item">
+    
+      <div class="dataset-content">
+        
+          <h3 class="dataset-heading">
+            
+              
+            
+            
+              <a href="/dataset/notificacoes-de-sindrome-gripal-leve-2020">Notificações de Síndrome Gripal - 2020</a>
+            
+            
+              
+              
+            
+          </h3>
+        
+        
+          
+        
+        
+          
+            <div>Definição:
+O Ministério da Saúde, por meio da Secretaria de Vigilância em Saúde (SVS), implementou, devido à pandemia, a vigilância da Síndrome Gripal (SG) de casos leves a...</div>
+          
+        
+      </div>
+      
+        
+          
+            <ul class="dataset-resources list-unstyled">
+              
+                
+                <li>
+                  <a href="/dataset/notificacoes-de-sindrome-gripal-leve-2020" class="label label-default" data-format="pdf">PDF</a>
+                </li>
+                
+                <li>
+                  <a href="/dataset/notificacoes-de-sindrome-gripal-leve-2020" class="label label-default" data-format="csv">CSV</a>
+                </li>
+                
+              
+            </ul>
+          
+        
+      
+    
+  </li>
+
+	      
+	        
+
+
+
+
+
+
+  <li class="dataset-item">
+    
+      <div class="dataset-content">
+        
+          <h3 class="dataset-heading">
+            
+              
+            
+            
+              <a href="/dataset/notificacoes-de-sindrome-gripal-api-elasticsearch">Notificações de Síndrome Gripal - API ElasticSearch</a>
+            
+            
+              
+              
+            
+          </h3>
+        
+        
+          
+        
+        
+          
+            <div>Definição: O Ministério da Saúde, por meio da Secretaria de Vigilância em Saúde (SVS), implementou, devido à pandemia, a vigilância da Síndrome Gripal (SG) de casos leves a...</div>
+          
+        
+      </div>
+      
+        
+          
+            <ul class="dataset-resources list-unstyled">
+              
+                
+                <li>
+                  <a href="/dataset/notificacoes-de-sindrome-gripal-api-elasticsearch" class="label label-default" data-format="pdf">PDF</a>
+                </li>
+                
+                <li>
+                  <a href="/dataset/notificacoes-de-sindrome-gripal-api-elasticsearch" class="label label-default" data-format="api">API</a>
+                </li>
+                
+              
+            </ul>
+          
+        
+      
+    
+  </li>
+
+	      
+	        
+
+
+
+
+
+
+  <li class="dataset-item">
+    
+      <div class="dataset-content">
+        
+          <h3 class="dataset-heading">
+            
+              
+            
+            
+              <a href="/dataset/srag-2009-2012">SRAG 2009 a 2012 - Banco de Dados de Síndroma Respiratória Aguda Grave</a>
+            
+            
+              
+              
+            
+          </h3>
+        
+        
+          
+        
+        
+          
+            <div>O Ministério da Saúde (MS), por meio da Secretaria de Vigilância em Saúde (SVS), desenvolve a vigilância da Síndrome Respiratória Aguda Grave (SRAG) no Brasil, desde a pandemia...</div>
+          
+        
+      </div>
+      
+        
+          
+            <ul class="dataset-resources list-unstyled">
+              
+                
+                <li>
+                  <a href="/dataset/srag-2009-2012" class="label label-default" data-format="pdf">PDF</a>
+                </li>
+                
+                <li>
+                  <a href="/dataset/srag-2009-2012" class="label label-default" data-format="csv">CSV</a>
+                </li>
+                
+              
+            </ul>
+          
+        
+      
+    
+  </li>
+
+	      
+	        
+
+
+
+
+
+
+  <li class="dataset-item">
+    
+      <div class="dataset-content">
+        
+          <h3 class="dataset-heading">
+            
+              
+            
+            
+              <a href="/dataset/sim-2020-2021">Sistema de Informação sobre Mortalidade – SIM</a>
+            
+            
+              
+              
+            
+          </h3>
+        
+        
+          
+        
+        
+          
+            <div>O Sistema de Informação sobre Mortalidade (SIM), desenvolvido pelo Ministério da Saúde em 1975, é produto da unificação de mais de quarenta modelos de Declaração de Óbito...</div>
+          
+        
+      </div>
+      
+        
+          
+            <ul class="dataset-resources list-unstyled">
+              
+                
+                <li>
+                  <a href="/dataset/sim-2020-2021" class="label label-default" data-format="csv">CSV</a>
+                </li>
+                
+                <li>
+                  <a href="/dataset/sim-2020-2021" class="label label-default" data-format="pdf">PDF</a>
+                </li>
+                
+              
+            </ul>
+          
+        
+      
+    
+  </li>
+
+	      
+	        
+
+
+
+
+
+
+  <li class="dataset-item">
+    
+      <div class="dataset-content">
+        
+          <h3 class="dataset-heading">
+            
+              
+            
+            
+              <a href="/dataset/srag-2019">SRAG 2019 - Banco de Dados de Síndrome Respiratória Aguda Grave</a>
+            
+            
+              
+              
+            
+          </h3>
+        
+        
+          
+        
+        
+          
+            <div>O Ministério da Saúde (MS), por meio da Secretaria de Vigilância em Saúde (SVS), desenvolve a vigilância da Síndrome Respiratória Aguda Grave (SRAG) no Brasil, desde a pandemia...</div>
+          
+        
+      </div>
+      
+        
+          
+            <ul class="dataset-resources list-unstyled">
+              
+                
+                <li>
+                  <a href="/dataset/srag-2019" class="label label-default" data-format="pdf">PDF</a>
+                </li>
+                
+                <li>
+                  <a href="/dataset/srag-2019" class="label label-default" data-format="csv">CSV</a>
+                </li>
+                
+              
+            </ul>
+          
+        
+      
+    
+  </li>
+
+	      
+	        
+
+
+
+
+
+
+  <li class="dataset-item">
+    
+      <div class="dataset-content">
+        
+          <h3 class="dataset-heading">
+            
+              
+            
+            
+              <a href="/dataset/srag-2013-2018">SRAG 2013 a 2018 - Banco de Dados de Síndrome Respiratória Aguda Grave</a>
+            
+            
+              
+              
+            
+          </h3>
+        
+        
+          
+        
+        
+          
+            <div>O Ministério da Saúde (MS), por meio da Secretaria de Vigilância em Saúde (SVS), desenvolve a vigilância da Síndrome Respiratória Aguda Grave (SRAG) no Brasil, desde a pandemia...</div>
+          
+        
+      </div>
+      
+        
+          
+            <ul class="dataset-resources list-unstyled">
+              
+                
+                <li>
+                  <a href="/dataset/srag-2013-2018" class="label label-default" data-format="pdf">PDF</a>
+                </li>
+                
+                <li>
+                  <a href="/dataset/srag-2013-2018" class="label label-default" data-format="csv">CSV</a>
+                </li>
+                
+              
+            </ul>
+          
+        
+      
+    
+  </li>
+
+	      
+	        
+
+
+
+
+
+
+  <li class="dataset-item">
+    
+      <div class="dataset-content">
+        
+          <h3 class="dataset-heading">
+            
+              
+            
+            
+              <a href="/dataset/sim-1979-2019">Sistema de Informação sobre Mortalidade – SIM (1979 a 2019)</a>
+            
+            
+              
+              
+            
+          </h3>
+        
+        
+          
+        
+        
+          
+            <div>Sistema de Informação sobre Mortalidade – SIM - 1979 a 2019.
+O Sistema de Informação sobre Mortalidade (SIM), desenvolvido pelo Ministério da Saúde em 1975, é produto da...</div>
+          
+        
+      </div>
+      
+        
+          
+            <ul class="dataset-resources list-unstyled">
+              
+                
+                <li>
+                  <a href="/dataset/sim-1979-2019" class="label label-default" data-format="pdf">PDF</a>
+                </li>
+                
+                <li>
+                  <a href="/dataset/sim-1979-2019" class="label label-default" data-format="csv">CSV</a>
+                </li>
+                
+              
+            </ul>
+          
+        
+      
+    
+  </li>
+
+	      
+	    
+    </ul>
+  
+
+      
+    </div>
+
+    
+      
+    
+  </section>
+
+  
+  <section class="module">
+    <div class="module-content">
+      
+      <small>
+        
+        
+        
+           Você também pode ter acesso a esses registros usando a <a href="/api/3">API</a> (veja <a href="http://docs.ckan.org/en/2.8/api/">Documentação da API</a>). 
+      </small>
+      
+    </div>
+  </section>
+  
+
+              </div>
+            
+          </div>
+        
+      </div>
+    </div>
+  
+    <footer class="site-footer">
+  <div class="container">
+    
+    <div class="row">
+      <div class="col-md-8 footer-links">
+        <img src="../../../base/images/brasil.png" width="153" alt="Logo Governo">
+      </div>
+      <div class="col-md-4 attribution">
+        
+          
+<form class="form-inline form-select lang-select" action="/util/redirect" data-module="select-switch" method="POST">
+  <label for="field-lang-select">Idioma</label>
+  <select id="field-lang-select" name="url" data-module="autocomplete" data-module-dropdown-class="lang-dropdown" data-module-container-class="lang-container">
+    
+      <option value="/pt_BR/dataset" selected="selected">
+        português (Brasil)
+      </option>
+    
+      <option value="/en/dataset" >
+        English
+      </option>
+    
+      <option value="/ja/dataset" >
+        日本語
+      </option>
+    
+      <option value="/it/dataset" >
+        italiano
+      </option>
+    
+      <option value="/cs_CZ/dataset" >
+        čeština (Česká republika)
+      </option>
+    
+      <option value="/ca/dataset" >
+        català
+      </option>
+    
+      <option value="/es/dataset" >
+        español
+      </option>
+    
+      <option value="/fr/dataset" >
+        français
+      </option>
+    
+      <option value="/el/dataset" >
+        Ελληνικά
+      </option>
+    
+      <option value="/sv/dataset" >
+        svenska
+      </option>
+    
+      <option value="/sr/dataset" >
+        српски
+      </option>
+    
+      <option value="/no/dataset" >
+        norsk bokmål (Norge)
+      </option>
+    
+      <option value="/sk/dataset" >
+        slovenčina
+      </option>
+    
+      <option value="/fi/dataset" >
+        suomi
+      </option>
+    
+      <option value="/ru/dataset" >
+        русский
+      </option>
+    
+      <option value="/de/dataset" >
+        Deutsch
+      </option>
+    
+      <option value="/pl/dataset" >
+        polski
+      </option>
+    
+      <option value="/nl/dataset" >
+        Nederlands
+      </option>
+    
+      <option value="/bg/dataset" >
+        български
+      </option>
+    
+      <option value="/ko_KR/dataset" >
+        한국어 (대한민국)
+      </option>
+    
+      <option value="/hu/dataset" >
+        magyar
+      </option>
+    
+      <option value="/sl/dataset" >
+        slovenščina
+      </option>
+    
+      <option value="/lv/dataset" >
+        latviešu
+      </option>
+    
+      <option value="/am/dataset" >
+        አማርኛ
+      </option>
+    
+      <option value="/ar/dataset" >
+        العربية
+      </option>
+    
+      <option value="/da_DK/dataset" >
+        dansk (Danmark)
+      </option>
+    
+      <option value="/en_AU/dataset" >
+        English (Australia)
+      </option>
+    
+      <option value="/es_AR/dataset" >
+        español (Argentina)
+      </option>
+    
+      <option value="/eu/dataset" >
+        euskara
+      </option>
+    
+      <option value="/fa_IR/dataset" >
+        فارسی (ایران)
+      </option>
+    
+      <option value="/gl/dataset" >
+        galego
+      </option>
+    
+      <option value="/he/dataset" >
+        עברית
+      </option>
+    
+      <option value="/hr/dataset" >
+        hrvatski
+      </option>
+    
+      <option value="/id/dataset" >
+        Indonesia
+      </option>
+    
+      <option value="/is/dataset" >
+        íslenska
+      </option>
+    
+      <option value="/km/dataset" >
+        ខ្មែរ
+      </option>
+    
+      <option value="/lt/dataset" >
+        lietuvių
+      </option>
+    
+      <option value="/mk/dataset" >
+        македонски
+      </option>
+    
+      <option value="/mn_MN/dataset" >
+        монгол (Монгол)
+      </option>
+    
+      <option value="/ne/dataset" >
+        नेपाली
+      </option>
+    
+      <option value="/pt_PT/dataset" >
+        português (Portugal)
+      </option>
+    
+      <option value="/ro/dataset" >
+        română
+      </option>
+    
+      <option value="/sq/dataset" >
+        shqip
+      </option>
+    
+      <option value="/sr_Latn/dataset" >
+        srpski (latinica)
+      </option>
+    
+      <option value="/th/dataset" >
+        ไทย
+      </option>
+    
+      <option value="/tl/dataset" >
+        Filipino (Pilipinas)
+      </option>
+    
+      <option value="/tr/dataset" >
+        Türkçe
+      </option>
+    
+      <option value="/uk/dataset" >
+        українська
+      </option>
+    
+      <option value="/uk_UA/dataset" >
+        українська (Україна)
+      </option>
+    
+      <option value="/vi/dataset" >
+        Tiếng Việt
+      </option>
+    
+      <option value="/zh_CN/dataset" >
+        中文 (简体, 中国)
+      </option>
+    
+      <option value="/zh_TW/dataset" >
+        中文 (繁體, 台灣)
+      </option>
+    
+  </select>
+  <button class="btn btn-default js-hide" type="submit">Ir</button>
+</form>
+        
+      </div>
+    </div>
+    
+  </div>
+
+  
+    
+  
+</footer>
+  
+    
+    
+    
+  
+    
+
+      
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1XYB88LPZG"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-1XYB88LPZG');
+    </script>
+  <script>document.getElementsByTagName('html')[0].className += ' js';</script>
+<script type="text/javascript" src="/fanstatic/vendor/:version:2022-01-06T02:10:57.30/jquery.min.js"></script>
+<script type="text/javascript" src="/fanstatic/vendor/:version:2022-01-06T02:10:57.30/:bundle:bootstrap/js/bootstrap.min.js;jed.min.js;moment-with-locales.js;select2/select2.min.js"></script>
+<script type="text/javascript" src="/fanstatic/base/:version:2022-01-06T02:10:57.14/:bundle:plugins/jquery.inherit.min.js;plugins/jquery.proxy-all.min.js;plugins/jquery.url-helpers.min.js;plugins/jquery.date-helpers.min.js;plugins/jquery.slug.min.js;plugins/jquery.slug-preview.min.js;plugins/jquery.truncator.min.js;plugins/jquery.masonry.min.js;plugins/jquery.form-warning.min.js;plugins/jquery.images-loaded.min.js;sandbox.min.js;module.min.js;pubsub.min.js;client.min.js;notify.min.js;i18n.min.js;main.min.js;modules/select-switch.min.js;modules/slug-preview.min.js;modules/basic-form.min.js;modules/confirm-action.min.js;modules/api-info.min.js;modules/autocomplete.min.js;modules/custom-fields.min.js;modules/data-viewer.min.js;modules/table-selectable-rows.min.js;modules/resource-form.min.js;modules/resource-upload-field.min.js;modules/resource-reorder.min.js;modules/resource-view-reorder.min.js;modules/follow.min.js;modules/activity-stream.min.js;modules/dashboard.min.js;modules/resource-view-embed.min.js;view-filters.min.js;modules/resource-view-filters-form.min.js;modules/resource-view-filters.min.js;modules/table-toggle-more.min.js;modules/dataset-visibility.min.js;modules/media-grid.min.js;modules/image-upload.min.js;modules/followers-counter.min.js"></script></body>
+</html>

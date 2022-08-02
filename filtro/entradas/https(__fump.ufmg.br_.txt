@@ -1,0 +1,444 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>
+	Fump - Assistência Estudantil da UFMG
+</title><meta name="keywords" content="fump, ufmg, assistência estudantil, moradia universitária, alimentação, restaurante universitário, bandejão, assistência à saúde, bolsas, estágios, programas complementares, programas de assistência, baixa renda, questionário socioeconômico, pnaes, contribuição voluntária" /><meta name="description" content="FUMP Fundação Universitária Mendes Pimentel - Assistência Estudantil, Moradia universitária da UFMG" /><link type="text/css" rel="stylesheet" href="/css/reset.css" /><link type="text/css" rel="stylesheet" href="/css/960.css" /><link type="text/css" rel="stylesheet" href="/css/style.css" />
+
+    <script type="text/javascript" src="/js/mascara.js"></script>
+
+    <script type="text/javascript" src="/js/Util.js"></script>
+
+    <script src="/js/jquery-1.4.2.min.js" type="text/javascript"></script>
+
+    <script src="/js/jquery.min.js" type="text/javascript"></script>
+
+    <script src="/js/jquery.meio.mask.min.js" type="text/javascript"></script>
+
+    <link href="/css/tipsy.css" rel="stylesheet" type="text/css" />
+
+    <script src="/js/jquery.tipsy.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        (function($) {
+            // call setMask function on the document.ready event
+            $(function() {
+                $('input:text').setMask();
+            }
+        );
+        })(jQuery);
+
+        /*Função Pai de Mascaras*/
+        function Mascara(o, f) {
+            v_obj = o
+            v_fun = f
+            setTimeout("execmascara()", 1)
+        }
+
+        /*Função que Executa os objetos*/
+        function execmascara() {
+            v_obj.value = v_fun(v_obj.value)
+        }
+
+        /*Função que Determina as expressões regulares dos objetos*/
+        function leech(v) {
+            v = v.replace(/o/gi, "0")
+            v = v.replace(/i/gi, "1")
+            v = v.replace(/z/gi, "2")
+            v = v.replace(/e/gi, "3")
+            v = v.replace(/a/gi, "4")
+            v = v.replace(/s/gi, "5")
+            v = v.replace(/t/gi, "7")
+            return v
+        }
+
+        /*Função que padroniza valor monétario*/
+        function Valor(v) {
+            v = v.replace(/\D/g, "") //Remove tudo o que não é dígito
+            v = v.replace(/^([0-9]{3}\.?){3}-[0-9]{2}$/, "$1.$2");
+            //v=v.replace(/(\d{3})(\d)/g,"$1,$2")
+            v = v.replace(/(\d)(\d{2})$/, "$1.$2") //Coloca ponto antes dos 2 últimos digitos
+            return v
+        }
+
+        /*Função que padroniza Area*/
+        function Area(v) {
+            v = v.replace(/\D/g, "")
+            v = v.replace(/(\d)(\d{2})$/, "$1.$2")
+            return v
+        }
+    </script>
+
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-20034265-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+
+    
+    <title>FUMP</title>
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+
+</head>
+<body>
+    <form method="post" action="./" id="form">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTQ1OTEzNjU2Mw9kFgJmD2QWAgIDD2QWCgIBDw8WAh4LTmF2aWdhdGVVcmxlZGQCBw8WAh4EVGV4dAW5Bzx1bD48bGk+PGEgY2xhc3M9J2JvcmRlckJvdHRvbTInIGhyZWY9Jy9jb250ZXVkby5hc3B4P3BhZ2luYT0xMzMnPiBjb21vIHRlciBhY2Vzc28gYW9zIGJlbmVmw61jaW9zIGRhIGZ1bXA8L2E+PC9saT48bGk+PGEgY2xhc3M9J2JvcmRlckJvdHRvbTInIGhyZWY9Jy9jb250ZXVkby5hc3B4P3BhZ2luYT0yNTcnPiBtaXNzw6NvLCB2aXPDo28gZSB2YWxvcmVzPC9hPjwvbGk+PGxpPjxhIGNsYXNzPSdib3JkZXJCb3R0b20yJyBocmVmPScvY29udGV1ZG8uYXNweD9wYWdpbmE9NSc+IGhpc3TDs3JpYSBkYSBmdW1wPC9hPjwvbGk+PGxpPjxhIGNsYXNzPSdib3JkZXJCb3R0b20yJyBocmVmPScvY29udGV1ZG8uYXNweD9wYWdpbmE9Mic+IGNvbnRyaWJ1acOnw6NvIHBhcmEgYSBhc3Npc3TDqm5jaWEgZXN0dWRhbnRpbDwvYT48L2xpPjxsaT48YSBjbGFzcz0nYm9yZGVyQm90dG9tMicgaHJlZj0nL2NvbnRldWRvLmFzcHg/cGFnaW5hPTEyJz4gZ2VzdMOjbyBhdHVhbDwvYT48L2xpPjxsaT48YSBjbGFzcz0nYm9yZGVyQm90dG9tMicgaHJlZj0nL2NvbnRldWRvLmFzcHg/cGFnaW5hPTEzJz4gY29uc2VsaG9zPC9hPjwvbGk+PGxpPjxhIGNsYXNzPSdib3JkZXJCb3R0b20yJyBocmVmPScvY29udGV1ZG8uYXNweD9wYWdpbmE9MTQnPiBlc3RhdHV0bzwvYT48L2xpPjxsaT48YSBjbGFzcz0nYm9yZGVyQm90dG9tMicgaHJlZj0nL2NvbnRldWRvLmFzcHg/cGFnaW5hPTE2Jz4gcHJlc3Rhw6fDo28gZGUgY29udGFzPC9hPjwvbGk+PGxpPjxhIGNsYXNzPSdib3JkZXJCb3R0b20yJyBocmVmPScvY29udGV1ZG8uYXNweD9wYWdpbmE9MjYwJz4gZXgtcHJlc2lkZW50ZXMgZnVtcDwvYT48L2xpPjxsaT48YSBjbGFzcz0nYm9yZGVyQm90dG9tMicgaHJlZj0nL2NvbnRldWRvLmFzcHg/cGFnaW5hPTI5NCc+IG1lZGlkYXMgZGUgZW5mcmVudGFtZW50byBkYSBjb3ZpZC0xOTwvYT48L2xpPjwvdWw+ZAIJDxYCHwEF9wc8dWw+PGxpPjxhIHN0eWxlPSdwYWRkaW5nLXRvcDogNXB4OycgY2xhc3M9J2JvcmRlckJvdHRvbTInIGhyZWY9JyMnPkLDoXNpY29zPC9hPjwvbGk+PGxpPjxhIHN0eWxlPSdwYWRkaW5nLWxlZnQ6IDEwcHg7IGxpbmUtaGVpZ2h0OiAxM3B4OycgaHJlZj0nL2NvbnRldWRvLmFzcHg/YXJlYT0xOSc+QWxpbWVudGHDp8OjbzwvYT48L2xpPjxsaT48YSBzdHlsZT0ncGFkZGluZy1sZWZ0OiAxMHB4OyBsaW5lLWhlaWdodDogMTNweDsnIGhyZWY9Jy9jb250ZXVkby5hc3B4P2FyZWE9MTAnPk1vcmFkaWEgVW5pdmVyc2l0w6FyaWE8L2E+PC9saT48bGk+PGEgc3R5bGU9J3BhZGRpbmctbGVmdDogMTBweDsgbGluZS1oZWlnaHQ6IDEzcHg7JyBocmVmPScvY29udGV1ZG8uYXNweD9hcmVhPTYnPkFzc2lzdMOqbmNpYSDDoCBTYcO6ZGU8L2E+PC9saT48bGk+PGEgc3R5bGU9J3BhZGRpbmctbGVmdDogMTBweDsgbGluZS1oZWlnaHQ6IDEzcHg7JyBocmVmPScvY29udGV1ZG8uYXNweD9hcmVhPTMyJz5BdXjDrWxpbyBGaW5hbmNlaXJvPC9hPjwvbGk+PGxpPjxhIHN0eWxlPSdwYWRkaW5nLXRvcDogNXB4OycgY2xhc3M9J2JvcmRlckJvdHRvbTInIGhyZWY9JyMnPkNvbXBsZW1lbnRhcmVzPC9hPjwvbGk+PGxpPjxhIGhyZWY9Jy9jb250ZXVkby5hc3B4P3BhZ2luYT0xNzknIHN0eWxlPSdwYWRkaW5nLWxlZnQ6IDEwcHg7IGxpbmUtaGVpZ2h0OiAxM3B4Oyc+QXV4w61saW8gTWF0ZXJpYWwgQWNhZMOqbWljbzwvYT48L2xpPjxsaT4mbmJzcDs8YSBocmVmPScvY29udGV1ZG8uYXNweD9wYWdpbmE9MjIxJyBzdHlsZT0ncGFkZGluZy1sZWZ0OiAxMHB4OyBsaW5lLWhlaWdodDogMTNweDsnPkJvbHNhIGRlIEZvcm1hw6fDo28gUHJvZmlzc2lvbmFsIENvbXBsZW1lbnRhcjwvYT48L2xpPjxsaT4mbmJzcDs8YSBocmVmPScvY29udGV1ZG8uYXNweD9wYWdpbmE9MjAzJyBzdHlsZT0ncGFkZGluZy1sZWZ0OiAxMHB4OyBsaW5lLWhlaWdodDogMTNweDsnPkJvbHNhIFBlcm1hbsOqbmNpYTwvYT48L2xpPjwvdWw+ZAILD2QWCAIBD2QWBGYPDxYCHwAFHS8uLi8uLi9jb250ZXVkby5hc3B4P3BhZ2luYT0yZBYCZg8PFgQeCEltYWdlVXJsBTMvY29udGV1ZG8vYmFubmVyL2Jhbm5lcl9hc3Npc3RlbmNpYV8yMjF4MTYxX2UwMS5qcGceB1Rvb2xUaXAFImJhbm5lcl9hc3Npc3RlbmNpYV8yMjF4MTYxX2UwMS5qcGdkZAIBDw8WAh8ABRwuLi8uLi9jb250ZXVkby5hc3B4P3BhZ2luYT0yZBYCZg8PFgQfAgUzL2NvbnRldWRvL2Jhbm5lci9iYW5uZXJfYXNzaXN0ZW5jaWFfMjIxeDE2MV9lMDEuanBnHwMFImJhbm5lcl9hc3Npc3RlbmNpYV8yMjF4MTYxX2UwMS5qcGdkZAIDDxYCHwEFwAY8dWw+PGxpIHN0eWxlPScqd2lkdGg6IDIwMHB4OyAqcGFkZGluZy1sZWZ0OiA1cHg7Jz48YSBzdHlsZT0nZm9udC1zaXplOiAxMHB4OycgaHJlZj0naHR0cDovL3NpbmFlLmZ1bXAudWZtZy5ici9zaW5hZVdlYi9Mb2dpbkFsdW5vJz4gU2luYWUgLSDDoXJlYSBkbyBhbHVubzwvYT48L2xpPjxsaSBzdHlsZT0nKndpZHRoOiAyMDBweDsgKnBhZGRpbmctbGVmdDogNXB4Oyc+PGEgc3R5bGU9J2ZvbnQtc2l6ZTogMTBweDsnIGhyZWY9Jy9jb250ZXVkby5hc3B4P3BhZ2luYT03Mic+IE7DumNsZW8gZGUgZXNjdXRhIC8gQXNzaXN0ZW50ZXMgc29jaWFpczwvYT48L2xpPjxsaSBzdHlsZT0nKndpZHRoOiAyMDBweDsgKnBhZGRpbmctbGVmdDogNXB4Oyc+PGEgc3R5bGU9J2ZvbnQtc2l6ZTogMTBweDsnIGhyZWY9Jy9jb250ZXVkby5hc3B4P3BhZ2luYT0xMzYnPiBDb250YXRvczwvYT48L2xpPjxsaSBzdHlsZT0nKndpZHRoOiAyMDBweDsgKnBhZGRpbmctbGVmdDogNXB4Oyc+PGEgc3R5bGU9J2ZvbnQtc2l6ZTogMTBweDsnIGhyZWY9Jy9saWNpdGFjb2VzLmFzcHg/ZXhpYmlyPUEnPiBDb21wcmFzL0xpY2l0YcOnw7VlczwvYT48L2xpPjxsaSBzdHlsZT0nKndpZHRoOiAyMDBweDsgKnBhZGRpbmctbGVmdDogNXB4Oyc+PGEgc3R5bGU9J2ZvbnQtc2l6ZTogMTBweDsnIGhyZWY9Jy9jb252ZW5pb3MuYXNweCc+IENvbnbDqm5pb3M8L2E+PC9saT48bGkgc3R5bGU9Jyp3aWR0aDogMjAwcHg7ICpwYWRkaW5nLWxlZnQ6IDVweDsnPjxhIHN0eWxlPSdmb250LXNpemU6IDEwcHg7JyBocmVmPScvY29udGV1ZG8uYXNweD9wYWdpbmE9MTg3Jz4gRWRpdGFpczwvYT48L2xpPjwvdWw+ZAIHDxYCHwEF6As8YSBocmVmPSdodHRwOi8vd3d3LmZ1bXAudWZtZy5ici9jb250ZXVkby5hc3B4P3BhZ2luYT0yNjEnPiA8aW1nIGFsdD0nQm9sc2EgQXBhZHJpbmhhbWVudG8nIGlkPSdpbWcxJyB3aWR0aD0nMzQwJyBoZWlnaHQ9JzI4MCdzcmM9Jy9jb250ZXVkby9iYW5uZXIvYmFubmVyX2FwYWRyaW5oYW1lbnRvLmpwZycgIC8+PC9hPjxhIGhyZWY9J2h0dHA6Ly93d3cuZnVtcC51Zm1nLmJyL25vdGljaWFzLmFzcHg/cGFnPTImbm90aWNpYT0xMzEyJz4gPGltZyBhbHQ9J0NvbW8gY2FkYXN0cmFyIGNvbnRhIGNvcnJlbnRlJyBpZD0naW1nMicgd2lkdGg9JzM0MCcgaGVpZ2h0PScyODAnc3JjPScvY29udGV1ZG8vYmFubmVyL2Jhbm5lcmNvbnRhXzM0MHgyODAuanBnJyBzdHlsZT0nZGlzcGxheTogbm9uZTsnIC8+PC9hPjxhIGhyZWY9J2h0dHA6Ly93d3cuZnVtcC51Zm1nLmJyL2NvbnRldWRvLmFzcHg/cGFnaW5hPTI5NCc+IDxpbWcgYWx0PSdBdHVhbGl6YWNhbyBmdW5jaW9uYW1lbnRvIENPVklELTE5JyBpZD0naW1nMycgd2lkdGg9JzM0MCcgaGVpZ2h0PScyODAnc3JjPScvY29udGV1ZG8vYmFubmVyL2Jhbm5lcjIzNDB4MjgwLmpwZycgc3R5bGU9J2Rpc3BsYXk6IG5vbmU7JyAvPjwvYT48YSBocmVmPSdodHRwOi8vd3d3LmZ1bXAudWZtZy5ici9jb250ZXVkby5hc3B4P3BhZ2luYT0yOTQnPiA8aW1nIGFsdD0nUmVub3Zhw6fDo28gZG9zIEF1eMOtbGlvcyBGaW5hbmNlaXJvcyBhb3MgdmV0ZXJhbm9zJyBpZD0naW1nNCcgd2lkdGg9JzM0MCcgaGVpZ2h0PScyODAnc3JjPScvY29udGV1ZG8vYmFubmVyL2Jhbm5lcjVfMzQweDI4MC5qcGcnIHN0eWxlPSdkaXNwbGF5OiBub25lOycgLz48L2E+PGEgaHJlZj0naHR0cDovL3d3dy5mdW1wLnVmbWcuYnIvY29udGV1ZG8uYXNweD9wYWdpbmE9Mjk1Jz4gPGltZyBhbHQ9J0FwYWRyaW5oYW1lbnRvIEluY2x1c2FvIERpZ2l0YWwnIGlkPSdpbWc1JyB3aWR0aD0nMzQwJyBoZWlnaHQ9JzI4MCdzcmM9Jy9jb250ZXVkby9iYW5uZXIvYmFubmVyLmpwZycgc3R5bGU9J2Rpc3BsYXk6IG5vbmU7JyAvPjwvYT48YSBocmVmPSdodHRwOi8vd3d3LmZ1bXAudWZtZy5ici9ub3RpY2lhcy5hc3B4P3BhZz0yJm5vdGljaWE9MTM4Nic+IDxpbWcgYWx0PSdBcGxpY2F0aXZvIEZ1bXAgLSBTaW1wbGVzLCBzZWd1cm8gZSBncmF0dWl0bycgaWQ9J2ltZzYnIHdpZHRoPSczNDAnIGhlaWdodD0nMjgwJ3NyYz0nL2NvbnRldWRvL2Jhbm5lci9hcGxpY2F0aXZvX2Z1bXAuanBnJyBzdHlsZT0nZGlzcGxheTogbm9uZTsnIC8+PC9hPjxhIGhyZWY9J2h0dHA6Ly93d3cuZnVtcC51Zm1nLmJyL25vdGljaWFzLmFzcHg/bm90aWNpYT0xNDI2Jz4gPGltZyBhbHQ9J1JldG9tYWRhIGRvIGFnZW5kYW1lbnRvIG9uLWxpbmUgZW0gQmVsbyBIb3Jpem9udGUgZSBNb250ZXMgQ2xhcm9zJyBpZD0naW1nNycgd2lkdGg9JzM0MCcgaGVpZ2h0PScyODAnc3JjPScvY29udGV1ZG8vYmFubmVyL2Jhbm5lcl9zaXRlLmpwZycgc3R5bGU9J2Rpc3BsYXk6IG5vbmU7JyAvPjwvYT5kAgkPZBYCZg8WAh4LXyFJdGVtQ291bnQCBhYMAgEPZBYCZg8VAwoyMC4wNC4yMDIyGm5vdGljaWFzLmFzcHg/bm90aWNpYT0xOTE5QEZ1bmNpb25hbWVudG8gZGFzIHVuaWRhZGVzIGRhIEZ1bXAgbm9zIGRpYXMgMjEsIDIyIGUgMjMgZGUgYWJyaWxkAgIPZBYCZg8VAwoyMC4wNC4yMDIyGm5vdGljaWFzLmFzcHg/bm90aWNpYT0xOTE4QkVkaXRhbCBQRlBDIDg1LzIwMjIgLSBDZW50cm8gZGUgTWVtw7NyaWEgZGEgRXNjb2xhIGRlIFZldGVyaW7DoXJpYWQCAw9kFgJmDxUDCjIwLjA0LjIwMjIabm90aWNpYXMuYXNweD9ub3RpY2lhPTE5MTcwRWRpdGFsIFBGUEMgODQvMjAyMiAtIFNlw6fDo28gZGUgRW5zaW5vIGRhIEVGRlRPZAIED2QWAmYPFQMKMjAuMDQuMjAyMhpub3RpY2lhcy5hc3B4P25vdGljaWE9MTkxNkZFZGl0YWwgUEZQQyA4My8yMDIyIC0gRGVwYXJ0YW1lbnRvIGRlIERlc2VuaG8gZGEgRXNjb2xhIGRlIEJlbGFzIEFydGVzZAIFD2QWAmYPFQMKMjAuMDQuMjAyMhpub3RpY2lhcy5hc3B4P25vdGljaWE9MTkxNUpFZGl0YWwgUEZQQyA4Mi8yMDIyIC0gU2VjcmV0YXJpYSBkbyBQcm9ncmFtYSBFbnZlbGhlY2ltZW50byBBdGl2byBkYSBFRkZUT2QCBg9kFgJmDxUDCjIwLjA0LjIwMjIabm90aWNpYXMuYXNweD9ub3RpY2lhPTE5MTRMRWRpdGFsIFBGUEMgODEvMjAyMiBDb211bmljYcOnw6NvIGRvIFByb2dyYW1hIEVudmVsaGVjaW1lbnRvIEF0aXZvIGRhIEVFRkZUT2QCDQ9kFgYCAQ8WAh8EAgoWFGYPZBYCZg8VAhdjb250ZXVkby5hc3B4P3BhZ2luYT05Midjb21vIHRlciBhY2Vzc28gYW9zIGJlbmVmw61jaW9zIGRhIGZ1bXBkAgEPZBYCZg8VAhhjb250ZXVkby5hc3B4P3BhZ2luYT0yNTcZbWlzc8Ojbywgdmlzw6NvIGUgdmFsb3Jlc2QCAg9kFgJmDxUCFmNvbnRldWRvLmFzcHg/cGFnaW5hPTURaGlzdMOzcmlhIGRhIGZ1bXBkAgMPZBYCZg8VAhZjb250ZXVkby5hc3B4P3BhZ2luYT0yLWNvbnRyaWJ1acOnw6NvIHBhcmEgYSBhc3Npc3TDqm5jaWEgZXN0dWRhbnRpbGQCBA9kFgJmDxUCF2NvbnRldWRvLmFzcHg/cGFnaW5hPTEyDWdlc3TDo28gYXR1YWxkAgUPZBYCZg8VAhdjb250ZXVkby5hc3B4P3BhZ2luYT0xMwljb25zZWxob3NkAgYPZBYCZg8VAhdjb250ZXVkby5hc3B4P3BhZ2luYT0xNAhlc3RhdHV0b2QCBw9kFgJmDxUCF2NvbnRldWRvLmFzcHg/cGFnaW5hPTE2FXByZXN0YcOnw6NvIGRlIGNvbnRhc2QCCA9kFgJmDxUCGGNvbnRldWRvLmFzcHg/cGFnaW5hPTI2MBNleC1wcmVzaWRlbnRlcyBmdW1wZAIJD2QWAmYPFQIYY29udGV1ZG8uYXNweD9wYWdpbmE9Mjk0JG1lZGlkYXMgZGUgZW5mcmVudGFtZW50byBkYSBjb3ZpZC0xOWQCAw8WAh8EAgUWCmYPZBYCZg8VAhhjb250ZXVkby5hc3B4P3BhZ2luYT0yODQxcGxhbm8gbmFjaW9uYWwgZGUgYXNzaXN0w6puY2lhIGVzdHVkYW50aWwgKHBuYWVzKWQCAQ9kFgJmDxUCFWNvbnRldWRvLmFzcHg/YXJlYT0xMBZtb3JhZGlhIHVuaXZlcnNpdMOhcmlhZAICD2QWAmYPFQIUY29udGV1ZG8uYXNweD9hcmVhPTYVYXNzaXN0w6puY2lhIGEgc2HDumRlZAIDD2QWAmYPFQIVY29udGV1ZG8uYXNweD9hcmVhPTExEmJvbHNhcyAvIGVzdMOhZ2lvc2QCBA9kFgJmDxUCFWNvbnRldWRvLmFzcHg/YXJlYT0xMhhwcm9ncmFtYXMgY29tcGxlbWVudGFyZXNkAgUPFgIfBAIJFhJmD2QWAmYPFQIYY29udGV1ZG8uYXNweD9wYWdpbmE9MTc1HXF1ZXN0aW9uw6FyaW8gc29jaW9lY29uw7RtaWNvZAIBD2QWAmYPFQIYY29udGV1ZG8uYXNweD9wYWdpbmE9MTk2D2Vuc2lubyB0w6ljbmljb2QCAg9kFgJmDxUCF2NvbnRldWRvLmFzcHg/cGFnaW5hPTIzC2dyYWR1YcOnw6NvZAIDD2QWAmYPFQIYY29udGV1ZG8uYXNweD9wYWdpbmE9MTIwEHDDs3MtZ3JhZHVhw6fDo29kAgQPZBYCZg8VAhdjb250ZXVkby5hc3B4P3BhZ2luYT0yNyhpc2Vuw6fDo28gZGUgdGF4YXM6IG1lc3RyYWRvIGUgZG91dG9yYWRvZAIFD2QWAmYPFQIXY29udGV1ZG8uYXNweD9wYWdpbmE9MjgJZXh0ZW5zw6NvZAIGD2QWAmYPFQIYY29udGV1ZG8uYXNweD9wYWdpbmE9MTQwGmludGVyY8OibWJpbyBpbnRlcm5hY2lvbmFsZAIHD2QWAmYPFQIYY29udGV1ZG8uYXNweD9wYWdpbmE9MTcwKHJldmFsaWRhw6fDo28gZGUgZGlwbG9tYXMgZGUgZ3JhZHVhw6fDo29kAggPZBYCZg8VAhhjb250ZXVkby5hc3B4P3BhZ2luYT0yNjgrbsOtdmVsIGl2IC0gZXNwZWPDrWZpY28gcGFyYSBhY2Vzc28gYW9zIHJ1c2Rk1IL9QHHZu1bKEamIsCRjgguAc5Qw42Bann8p1dq8jg8=" />
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAATStJn/7/a1kukX/VdDyDvOYf0n62fyYZzGaAXs4UYW10UyfUFyKU8ppktZbx3+0fAEu9XQ8r+jXoGYqCVjHXkSKw7CGpd6Cq6XBo1B3yWoFkkYEVlnVDM9rqm1vne0kNg=" />
+</div>
+    <div>
+        <div id="all" class="container_16">
+            <div id="header" class="grid_16">
+                <h1 id="logoFump" class=" grid_5 marginTop20" style="margin-left: 50px;">
+                    <a id="lnkPrincipal" title="Fump - Assistência estudantil da UFMG">
+                        <img src="/img/marca-fump.png" width="103" height="84" alt="Fump - Assistência estudantil da UFMG" />                        
+                    </a>
+                    <a class="marginLeft20" title="UFMG" href="http://www.ufmg.br" target="_blank">                        
+                        <img src="/img/marca-ufmg.png" width="147" height="44" alt="UFMG" />
+                    </a>
+                </h1>
+                <div class="grid_8 prefix_2 right">
+                    <img src="/img/img-superior.jpg" width="477" height="5" alt="" /></div>
+                <div id="menuLocalization" class="grid_10 omega marginTop10 right">
+                    <table class="right">
+                        <tr>
+                            <td>
+                                <input name="ctl00$txtBusca" type="text" value="Buscar" id="txtBusca" class="inputFormulario" onfocus="if(this.value == &#39;Buscar&#39;) {this.value = &#39;&#39;;}" onblur="if(this.value == &#39;&#39;) {this.value = &#39;Buscar&#39;;}" />
+                                <input type="submit" name="ctl00$btnBuscar" value="" id="btnBuscar" class="btnBuscar" />
+                            </td>
+                            <td style="padding-left: 10px;">
+                                <ul class="inline upper" id="menutop">
+                                    <li><a class="arialGray9" href="/fale-conosco.aspx">Fale com
+                                        a FUMP</a></li>
+                                    <li>
+                                        <img style="vertical-align: middle" src="/img/img-separacao-menu.jpg" width="3" height="4"
+                                            alt="" /></li>
+                                    <li><a class="arialGray9" href="http://intranet.fump.ufmg.br:8081/RM//Rhu-BancoTalentos/#/RM/Rhu-BancoTalentos/home">Trabalhe
+                                        Conosco</a></li>
+                                    <li>
+                                        <img style="vertical-align: middle" src="/img/img-separacao-menu.jpg" width="3" height="4"
+                                            alt="" /></li>
+                                    <li style="*width: 100px;"><a class="arialGray9" href="/conteudo.aspx?pagina=42">
+                                        Sala de Imprensa</a></li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="menuMain2" class="grid_10 right marginTop10">
+                    <ul class="inline right omega">
+                        <li>
+                            <a id="btnFump2" href="#" class="indent">Fump</a>
+                            <ul><li><a class='borderBottom2' href='/conteudo.aspx?pagina=133'> como ter acesso aos benefícios da fump</a></li><li><a class='borderBottom2' href='/conteudo.aspx?pagina=257'> missão, visão e valores</a></li><li><a class='borderBottom2' href='/conteudo.aspx?pagina=5'> história da fump</a></li><li><a class='borderBottom2' href='/conteudo.aspx?pagina=2'> contribuição para a assistência estudantil</a></li><li><a class='borderBottom2' href='/conteudo.aspx?pagina=12'> gestão atual</a></li><li><a class='borderBottom2' href='/conteudo.aspx?pagina=13'> conselhos</a></li><li><a class='borderBottom2' href='/conteudo.aspx?pagina=14'> estatuto</a></li><li><a class='borderBottom2' href='/conteudo.aspx?pagina=16'> prestação de contas</a></li><li><a class='borderBottom2' href='/conteudo.aspx?pagina=260'> ex-presidentes fump</a></li><li><a class='borderBottom2' href='/conteudo.aspx?pagina=294'> medidas de enfrentamento da covid-19</a></li></ul>                           
+                        </li>
+                        <li><a id="btnProgs2" href="#" class="indent">Programas</a>
+                            <ul><li><a style='padding-top: 5px;' class='borderBottom2' href='#'>Básicos</a></li><li><a style='padding-left: 10px; line-height: 13px;' href='/conteudo.aspx?area=19'>Alimentação</a></li><li><a style='padding-left: 10px; line-height: 13px;' href='/conteudo.aspx?area=10'>Moradia Universitária</a></li><li><a style='padding-left: 10px; line-height: 13px;' href='/conteudo.aspx?area=6'>Assistência à Saúde</a></li><li><a style='padding-left: 10px; line-height: 13px;' href='/conteudo.aspx?area=32'>Auxílio Financeiro</a></li><li><a style='padding-top: 5px;' class='borderBottom2' href='#'>Complementares</a></li><li><a href='/conteudo.aspx?pagina=179' style='padding-left: 10px; line-height: 13px;'>Auxílio Material Acadêmico</a></li><li>&nbsp;<a href='/conteudo.aspx?pagina=221' style='padding-left: 10px; line-height: 13px;'>Bolsa de Formação Profissional Complementar</a></li><li>&nbsp;<a href='/conteudo.aspx?pagina=203' style='padding-left: 10px; line-height: 13px;'>Bolsa Permanência</a></li></ul> 
+                        </li>
+                        <li><a id="btnQuestion2" href="/conteudo.aspx?pagina=175" class="indent">
+                            Questionário</a></li>
+                        <li><a id="btnAcesso" href="/conteudo.aspx?pagina=258" class="indent">
+                            Acesso à informação</a></li>
+                    </ul>
+                </div>
+                <div id="topDivision" class="grid_16 left marginTop15">
+                    <img src="/img/img-separador-superior.jpg" width="940" height="21" alt="" /></div>
+            </div>
+            <div id="content" class="grid_16 left">
+                
+    <div id="meio-cima" class="paddingBottom10">
+        <div class="esquerda">
+            <div id="home-itens">
+                <img src="img/programa-assistencia-estudantil.jpg" alt="" />
+                <ul>
+                    <li><a id="imgIcon01" class="icon01" href="conteudo.aspx?area=19">1</a></li>
+                    <li><a id="imgIcon03" class="icon03" href="conteudo.aspx?area=10">3</a></li>
+                    <li><a id="imgIcon02" class="icon02" href="conteudo.aspx?area=6">2</a></li>
+					<li><a id="imgIcon04" class="icon04" href="conteudo.aspx?pagina=67">4</a></li>
+                    <li><a id="imgIcon05" class="icon05" href="conteudo.aspx?pagina=179">5</a></li>
+                </ul>
+                <div class="icon01 selector" id="home-des-alter">
+                    <div class="home-itens-tit">
+                        <a href="conteudo.aspx?area=19">
+                            <img src="img/alimentacao-title.jpg" /></a></div>
+                    <div id="home-itens-desc">
+                    São quatro restaurantes universitários (RUs) que oferecem a todos os estudantes da UFMG almoço e jantar (RU Setorial I, RU campus Saúde e RU ICA). Já o RU Setorial II e o RU da Faculdade de Direito oferecem apenas almoço. Os estudantes assistidos pela Fump nos níveis I, II e III têm café da manhã gratuito, além de almoço e jantar a preço subsidiado.
+                     </div>
+                </div>
+                <div class="icon03 selector" id="home-des-alter3">
+                    <div class="home-itens-tit">
+                        <a href="conteudo.aspx?area=10">
+                            <img src="img/moradia-universitaria-title.jpg" /></a></div>
+                    <div id="home-itens-desc">
+                        Habitação adequada para os estudantes que não residem em Belo Horizonte e Montes
+                        Claros.</div>
+                </div>
+                <div class="icon02 selector" id="home-des-alter2">
+                    <div class="home-itens-tit">
+                        <a href="conteudo.aspx?area=6">
+                            <img src="img/assistencia-a-saude-title.jpg" /></a></div>
+                    <div id="home-itens-desc">
+                        O Programa de Assistência à Saúde oferece aos estudantes assistidos pela Fump acesso a atendimento médico, odontológico e psicológico.</div>
+                </div>
+                <div class="icon04 selector" id="home-des-alter4">
+                    <div class="home-itens-tit">
+                        <a href="programas-geral.aspx?tipo=complementares">
+                            <img src="img/bolsas-title.jpg" /></a></div>
+                    <div id="home-itens-desc">
+                        Programas de complementação financeira concedidos para o custeio de despesas básicas
+                        e acadêmicas dos estudantes assistidos pela Fump.</div>
+                </div>
+                <div class="icon05 selector" id="home-des-alter5">
+                    <div class="home-itens-tit">
+                        <a href="conteudo.aspx?area=12">
+                            <img src="img/programas-title.jpg" /></a></div>
+                    <div id="home-itens-desc">
+                        Programas de complementação educacional, desenvolvimento pessoal e profissional
+                        voltados para a formação acadêmica e cidadã dos estudantes.</div>
+                </div>
+            </div>
+            <div class="icon01 selector" id="home-meio-foto">
+                <img src="img/home-meio-foto1.jpg" /></div>
+            <div class="icon02 selector" id="home-meio-foto2">
+                <img src="img/home-meio-foto2.jpg" /></div>
+            <div class="icon03 selector" id="home-meio-foto3">
+                <img src="img/home-meio-foto3.jpg" /></div>
+            <div class="icon04 selector" id="home-meio-foto4">
+                <img src="img/home-meio-foto4.jpg" /></div>
+            <div class="icon05 selector" id="home-meio-foto5">
+                <img src="img/home-meio-foto5.jpg" /></div>
+        </div>
+        <div class="direita">
+            <a id="contentPlaceHolder_trBanner_hlkLinkInternaTopo" href="conteudo.aspx?pagina=2"><img id="contentPlaceHolder_trBanner_imgInternaTopo" title="banner_assistencia_221x161_e01.jpg" src="/conteudo/banner/banner_assistencia_221x161_e01.jpg" style="height:161px;width:221px;" /></a>
+    
+            <div class="clear">
+            </div>
+            <ul><li style='*width: 200px; *padding-left: 5px;'><a style='font-size: 10px;' href='http://sinae.fump.ufmg.br/sinaeWeb/LoginAluno'> Sinae - área do aluno</a></li><li style='*width: 200px; *padding-left: 5px;'><a style='font-size: 10px;' href='/conteudo.aspx?pagina=72'> Núcleo de escuta / Assistentes sociais</a></li><li style='*width: 200px; *padding-left: 5px;'><a style='font-size: 10px;' href='/conteudo.aspx?pagina=136'> Contatos</a></li><li style='*width: 200px; *padding-left: 5px;'><a style='font-size: 10px;' href='/licitacoes.aspx?exibir=A'> Compras/Licitações</a></li><li style='*width: 200px; *padding-left: 5px;'><a style='font-size: 10px;' href='/convenios.aspx'> Convênios</a></li><li style='*width: 200px; *padding-left: 5px;'><a style='font-size: 10px;' href='/conteudo.aspx?pagina=187'> Editais</a></li></ul>            
+        </div>
+    </div>
+    <div class="" id="home-saibamais">
+        <a id="lnkKnowMore">
+            <img src="img/icone-saiba-mais.gif" align="texttop" />&nbsp;Saiba mais</a>
+    </div>
+    <div id="meio-baixo">
+        <div class="esquerda">
+            <div id="home-baixo" style="margin-top: 40px;">     
+                <input name="ctl00$contentPlaceHolder$txtQtdeBanners" type="text" value="7" id="contentPlaceHolder_txtQtdeBanners" class="txtDataSelecionada none" style="height:1px;width:1px;" />
+                <a href='http://www.fump.ufmg.br/conteudo.aspx?pagina=261'> <img alt='Bolsa Apadrinhamento' id='img1' width='340' height='280'src='/conteudo/banner/banner_apadrinhamento.jpg'  /></a><a href='http://www.fump.ufmg.br/noticias.aspx?pag=2&noticia=1312'> <img alt='Como cadastrar conta corrente' id='img2' width='340' height='280'src='/conteudo/banner/bannerconta_340x280.jpg' style='display: none;' /></a><a href='http://www.fump.ufmg.br/conteudo.aspx?pagina=294'> <img alt='Atualizacao funcionamento COVID-19' id='img3' width='340' height='280'src='/conteudo/banner/banner2340x280.jpg' style='display: none;' /></a><a href='http://www.fump.ufmg.br/conteudo.aspx?pagina=294'> <img alt='Renovação dos Auxílios Financeiros aos veteranos' id='img4' width='340' height='280'src='/conteudo/banner/banner5_340x280.jpg' style='display: none;' /></a><a href='http://www.fump.ufmg.br/conteudo.aspx?pagina=295'> <img alt='Apadrinhamento Inclusao Digital' id='img5' width='340' height='280'src='/conteudo/banner/banner.jpg' style='display: none;' /></a><a href='http://www.fump.ufmg.br/noticias.aspx?pag=2&noticia=1386'> <img alt='Aplicativo Fump - Simples, seguro e gratuito' id='img6' width='340' height='280'src='/conteudo/banner/aplicativo_fump.jpg' style='display: none;' /></a><a href='http://www.fump.ufmg.br/noticias.aspx?noticia=1426'> <img alt='Retomada do agendamento on-line em Belo Horizonte e Montes Claros' id='img7' width='340' height='280'src='/conteudo/banner/banner_site.jpg' style='display: none;' /></a>        
+                
+                
+            </div>
+            <div class="right home-news">
+                <p>
+                    <img src="img/noticias-title.jpg" width="74" height="19" alt="" /></p>
+                
+        <table id="listNews" class="paddingTop5" >
+      
+        <tr>
+          <td valign="top"><div class="arialGreen14Strong">20.04.2022</div></td>
+          <td><a class="arialGreen12" href='noticias.aspx?noticia=1919'>Funcionamento das unidades da Fump nos dias 21, 22 e 23 de abril</a></td>
+        </tr>
+      
+        <tr>
+          <td valign="top"><div class="arialGreen14Strong">20.04.2022</div></td>
+          <td><a class="arialGreen12" href='noticias.aspx?noticia=1918'>Edital PFPC 85/2022 - Centro de Memória da Escola de Veterinária</a></td>
+        </tr>
+      
+        <tr>
+          <td valign="top"><div class="arialGreen14Strong">20.04.2022</div></td>
+          <td><a class="arialGreen12" href='noticias.aspx?noticia=1917'>Edital PFPC 84/2022 - Seção de Ensino da EFFTO</a></td>
+        </tr>
+      
+        <tr>
+          <td valign="top"><div class="arialGreen14Strong">20.04.2022</div></td>
+          <td><a class="arialGreen12" href='noticias.aspx?noticia=1916'>Edital PFPC 83/2022 - Departamento de Desenho da Escola de Belas Artes</a></td>
+        </tr>
+      
+        <tr>
+          <td valign="top"><div class="arialGreen14Strong">20.04.2022</div></td>
+          <td><a class="arialGreen12" href='noticias.aspx?noticia=1915'>Edital PFPC 82/2022 - Secretaria do Programa Envelhecimento Ativo da EFFTO</a></td>
+        </tr>
+      
+        <tr>
+          <td valign="top"><div class="arialGreen14Strong">20.04.2022</div></td>
+          <td><a class="arialGreen12" href='noticias.aspx?noticia=1914'>Edital PFPC 81/2022 Comunicação do Programa Envelhecimento Ativo da EEFFTO</a></td>
+        </tr>
+      
+        </table>
+      
+      
+      <p id="contentPlaceHolder_newsBox_allNewsLink" class="marginTop20"><a class="linkSeeMore arialGray12 left paddingTop5" href="noticias.aspx">Veja mais notícias</a></p>
+
+
+            </div>
+        </div>
+        <div class="direita omega alpha" style="width: 240px;">
+            <div class="left">
+                <table>
+                    <tr>
+                        <td colspan="2"><p>
+                            <img height="54" width="130" src="img/parceiros-subtitle.jpg" alt=""></p>
+                            <br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a target="_blank" href="http://www.ufmg.br/copi/sempre-index.php">
+                                <img height="75" width="119" style="margin-top: 15px; margin-left: 30px;" alt=""
+                                    src="img/sempre_ufmg.jpg"></a>
+                        </td>
+                        <td>
+                            <a target="_blank" href="http://www.bu.ufmg.br/">
+                                <img height="76" width="47" style="margin-top: 15px; margin-left: 30px;" alt="" src="img/marca-bu.jpg"></a>
+                        </td>                        
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="seta2">
+    </div>
+    <script type="text/javascript">
+
+        var numImages = $(".txtDataSelecionada").val();
+        var currentImage = 1;
+        imageInterval = window.setInterval("changeImage();", 4000);
+
+        function changeImage() {
+            $("#img" + currentImage).fadeOut("slow", function() {
+                if (currentImage >= numImages) {
+                    currentImage = 0;
+                }
+                $("#img" + (currentImage + 1)).fadeIn("slow", function() {
+                    currentImage++;
+                });
+            });
+        }
+
+    </script>
+
+            </div>
+            
+<div id="footer" class="grid_16 left">
+    <div class="grid_16 left">
+        
+        <a href="http://www.facebook.com/FumpUFMG" target="_blank">
+            <img style="padding-left: 10px;" class="left" src="/img/img_facebook.png" width="34" height="33" alt="" />
+        </a><a href="http://www.twitter.com/fump_UFMG" target="_blank">
+            <img style="padding-left: 10px;" style="padding-left: 10px;" class="left" src="/img/img_twitter.png" width="34"
+                height="33" alt="" />
+        </a>
+        
+        <div class="grid_16 left">
+            <ul id="footerFump" class="marginTop10 left">
+                <li class="arialGreen12 bolder borderBottom4">fump</li>
+                
+                        <li><a class="arialWhite10" href='/conteudo.aspx?pagina=92'>
+                            como ter acesso aos benefícios da fump</a></li>
+                    
+                        <li><a class="arialWhite10" href='/conteudo.aspx?pagina=257'>
+                            missão, visão e valores</a></li>
+                    
+                        <li><a class="arialWhite10" href='/conteudo.aspx?pagina=5'>
+                            história da fump</a></li>
+                    
+                        <li><a class="arialWhite10" href='/conteudo.aspx?pagina=2'>
+                            contribuição para a assistência estudantil</a></li>
+                    
+                        <li><a class="arialWhite10" href='/conteudo.aspx?pagina=12'>
+                            gestão atual</a></li>
+                    
+                        <li><a class="arialWhite10" href='/conteudo.aspx?pagina=13'>
+                            conselhos</a></li>
+                    
+                        <li><a class="arialWhite10" href='/conteudo.aspx?pagina=14'>
+                            estatuto</a></li>
+                    
+                        <li><a class="arialWhite10" href='/conteudo.aspx?pagina=16'>
+                            prestação de contas</a></li>
+                    
+                        <li><a class="arialWhite10" href='/conteudo.aspx?pagina=260'>
+                            ex-presidentes fump</a></li>
+                    
+                        <li><a class="arialWhite10" href='/conteudo.aspx?pagina=294'>
+                            medidas de enfrentamento da covid-19</a></li>
+                    
+            </ul>
+            <ul id="footerProgram" class="marginTop10 left">
+                <li class="arialGreen12 bolder borderBottom4">programas</li>
+                
+                        <li><a class="arialWhite10" href='/conteudo.aspx?pagina=284'>
+                            plano nacional de assistência estudantil (pnaes)</a></li>
+                    
+                        <li><a class="arialWhite10" href='/conteudo.aspx?area=10'>
+                            moradia universitária</a></li>
+                    
+                        <li><a class="arialWhite10" href='/conteudo.aspx?area=6'>
+                            assistência a saúde</a></li>
+                    
+                        <li><a class="arialWhite10" href='/conteudo.aspx?area=11'>
+                            bolsas / estágios</a></li>
+                    
+                        <li><a class="arialWhite10" href='/conteudo.aspx?area=12'>
+                            programas complementares</a></li>
+                    
+            </ul>
+            <ul id="footerQuestion" class="marginTop10 left">
+                <li class="arialGreen12 bolder borderBottom4">questionário socioeconômico</li>
+                
+                        <li><a class="arialWhite10" href='/conteudo.aspx?pagina=175'>
+                            questionário socioeconômico</a></li>
+                    
+                        <li><a class="arialWhite10" href='/conteudo.aspx?pagina=196'>
+                            ensino técnico</a></li>
+                    
+                        <li><a class="arialWhite10" href='/conteudo.aspx?pagina=23'>
+                            graduação</a></li>
+                    
+                        <li><a class="arialWhite10" href='/conteudo.aspx?pagina=120'>
+                            pós-graduação</a></li>
+                    
+                        <li><a class="arialWhite10" href='/conteudo.aspx?pagina=27'>
+                            isenção de taxas: mestrado e doutorado</a></li>
+                    
+                        <li><a class="arialWhite10" href='/conteudo.aspx?pagina=28'>
+                            extensão</a></li>
+                    
+                        <li><a class="arialWhite10" href='/conteudo.aspx?pagina=140'>
+                            intercâmbio internacional</a></li>
+                    
+                        <li><a class="arialWhite10" href='/conteudo.aspx?pagina=170'>
+                            revalidação de diplomas de graduação</a></li>
+                    
+                        <li><a class="arialWhite10" href='/conteudo.aspx?pagina=268'>
+                            nível iv - específico para acesso aos rus</a></li>
+                    
+            </ul>
+        </div>
+        <div class="grid_16 left marginTop20">
+            <p class="arialWhite12 bolder" style="text-align: center;">
+                Av. Antônio Abrahão Caram, 610, São José - Belo Horizonte/MG -  (31) 3409.8470 / 3409.8401 / 3409.8403 <a href="http://www.marketingdebusca.com.br/pagerank/"
+                    target="_blank"><img height="20" border="0" width="51" src="http://www.marketingdebusca.com.br/imagens/pagerank-7.gif"
+                        alt="PageRank" class="left"></a></p>
+        </div>
+    </div>
+</div>
+
+        </div>
+    </div>
+    </form>
+</body>
+</html>

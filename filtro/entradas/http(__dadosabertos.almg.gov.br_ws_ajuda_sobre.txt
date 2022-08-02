@@ -1,0 +1,238 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="pt-BR">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="Author" content="ALMG">
+<title>Sobre o sistema...</title>
+<link type="text/css" rel="stylesheet" href="http://www.almg.gov.br/opencms/opencms/system/modules/br.gov.almg.internet.apresentacao/resources/css/ajuda/default.css">
+<link type="image/x-icon" rel='shortcut icon' href='http://www.almg.gov.br/opencms/opencms/system/modules/br.gov.almg.internet.apresentacao/resources/img/ajuda/ico_almg.ico'>
+<script type="text/javascript">
+	if (!document.createElementNS) {
+		document.createElement('article');
+		document.createElement('aside');
+		document.createElement('footer');
+		document.createElement('section');
+	}
+</script>
+</head>
+<body>
+<div id="header">
+	<div id="header_logo">
+		<a href="http://dadosabertos.almg.gov.br/ws/ajuda/sobre"><img border="0" src="http://www.almg.gov.br/opencms/opencms/system/modules/br.gov.almg.internet.apresentacao/resources/img/ajuda/logo_api.jpg"></a>
+	</div>
+	<div id="header_button">
+		<ul>
+			<li><a href="http://dadosabertos.almg.gov.br/ws/ajuda/sobre">Home</a></li>
+			<li><a href="http://www.almg.gov.br" target="_blank">Site ALMG</a></li>
+		</ul>
+	</div>
+</div>
+<article>
+<h2>Sobre o sistema...</h2>
+
+<p>O Sistema de Webservices da <abbr title="Assembleia Legislativa de Minas Gerais">ALMG</abbr>,
+cuja sigla é <code>ws</code>, é composto por um conjunto de recursos web
+cujos acessos tentam, sempre que possível, atender aos ideais e ao
+conjunto de melhores práticas <a
+	href="http://pt.wikipedia.org/wiki/RESTful"><abbr
+	title="Representational State Transfer">REST</abbr></a>.</p>
+<p>Outra forma de definir o <code>ws</code> seria como uma <abbr
+	title="Application Programming Interface">API</abbr> <abbr
+	title="Representational State Transfer">REST</abbr>. Possui uma <abbr
+	title="Application Programming Interface">API</abbr> que retorna
+diversos tipos de <abbr title="Plain Old XML">POX</abbr> através do <abbr
+	title="Hypertext Transfer Protocol">HTTP</abbr>.</p>
+<p>Contudo, alguns aspectos desta <abbr
+	title="Application Programming Interface">API</abbr> não são muito <abbr
+	title="Representational State Transfer">REST</abbr>ful:</p>
+<ul>
+	<li>Nem todos objetos são expostos como recursos e por isso não
+	é possível acessá-los diretamente.</li>
+	<li>As representações dos recursos não são interconectadas, 
+	não é possível navegar por uma lista de objetos até chegar a um objeto da
+	lista diretamente. Muitas vezes, apenas as chaves são listadas.</li>
+	<li>Muitos objetos são acessados através de <abbr
+		title="Universal Resource Locator">URLs</abbr> de pesquisa,
+	identificadas por verbos como "consulta".</li>
+	<li>Leia os termos de utilização desta API no 
+		<a href="http://www.almg.gov.br/sobre/dados_abertos/index.html">portal da ALMG</a>.</li>
+</ul>
+<p>Deve-se evitar a codificação de letras acentuadas e sinais.
+Lembre-se que ao usar webservices através de programas, a URL deve ser
+codificada para evitar caracteres proibidos. Veja mais sobre codificação
+na <a href="http://www.w3.org/TR/html4/">especificação HTML 4</a>.</p>
+<p>Nos textos montados no XML, adotamos as seguintes tabelas de
+"escape".</p>
+<table>
+	<caption>Tabela com os "escapes"</caption>
+	<thead title="Tabela com os 'escapes'">
+		<tr>
+			<th>Original</th>
+			<th>Versão Escape</th>
+			<th>Descrição</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>&lt;</td>
+			<td>&amp;lt;</td>
+			<td>menor que</td>
+		</tr>
+		<tr>
+			<td>&gt;</td>
+			<td>&amp;gt;</td>
+			<td>maior que</td>
+		</tr>
+		<tr>
+			<td>&amp;</td>
+			<td>&amp;amp;</td>
+			<td>ampersand&nbsp;</td>
+		</tr>
+		<tr>
+			<td>'</td>
+			<td>&amp;apos;</td>
+			<td>apostrófo</td>
+		</tr>
+		<tr>
+			<td>"</td>
+			<td>&amp;quot;</td>
+			<td>aspas</td>
+		</tr>
+	</tbody>
+</table>
+<p>Veja a seguir as páginas com explicações sobre cada recurso.
+Ao clicar em uma ajuda específica, a respectiva página é montada com
+exemplos reais que refletem a base no momento da consulta. Assim, o
+resultado pode demorar e/ou alguns exemplos podem não exibir seus
+resultados.</p>
+<table>
+	<caption>Tabela com os webservices</caption>
+	<thead title="Tabela com os webservices">
+		<tr>
+			<th>Recurso</th>
+			<th>Versão</th>
+			<th>Descrição</th>
+			<th>URL</th>
+		</tr>
+	</thead>
+	<tbody>
+		
+		<tr>
+			<td>Agenda Institucional</td>
+			<td>1.6</td>
+			<td>Este conjunto de webservices cuida dos itens de agenda institucional.</p> <p>Os itens de agenda são:</p><ul><li>Atividade de Ensino</li><li>Audiência Pública</li><li>Debate Público</li><li>Evento Institucional</li><li>Reunião de Comissão</li><li>Reunião de Plenário</li><li>Reunião Preparatória de Evento Institucional</li><li>Visita de Comissão</li><li>Visita Orientada</li></ul><p>Outros tipos de itens de agenda devem ser cadastrados em sistema próprio da ALMG.</td>
+			<td><a href="http://dadosabertos.almg.gov.br/ws/agenda/ajuda">http://dadosabertos.almg.gov.br/ws/agenda/ajuda</a></td>
+		</tr>
+		
+		<tr>
+			<td>Comissões</td>
+			<td>2.0</td>
+			<td>Este conjunto de webservices retorna listas de comissões e participações de Deputados em comissões.</p></td>
+			<td><a href="http://dadosabertos.almg.gov.br/ws/comissoes/ajuda">http://dadosabertos.almg.gov.br/ws/comissoes/ajuda</a></td>
+		</tr>
+		
+		<tr>
+			<td>Contratos</td>
+			<td>1.1</td>
+			<td>Este conjunto de webservices implementa a consulta à lista de pessoas físicas e jurídicas com contratos ou convênios vigentes firmados pela ALMG.</td>
+			<td><a href="http://dadosabertos.almg.gov.br/ws/prestacao_contas/contratos/ajuda">http://dadosabertos.almg.gov.br/ws/prestacao_contas/contratos/ajuda</a></td>
+		</tr>
+		
+		<tr>
+			<td>Deputados</td>
+			<td>1.4</td>
+			<td>Este conjunto de webservices retorna listas de Deputados da legislatura atual. Também retorna listas de pronunciamentos e proposições de autoria de Deputados.</td>
+			<td><a href="http://dadosabertos.almg.gov.br/ws/deputados/ajuda">http://dadosabertos.almg.gov.br/ws/deputados/ajuda</a></td>
+		</tr>
+		
+		<tr>
+			<td>Legislaturas</td>
+			<td>1.0</td>
+			<td>Este conjunto de webservices retorna listas de Deputados que exerceram mandato, seus pronunciamentos e proposições, comissões e participações de Deputados em comissões de legislaturas passadas.</p><p>Uma legislatura é o período de tempo em que um mandato parlamentar é exercido.</td>
+			<td><a href="http://dadosabertos.almg.gov.br/ws/legislaturas/ajuda">http://dadosabertos.almg.gov.br/ws/legislaturas/ajuda</a></td>
+		</tr>
+		
+		<tr>
+			<td>Legislação</td>
+			<td>1.2</td>
+			<td>Este conjunto de webservices implementa consultas às bases de legislação da ALMG.</p><p>Além da legislação mineira em sua totalidade desde 1947, permite pesquisa em artigos atualizados de certas normas específicas: Código de Saúde, Constituição Estadual, Estatuto do Servidor e Regimento Interno. Também permite consulta aos artigos atualizados da Constituição Federal.</td>
+			<td><a href="http://dadosabertos.almg.gov.br/ws/legislacao/ajuda">http://dadosabertos.almg.gov.br/ws/legislacao/ajuda</a></td>
+		</tr>
+		
+		<tr>
+			<td>Localidades Brasileiras</td>
+			<td>1.0</td>
+			<td>Este conjunto de webservices implementa consultas às localidades brasileiras e unidades da federação.</td>
+			<td><a href="http://dadosabertos.almg.gov.br/ws/brasil/localidades/ajuda">http://dadosabertos.almg.gov.br/ws/brasil/localidades/ajuda</a></td>
+		</tr>
+		
+		<tr>
+			<td>Mídias</td>
+			<td>1.3</td>
+			<td>Este conjunto de webservices fornece listas de URLs e metadados sobre o acervo de mídias indexadas da Assembleia.</p><p>Uma mídia pode ser uma imagem, vídeo, som, pdf ou qualquer outro tipo de mídia que tenha um <i>mime type</i> cadastrado no sistema de indexação multimídia.</p><p>A indexação de uma mídia é realizada usando tags de localização e de conteúdo conforme o webservice de tags.</p><p>Uma mídia pode ter visões, que são outras mídias que têm a mesma indexação, mas são de outro tipo ou resolução.</td>
+			<td><a href="http://dadosabertos.almg.gov.br/ws/midias/ajuda">http://dadosabertos.almg.gov.br/ws/midias/ajuda</a></td>
+		</tr>
+		
+		<tr>
+			<td>Plenário</td>
+			<td>1.2</td>
+			<td>Este conjunto de webservices retorna informações sobre as reuniões de Plenário.</td>
+			<td><a href="http://dadosabertos.almg.gov.br/ws/plenario/ajuda">http://dadosabertos.almg.gov.br/ws/plenario/ajuda</a></td>
+		</tr>
+		
+		<tr>
+			<td>Pronunciamentos</td>
+			<td>1.1</td>
+			<td>Este conjunto de webservices retorna pronunciamentos de Deputados e outras autoridades, incluindo apartes em pronunciamentos de outros Deputados.</td>
+			<td><a href="http://dadosabertos.almg.gov.br/ws/pronunciamentos/ajuda">http://dadosabertos.almg.gov.br/ws/pronunciamentos/ajuda</a></td>
+		</tr>
+		
+		<tr>
+			<td>Proposições </td>
+			<td>1.1</td>
+			<td>Este conjunto de webservices implementa pesquisa às proposições (também chamadas de matérias) em tramitação na ALMG.</p><p>Pesquisa informações sobre todas as proposições que estão tramitando ou que foram apreciadas pela Assembleia Legislativa de Minas Gerais desde 1959.</td>
+			<td><a href="http://dadosabertos.almg.gov.br/ws/proposicoes/ajuda">http://dadosabertos.almg.gov.br/ws/proposicoes/ajuda</a></td>
+		</tr>
+		
+		<tr>
+			<td>Representação Partidária</td>
+			<td>1.0</td>
+			<td>Este conjunto de webservices retorna listas de partidos, blocos e lideranças da legislatura atual.</td>
+			<td><a href="http://dadosabertos.almg.gov.br/ws/representacao_partidaria/ajuda">http://dadosabertos.almg.gov.br/ws/representacao_partidaria/ajuda</a></td>
+		</tr>
+		
+		<tr>
+			<td>Tags</td>
+			<td>1.1</td>
+			<td>Este conjunto de webservices fornece listas de tags de indexação.</p><p>Uma tag pode ser de conteúdo ou uma tag de localização, querendo dizer que representa uma seção do Portal.</p><p>Uma tag pode ser assinável para boletim, indicando que pode ser escolhida por um usuário que deseja receber boletins de notícias indexadas com esta tag.</p><p>Da mesma forma, uma tag pode ser assinável para RSS.</p><p>Tags podem ser hierarquizadas em dois níveis. Isso quer dizer que uma tag pode ter uma ou nenhuma tag pai, mas nunca vai ter uma tag avô.</p><p>Tags sem pai são ditas serem tags de primeiro nível.</td>
+			<td><a href="http://dadosabertos.almg.gov.br/ws/indexacao/tags/ajuda">http://dadosabertos.almg.gov.br/ws/indexacao/tags/ajuda</a></td>
+		</tr>
+		
+		<tr>
+			<td>Verbas Indenizatórias</td>
+			<td>1.1</td>
+			<td>Este webservice permite consultar o extrato das despesas de verba indenizatória de Deputado.</p><p>Todo Deputado faz jus a uma verba indenizatória por despesas realizadas, mediante requerimento e comprovação com notas fiscais ou documentos equivalentes, até o limite mensal de R$ 20 mil.</p><p>Um Deputado possui uma lista de datas para as quais foram gerados relatórios mensais de verbas indenizatórias. Em uma data, podem ocorrer diversos itens de despesa.</td>
+			<td><a href="http://dadosabertos.almg.gov.br/ws/prestacao_contas/verbas_indenizatorias/ajuda">http://dadosabertos.almg.gov.br/ws/prestacao_contas/verbas_indenizatorias/ajuda</a></td>
+		</tr>
+		
+	</tbody>
+</table>
+<p>Hoje em dia, a maioria das APIs "REST" não são totalmente
+RESTful, que é justamente o caso do <code>ws</code>. </p>
+<p>Envie suas <a href="http://www.almg.gov.br/participe/fale_assembleia/index.html?idAssunto=10">sugestões e críticas</a>.</p>
+</article>
+<aside>
+<h2>Mais referências</h2>
+<ul>
+	<li><a href="http://pt.wikipedia.org/wiki/RESTful">Wiki RESTful</a></li>
+	<li><a href="http://www.peej.co.uk/articles/restfully-delicious.html">A RESTful Web Service, an Example</a> - An example of a RESTful API for Delicious. <span class="date">(30 out. 2005)</span></li>
+	<li><a href="/ws/ajuda/parametros">Lista de parâmetros para	webservices</a></li>
+	<li><a href="/ws/ajuda/metodos">Lista de URLs para webservices</a></li>
+</ul>
+</aside>
+<footer>
+&copy; ALMG | Escrito: Jul 26, 2010 | Última modificação: Mar 30, 2011 | <a href="http://www.almg.gov.br/">Voltar</a>
+</footer>
+</body>
+</html>

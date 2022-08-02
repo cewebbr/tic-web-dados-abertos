@@ -1,0 +1,2046 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="pt-BR">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta name="Author" content="ALMG">
+<title>Agenda Institucional</title>
+<script type="text/javascript" src="http://www.almg.gov.br/opencms/opencms/system/modules/br.gov.almg.internet.apresentacao/resources/js/ajuda/accordion/jquery-1.4.4.min.js"></script>
+<script type="text/javascript" src="http://www.almg.gov.br/opencms/opencms/system/modules/br.gov.almg.internet.apresentacao/resources/js/ajuda/accordion/jquery-ui-1.8.10.custom.min.js"></script>
+<link type="text/css" rel="stylesheet" href="http://www.almg.gov.br/opencms/opencms/system/modules/br.gov.almg.internet.apresentacao/resources/css/ajuda/default.css">
+<link type="image/x-icon" rel='shortcut icon' href='http://www.almg.gov.br/opencms/opencms/system/modules/br.gov.almg.internet.apresentacao/resources/img/ajuda/ico_almg.ico'>
+<script type="text/javascript">
+	if (!document.createElementNS) {
+		document.createElement('article');
+		document.createElement('aside');
+		document.createElement('footer');
+		document.createElement('section');
+	}
+
+	<!--
+	$(function() {
+		$(".sanfona").accordion({
+			active: false , collapsible: true, autoHeight: false
+		});
+	});
+	//-->
+</script>
+</head>
+<body>
+<div id="header">
+	<div id="header_logo">
+		<a href="http://dadosabertos.almg.gov.br/ws/ajuda/sobre"><img border="0" src="http://www.almg.gov.br/opencms/opencms/system/modules/br.gov.almg.internet.apresentacao/resources/img/ajuda/logo_api.jpg"></a>
+	</div>
+	<div id="header_button">
+		<ul>
+			<li><a href="http://dadosabertos.almg.gov.br/ws/ajuda/sobre">Home</a></li>
+			<li><a href="http://www.almg.gov.br" target="_blank">Site ALMG</a></li>
+		</ul>
+	</div>
+</div>
+<article>
+<h2>Agenda Institucional</h2>
+<p><b>Versão:</b> 1.6</p>
+<p>Apresentamos as principais características do webservice <i>Agenda Institucional</i>,
+componente do sistema de webservices da <abbr title="Assembleia Legislativa de Minas Gerais">ALMG</abbr>, 
+cuja sigla é <code>ws</code>.</p>
+<p>Este conjunto de webservices cuida dos itens de agenda institucional.</p> <p>Os itens de agenda são:</p><ul><li>Atividade de Ensino</li><li>Audiência Pública</li><li>Debate Público</li><li>Evento Institucional</li><li>Reunião de Comissão</li><li>Reunião de Plenário</li><li>Reunião Preparatória de Evento Institucional</li><li>Visita de Comissão</li><li>Visita Orientada</li></ul><p>Outros tipos de itens de agenda devem ser cadastrados em sistema próprio da ALMG.</p>
+<h4>Recursos</h4>
+<p>Os recursos que podem ser acessados são listados a seguir.</p>
+<table>
+	<thead>
+		<tr>
+			<th>Nome</th>
+			<th>Versão</th>
+		</tr>
+	</thead>
+	<tbody>
+        
+		<tr>
+			<td><a href="#Lista de Categorias">Lista de Categorias</a></td>
+			<td>1.0</td>
+		</tr>
+        
+		<tr>
+			<td><a href="#Lista de Seções">Lista de Seções</a></td>
+			<td>1.0</td>
+		</tr>
+        
+		<tr>
+			<td><a href="#Lista de Categorias por Seção do Portal">Lista de Categorias por Seção do Portal</a></td>
+			<td>1.0</td>
+		</tr>
+        
+		<tr>
+			<td><a href="#Lista de Itens da Agenda Diária por Seção do Portal">Lista de Itens da Agenda Diária por Seção do Portal</a></td>
+			<td>1.0</td>
+		</tr>
+        
+		<tr>
+			<td><a href="#Lista de Itens da Agenda Diária por Seção do Portal, por período, por expressão e por categoria">Lista de Itens da Agenda Diária por Seção do Portal, por período, por expressão e por categoria</a></td>
+			<td>1.0</td>
+		</tr>
+        
+		<tr>
+			<td><a href="#Ajuda">Ajuda</a></td>
+			<td>1.0</td>
+		</tr>
+        
+	</tbody>
+</table>
+<p>Quando o XML de resposta do recurso é maior que 20000 (vinte mil) caracteres, ele é truncado para 10000 (dez mil) caracteres para não tornar este documento muito extenso.</p>
+
+
+<h3><a name="Lista de Categorias"></a>Lista de Categorias</h3>
+<p><b>Versão:</b> 1.0</p>
+<p>Lista as categorias de item de agenda, ordenadas pelo nome.</p>
+<table>
+<tbody>
+<tr><td>URL</td><td><code>http://dadosabertos.almg.gov.br/ws/agenda/categorias</code></td></tr>
+<tr><td>Método</td><td> <code>GET</code></td></tr>
+<tr><td>Tipos de Consumo</td><td> <code>N.I.</code><br /> </td></tr>
+<tr><td>Tipos de Retorno</td><td> <code>application/xml</code><br /> </td></tr>
+<tr><td>Resultados</td><td> <code>200 OK & XML</code><br /></td></tr>
+</tbody>
+</table>
+<h4>Parâmetros</h4>
+<table>
+	<thead>
+		<tr>
+			<th>Nome</th>
+			<th>Descrição</th>
+			<th>Tipo</th>
+			<th>Valor Default</th>
+		</tr>
+	</thead>
+	<tbody>
+	<tr><td colspan="4">Sem parâmetros.</td></tr>
+	</tbody>
+</table>
+
+<h4>Headers</h4>
+<table>
+	<thead>
+		<tr>
+			<th>Nome</th>
+			<th>Descrição</th>
+			<th>Tipo</th>
+			<th>Valor Default</th>
+		</tr>
+	</thead>
+	<tbody>
+	<tr><td colspan="4">Sem headers.</td></tr>
+	</tbody>
+</table>
+
+<h4>Exemplos</h4>
+<div class="sanfona">
+
+
+<h5><a href="#Lista de Categorias">Lista geral</a></h5>
+<div class="code">GET http://dadosabertos.almg.gov.br/ws/agenda/categorias<br/><br/>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+&lt;listaCategoriaItemAgenda xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
+&lt;categoria&gt;
+  &lt;id&gt;14&lt;/id&gt;
+  &lt;nome&gt;ALMG Cultural&lt;/nome&gt;
+  &lt;origemConteudo&gt;SISTEMA&lt;/origemConteudo&gt;
+  &lt;parametrosBusca&gt;
+    &lt;secoesPortal&gt;home,agenda&lt;/secoesPortal&gt;
+  &lt;/parametrosBusca&gt;
+  &lt;idsCategoriasSubordinadas&gt;15,16,17,18,19,20&lt;/idsCategoriasSubordinadas&gt;
+&lt;/categoria&gt;
+&lt;categoria&gt;
+  &lt;id&gt;15&lt;/id&gt;
+  &lt;nome&gt;Artes Plásticas&lt;/nome&gt;
+  &lt;origemConteudo&gt;CADASTRO&lt;/origemConteudo&gt;
+  &lt;parametrosBusca&gt;
+    &lt;secoesPortal&gt;cultural&lt;/secoesPortal&gt;
+  &lt;/parametrosBusca&gt;
+  &lt;idsCategoriasSuperiores&gt;14&lt;/idsCategoriasSuperiores&gt;
+&lt;/categoria&gt;
+&lt;categoria&gt;
+  &lt;id&gt;16&lt;/id&gt;
+  &lt;nome&gt;Artesanato&lt;/nome&gt;
+  &lt;origemConteudo&gt;CADASTRO&lt;/origemConteudo&gt;
+  &lt;parametrosBusca&gt;
+    &lt;secoesPortal&gt;cultural&lt;/secoesPortal&gt;
+  &lt;/parametrosBusca&gt;
+  &lt;idsCategoriasSuperiores&gt;14&lt;/idsCategoriasSuperiores&gt;
+&lt;/categoria&gt;
+&lt;categoria&gt;
+  &lt;id&gt;20013&lt;/id&gt;
+  &lt;nome&gt;Assembleia Fiscaliza&lt;/nome&gt;
+  &lt;origemConteudo&gt;SISTEMA&lt;/origemConteudo&gt;
+  &lt;parametrosBusca&gt;
+    &lt;secoesPortal&gt;eventos&lt;/secoesPortal&gt;
+  &lt;/parametrosBusca&gt;
+  &lt;idsCategoriasSuperiores&gt;6&lt;/idsCategoriasSuperiores&gt;
+&lt;/categoria&gt;
+&lt;categoria&gt;
+  &lt;id&gt;24&lt;/id&gt;
+  &lt;nome&gt;Atividades para as Câmaras&lt;/nome&gt;
+  &lt;origemConteudo&gt;SISTEMA&lt;/origemConteudo&gt;
+  &lt;parametrosBusca&gt;
+    &lt;secoesPortal&gt;escola&lt;/secoesPortal&gt;
+  &lt;/parametrosBusca&gt;
+  &lt;idsCategoriasSuperiores&gt;3&lt;/idsCategoriasSuperiores&gt;
+&lt;/categoria&gt;
+&lt;categoria&gt;
+  &lt;id&gt;20005&lt;/id&gt;
+  &lt;nome&gt;Audiência Pública - Evento&lt;/nome&gt;
+  &lt;origemConteudo&gt;SISTEMA&lt;/origemConteudo&gt;
+  &lt;parametrosBusca&gt;
+    &lt;secoesPortal&gt;eventos&lt;/secoesPortal&gt;
+  &lt;/parametrosBusca&gt;
+  &lt;idsCategoriasSuperiores&gt;6&lt;/idsCategoriasSuperiores&gt;
+&lt;/categoria&gt;
+&lt;categoria&gt;
+  &lt;id&gt;20009&lt;/id&gt;
+  &lt;nome&gt;Audiência Pública de Comissões&lt;/nome&gt;
+  &lt;origemConteudo&gt;SISTEMA&lt;/origemConteudo&gt;
+  &lt;parametrosBusca&gt;
+    &lt;secoesPortal&gt;eventos&lt;/secoesPortal&gt;
+  &lt;/parametrosBusca&gt;
+  &lt;idsCategoriasSuperiores&gt;6&lt;/idsCategoriasSuperiores&gt;
+&lt;/categoria&gt;
+&lt;categoria&gt;
+  &lt;id&gt;11&lt;/id&gt;
+  &lt;nome&gt;Campanhas Educativas&lt;/nome&gt;
+  &lt;origemConteudo&gt;CADASTRO&lt;/origemConteudo&gt;
+  &lt;parametrosBusca&gt;
+    &lt;secoesPortal&gt;procon&lt;/secoesPortal&gt;
+  &lt;/parametrosBusca&gt;
+  &lt;idsCategoriasSuperiores&gt;7&lt;/idsCategoriasSuperiores&gt;
+&lt;/categoria&gt;
+&lt;categoria&gt;
+  &lt;id&gt;20003&lt;/id&gt;
+  &lt;nome&gt;Ciclo de Debates&lt;/nome&gt;
+  &lt;origemConteudo&gt;SISTEMA&lt;/origemConteudo&gt;
+  &lt;parametrosBusca&gt;
+    &lt;secoesPortal&gt;eventos&lt;/secoesPortal&gt;
+  &lt;/parametrosBusca&gt;
+  &lt;idsCategoriasSuperiores&gt;4&lt;/idsCategoriasSuperiores&gt;
+&lt;/categoria&gt;
+&lt;categoria&gt;
+  &lt;id&gt;4&lt;/id&gt;
+  &lt;nome&gt;Ciclos, Fóruns e Seminários&lt;/nome&gt;
+  &lt;origemConteudo&gt;SISTEMA&lt;/origemConteudo&gt;
+  &lt;parametrosBusca&gt;
+    &lt;secoesPortal&gt;home,agenda&lt;/secoesPortal&gt;
+  &lt;/parametrosBusca&gt;
+  &lt;idsCategoriasSubordinadas&gt;20001,20002,20003&lt;/idsCategoriasSubordinadas&gt;
+&lt;/categoria&gt;
+&lt;categoria&gt;
+  &lt;id&gt;1&lt;/id&gt;
+  &lt;nome&gt;Comissões&lt;/nome&gt;
+  &lt;origemConteudo&gt;SISTEMA&lt;/origemConteudo&gt;
+  &lt;parametrosBusca&gt;
+    &lt;secoesPortal&gt;home,agenda,comissoes&lt;/secoesPortal&gt;
+  &lt;/parametrosBusca&gt;
+&lt;/categoria&gt;
+&lt;categoria&gt;
+  &lt;id&gt;20006&lt;/id&gt;
+  &lt;nome&gt;Conferência Estadual&lt;/nome&gt;
+  &lt;origemConteudo&gt;SISTEMA&lt;/origemConteudo&gt;
+  &lt;parametrosBusca&gt;
+    &lt;secoesPortal&gt;eventos&lt;/secoesPortal&gt;
+  &lt;/parametrosBusca&gt;
+  &lt;idsCategoriasSuperiores&gt;5&lt;/idsCategoriasSuperiores&gt;
+&lt;/categoria&gt;
+&lt;categoria&gt;
+  &lt;id&gt;5&lt;/id&gt;
+  &lt;nome&gt;Conferências&lt;/nome&gt;
+  &lt;origemConteudo&gt;SISTEMA&lt;/origemConteudo&gt;
+  &lt;parametrosBusca&gt;
+    &lt;secoesPortal&gt;home,agenda&lt;/secoesPortal&gt;
+  &lt;/parametrosBusca&gt;
+  &lt;idsCategoriasSubordinadas&gt;20006&lt;/idsCategoriasSubordinadas&gt;
+&lt;/categoria&gt;
+&lt;categoria&gt;
+  &lt;id&gt;22&lt;/id&gt;
+  &lt;nome&gt;Cursos&lt;/nome&gt;
+  &lt;origemConteudo&gt;SISTEMA&lt;/origemConteudo&gt;
+  &lt;parametrosBusca&gt;
+    &lt;secoesPortal&gt;escola&lt;/secoesPortal&gt;
+  &lt;/parametrosBusca&gt;
+  &lt;idsCategoriasSuperiores&gt;3&lt;/idsCategoriasSuperiores&gt;
+&lt;/categoria&gt;
+&lt;categoria&gt;
+  &lt;id&gt;10&lt;/id&gt;
+  &lt;nome&gt;Cursos e Palestras&lt;/nome&gt;
+  &lt;origemConteudo&gt;CADASTRO&lt;/origemConteudo&gt;
+  &lt;parametrosBusca&gt;
+    &lt;secoesPortal&gt;procon&lt;/secoesPortal&gt;
+  &lt;/parametrosBusca&gt;
+  &lt;idsCategoriasSuperiores&gt;7&lt;/idsCategoriasSuperiores&gt;
+&lt;/categoria&gt;
+&lt;categoria&gt;
+  &lt;id&gt;17&lt;/id&gt;
+  &lt;nome&gt;Dança&lt;/nome&gt;
+  &lt;origemConteudo&gt;CADASTRO&lt;/origemConteudo&gt;
+  &lt;parametrosBusca&gt;
+    &lt;secoesPortal&gt;cultural&lt;/secoesPortal&gt;
+  &lt;/parametrosBusca&gt;
+  &lt;idsCategoriasSuperiores&gt;14&lt;/idsCategoriasSuperiores&gt;
+&lt;/categoria&gt;
+&lt;categoria&gt;
+  &lt;id&gt;25&lt;/id&gt;
+  &lt;nome&gt;Debate Público&lt;/nome&gt;
+  &lt;origemConteudo&gt;SISTEMA&lt;/origemConteudo&gt;
+  &lt;parametrosBusca&gt;
+    &lt;secoesPortal&gt;home,agenda,comissoes&lt;/secoesPortal&gt;
+  &lt;/parametrosBusca&gt;
+&lt;/categoria&gt;
+&lt;categoria&gt;
+  &lt;id&gt;20010&lt;/id&gt;
+  &lt;nome&gt;Debate Público - Evento&lt;/nome&gt;
+  &lt;origemConteudo&gt;SISTEMA&lt;/origemConteudo&gt;
+  &lt;parametrosBusca&gt;
+    &lt;secoesPortal&gt;eventos&lt;/secoesPortal&gt;
+  &lt;/parametrosBusca&gt;
+  &lt;idsCategoriasSuperiores&gt;6&lt;/idsCategoriasSuperiores&gt;
+&lt;/categoria&gt;
+&lt;categoria&gt;
+  &lt;id&gt;20012&lt;/id&gt;
+  &lt;nome&gt;Discussão Participativa PPAG&lt;/nome&gt;
+  &lt;origemConteudo&gt;SISTEMA&lt;/origemConteudo&gt;
+  &lt;parametrosBusca&gt;
+    &lt;secoesPortal&gt;eventos&lt;/secoesPortal&gt;
+  &lt;/parametrosBusca&gt;
+  &lt;idsCategoriasSuperiores&gt;6&lt;/idsCategoriasSuperiores&gt;
+&lt;/categoria&gt;
+&lt;categoria&gt;
+  &lt;id&gt;32&lt;/id&gt;
+  &lt;nome&gt;EAD&lt;/nome&gt;
+  &lt;origemConteudo&gt;SISTEMA&lt;/origemConteudo&gt;
+  &lt;parametrosBusca&gt;
+    &lt;secoesPortal&gt;escola&lt;/secoesPortal&gt;
+  &lt;/parametrosBusca&gt;
+  &lt;idsCategoriasSuperiores&gt;3&lt;/idsCategoriasSuperiores&gt;
+&lt;/categoria&gt;
+&lt;categoria&gt;
+  &lt;id&gt;3&lt;/id&gt;
+  &lt;nome&gt;Educação para a Cidadania&lt;/nome&gt;
+  &lt;origemConteudo&gt;SISTEMA&lt;/origemConteudo&gt;
+  &lt;parametrosBusca&gt;
+    &lt;secoesPortal&gt;sem_secao&lt;/secoesPortal&gt;
+  &lt;/parametrosBusca&gt;
+  &lt;idsCategoriasSubordinadas&gt;2,21,22,23,24,32&lt;/idsCategoriasSubordinadas&gt;
+&lt;/categoria&gt;
+&lt;categoria&gt;
+  &lt;id&gt;20011&lt;/id&gt;
+  &lt;nome&gt;Encontro Internacional&lt;/nome&gt;
+  &lt;origemConteudo&gt;SISTEMA&lt;/origemConteudo&gt;
+  &lt;parametrosBusca&gt;
+    &lt;secoesPortal&gt;eventos&lt;/secoesPortal&gt;
+  &lt;/parametrosBusca&gt;
+  &lt;idsCategoriasSuperiores&gt;6&lt;/idsCategoriasSuperiores&gt;
+&lt;/categoria&gt;
+&lt;categoria&gt;
+  &lt;id&gt;20008&lt;/id&gt;
+  &lt;nome&gt;Eventos Diversos&lt;/nome&gt;
+  &lt;origemConteudo&gt;SISTEMA&lt;/origemConteudo&gt;
+  &lt;parametrosBusca&gt;
+    &lt;secoesPortal&gt;eventos&lt;/secoesPortal&gt;
+  &lt;/parametrosBusca&gt;
+  &lt;idsCategoriasSuperiores&gt;6&lt;/idsCategoriasSuperiores&gt;
+&lt;/categoria&gt;
+&lt;categoria&gt;
+  &lt;id&gt;34&lt;/id&gt;
+  &lt;nome&gt;Exposição&lt;/nome&gt;
+  &lt;origemConteudo&gt;CADASTRO&lt;/origemConteudo&gt;
+  &lt;parametrosBusca&gt;
+    &lt;secoesPortal&gt;memoria&lt;/secoesPortal&gt;
+  &lt;/parametrosBusca&gt;
+  &lt;idsCategoriasSuperiores&gt;33&lt;/idsCategoriasSuperiores&gt;
+&lt;/categoria&gt;
+&lt;categoria&gt;
+  &lt;id&gt;20007&lt;/id&gt;
+  &lt;nome&gt;Feira ou Exposição&lt;/nome&gt;
+  &lt;origemConteudo&gt;SISTEMA&lt;/origemConteudo&gt;
+  &lt;parametrosBusca&gt;
+    &lt;secoesPortal&gt;eventos&lt;/secoesPortal&gt;
+  &lt;/parametrosBusca&gt;
+  &lt;idsCategoriasSuperiores&gt;6&lt;/idsCategoriasSuperiores&gt;
+&lt;/categoria&gt;
+&lt;categoria&gt;
+  &lt;id&gt;20002&lt;/id&gt;
+  &lt;nome&gt;Fórum Técnico&lt;/nome&gt;
+  &lt;origemConteudo&gt;SISTEMA&lt;/origemConteudo&gt;
+  &lt;parametrosBusca&gt;
+    &lt;secoesPortal&gt;eventos&lt;/secoesPortal&gt;
+  &lt;/parametrosBusca&gt;
+  &lt;idsCategoriasSuperiores&gt;4&lt;/idsCategoriasSuperiores&gt;
+&lt;/categoria&gt;
+&lt;categoria&gt;
+  &lt;id&gt;36&lt;/id&gt;
+  &lt;nome&gt;Lançamento&lt;/nome&gt;
+  &lt;origemConteudo&gt;CADASTRO&lt;/origemConteudo&gt;
+  &lt;parametrosBusca&gt;
+    &lt;secoesPortal&gt;memoria&lt;/secoesPortal&gt;
+  &lt;/parametrosBusca&gt;
+  &lt;idsCategoriasSuperiores&gt;33&lt;/idsCategoriasSuperiores&gt;
+&lt;/categoria&gt;
+&lt;categoria&gt;
+  &lt;id&gt;18&lt;/id&gt;
+  &lt;nome&gt;Literatura&lt;/nome&gt;
+  &lt;origemConteudo&gt;CADASTRO&lt;/origemConteudo&gt;
+  &lt;parametrosBusca&gt;
+    &lt;secoesPortal&gt;cultural&lt;/secoesPortal&gt;
+  &lt;/parametrosBusca&gt;
+  &lt;idsCategoriasSuperiores&gt;14&lt;/idsCategoriasSuperiores&gt;
+&lt;/categoria&gt;
+&lt;categoria&gt;
+  &lt;id&gt;33&lt;/id&gt;
+  &lt;nome&gt;Memória&lt;/nome&gt;
+  &lt;origemConteudo&gt;SISTEMA&lt;/origemConteudo&gt;
+  &lt;parametrosBusca&gt;
+    &lt;secoesPortal&gt;sem_secao&lt;/secoesPortal&gt;
+  &lt;/parametrosBusca&gt;
+  &lt;idsCategoriasSubordinadas&gt;34,35,36&lt;/idsCategoriasSubordinadas&gt;
+&lt;/categoria&gt;
+&lt;categoria&gt;
+  &lt;id&gt;19&lt;/id&gt;
+  &lt;nome&gt;Música&lt;/nome&gt;
+  &lt;origemConteudo&gt;CADASTRO&lt;/origemConteudo&gt;
+  &lt;parametrosBusca&gt;
+    &lt;secoesPortal&gt;cultural&lt;/secoesPortal&gt;
+  &lt;/parametrosBusca&gt;
+  &lt;idsCategoriasSuperiores&gt;14&lt;/idsCategoriasSuperiores&gt;
+&lt;/categoria&gt;
+&lt;categoria&gt;
+  &lt;id&gt;20014&lt;/id&gt;
+  &lt;nome&gt;Online&lt;/nome&gt;
+  &lt;origemConteudo&gt;SISTEMA&lt;/origemConteudo&gt;
+  &lt;parametrosBusca&gt;
+    &lt;secoesPortal&gt;eventos&lt;/secoesPortal&gt;
+  &lt;/parametrosBusca&gt;
+  &lt;idsCategoriasSuperiores&gt;6&lt;/idsCategoriasSuperiores&gt;
+&lt;/categoria&gt;
+&lt;categoria&gt;
+  &lt;id&gt;31&lt;/id&gt;
+  &lt;nome&gt;Outros Eventos&lt;/nome&gt;
+  &lt;origemConteudo&gt;CADASTRO&lt;/origemConteudo&gt;
+  &lt;parametrosBusca&gt;
+    &lt;secoesPortal&gt;sem_secao&lt;/secoesPortal&gt;
+  &lt;/parametrosBusca&gt;
+  &lt;idsCategoriasSuperiores&gt;6&lt;/idsCategoriasSuperiores&gt;
+&lt;/categoria&gt;
+&lt;categoria&gt;
+  &lt;id&gt;6&lt;/id&gt;
+  &lt;nome&gt;Outros Eventos&lt;/nome&gt;
+  &lt;origemConteudo&gt;SISTEMA&lt;/origemConteudo&gt;
+  &lt;parametrosBusca&gt;
+    &lt;secoesPortal&gt;home,agenda&lt;/secoesPortal&gt;
+  &lt;/parametrosBusca&gt;
+  &lt;idsCategoriasSubordinadas&gt;31,20004,20005,20007,20008,20009,20010,20011,20012,20013,20014&lt;/idsCategoriasSubordinadas&gt;
+&lt;/categoria&gt;
+&lt;categoria&gt;
+  &lt;id&gt;35&lt;/id&gt;
+  &lt;nome&gt;Palestra&lt;/nome&gt;
+  &lt;origemConteudo&gt;CADASTRO&lt;/origemConteudo&gt;
+  &lt;parametrosBusca&gt;
+    &lt;secoesPortal&gt;memoria&lt;/secoesPortal&gt;
+  &lt;/parametrosBusca&gt;
+  &lt;idsCategoriasSuperiores&gt;33&lt;/idsCategoriasSuperiores&gt;
+&lt;/categoria&gt;
+&lt;categoria&gt;
+  &lt;id&gt;23&lt;/id&gt;
+  &lt;nome&gt;Palestras&lt;/nome&gt;
+  &lt;origemConteudo&gt;SISTEMA&lt;/origemConteudo&gt;
+  &lt;parametrosBusca&gt;
+    &lt;secoesPortal&gt;escola&lt;/secoesPortal&gt;
+  &lt;/parametrosBusca&gt;
+  &lt;idsCategoriasSuperiores&gt;3&lt;/idsCategoriasSuperiores&gt;
+&lt;/categoria&gt;
+&lt;categoria&gt;
+  &lt;id&gt;21&lt;/id&gt;
+  &lt;nome&gt;Parlamento Jovem&lt;/nome&gt;
+  &lt;origemConteudo&gt;SISTEMA&lt;/origemConteudo&gt;
+  &lt;parametrosBusca&gt;
+    &lt;secoesPortal&gt;escola&lt;/secoesPortal&gt;
+  &lt;/parametrosBusca&gt;
+  &lt;idsCategoriasSuperiores&gt;3&lt;/idsCategoriasSuperiores&gt;
+&lt;/categoria&gt;
+&lt;categoria&gt;
+  &lt;id&gt;12&lt;/id&gt;
+  &lt;nome&gt;Participação em Eventos&lt;/nome&gt;
+  &lt;origemConteudo&gt;CADASTRO&lt;/origemConteudo&gt;
+  &lt;parametrosBusca&gt;
+    &lt;secoesPortal&gt;procon&lt;/secoesPortal&gt;
+  &lt;/parametrosBusca&gt;
+  &lt;idsCategoriasSuperiores&gt;7&lt;/idsCategoriasSuperiores&gt;
+&lt;/categoria&gt;
+&lt;categoria&gt;
+  &lt;id&gt;0&lt;/id&gt;
+  &lt;nome&gt;Plenário&lt;/nome&gt;
+  &lt;origemConteudo&gt;SISTEMA&lt;/origemConteudo&gt;
+  &lt;parametrosBusca&gt;
+    &lt;secoesPortal&gt;home,agenda,plenario&lt;/secoesPortal&gt;
+  &lt;/parametrosBusca&gt;
+&lt;/categoria&gt;
+&lt;categoria&gt;
+  &lt;id&gt;7&lt;/id&gt;
+  &lt;nome&gt;Procon&lt;/nome&gt;
+  &lt;origemConteudo&gt;SISTEMA&lt;/origemConteudo&gt;
+  &lt;parametrosBusca&gt;
+    &lt;secoesPortal&gt;sem_secao&lt;/secoesPortal&gt;
+  &lt;/parametrosBusca&gt;
+  &lt;idsCategoriasSubordinadas&gt;8,9,10,11,12&lt;/idsCategoriasSubordinadas&gt;
+&lt;/categoria&gt;
+&lt;categoria&gt;
+  &lt;id&gt;9&lt;/id&gt;
+  &lt;nome&gt;Procon junto ao Fornecedor&lt;/nome&gt;
+  &lt;origemConteudo&gt;CADASTRO&lt;/origemConteudo&gt;
+  &lt;parametrosBusca&gt;
+    &lt;secoesPortal&gt;procon&lt;/secoesPortal&gt;
+  &lt;/parametrosBusca&gt;
+  &lt;idsCategoriasSuperiores&gt;7&lt;/idsCategoriasSuperiores&gt;
+&lt;/categoria&gt;
+&lt;categoria&gt;
+  &lt;id&gt;8&lt;/id&gt;
+  &lt;nome&gt;Procon na Escola&lt;/nome&gt;
+  &lt;origemConteudo&gt;CADASTRO&lt;/origemConteudo&gt;
+  &lt;parametrosBusca&gt;
+    &lt;secoesPortal&gt;procon&lt;/secoesPortal&gt;
+  &lt;/parametrosBusca&gt;
+  &lt;idsCategoriasSuperiores&gt;7&lt;/idsCategoriasSuperiores&gt;
+&lt;/categoria&gt;
+&lt;categoria&gt;
+  &lt;id&gt;28&lt;/id&gt;
+  &lt;nome&gt;Programação Rádio&lt;/nome&gt;
+  &lt;origemConteudo&gt;CADASTRO&lt;/origemConteudo&gt;
+  &lt;parametrosBusca&gt;
+    &lt;secoesPortal&gt;radio&lt;/secoesPortal&gt;
+  &lt;/parametrosBusca&gt;
+  &lt;idsCategoriasSuperiores&gt;26&lt;/idsCategoriasSuperiores&gt;
+&lt;/categoria&gt;
+&lt;categoria&gt;
+  &lt;id&gt;29&lt;/id&gt;
+  &lt;nome&gt;Programação TV&lt;/nome&gt;
+  &lt;origemConteudo&gt;CADASTRO&lt;/origemConteudo&gt;
+  &lt;parametrosBusca&gt;
+    &lt;secoesPortal&gt;tv&lt;/secoesPortal&gt;
+  &lt;/parametrosBusca&gt;
+  &lt;idsCategoriasSuperiores&gt;27&lt;/idsCategoriasSuperiores&gt;
+&lt;/categoria&gt;
+&lt;categoria&gt;
+  &lt;id&gt;26&lt;/id&gt;
+  &lt;nome&gt;Rádio&lt;/nome&gt;
+  &lt;origemConteudo&gt;SISTEMA&lt;/origemConteudo&gt;
+  &lt;parametrosBusca&gt;
+    &lt;secoesPortal&gt;sem_secao&lt;/secoesPortal&gt;
+  &lt;/parametrosBusca&gt;
+  &lt;idsCategoriasSubordinadas&gt;28&lt;/idsCategoriasSubordinadas&gt;
+&lt;/categoria&gt;
+&lt;categoria&gt;
+  &lt;id&gt;30&lt;/id&gt;
+  &lt;nome&gt;Sala da Presidência&lt;/nome&gt;
+  &lt;origemConteudo&gt;CADASTRO&lt;/origemConteudo&gt;
+  &lt;parametrosBusca&gt;
+    &lt;secoesPortal&gt;presidencia&lt;/secoesPortal&gt;
+  &lt;/parametrosBusca&gt;
+  &lt;idsCategoriasSuperiores&gt;13&lt;/idsCategoriasSuperiores&gt;
+&lt;/categoria&gt;
+&lt;categoria&gt;
+  &lt;id&gt;13&lt;/id&gt;
+  &lt;nome&gt;Sala da Presidência&lt;/nome&gt;
+  &lt;origemConteudo&gt;SISTEMA&lt;/origemConteudo&gt;
+  &lt;parametrosBusca&gt;
+    &lt;secoesPortal&gt;sem_secao&lt;/secoesPortal&gt;
+  &lt;/parametrosBusca&gt;
+  &lt;idsCategoriasSubordinadas&gt;30&lt;/idsCategoriasSubordinadas&gt;
+&lt;/categoria&gt;
+&lt;categoria&gt;
+  &lt;id&gt;20001&lt;/id&gt;
+  &lt;nome&gt;Seminário Legislativo&lt;/nome&gt;
+  &lt;origemConteudo&gt;SISTEMA&lt;/origemConteudo&gt;
+  &lt;parametrosBusca&gt;
+    &lt;secoesPortal&gt;eventos&lt;/secoesPortal&gt;
+  &lt;/parametrosBusca&gt;
+  &lt;idsCategoriasSuperiores&gt;4&lt;/idsCategoriasSuperiores&gt;
+&lt;/categoria&gt;
+&lt;categoria&gt;
+  &lt;id&gt;20&lt;/id&gt;
+  &lt;nome&gt;Teatro&lt;/nome&gt;
+  &lt;origemConteudo&gt;CADASTRO&lt;/origemConteudo&gt;
+  &lt;parametrosBusca&gt;
+    &lt;secoesPortal&gt;cultural&lt;/secoesPortal&gt;
+  &lt;/parametrosBusca&gt;
+  &lt;idsCategoriasSuperiores&gt;14&lt;/idsCategoriasSuperiores&gt;
+&lt;/categoria&gt;
+&lt;categoria&gt;
+  &lt;id&gt;20004&lt;/id&gt;
+  &lt;nome&gt;Teleconferência&lt;/nome&gt;
+  &lt;origemConteudo&gt;SISTEMA&lt;/origemConteudo&gt;
+  &lt;parametrosBusca&gt;
+    &lt;secoesPortal&gt;eventos&lt;/secoesPortal&gt;
+  &lt;/parametrosBusca&gt;
+  &lt;idsCategoriasSuperiores&gt;6&lt;/idsCategoriasSuperiores&gt;
+&lt;/categoria&gt;
+&lt;categoria&gt;
+  &lt;id&gt;27&lt;/id&gt;
+  &lt;nome&gt;TV&lt;/nome&gt;
+  &lt;origemConteudo&gt;SISTEMA&lt;/origemConteudo&gt;
+  &lt;parametrosBusca&gt;
+    &lt;secoesPortal&gt;sem_secao&lt;/secoesPortal&gt;
+  &lt;/parametrosBusca&gt;
+  &lt;idsCategoriasSubordinadas&gt;29&lt;/idsCategoriasSubordinadas&gt;
+&lt;/categoria&gt;
+&lt;categoria&gt;
+  &lt;id&gt;2&lt;/id&gt;
+  &lt;nome&gt;Visitas Orientadas&lt;/nome&gt;
+  &lt;origemConteudo&gt;SISTEMA&lt;/origemConteudo&gt;
+  &lt;parametrosBusca&gt;
+    &lt;secoesPortal&gt;home,agenda,escola&lt;/secoesPortal&gt;
+  &lt;/parametrosBusca&gt;
+  &lt;idsCategoriasSuperiores&gt;3&lt;/idsCategoriasSuperiores&gt;
+&lt;/categoria&gt;
+&lt;/listaCategoriaItemAgenda&gt;
+</div>
+
+
+</div> 
+
+
+<h3><a name="Lista de Seções"></a>Lista de Seções</h3>
+<p><b>Versão:</b> 1.0</p>
+<p>Lista as seções de categoria de item de agenda, ordenadas pelo nome.</p>
+<table>
+<tbody>
+<tr><td>URL</td><td><code>http://dadosabertos.almg.gov.br/ws/agenda/secoes</code></td></tr>
+<tr><td>Método</td><td> <code>GET</code></td></tr>
+<tr><td>Tipos de Consumo</td><td> <code>N.I.</code><br /> </td></tr>
+<tr><td>Tipos de Retorno</td><td> <code>application/xml</code><br /> </td></tr>
+<tr><td>Resultados</td><td> <code>200 OK & XML</code><br /></td></tr>
+</tbody>
+</table>
+<h4>Parâmetros</h4>
+<table>
+	<thead>
+		<tr>
+			<th>Nome</th>
+			<th>Descrição</th>
+			<th>Tipo</th>
+			<th>Valor Default</th>
+		</tr>
+	</thead>
+	<tbody>
+	<tr><td colspan="4">Sem parâmetros.</td></tr>
+	</tbody>
+</table>
+
+<h4>Headers</h4>
+<table>
+	<thead>
+		<tr>
+			<th>Nome</th>
+			<th>Descrição</th>
+			<th>Tipo</th>
+			<th>Valor Default</th>
+		</tr>
+	</thead>
+	<tbody>
+	<tr><td colspan="4">Sem headers.</td></tr>
+	</tbody>
+</table>
+
+<h4>Exemplos</h4>
+<div class="sanfona">
+
+
+<h5><a href="#Lista de Seções">Lista geral</a></h5>
+<div class="code">GET http://dadosabertos.almg.gov.br/ws/agenda/secoes<br/><br/>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+&lt;listaSecaoAgenda xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
+&lt;secaoAgenda&gt;
+  &lt;nome&gt;agenda&lt;/nome&gt;
+  &lt;categorias&gt;
+    &lt;categoria&gt;
+      &lt;id&gt;14&lt;/id&gt;
+      &lt;nome&gt;ALMG Cultural&lt;/nome&gt;
+      &lt;origemConteudo&gt;SISTEMA&lt;/origemConteudo&gt;
+      &lt;parametrosBusca&gt;
+        &lt;secoesPortal&gt;home,agenda&lt;/secoesPortal&gt;
+      &lt;/parametrosBusca&gt;
+      &lt;idsCategoriasSubordinadas&gt;15,16,17,18,19,20&lt;/idsCategoriasSubordinadas&gt;
+    &lt;/categoria&gt;
+    &lt;categoria&gt;
+      &lt;id&gt;4&lt;/id&gt;
+      &lt;nome&gt;Ciclos, Fóruns e Seminários&lt;/nome&gt;
+      &lt;origemConteudo&gt;SISTEMA&lt;/origemConteudo&gt;
+      &lt;parametrosBusca&gt;
+        &lt;secoesPortal&gt;home,agenda&lt;/secoesPortal&gt;
+      &lt;/parametrosBusca&gt;
+      &lt;idsCategoriasSubordinadas&gt;20001,20002,20003&lt;/idsCategoriasSubordinadas&gt;
+    &lt;/categoria&gt;
+    &lt;categoria&gt;
+      &lt;id&gt;1&lt;/id&gt;
+      &lt;nome&gt;Comissões&lt;/nome&gt;
+      &lt;origemConteudo&gt;SISTEMA&lt;/origemConteudo&gt;
+      &lt;parametrosBusca&gt;
+        &lt;secoesPortal&gt;home,agenda,comissoes&lt;/secoesPortal&gt;
+      &lt;/parametrosBusca&gt;
+    &lt;/categoria&gt;
+    &lt;categoria&gt;
+      &lt;id&gt;5&lt;/id&gt;
+      &lt;nome&gt;Conferências&lt;/nome&gt;
+      &lt;origemConteudo&gt;SISTEMA&lt;/origemConteudo&gt;
+      &lt;parametrosBusca&gt;
+        &lt;secoesPortal&gt;home,agenda&lt;/secoesPortal&gt;
+      &lt;/parametrosBusca&gt;
+      &lt;idsCategoriasSubordinadas&gt;20006&lt;/idsCategoriasSubordinadas&gt;
+    &lt;/categoria&gt;
+    &lt;categoria&gt;
+      &lt;id&gt;25&lt;/id&gt;
+      &lt;nome&gt;Debate Público&lt;/nome&gt;
+      &lt;origemConteudo&gt;SISTEMA&lt;/origemConteudo&gt;
+      &lt;parametrosBusca&gt;
+        &lt;secoesPortal&gt;home,agenda,comissoes&lt;/secoesPortal&gt;
+      &lt;/parametrosBusca&gt;
+    &lt;/categoria&gt;
+    &lt;categoria&gt;
+      &lt;id&gt;6&lt;/id&gt;
+      &lt;nome&gt;Outros Eventos&lt;/nome&gt;
+      &lt;origemConteudo&gt;SISTEMA&lt;/origemConteudo&gt;
+      &lt;parametrosBusca&gt;
+        &lt;secoesPortal&gt;home,agenda&lt;/secoesPortal&gt;
+      &lt;/parametrosBusca&gt;
+      &lt;idsCategoriasSubordinadas&gt;31,20004,20005,20007,20008,20009,20010,20011,20012,20013,20014&lt;/idsCategoriasSubordinadas&gt;
+    &lt;/categoria&gt;
+    &lt;categoria&gt;
+      &lt;id&gt;0&lt;/id&gt;
+      &lt;nome&gt;Plenário&lt;/nome&gt;
+      &lt;origemConteudo&gt;SISTEMA&lt;/origemConteudo&gt;
+      &lt;parametrosBusca&gt;
+        &lt;secoesPortal&gt;home,agenda,plenario&lt;/secoesPortal&gt;
+      &lt;/parametrosBusca&gt;
+    &lt;/categoria&gt;
+    &lt;categoria&gt;
+      &lt;id&gt;2&lt;/id&gt;
+      &lt;nome&gt;Visitas Orientadas&lt;/nome&gt;
+      &lt;origemConteudo&gt;SISTEMA&lt;/origemConteudo&gt;
+      &lt;parametrosBusca&gt;
+        &lt;secoesPortal&gt;home,agenda,escola&lt;/secoesPortal&gt;
+      &lt;/parametrosBusca&gt;
+      &lt;idsCategoriasSuperiores&gt;3&lt;/idsCategoriasSuperiores&gt;
+    &lt;/categoria&gt;
+  &lt;/categorias&gt;
+&lt;/secaoAgenda&gt;
+&lt;secaoAgenda&gt;
+  &lt;nome&gt;comissoes&lt;/nome&gt;
+  &lt;categorias&gt;
+    &lt;categoria&gt;
+      &lt;id&gt;1&lt;/id&gt;
+      &lt;nome&gt;Comissões&lt;/nome&gt;
+      &lt;origemConteudo&gt;SISTEMA&lt;/origemConteudo&gt;
+      &lt;parametrosBusca&gt;
+        &lt;secoesPortal&gt;home,agenda,comissoes&lt;/secoesPortal&gt;
+      &lt;/parametrosBusca&gt;
+    &lt;/categoria&gt;
+    &lt;categoria&gt;
+      &lt;id&gt;25&lt;/id&gt;
+      &lt;nome&gt;Debate Público&lt;/nome&gt;
+      &lt;origemConteudo&gt;SISTEMA&lt;/origemConteudo&gt;
+      &lt;parametrosBusca&gt;
+        &lt;secoesPortal&gt;home,agenda,comissoes&lt;/secoesPortal&gt;
+      &lt;/parametrosBusca&gt;
+    &lt;/categoria&gt;
+  &lt;/categorias&gt;
+&lt;/secaoAgenda&gt;
+&lt;secaoAgenda&gt;
+  &lt;nome&gt;cultural&lt;/nome&gt;
+  &lt;categorias&gt;
+    &lt;categoria&gt;
+      &lt;id&gt;15&lt;/id&gt;
+      &lt;nome&gt;Artes Plásticas&lt;/nome&gt;
+      &lt;origemConteudo&gt;CADASTRO&lt;/origemConteudo&gt;
+      &lt;parametrosBusca&gt;
+        &lt;secoesPortal&gt;cultural&lt;/secoesPortal&gt;
+      &lt;/parametrosBusca&gt;
+      &lt;idsCategoriasSuperiores&gt;14&lt;/idsCategoriasSuperiores&gt;
+    &lt;/categoria&gt;
+    &lt;categoria&gt;
+      &lt;id&gt;16&lt;/id&gt;
+      &lt;nome&gt;Artesanato&lt;/nome&gt;
+      &lt;origemConteudo&gt;CADASTRO&lt;/origemConteudo&gt;
+      &lt;parametrosBusca&gt;
+        &lt;secoesPortal&gt;cultural&lt;/secoesPortal&gt;
+      &lt;/parametrosBusca&gt;
+      &lt;idsCategoriasSuperiores&gt;14&lt;/idsCategoriasSuperiores&gt;
+    &lt;/categoria&gt;
+    &lt;categoria&gt;
+      &lt;id&gt;17&lt;/id&gt;
+      &lt;nome&gt;Dança&lt;/nome&gt;
+      &lt;origemConteudo&gt;CADASTRO&lt;/origemConteudo&gt;
+      &lt;parametrosBusca&gt;
+        &lt;secoesPortal&gt;cultural&lt;/secoesPortal&gt;
+      &lt;/parametrosBusca&gt;
+      &lt;idsCategoriasSuperiores&gt;14&lt;/idsCategoriasSuperiores&gt;
+    &lt;/categoria&gt;
+    &lt;categoria&gt;
+      &lt;id&gt;18&lt;/id&gt;
+      &lt;nome&gt;Literatura&lt;/nome&gt;
+      &lt;origemConteudo&gt;CADASTRO&lt;/origemConteudo&gt;
+      &lt;parametrosBusca&gt;
+        &lt;secoesPortal&gt;cultural&lt;/secoesPortal&gt;
+      &lt;/parametrosBusca&gt;
+      &lt;idsCategoriasSuperiores&gt;14&lt;/idsCategoriasSuperiores&gt;
+    &lt;/categoria&gt;
+    &lt;categoria&gt;
+      &lt;id&gt;19&lt;/id&gt;
+      &lt;nome&gt;Música&lt;/nome&gt;
+      &lt;origemConteudo&gt;CADASTRO&lt;/origemConteudo&gt;
+      &lt;parametrosBusca&gt;
+        &lt;secoesPortal&gt;cultural&lt;/secoesPortal&gt;
+      &lt;/parametrosBusca&gt;
+      &lt;idsCategoriasSuperiores&gt;14&lt;/idsCategoriasSuperiores&gt;
+    &lt;/categoria&gt;
+    &lt;categoria&gt;
+      &lt;id&gt;20&lt;/id&gt;
+      &lt;nome&gt;Teatro&lt;/nome&gt;
+      &lt;origemConteudo&gt;CADASTRO&lt;/origemConteudo&gt;
+      &lt;parametrosBusca&gt;
+        &lt;secoesPortal&gt;cultural&lt;/secoesPortal&gt;
+      &lt;/parametrosBusca&gt;
+      &lt;idsCategoriasSuperiores&gt;14&lt;/idsCategoriasSuperiores&gt;
+    &lt;/categoria&gt;
+  &lt;/categorias&gt;
+&lt;/secaoAgenda&gt;
+&lt;secaoAgenda&gt;
+  &lt;nome&gt;escola&lt;/nome&gt;
+  &lt;categorias&gt;
+    &lt;categoria&gt;
+      &lt;id&gt;24&lt;/id&gt;
+      &lt;nome&gt;Atividades para as Câmaras&lt;/nome&gt;
+      &lt;origemConteudo&gt;SISTEMA&lt;/origemConteudo&gt;
+      &lt;parametrosBusca&gt;
+        &lt;secoesPortal&gt;escola&lt;/secoesPortal&gt;
+      &lt;/parametrosBusca&gt;
+      &lt;idsCategoriasSuperiores&gt;3&lt;/idsCategoriasSuperiores&gt;
+    &lt;/categoria&gt;
+    &lt;categoria&gt;
+      &lt;id&gt;22&lt;/id&gt;
+      &lt;nome&gt;Cursos&lt;/nome&gt;
+      &lt;origemConteudo&gt;SISTEMA&lt;/origemConteudo&gt;
+      &lt;parametrosBusca&gt;
+        &lt;secoesPortal&gt;escola&lt;/secoesPortal&gt;
+      &lt;/parametrosBusca&gt;
+      &lt;idsCategoriasSuperiores&gt;3&lt;/idsCategoriasSuperiores&gt;
+    &lt;/categoria&gt;
+    &lt;categoria&gt;
+      &lt;id&gt;32&lt;/id&gt;
+      &lt;nome&gt;EAD&lt;/nome&gt;
+      &lt;origemConteudo&gt;SISTEMA&lt;/origemConteudo&gt;
+      &lt;parametrosBusca&gt;
+        &lt;secoesPortal&gt;escola&lt;/secoesPortal&gt;
+      &lt;/parametrosBusca&gt;
+      &lt;idsCategoriasSuperiores&gt;3&lt;/idsCategoriasSuperiores&gt;
+    &lt;/categoria&gt;
+    &lt;categoria&gt;
+      &lt;id&gt;23&lt;/id&gt;
+      &lt;nome&gt;Palestras&lt;/nome&gt;
+      &lt;origemConteudo&gt;SISTEMA&lt;/origemConteudo&gt;
+      &lt;parametrosBusca&gt;
+        &lt;secoesPortal&gt;escola&lt;/secoesPortal&gt;
+      &lt;/parametrosBusca&gt;
+      &lt;idsCategoriasSuperiores&gt;3&lt;/idsCategoriasSuperiores&gt;
+    &lt;/categoria&gt;
+    &lt;categoria&gt;
+      &lt;id&gt;21&lt;/id&gt;
+      &lt;nome&gt;Parlamento Jovem&lt;/nome&gt;
+      &lt;origemConteudo&gt;SISTEMA&lt;/origemConteudo&gt;
+      &lt;parametrosBusca&gt;
+        &lt;secoesPortal&gt;escola&lt;/secoesPortal&gt;
+      &lt;/parametrosBusca&gt;
+      &lt;idsCategoriasSuperiores&gt;3&lt;/idsCategoriasSuperiores&gt;
+    &lt;/categoria&gt;
+    &lt;categoria&gt;
+      &lt;id&gt;2&lt;/id&gt;
+      &lt;nome&gt;Visitas Orientadas&lt;/nome&gt;
+      &lt;origemConteudo&gt;SISTEMA&lt;/origemConteudo&gt;
+      &lt;parametrosBusca&gt;
+        &lt;secoesPortal&gt;home,agenda,escola&lt;/secoesPortal&gt;
+      &lt;/parametrosBusca&gt;
+      &lt;idsCategoriasSuperiores&gt;3&lt;/idsCategoriasSuperiores&gt;
+    &lt;/categoria&gt;
+  &lt;/categorias&gt;
+&lt;/secaoAgenda&gt;
+&lt;secaoAgenda&gt;
+  &lt;nome&gt;eventos&lt;/nome&gt;
+  &lt;categorias&gt;
+    &lt;categoria&gt;
+      &lt;id&gt;20013&lt;/id&gt;
+      &lt;nome&gt;Assembleia Fiscaliza&lt;/nome&gt;
+      &lt;origemConteudo&gt;SISTEMA&lt;/origemConteudo&gt;
+      &lt;parametrosBusca&gt;
+        &lt;secoesPortal&gt;eventos&lt;/secoesPortal&gt;
+      &lt;/parametrosBusca&gt;
+      &lt;idsCategoriasSuperiores&gt;6&lt;/idsCategoriasSuperiores&gt;
+    &lt;/categoria&gt;
+    &lt;categoria&gt;
+      &lt;id&gt;20005&lt;/id&gt;
+      &lt;nome&gt;Audiência Pública - Evento&lt;/nome&gt;
+      &lt;origemConteudo&gt;SISTEMA&lt;/origemConteudo&gt;
+      &lt;parametrosBusca&gt;
+        &lt;secoesPortal&gt;eventos&lt;/secoesPortal&gt;
+      &lt;/parametrosBusca&gt;
+      &lt;idsCategoriasSuperiores&gt;6&lt;/idsCategoriasSuperiores&gt;
+    &lt;/categoria&gt;
+    &lt;categoria&gt;
+      &lt;id&gt;20009&lt;/id&gt;
+      &lt;nome&gt;Audiência Pública de Comissões&lt;/nome&gt;
+      &lt;origemConteudo&gt;SISTEMA&lt;/origemConteudo&gt;
+      &lt;parametrosBusca&gt;
+        &lt;secoesPortal&gt;eventos&lt;/secoesPortal&gt;
+      &lt;/parametrosBusca&gt;
+      &lt;idsCategoriasSuperiores&gt;6&lt;/idsCategoriasSuperiores&gt;
+    &lt;/categoria&gt;
+    &lt;categoria&gt;
+      &lt;id&gt;20003&lt;/id&gt;
+      &lt;nome&gt;Ciclo de Debates&lt;/nome&gt;
+      &lt;origemConteudo&gt;SISTEMA&lt;/origemConteudo&gt;
+      &lt;parametrosBusca&gt;
+        &lt;secoesPortal&gt;eventos&lt;/secoesPortal&gt;
+      &lt;/parametrosBusca&gt;
+      &lt;idsCategoriasSuperiores&gt;4&lt;/idsCategoriasSuperiores&gt;
+    &lt;/categoria&gt;
+    &lt;categoria&gt;
+      &lt;id&gt;20006&lt;/id&gt;
+      &lt;nome&gt;Conferência Estadual&lt;/nome&gt;
+      &lt;origemConteudo&gt;SISTEMA&lt;/origemConteudo&gt;
+      &lt;parametrosBusca&gt;
+        &lt;secoesPortal&gt;eventos&lt;/secoesPortal&gt;
+      &lt;/parametrosBusca&gt;
+      &lt;idsCategoriasSuperiores&gt;5&lt;/idsCategoriasSuperiores&gt;
+    &lt;/categoria&gt;
+    &lt;categoria&gt;
+      &lt;id&gt;20010&lt;/id&gt;
+      &lt;nome&gt;Debate Público - Evento&lt;/nome&gt;
+      &lt;origemConteudo&gt;SISTEMA&lt;/origemConteudo&gt;
+      &lt;parametrosBusca&gt;
+        &lt;secoesPortal&gt;eventos&lt;/secoesPortal&gt;
+      &lt;/parametrosBusca&gt;
+      &lt;idsCategoriasSuperiores&gt;6&lt;/idsCategoriasSuperiores&gt;
+    &lt;/categoria&gt;
+    &lt;categoria&gt;
+      &lt;id&gt;20012&lt;/id&gt;
+      &lt;nome&gt;Discussão Participativa PPAG&lt;/nome&gt;
+      &lt;origemConteudo&gt;SISTEMA&lt;/origemConteudo&gt;
+      &lt;parametrosBusca&gt;
+        &lt;secoesPortal&gt;eventos&lt;/secoesPortal&gt;
+      &lt;/parametrosBusca&gt;
+      &lt;idsCategoriasSuperiores&gt;6&lt;/idsCategoriasSuperiores&gt;
+    &lt;/categoria&gt;
+    &lt;categoria&gt;
+      &lt;id&gt;20011&lt;/id&gt;
+      &lt;nome&gt;Encontro Internacional&lt;/nome&gt;
+      &lt;origemConteudo&gt;SISTEMA&lt;/origemConteudo&gt;
+      &lt;parametrosBusca&gt;
+        &lt;secoesPortal&gt;eventos&lt;/secoesPortal&gt;
+      &lt;/parametrosBusca&gt;
+      &lt;idsCategoriasSuperiores&gt;6&lt;/idsCategoriasSuperiores&gt;
+    &lt;/categoria&gt;
+    &lt;categoria&gt;
+      &lt;id&gt;20008&lt;/id&gt;
+      &lt;nome&gt;Eventos Diversos&lt;/nome&gt;
+      &lt;origemConteudo&gt;SISTEMA&lt;/origemConteudo&gt;
+      &lt;parametrosBusca&gt;
+        &lt;secoesPortal&gt;eventos&lt;/secoesPortal&gt;
+      &lt;/parametrosBusca&gt;
+      &lt;idsCategoriasSuperiores&gt;6&lt;/idsCategoriasSuperiores&gt;
+    &lt;/categoria&gt;
+    &lt;categoria&gt;
+      &lt;id&gt;20007&lt;/id&gt;
+      &lt;nome&gt;Feira ou Exposição&lt;/nome&gt;
+      &lt;origemConteudo&gt;SISTEMA&lt;/origemConteudo&gt;
+      &lt;parametrosBusca&gt;
+        &lt;secoesPortal&gt;eventos&lt;/secoesPortal&gt;
+      &lt;/parametrosBusca&gt;
+      &lt;idsCategoriasSuperiores&gt;6&lt;/idsCategoriasSuperiores&gt;
+    &lt;/categoria&gt;
+    &lt;categoria&gt;
+      &lt;id&gt;20002&lt;/id&gt;
+      &lt;nome&gt;Fórum Técnico&lt;/nome&gt;
+      &lt;origemConteudo&gt;SISTEMA&lt;/origemConteudo&gt;
+      &lt;parametrosBusca&gt;
+        &lt;secoesPortal&gt;eventos&lt;/secoesPortal&gt;
+      &lt;/parametrosBusca&gt;
+      &lt;idsCategoriasSuperiores&gt;4&lt;/idsCategoriasSuperiores&gt;
+    &lt;/categoria&gt;
+    &lt;categoria&gt;
+      &lt;id&gt;20014&lt;/id&gt;
+      &lt;nome&gt;Online&lt;/nome&gt;
+      &lt;origemConteudo&gt;SISTEMA&lt;/origemConteudo&gt;
+      &lt;parametrosBusca&gt;
+        &lt;secoesPortal&gt;eventos&lt;/secoesPortal&gt;
+      &lt;/parametrosBusca&gt;
+      &lt;idsCategoriasSuperiores&gt;6&lt;/idsCategoriasSuperiores&gt;
+    &lt;/categoria&gt;
+    &lt;categoria&gt;
+      &lt;id&gt;20001&lt;/id&gt;
+      &lt;nome&gt;Seminário Legislativo&lt;/nome&gt;
+      &lt;origemConteudo&gt;SISTEMA&lt;/origemConteudo&gt;
+      &lt;parametrosBusca&gt;
+        &lt;secoesPortal&gt;eventos&lt;/secoesPortal&gt;
+      &lt;/parametrosBusca&gt;
+      &lt;idsCategoriasSuperiores&gt;4&lt;/idsCategoriasSuperiores&gt;
+    &lt;/categoria&gt;
+    &lt;categoria&gt;
+      &lt;id&gt;20004&lt;/id&gt;
+      &lt;nome&gt;Teleconferência&lt;/nome&gt;
+      &lt;origemConteudo&gt;SISTEMA&lt;/origemConteudo&gt;
+      &lt;parametrosBusca&gt;
+        &lt;secoesPortal&gt;eventos&lt;/secoesPortal&gt;
+      &lt;/parametrosBusca&gt;
+      &lt;idsCategoriasSuperiores&gt;6&lt;/idsCategoriasSuperiores&gt;
+    &lt;/categoria&gt;
+  &lt;/categorias&gt;
+&lt;/secaoAgenda&gt;
+&lt;secaoAgenda&gt;
+  &lt;nome&gt;home&lt;/nome&gt;
+  &lt;categorias&gt;
+    &lt;categoria&gt;
+      &lt;id&gt;14&lt;/id&gt;
+      &lt;nome&gt;ALMG Cultural&lt;/nome&gt;
+      &lt;origemConteudo&gt;SISTEMA&lt;/origemConteudo&gt;
+      &lt;parametrosBusca&gt;
+        &lt;secoesPortal&gt;home,agenda&lt;/secoesPortal&gt;
+      &lt;/parametrosBusca&gt;
+      &lt;idsCategoriasSubordinadas&gt;15,16,17,18,19,20&lt;/idsCategoriasSubordinadas&gt;
+    &lt;/categoria&gt;
+    &lt;categoria&gt;
+      &lt;id&gt;4&lt;/id&gt;
+      &lt;nome&gt;Ciclos, Fóruns e Seminários&lt;/nome&gt;
+      &lt;origemConteudo&gt;SISTEMA&lt;/origemConteudo&gt;
+      &lt;parametrosBusca&gt;
+        &lt;secoesPortal&gt;home,agenda&lt;/secoesPortal&gt;
+      &lt;/parametrosBusca&gt;
+      &lt;idsCategoriasSubordinadas&gt;20001,20002,20003&lt;/idsCategoriasSubordinadas&gt;
+    &lt;/categoria&gt;
+    &lt;categoria&gt;
+      &lt;id&gt;1&lt;/id&gt;
+      &lt;nome&gt;Comissões&lt;/nome&gt;
+      &lt;origemConteudo&gt;SISTEMA&lt;/origemConteudo&gt;
+      &lt;parametrosBusca&gt;
+        &lt;secoesPortal&gt;home,agenda,comissoes&lt;/secoesPortal&gt;
+      &lt;/parametrosBusca&gt;
+    &lt;/categoria&gt;
+    &lt;categoria&gt;
+      &lt;id&gt;5&lt;/id&gt;
+      &lt;nome&gt;Conferências&lt;/nome&gt;
+      &lt;origemConteudo&gt;SISTEMA&lt;/origemConteudo&gt;
+      &lt;parametrosBusca&gt;
+        &lt;secoesPortal&gt;home,agenda&lt;/secoesPortal&gt;
+      &lt;/parametrosBusca&gt;
+      &lt;idsCategoriasSubordinadas&gt;20006&lt;/idsCategoriasSubordinadas&gt;
+    &lt;/categoria&gt;
+    &lt;categoria&gt;
+      &lt;id&gt;25&lt;/id&gt;
+      &lt;nome&gt;Debate Público&lt;/nome&gt;
+      &lt;origemConteudo&gt;SISTEMA&lt;/origemConteudo&gt;
+      &lt;parametrosBusca&gt;
+        &lt;secoesPortal&gt;home,agenda,comissoes&lt;/secoesPortal&gt;
+      &lt;/parametrosBusca&gt;
+    &lt;/categoria&gt;
+    &lt;categoria&gt;
+      &lt;id&gt;6&lt;/id&gt;
+      &lt;nome&gt;Outros Eventos&lt;/nome&gt;
+      &lt;origemConteudo&gt;SISTEMA&lt;/origemConteudo&gt;
+      &lt;parametrosBusca&gt;
+        &lt;secoesPortal&gt;home,agenda&lt;/secoesPortal&gt;
+      &lt;/parametrosBusca&gt;
+      &lt;idsCategoriasSubordinadas&gt;31,20004,20005,20007,20008,20009,20010,20011,20012,20013,20014&lt;/idsCategoriasSubordinadas&gt;
+    &lt;/categoria&gt;
+    &lt;categoria&gt;
+      &lt;id&gt;0&lt;/id&gt;
+      &lt;nome&gt;Plenário&lt;/nome&gt;
+      &lt;origemConteudo&gt;SISTEMA&lt;/origemConteudo&gt;
+      &lt;parametrosBusca&gt;
+        &lt;secoesPortal&gt;home,agenda,plenario&lt;/secoesPortal&gt;
+      &lt;/parametrosBusca&gt;
+    &lt;/categoria&gt;
+    &lt;categoria&gt;
+      &lt;id&gt;2&lt;/id&gt;
+      &lt;nome&gt;Visitas Orientadas&lt;/nome&gt;
+      &lt;origemConteudo&gt;SISTEMA&lt;/origemConteudo&gt;
+      &lt;parametrosBusca&gt;
+        &lt;secoesPortal&gt;home,agenda,escola&lt;/secoesPortal&gt;
+      &lt;/parametrosBusca&gt;
+      &lt;idsCategoriasSuperiores&gt;3&lt;/idsCategoriasSuperiores&gt;
+    &lt;/categoria&gt;
+  &lt;/categorias&gt;
+&lt;/secaoAgenda&gt;
+&lt;secaoAgenda&gt;
+  &lt;nome&gt;memoria&lt;/nome&gt;
+  &lt;categorias&gt;
+    &lt;categoria&gt;
+      &lt;id&gt;34&lt;/id&gt;
+      &lt;nome&gt;Exposição&lt;/nome&gt;
+      &lt;origemConteudo&gt;CADASTRO&lt;/origemConteudo&gt;
+      &lt;parametrosBusca&gt;
+        &lt;secoesPortal&gt;memoria&lt;/secoesPortal&gt;
+      &lt;/parametrosBusca&gt;
+      &lt;idsCategoriasSuperiores&gt;33&lt;/idsCategoriasSuperiores&gt;
+    &lt;/categoria&gt;
+    &lt;categoria&gt;
+      &lt;id&gt;36&lt;/id&gt;
+      &lt;nome&gt;Lançamento&lt;/nome&gt;
+      &lt;origemConteudo&gt;CADASTRO&lt;/origemConteudo&gt;
+      &lt;parametrosBusca&gt;
+        &lt;secoesPortal&gt;memoria&lt;/secoesPortal&gt;
+      &lt;/parametrosBusca&gt;
+      &lt;idsCategoriasSuperiores&gt;33&lt;/idsCategoriasSuperiores&gt;
+    &lt;/categoria&gt;
+    &lt;categoria&gt;
+      &lt;id&gt;35&lt;/id&gt;
+      &lt;nome&gt;Palestra&lt;/nome&gt;
+      &lt;origemConteudo&gt;CADASTRO&lt;/origemConteudo&gt;
+      &lt;parametrosBusca&gt;
+        &lt;secoesPortal&gt;memoria&lt;/secoesPortal&gt;
+      &lt;/parametrosBusca&gt;
+      &lt;idsCategoriasSuperiores&gt;33&lt;/idsCategoriasSuperiores&gt;
+    &lt;/categoria&gt;
+  &lt;/categorias&gt;
+&lt;/secaoAgenda&gt;
+&lt;secaoAgenda&gt;
+  &lt;nome&gt;plenario&lt;/nome&gt;
+  &lt;categorias&gt;
+    &lt;categoria&gt;
+      &lt;id&gt;0&lt;/id&gt;
+      &lt;nome&gt;Plenário&lt;/nome&gt;
+      &lt;origemConteudo&gt;SISTEMA&lt;/origemConteudo&gt;
+      &lt;parametrosBusca&gt;
+        &lt;secoesPortal&gt;home,agenda,plenario&lt;/secoesPortal&gt;
+      &lt;/parametrosBusca&gt;
+    &lt;/categoria&gt;
+  &lt;/categorias&gt;
+&lt;/secaoAgenda&gt;
+&lt;secaoAgenda&gt;
+  &lt;nome&gt;presidencia&lt;/nome&gt;
+  &lt;categorias&gt;
+    &lt;categoria&gt;
+      &lt;id&gt;30&lt;/id&gt;
+      &lt;nome&gt;Sala da Presidência&lt;/nome&gt;
+      &lt;origemConteudo&gt;CADASTRO&lt;/origemConteudo&gt;
+      &lt;parametrosBusca&gt;
+        &lt;secoesPortal&gt;presidencia&lt;/secoesPortal&gt;
+      &lt;/parametrosBusca&gt;
+      &lt;idsCategoriasSuperiores&gt;13&lt;/idsCategoriasSuperiores&gt;
+    &lt;/categoria&gt;
+  &lt;/categorias&gt;
+&lt;/secaoAgenda&gt;
+&lt;secaoAgenda&gt;
+  &lt;nome&gt;procon&lt;/nome&gt;
+  &lt;categorias&gt;
+    &lt;categoria&gt;
+      &lt;id&gt;11&lt;/id&gt;
+      &lt;nome&gt;Campanhas Educativas&lt;/nome&gt;
+      &lt;origemConteudo&gt;CADASTRO&lt;/origemConteudo&gt;
+      &lt;parametrosBusca&gt;
+        &lt;secoesPortal&gt;procon&lt;/secoesPortal&gt;
+      &lt;/parametrosBusca&gt;
+      &lt;idsCategoriasSuperiores&gt;7&lt;/idsCategoriasSuperiores&gt;
+    &lt;/categoria&gt;
+    &lt;categoria&gt;
+      &lt;id&gt;10&lt;/id&gt;
+      &lt;nome&gt;Cursos e Palestras&lt;/nome&gt;
+      &lt;origemConteudo&gt;CADASTRO&lt;/origemConteudo&gt;
+      &lt;parametrosBusca&gt;
+        &lt;secoesPortal&gt;procon&lt;/secoesPortal&gt;
+      &lt;/parametrosBusca&gt;
+      &lt;idsCategoriasSuperiores&gt;7&lt;/idsCategoriasSuperiores&gt;
+    &lt;/categoria&gt;
+    &lt;categoria&gt;
+      &lt;id&gt;12&lt;/id&gt;
+      &lt;nome&gt;Participação em Eventos&lt;/nome&gt;
+      &lt;origemConteudo&gt;CADASTRO&lt;/origemConteudo&gt;
+      &lt;parametrosBusca&gt;
+        &lt;secoesPortal&gt;procon&lt;/secoesPortal&gt;
+      &lt;/parametrosBusca&gt;
+      &lt;idsCategoriasSuperiores&gt;7&lt;/idsCategoriasSuperiores&gt;
+    &lt;/categoria&gt;
+    &lt;categoria&gt;
+      &lt;id&gt;9&lt;/id&gt;
+      &lt;nome&gt;Procon junto ao Fornecedor&lt;/nome&gt;
+      &lt;origemConteudo&gt;CADASTRO&lt;/origemConteudo&gt;
+      &lt;parametrosBusca&gt;
+        &lt;secoesPortal&gt;procon&lt;/secoesPortal&gt;
+      &lt;/parametrosBusca&gt;
+      &lt;idsCategoriasSuperiores&gt;7&lt;/idsCategoriasSuperiores&gt;
+    &lt;/categoria&gt;
+    &lt;categoria&gt;
+      &lt;id&gt;8&lt;/id&gt;
+      &lt;nome&gt;Procon na Escola&lt;/nome&gt;
+      &lt;origemConteudo&gt;CADASTRO&lt;/origemConteudo&gt;
+      &lt;parametrosBusca&gt;
+        &lt;secoesPortal&gt;procon&lt;/secoesPortal&gt;
+      &lt;/parametrosBusca&gt;
+      &lt;idsCategoriasSuperiores&gt;7&lt;/idsCategoriasSuperiores&gt;
+    &lt;/categoria&gt;
+  &lt;/categorias&gt;
+&lt;/secaoAgenda&gt;
+&lt;secaoAgenda&gt;
+  &lt;nome&gt;radio&lt;/nome&gt;
+  &lt;categorias&gt;
+    &lt;categoria&gt;
+      &lt;id&gt;28&lt;/id&gt;
+      &lt;nome&gt;Programação Rádio&lt;/nome&gt;
+      &lt;origemConteudo&gt;CADASTRO&lt;/origemConteudo&gt;
+      &lt;parametrosBusca&gt;
+        &lt;secoesPortal&gt;radio&lt;/secoesPortal&gt;
+      &lt;/parametrosBusca&gt;
+      &lt;idsCategoriasSuperiores&gt;26&lt;/idsCategoriasSuperiores&gt;
+    &lt;/categoria&gt;
+  &lt;/categorias&gt;
+&lt;/secaoAgenda&gt;
+&lt;secaoAgenda&gt;
+  &lt;nome&gt;sem_secao&lt;/nome&gt;
+  &lt;categorias&gt;
+    &lt;categoria&gt;
+      &lt;id&gt;3&lt;/id&gt;
+      &lt;nome&gt;Educação para a Cidadania&lt;/nome&gt;
+      &lt;origemConteudo&gt;SISTEMA&lt;/origemConteudo&gt;
+      &lt;parametrosBusca&gt;
+        &lt;secoesPortal&gt;sem_secao&lt;/secoesPortal&gt;
+      &lt;/parametrosBusca&gt;
+      &lt;idsCategoriasSubordinadas&gt;2,21,22,23,24,32&lt;/idsCategoriasSubordinadas&gt;
+    &lt;/categoria&gt;
+    &lt;categoria&gt;
+      &lt;id&gt;33&lt;/id&gt;
+      &lt;nome&gt;Memória&lt;/nome&gt;
+      &lt;origemConteudo&gt;SISTEMA&lt;/origemConteudo&gt;
+      &lt;parametrosBusca&gt;
+        &lt;secoesPortal&gt;sem_secao&lt;/secoesPortal&gt;
+      &lt;/parametrosBusca&gt;
+      &lt;idsCategoriasSubordinadas&gt;34,35,36&lt;/idsCategoriasSubordinadas&gt;
+    &lt;/categoria&gt;
+    &lt;categoria&gt;
+      &lt;id&gt;31&lt;/id&gt;
+      &lt;nome&gt;Outros Eventos&lt;/nome&gt;
+      &lt;origemConteudo&gt;CADASTRO&lt;/origemConteudo&gt;
+      &lt;parametrosBusca&gt;
+        &lt;secoesPortal&gt;sem_secao&lt;/secoesPortal&gt;
+      &lt;/parametrosBusca&gt;
+      &lt;idsCategoriasSuperiores&gt;6&lt;/idsCategoriasSuperiores&gt;
+    &lt;/categoria&gt;
+    &lt;categoria&gt;
+      &lt;id&gt;7&lt;/id&gt;
+      &lt;nome&gt;Procon&lt;/nome&gt;
+      &lt;origemConteudo&gt;SISTEMA&lt;/origemConteudo&gt;
+      &lt;parametrosBusca&gt;
+        &lt;secoesPortal&gt;sem_secao&lt;/secoesPortal&gt;
+      &lt;/parametrosBusca&gt;
+      &lt;idsCategoriasSubordinadas&gt;8,9,10,11,12&lt;/idsCategoriasSubordinadas&gt;
+    &lt;/categoria&gt;
+    &lt;categoria&gt;
+      &lt;id&gt;26&lt;/id&gt;
+      &lt;nome&gt;Rádio&lt;/nome&gt;
+      &lt;origemConteudo&gt;SISTEMA&lt;/origemConteudo&gt;
+      &lt;parametrosBusca&gt;
+        &lt;secoesPortal&gt;sem_secao&lt;/secoesPortal&gt;
+      &lt;/parametrosBusca&gt;
+      &lt;idsCategoriasSubordinadas&gt;28&lt;/idsCategoriasSubordinadas&gt;
+    &lt;/categoria&gt;
+    &lt;categoria&gt;
+      &lt;id&gt;13&lt;/id&gt;
+      &lt;nome&gt;Sala da Presidência&lt;/nome&gt;
+      &lt;origemConteudo&gt;SISTEMA&lt;/origemConteudo&gt;
+      &lt;parametrosBusca&gt;
+        &lt;secoesPortal&gt;sem_secao&lt;/secoesPortal&gt;
+      &lt;/parametrosBusca&gt;
+      &lt;idsCategoriasSubordinadas&gt;30&lt;/idsCategoriasSubordinadas&gt;
+    &lt;/categoria&gt;
+    &lt;categoria&gt;
+      &lt;id&gt;27&lt;/id&gt;
+      &lt;nome&gt;TV&lt;/nome&gt;
+      &lt;origemConteudo&gt;SISTEMA&lt;/origemConteudo&gt;
+      &lt;parametrosBusca&gt;
+        &lt;secoesPortal&gt;sem_secao&lt;/secoesPortal&gt;
+      &lt;/parametrosBusca&gt;
+      &lt;idsCategoriasSubordinadas&gt;29&lt;/idsCategoriasSubordinadas&gt;
+    &lt;/categoria&gt;
+  &lt;/categorias&gt;
+&lt;/secaoAgenda&gt;
+&lt;secaoAgenda&gt;
+  &lt;nome&gt;tv&lt;/nome&gt;
+  &lt;categorias&gt;
+    &lt;categoria&gt;
+      &lt;id&gt;29&lt;/id&gt;
+      &lt;nome&gt;Programação TV&lt;/nome&gt;
+      &lt;origemConteudo&gt;CADASTRO&lt;/origemConteudo&gt;
+      &lt;parametrosBusca&gt;
+        &lt;secoesPortal&gt;tv&lt;/secoesPortal&gt;
+      &lt;/parametrosBusca&gt;
+      &lt;idsCategoriasSuperiores&gt;27&lt;/idsCategoriasSuperiores&gt;
+    &lt;/categoria&gt;
+  &lt;/categorias&gt;
+&lt;/secaoAgenda&gt;
+&lt;/listaSecaoAgenda&gt;
+</div>
+
+
+</div> 
+
+
+<h3><a name="Lista de Categorias por Seção do Portal"></a>Lista de Categorias por Seção do Portal</h3>
+<p><b>Versão:</b> 1.0</p>
+<p>Lista as categorias de item de agenda de uma seção do Portal, ordenadas pelo nome.</p>
+<table>
+<tbody>
+<tr><td>URL</td><td><code>http://dadosabertos.almg.gov.br/ws/agenda/categorias/{secao}</code></td></tr>
+<tr><td>Método</td><td> <code>GET</code></td></tr>
+<tr><td>Tipos de Consumo</td><td> <code>N.I.</code><br /> </td></tr>
+<tr><td>Tipos de Retorno</td><td> <code>application/xml</code><br /> </td></tr>
+<tr><td>Resultados</td><td> <code>200 OK & XML</code><br /></td></tr>
+</tbody>
+</table>
+<h4>Parâmetros</h4>
+<table>
+	<thead>
+		<tr>
+			<th>Nome</th>
+			<th>Descrição</th>
+			<th>Tipo</th>
+			<th>Valor Default</th>
+		</tr>
+	</thead>
+	<tbody>
+	
+		<tr>
+			<td><code>{secao}</code></td>
+			<td>Seção do Portal.</td>
+			<td><code>String</code></td>
+			<td><code>N.I.</code></td>
+		</tr>
+		
+		<tr>
+			<td><code>?aliasComissaoParticipanteConcreto=</code></td>
+			<td>Alias de Comissão Participante vai ser referente a classe abstrata ou às classes concretas</td>
+			<td><code>Boolean</code></td>
+			<td><code>true</code></td>
+		</tr>
+		
+	</tbody>
+</table>
+
+<h4>Headers</h4>
+<table>
+	<thead>
+		<tr>
+			<th>Nome</th>
+			<th>Descrição</th>
+			<th>Tipo</th>
+			<th>Valor Default</th>
+		</tr>
+	</thead>
+	<tbody>
+	<tr><td colspan="4">Sem headers.</td></tr>
+	</tbody>
+</table>
+
+<h4>Exemplos</h4>
+<div class="sanfona">
+
+
+<h5><a href="#Lista de Categorias por Seção do Portal">Lista das categorias da seção <i>comissoes</i> do Portal</a></h5>
+<div class="code">GET http://dadosabertos.almg.gov.br/ws/agenda/categorias/comissoes<br/><br/>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+&lt;listaCategoriaItemAgenda xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
+&lt;categoria&gt;
+  &lt;id&gt;1&lt;/id&gt;
+  &lt;nome&gt;Comissões&lt;/nome&gt;
+  &lt;origemConteudo&gt;SISTEMA&lt;/origemConteudo&gt;
+  &lt;parametrosBusca&gt;
+    &lt;secoesPortal&gt;home,agenda,comissoes&lt;/secoesPortal&gt;
+  &lt;/parametrosBusca&gt;
+&lt;/categoria&gt;
+&lt;categoria&gt;
+  &lt;id&gt;25&lt;/id&gt;
+  &lt;nome&gt;Debate Público&lt;/nome&gt;
+  &lt;origemConteudo&gt;SISTEMA&lt;/origemConteudo&gt;
+  &lt;parametrosBusca&gt;
+    &lt;secoesPortal&gt;home,agenda,comissoes&lt;/secoesPortal&gt;
+  &lt;/parametrosBusca&gt;
+&lt;/categoria&gt;
+&lt;/listaCategoriaItemAgenda&gt;
+</div>
+
+
+</div> 
+
+
+<h3><a name="Lista de Itens da Agenda Diária por Seção do Portal"></a>Lista de Itens da Agenda Diária por Seção do Portal</h3>
+<p><b>Versão:</b> 1.0</p>
+<p>Lista os itens da agenda diária de uma seção do Portal, ordenados pela hora de início.</p>
+<table>
+<tbody>
+<tr><td>URL</td><td><code>http://dadosabertos.almg.gov.br/ws/agenda/diaria/{secao}/{ano}/{mes}/{dia}</code></td></tr>
+<tr><td>Método</td><td> <code>GET</code></td></tr>
+<tr><td>Tipos de Consumo</td><td> <code>N.I.</code><br /> </td></tr>
+<tr><td>Tipos de Retorno</td><td> <code>application/xml</code><br /> </td></tr>
+<tr><td>Resultados</td><td> <code>200 OK & XML</code><br /></td></tr>
+</tbody>
+</table>
+<h4>Parâmetros</h4>
+<table>
+	<thead>
+		<tr>
+			<th>Nome</th>
+			<th>Descrição</th>
+			<th>Tipo</th>
+			<th>Valor Default</th>
+		</tr>
+	</thead>
+	<tbody>
+	
+		<tr>
+			<td><code>{secao}</code></td>
+			<td>Seção do Portal.</td>
+			<td><code>String</code></td>
+			<td><code>N.I.</code></td>
+		</tr>
+		
+		<tr>
+			<td><code>{ano}</code></td>
+			<td>Ano de referência (2005..).</td>
+			<td><code>Integer</code></td>
+			<td><code>N.I.</code></td>
+		</tr>
+		
+		<tr>
+			<td><code>{mes}</code></td>
+			<td>Mês de referência (1..12).</td>
+			<td><code>Byte</code></td>
+			<td><code>N.I.</code></td>
+		</tr>
+		
+		<tr>
+			<td><code>{dia}</code></td>
+			<td>Dia de referência (1..31, conforme mês/ano).</td>
+			<td><code>Byte</code></td>
+			<td><code>N.I.</code></td>
+		</tr>
+		
+		<tr>
+			<td><code>?cat=</code></td>
+			<td>Lista de identificadores de categorias de itens de agenda separados por vírgula. Exemplo: cat=0,1,2<br/>Se não informado, traz itens de todas as categorias da seção.</td>
+			<td><code>String</code></td>
+			<td><code>N.I.</code></td>
+		</tr>
+		
+		<tr>
+			<td><code>?aliasComissaoParticipanteConcreto=</code></td>
+			<td>Alias de Comissão Participante vai ser referente a classe abstrata ou às classes concretas</td>
+			<td><code>Boolean</code></td>
+			<td><code>true</code></td>
+		</tr>
+		
+	</tbody>
+</table>
+
+<h4>Headers</h4>
+<table>
+	<thead>
+		<tr>
+			<th>Nome</th>
+			<th>Descrição</th>
+			<th>Tipo</th>
+			<th>Valor Default</th>
+		</tr>
+	</thead>
+	<tbody>
+	<tr><td colspan="4">Sem headers.</td></tr>
+	</tbody>
+</table>
+
+<h4>Exemplos</h4>
+<div class="sanfona">
+
+
+<h5><a href="#Lista de Itens da Agenda Diária por Seção do Portal">Agenda diária de uma seção do Portal</a></h5>
+<div class="code">GET http://dadosabertos.almg.gov.br/ws/agenda/diaria/home/2010/06/11<br/><br/>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+&lt;agendaDiaria&gt;
+  &lt;tamanho&gt;4&lt;/tamanho&gt;
+  &lt;dia&gt;2010-06-11&lt;/dia&gt;
+  &lt;nomeDiaSemana&gt;Sexta-feira&lt;/nomeDiaSemana&gt;
+  &lt;itens&gt;
+    &lt;visitaOrientada&gt;
+      &lt;codigoInterno&gt;VO.789&lt;/codigoInterno&gt;
+      &lt;titulo&gt;8ª ano - E. M. Valério Ferreira Palhares - Betim&lt;/titulo&gt;
+      &lt;subtitulo&gt;Visita orientada&lt;/subtitulo&gt;
+      &lt;local&gt;ALMG&lt;/local&gt;
+      &lt;descricao&gt;Visitas às dependências da Assembleia com objetivo de conhecer a estrutura e funcionamento do poder legislativo e conceitos básicos sobre a política&lt;/descricao&gt;
+      &lt;diaInicial class="sql-timestamp"&gt;2010-06-11&lt;/diaInicial&gt;
+      &lt;diaFinal class="sql-timestamp"&gt;2010-06-11&lt;/diaFinal&gt;
+      &lt;horaInicial&gt;08:00&lt;/horaInicial&gt;
+      &lt;horaFinal&gt;08:00&lt;/horaFinal&gt;
+      &lt;categoria&gt;
+        &lt;id&gt;2&lt;/id&gt;
+        &lt;nome&gt;Visitas Orientadas&lt;/nome&gt;
+        &lt;origemConteudo&gt;SISTEMA&lt;/origemConteudo&gt;
+        &lt;parametrosBusca&gt;
+          &lt;secoesPortal&gt;home,agenda,escola&lt;/secoesPortal&gt;
+        &lt;/parametrosBusca&gt;
+        &lt;idsCategoriasSuperiores&gt;3&lt;/idsCategoriasSuperiores&gt;
+      &lt;/categoria&gt;
+      &lt;parametrosBusca&gt;
+        &lt;secoesPortal&gt;home,agenda,escola&lt;/secoesPortal&gt;
+      &lt;/parametrosBusca&gt;
+      &lt;situacao&gt;OK&lt;/situacao&gt;
+      &lt;instituicoesParticipantes&gt;
+        &lt;instituicaoParticipante&gt;
+          &lt;idInstituicao&gt;1073&lt;/idInstituicao&gt;
+          &lt;tipoParticipacao&gt;PARTICIPANTE&lt;/tipoParticipacao&gt;
+          &lt;nome&gt;E. M. Valério Ferreira Palhares&lt;/nome&gt;
+          &lt;qtdParticipantes&gt;50&lt;/qtdParticipantes&gt;
+          &lt;qtdInscritos&gt;50&lt;/qtdInscritos&gt;
+          &lt;municipio&gt;Betim&lt;/municipio&gt;
+          &lt;indicadorEntidadePublica&gt;S&lt;/indicadorEntidadePublica&gt;
+        &lt;/instituicaoParticipante&gt;
+      &lt;/instituicoesParticipantes&gt;
+    &lt;/visitaOrientada&gt;
+    &lt;debatePublico&gt;
+      &lt;codigoInterno&gt;5.3.20100611.09:00&lt;/codigoInterno&gt;
+      &lt;titulo&gt;Plano de Desenvolvimento Regional do Alto Paraopeba&lt;/titulo&gt;
+      &lt;subtitulo&gt;Comissão de Assuntos Municipais&lt;/subtitulo&gt;
+      &lt;local&gt;Plenário&lt;/local&gt;
+      &lt;descricao&gt;debater o Plano de Desenvolvimento Regional do Alto Paraopeba.&lt;/descricao&gt;
+      &lt;diaInicial class="sql-timestamp"&gt;2010-06-11&lt;/diaInicial&gt;
+      &lt;diaFinal class="sql-timestamp"&gt;2010-06-11&lt;/diaFinal&gt;
+      &lt;horaInicial&gt;09:00&lt;/horaInicial&gt;
+      &lt;horaFinal&gt;13:30&lt;/horaFinal&gt;
+      &lt;urlDetalhe&gt;http://www.almg.gov.br/atividade_parlamentar/comissoes/internaPauta.html?idCom=3&amp;dia=11&amp;mes=06&amp;ano=2010&amp;hr=09:00&amp;tpCom=5&amp;aba=js_tabPauta&lt;/urlDetalhe&gt;
+      &lt;categoria&gt;
+        &lt;id&gt;25&lt;/id&gt;
+        &lt;nome&gt;Debate Público&lt;/nome&gt;
+        &lt;origemConteudo&gt;SISTEMA&lt;/origemConteudo&gt;
+        &lt;parametrosBusca&gt;
+          &lt;secoesPortal&gt;home,agenda,comissoes&lt;/secoesPortal&gt;
+        &lt;/parametrosBusca&gt;
+      &lt;/categoria&gt;
+      &lt;parametrosBusca&gt;
+        &lt;secoesPortal&gt;home,agenda,comissoes&lt;/secoesPortal&gt;
+      &lt;/parametrosBusca&gt;
+      &lt;situacao&gt;OK&lt;/situacao&gt;
+      &lt;tipoReuniao&gt;5&lt;/tipoReuniao&gt;
+      &lt;idComissaoIdentificadora&gt;3&lt;/idComissaoIdentificadora&gt;
+      &lt;idReuniaoComissao&gt;14655&lt;/idReuniaoComissao&gt;
+      &lt;statusTransmissao&gt;5&lt;/statusTransmissao&gt;
+      &lt;exibirResultado&gt;S&lt;/exibirResultado&gt;
+      &lt;comissoesParticipantes&gt;
+        &lt;comissaoParticipante&gt;
+          &lt;idComissao&gt;3&lt;/idComissao&gt;
+          &lt;tipoParticipacao&gt;IDENTIFICACAO&lt;/tipoParticipacao&gt;
+          &lt;nomeComissao&gt;Comissão de Assuntos Municipais e Regionalização&lt;/nomeComissao&gt;
+          &lt;nomeReduzido&gt;Assuntos Municipais&lt;/nomeReduzido&gt;
+          &lt;tipoComissao&gt;1&lt;/tipoComissao&gt;
+        &lt;/comissaoParticipante&gt;
+      &lt;/comissoesParticipantes&gt;
+    &lt;/debatePublico&gt;
+    &lt;reuniaoPreparatoriaEvento&gt;
+      &lt;codigoInterno&gt;RPEI.144&lt;/codigoInterno&gt;
+      &lt;titulo&gt;Reunião Preparatória para Segurança Pública: Drogas, Criminalidade e Violência&lt;/titulo&gt;
+      &lt;local&gt;Plenarinho I&lt;/local&gt;
+      &lt;descricao&gt;FT Segurança Pública - 7ª Reunião da Comissão Organizadora&lt;/descricao&gt;
+      &lt;diaInicial class="sql-timestamp"&gt;2010-06-11&lt;/diaInicial&gt;
+      &lt;diaFinal class="sql-timestamp"&gt;2010-06-11&lt;/diaFinal&gt;
+      &lt;horaInicial&gt;09:30&lt;/horaInicial&gt;
+      &lt;categoria&gt;
+        &lt;id&gt;20002&lt;/id&gt;
+        &lt;nome&gt;Fórum Técnico&lt;/nome&gt;
+        &lt;origemConteudo&gt;SISTEMA&lt;/origemConteudo&gt;
+        &lt;parametrosBusca&gt;
+          &lt;secoesPortal&gt;eventos&lt;/secoesPortal&gt;
+        &lt;/parametrosBusca&gt;
+        &lt;idsCategoriasSuperiores&gt;4&lt;/idsCategoriasSuperiores&gt;
+      &lt;/categoria&gt;
+      &lt;parametrosBusca&gt;
+        &lt;secoesPortal&gt;eventos&lt;/secoesPortal&gt;
+      &lt;/parametrosBusca&gt;
+      &lt;situacao&gt;OK&lt;/situacao&gt;
+      &lt;indicadorInscricaoWeb&gt;S&lt;/indicadorInscricaoWeb&gt;
+      &lt;numeroVagas&gt;560&lt;/numeroVagas&gt;
+      &lt;dataInicioInscricao class="sql-timestamp"&gt;2010-07-16&lt;/dataInicioInscricao&gt;
+      &lt;dataFimInscricao class="sql-timestamp"&gt;2010-08-03&lt;/dataFimInscricao&gt;
+      &lt;numeroMatriculados&gt;749&lt;/numeroMatriculados&gt;
+      &lt;url&gt;http://www.almg.gov.br/acompanhe/eventos/hotsites/2010/forum_seguranca/index.html&lt;/url&gt;
+      &lt;urlInscricao&gt;http://www.almg.gov.br/hotsites/2010/forum_seguranca/inscricoes.html&lt;/urlInscricao&gt;
+    &lt;/reuniaoPreparatoriaEvento&gt;
+    &lt;visitaOrientada&gt;
+      &lt;codigoInterno&gt;VO.790&lt;/codigoInterno&gt;
+      &lt;titulo&gt;6ª ano - E. M. Valério Ferreira Palhares - Betim&lt;/titulo&gt;
+      &lt;subtitulo&gt;Visita orientada&lt;/subtitulo&gt;
+      &lt;local&gt;ALMG&lt;/local&gt;
+      &lt;descricao&gt;Visitas às dependências da Assembleia com objetivo de conhecer a estrutura e funcionamento do poder legislativo e conceitos básicos sobre a política&lt;/descricao&gt;
+      &lt;diaInicial class="sql-timestamp"&gt;2010-06-11&lt;/diaInicial&gt;
+      &lt;diaFinal class="sql-timestamp"&gt;2010-06-11&lt;/diaFinal&gt;
+      &lt;horaInicial&gt;14:00&lt;/horaInicial&gt;
+      &lt;horaFinal&gt;14:00&lt;/horaFinal&gt;
+      &lt;categoria&gt;
+        &lt;id&gt;2&lt;/id&gt;
+        &lt;nome&gt;Visitas Orientadas&lt;/nome&gt;
+        &lt;origemConteudo&gt;SISTEMA&lt;/origemConteudo&gt;
+        &lt;parametrosBusca&gt;
+          &lt;secoesPortal&gt;home,agenda,escola&lt;/secoesPortal&gt;
+        &lt;/parametrosBusca&gt;
+        &lt;idsCategoriasSuperiores&gt;3&lt;/idsCategoriasSuperiores&gt;
+      &lt;/categoria&gt;
+      &lt;parametrosBusca&gt;
+        &lt;secoesPortal&gt;home,agenda,escola&lt;/secoesPortal&gt;
+      &lt;/parametrosBusca&gt;
+      &lt;situacao&gt;OK&lt;/situacao&gt;
+      &lt;instituicoesParticipantes&gt;
+        &lt;instituicaoParticipante&gt;
+          &lt;idInstituicao&gt;1073&lt;/idInstituicao&gt;
+          &lt;tipoParticipacao&gt;PARTICIPANTE&lt;/tipoParticipacao&gt;
+          &lt;nome&gt;E. M. Valério Ferreira Palhares&lt;/nome&gt;
+          &lt;qtdParticipantes&gt;49&lt;/qtdParticipantes&gt;
+          &lt;qtdInscritos&gt;50&lt;/qtdInscritos&gt;
+          &lt;municipio&gt;Betim&lt;/municipio&gt;
+          &lt;indicadorEntidadePublica&gt;S&lt;/indicadorEntidadePublica&gt;
+        &lt;/instituicaoParticipante&gt;
+      &lt;/instituicoesParticipantes&gt;
+    &lt;/visitaOrientada&gt;
+  &lt;/itens&gt;
+&lt;/agendaDiaria&gt;
+</div>
+
+
+
+<h5><a href="#Lista de Itens da Agenda Diária por Seção do Portal">Agenda diária de uma seção por uma categoria</a></h5>
+<div class="code">GET http://dadosabertos.almg.gov.br/ws/agenda/diaria/home/2010/06/05?cat=0<br/><br/>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+&lt;agendaDiaria&gt;
+  &lt;tamanho&gt;0&lt;/tamanho&gt;
+  &lt;dia&gt;2010-06-05&lt;/dia&gt;
+  &lt;nomeDiaSemana&gt;Sábado&lt;/nomeDiaSemana&gt;
+  &lt;itens/&gt;
+&lt;/agendaDiaria&gt;
+</div>
+
+
+</div> 
+
+
+<h3><a name="Lista de Itens da Agenda Diária por Seção do Portal, por período, por expressão e por categoria"></a>Lista de Itens da Agenda Diária por Seção do Portal, por período, por expressão e por categoria</h3>
+<p><b>Versão:</b> 1.0</p>
+<p>Lista os ítens da Agenda Diária por Seção do Portal, por período, por expressão e por categoria.</p>
+<table>
+<tbody>
+<tr><td>URL</td><td><code>http://dadosabertos.almg.gov.br/ws/agenda/diaria/{secao}/pesquisa</code></td></tr>
+<tr><td>Método</td><td> <code>GET</code></td></tr>
+<tr><td>Tipos de Consumo</td><td> <code>N.I.</code><br /> </td></tr>
+<tr><td>Tipos de Retorno</td><td> <code>application/xml</code><br /> </td></tr>
+<tr><td>Resultados</td><td> <code>200 OK & XML</code><br /></td></tr>
+</tbody>
+</table>
+<h4>Parâmetros</h4>
+<table>
+	<thead>
+		<tr>
+			<th>Nome</th>
+			<th>Descrição</th>
+			<th>Tipo</th>
+			<th>Valor Default</th>
+		</tr>
+	</thead>
+	<tbody>
+	
+		<tr>
+			<td><code>{secao}</code></td>
+			<td>Seção do Portal.</td>
+			<td><code>String</code></td>
+			<td><code>N.I.</code></td>
+		</tr>
+		
+		<tr>
+			<td><code>?expr=</code></td>
+			<td>Expressão de pesquisa para o comando SQL <code>like</code>.</td>
+			<td><code>String</code></td>
+			<td><code></code></td>
+		</tr>
+		
+		<tr>
+			<td><code>?ini=</code></td>
+			<td>Data inicial do período de pesquisa, no formato 'AAAAMMDD'.<br/> Exemplo: ini=19841201</td>
+			<td><code>String</code></td>
+			<td><code>N.I.</code></td>
+		</tr>
+		
+		<tr>
+			<td><code>?fim=</code></td>
+			<td>Data final do período de pesquisa, no formato 'AAAAMMDD'.<br/> Exemplo: fim=19851202</td>
+			<td><code>String</code></td>
+			<td><code>N.I.</code></td>
+		</tr>
+		
+		<tr>
+			<td><code>?cat=</code></td>
+			<td>Lista de identificadores de categorias de itens de agenda separados por vírgula. Exemplo: cat=0,1,2<br/>Se não informado, traz itens de todas as categorias da seção.</td>
+			<td><code>String</code></td>
+			<td><code>N.I.</code></td>
+		</tr>
+		
+		<tr>
+			<td><code>?aliasComissaoParticipanteConcreto=</code></td>
+			<td>Alias de Comissão Participante vai ser referente a classe abstrata ou às classes concretas</td>
+			<td><code>Boolean</code></td>
+			<td><code>true</code></td>
+		</tr>
+		
+	</tbody>
+</table>
+
+<h4>Headers</h4>
+<table>
+	<thead>
+		<tr>
+			<th>Nome</th>
+			<th>Descrição</th>
+			<th>Tipo</th>
+			<th>Valor Default</th>
+		</tr>
+	</thead>
+	<tbody>
+	<tr><td colspan="4">Sem headers.</td></tr>
+	</tbody>
+</table>
+
+<h4>Exemplos</h4>
+<div class="sanfona">
+
+
+<h5><a href="#Lista de Itens da Agenda Diária por Seção do Portal, por período, por expressão e por categoria">Lista os ítens da Agenda Diária da seção TV do dia 01/12/2011 a 07/12/2011 que sejam da categoria Programação TV e com a expressão 'reprise'</a></h5>
+<div class="code">GET http://dadosabertos.almg.gov.br/ws/agenda/diaria/tv/pesquisa?ini=20111201&fim=20111207&cat=29&expr=reprise<br/><br/>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+&lt;agendaPeriodo&gt;
+  &lt;tamanho&gt;7&lt;/tamanho&gt;
+  &lt;inicio&gt;2011-12-01&lt;/inicio&gt;
+  &lt;fim&gt;2011-12-07&lt;/fim&gt;
+  &lt;dias&gt;
+    &lt;agendaDiaria&gt;
+      &lt;tamanho&gt;7&lt;/tamanho&gt;
+      &lt;dia&gt;2011-12-01&lt;/dia&gt;
+      &lt;nomeDiaSemana&gt;Quinta-feira&lt;/nomeDiaSemana&gt;
+      &lt;itens&gt;
+        &lt;itemCadastrado&gt;
+          &lt;codigoInterno&gt;AA.2491&lt;/codigoInterno&gt;
+          &lt;titulo&gt;Plenário (continuação)&lt;/titulo&gt;
+          &lt;descricao&gt;Reprise&lt;/descricao&gt;
+          &lt;diaInicial class="sql-timestamp"&gt;2011-12-01&lt;/diaInicial&gt;
+          &lt;diaFinal class="sql-timestamp"&gt;2011-12-01&lt;/diaFinal&gt;
+          &lt;horaInicial&gt;00:00&lt;/horaInicial&gt;
+          &lt;horaFinal&gt;01:00&lt;/horaFinal&gt;
+          &lt;categoria&gt;
+            &lt;id&gt;29&lt;/id&gt;
+            &lt;nome&gt;Programação TV&lt;/nome&gt;
+            &lt;origemConteudo&gt;CADASTRO&lt;/origemConteudo&gt;
+            &lt;parametrosBusca&gt;
+              &lt;secoesPortal&gt;tv&lt;/secoesPortal&gt;
+            &lt;/parametrosBusca&gt;
+            &lt;idsCategoriasSuperiores&gt;27&lt;/idsCategoriasSuperiores&gt;
+          &lt;/categoria&gt;
+          &lt;parametrosBusca&gt;
+            &lt;secoesPortal&gt;tv&lt;/secoesPortal&gt;
+          &lt;/parametrosBusca&gt;
+          &lt;situacao&gt;OK&lt;/situacao&gt;
+        &lt;/itemCadastrado&gt;
+        &lt;itemCadastrado&gt;
+          &lt;codigoInterno&gt;AA.2488&lt;/codigoInterno&gt;
+          &lt;titulo&gt;Repórter Assembleia&lt;/titulo&gt;
+          &lt;descricao&gt;Reprise&lt;/descricao&gt;
+          &lt;diaInicial class="sql-timestamp"&gt;2011-12-01&lt;/diaInicial&gt;
+          &lt;diaFinal class="sql-timestamp"&gt;2011-12-01&lt;/diaFinal&gt;
+          &lt;horaInicial&gt;01:30&lt;/horaInicial&gt;
+          &lt;horaFinal&gt;02:00&lt;/horaFinal&gt;
+          &lt;categoria&gt;
+            &lt;id&gt;29&lt;/id&gt;
+            &lt;nome&gt;Programação TV&lt;/nome&gt;
+            &lt;origemConteudo&gt;CADASTRO&lt;/origemConteudo&gt;
+            &lt;parametrosBusca&gt;
+              &lt;secoesPortal&gt;tv&lt;/secoesPortal&gt;
+            &lt;/parametrosBusca&gt;
+            &lt;idsCategoriasSuperiores&gt;27&lt;/idsCategoriasSuperiores&gt;
+          &lt;/categoria&gt;
+          &lt;parametrosBusca&gt;
+            &lt;secoesPortal&gt;tv&lt;/secoesPortal&gt;
+          &lt;/parametrosBusca&gt;
+          &lt;situacao&gt;OK&lt;/situacao&gt;
+        &lt;/itemCadastrado&gt;
+        &lt;itemCadastrado&gt;
+          &lt;codigoInterno&gt;AA.2497&lt;/codigoInterno&gt;
+          &lt;titulo&gt;Repórter Assembleia&lt;/titulo&gt;
+          &lt;descricao&gt;Reprise&lt;/descricao&gt;
+          &lt;diaInicial class="sql-timestamp"&gt;2011-12-01&lt;/diaInicial&gt;
+          &lt;diaFinal class="sql-timestamp"&gt;2011-12-01&lt;/diaFinal&gt;
+          &lt;horaInicial&gt;07:30&lt;/horaInicial&gt;
+          &lt;horaFinal&gt;08:00&lt;/horaFinal&gt;
+          &lt;categoria&gt;
+            &lt;id&gt;29&lt;/id&gt;
+            &lt;nome&gt;Programação TV&lt;/nome&gt;
+            &lt;origemConteudo&gt;CADASTRO&lt;/origemConteudo&gt;
+            &lt;parametrosBusca&gt;
+              &lt;secoesPortal&gt;tv&lt;/secoesPortal&gt;
+            &lt;/parametrosBusca&gt;
+            &lt;idsCategoriasSuperiores&gt;27&lt;/idsCategoriasSuperiores&gt;
+          &lt;/categoria&gt;
+          &lt;parametrosBusca&gt;
+            &lt;secoesPortal&gt;tv&lt;/secoesPortal&gt;
+          &lt;/parametrosBusca&gt;
+          &lt;situacao&gt;OK&lt;/situacao&gt;
+        &lt;/itemCadastrado&gt;
+        &lt;itemCadastrado&gt;
+          &lt;codigoInterno&gt;AA.2498&lt;/codigoInterno&gt;
+          &lt;titulo&gt;Mundo Político&lt;/titulo&gt;
+          &lt;descricao&gt;Reprise&lt;/descricao&gt;
+          &lt;diaInicial class="sql-timestamp"&gt;2011-12-01&lt;/diaInicial&gt;
+          &lt;diaFinal class="sql-timestamp"&gt;2011-12-01&lt;/diaFinal&gt;
+          &lt;horaInicial&gt;08:00&lt;/horaInicial&gt;
+          &lt;horaFinal&gt;08:30&lt;/horaFinal&gt;
+          &lt;categoria&gt;
+            &lt;id&gt;29&lt;/id&gt;
+            &lt;nome&gt;Programação TV&lt;/nome&gt;
+            &lt;origemConteudo&gt;CADASTRO&lt;/origemConteudo&gt;
+            &lt;parametrosBusca&gt;
+              &lt;secoesPortal&gt;tv&lt;/secoesPortal&gt;
+            &lt;/parametrosBusca&gt;
+            &lt;idsCategoriasSuperiores&gt;27&lt;/idsCategoriasSuperiores&gt;
+          &lt;/categoria&gt;
+          &lt;parametrosBusca&gt;
+            &lt;secoesPortal&gt;tv&lt;/secoesPortal&gt;
+          &lt;/parametrosBusca&gt;
+          &lt;situacao&gt;OK&lt;/situacao&gt;
+        &lt;/itemCadastrado&gt;
+        &lt;itemCadastrado&gt;
+          &lt;codigoInterno&gt;AA.2499&lt;/codigoInterno&gt;
+          &lt;titulo&gt;Mundo Político&lt;/titulo&gt;
+          &lt;descricao&gt;Reprise&lt;/descricao&gt;
+          &lt;diaInicial class="sql-timestamp"&gt;2011-12-01&lt;/diaInicial&gt;
+          &lt;diaFinal class="sql-timestamp"&gt;2011-12-01&lt;/diaFinal&gt;
+          &lt;horaInicial&gt;13:00&lt;/horaInicial&gt;
+          &lt;horaFinal&gt;13:30&lt;/horaFinal&gt;
+          &lt;categoria&gt;
+            &lt;id&gt;29&lt;/id&gt;
+            &lt;nome&gt;Programação TV&lt;/nome&gt;
+            &lt;origemConteudo&gt;CADASTRO&lt;/origemConteudo&gt;
+            &lt;parametrosBusca&gt;
+              &lt;secoesPortal&gt;tv&lt;/secoesPortal&gt;
+            &lt;/parametrosBusca&gt;
+            &lt;idsCategoriasSuperiores&gt;27&lt;/idsCategoriasSuperiores&gt;
+          &lt;/categoria&gt;
+          &lt;parametrosBusca&gt;
+            &lt;secoesPortal&gt;tv&lt;/secoesPortal&gt;
+          &lt;/parametrosBusca&gt;
+          &lt;situacao&gt;OK&lt;/situacao&gt;
+        &lt;/itemCadastrado&gt;
+        &lt;itemCadastrado&gt;
+          &lt;codigoInterno&gt;AA.2514&lt;/codigoInterno&gt;
+          &lt;titulo&gt;Repórter Assembleia&lt;/titulo&gt;
+          &lt;descricao&gt;Reprise&lt;/descricao&gt;
+          &lt;diaInicial class="sql-timestamp"&gt;2011-12-01&lt;/diaInicial&gt;
+          &lt;diaFinal class="sql-timestamp"&gt;2011-12-01&lt;/diaFinal&gt;
+          &lt;horaInicial&gt;22:00&lt;/horaInicial&gt;
+          &lt;horaFinal&gt;22:30&lt;/horaFinal&gt;<br/>
+...<br/>
+&lt;/diaFinal&gt;
+          &lt;horaInicial&gt;01:30&lt;/horaInicial&gt;
+          &lt;horaFinal&gt;02:00&lt;/horaFinal&gt;
+          &lt;categoria&gt;
+            &lt;id&gt;29&lt;/id&gt;
+            &lt;nome&gt;Programação TV&lt;/nome&gt;
+            &lt;origemConteudo&gt;CADASTRO&lt;/origemConteudo&gt;
+            &lt;parametrosBusca&gt;
+              &lt;secoesPortal&gt;tv&lt;/secoesPortal&gt;
+            &lt;/parametrosBusca&gt;
+            &lt;idsCategoriasSuperiores&gt;27&lt;/idsCategoriasSuperiores&gt;
+          &lt;/categoria&gt;
+          &lt;parametrosBusca&gt;
+            &lt;secoesPortal&gt;tv&lt;/secoesPortal&gt;
+          &lt;/parametrosBusca&gt;
+          &lt;situacao&gt;OK&lt;/situacao&gt;
+        &lt;/itemCadastrado&gt;
+        &lt;itemCadastrado&gt;
+          &lt;codigoInterno&gt;AA.2674&lt;/codigoInterno&gt;
+          &lt;titulo&gt;Repórter Assembleia&lt;/titulo&gt;
+          &lt;descricao&gt;Reprise&lt;/descricao&gt;
+          &lt;diaInicial class="sql-timestamp"&gt;2011-12-07&lt;/diaInicial&gt;
+          &lt;diaFinal class="sql-timestamp"&gt;2011-12-07&lt;/diaFinal&gt;
+          &lt;horaInicial&gt;07:30&lt;/horaInicial&gt;
+          &lt;horaFinal&gt;08:00&lt;/horaFinal&gt;
+          &lt;categoria&gt;
+            &lt;id&gt;29&lt;/id&gt;
+            &lt;nome&gt;Programação TV&lt;/nome&gt;
+            &lt;origemConteudo&gt;CADASTRO&lt;/origemConteudo&gt;
+            &lt;parametrosBusca&gt;
+              &lt;secoesPortal&gt;tv&lt;/secoesPortal&gt;
+            &lt;/parametrosBusca&gt;
+            &lt;idsCategoriasSuperiores&gt;27&lt;/idsCategoriasSuperiores&gt;
+          &lt;/categoria&gt;
+          &lt;parametrosBusca&gt;
+            &lt;secoesPortal&gt;tv&lt;/secoesPortal&gt;
+          &lt;/parametrosBusca&gt;
+          &lt;situacao&gt;OK&lt;/situacao&gt;
+        &lt;/itemCadastrado&gt;
+        &lt;itemCadastrado&gt;
+          &lt;codigoInterno&gt;AA.2675&lt;/codigoInterno&gt;
+          &lt;titulo&gt;Mundo Político&lt;/titulo&gt;
+          &lt;descricao&gt;Reprise&lt;/descricao&gt;
+          &lt;diaInicial class="sql-timestamp"&gt;2011-12-07&lt;/diaInicial&gt;
+          &lt;diaFinal class="sql-timestamp"&gt;2011-12-07&lt;/diaFinal&gt;
+          &lt;horaInicial&gt;08:00&lt;/horaInicial&gt;
+          &lt;horaFinal&gt;08:30&lt;/horaFinal&gt;
+          &lt;categoria&gt;
+            &lt;id&gt;29&lt;/id&gt;
+            &lt;nome&gt;Programação TV&lt;/nome&gt;
+            &lt;origemConteudo&gt;CADASTRO&lt;/origemConteudo&gt;
+            &lt;parametrosBusca&gt;
+              &lt;secoesPortal&gt;tv&lt;/secoesPortal&gt;
+            &lt;/parametrosBusca&gt;
+            &lt;idsCategoriasSuperiores&gt;27&lt;/idsCategoriasSuperiores&gt;
+          &lt;/categoria&gt;
+          &lt;parametrosBusca&gt;
+            &lt;secoesPortal&gt;tv&lt;/secoesPortal&gt;
+          &lt;/parametrosBusca&gt;
+          &lt;situacao&gt;OK&lt;/situacao&gt;
+        &lt;/itemCadastrado&gt;
+        &lt;itemCadastrado&gt;
+          &lt;codigoInterno&gt;AA.2676&lt;/codigoInterno&gt;
+          &lt;titulo&gt;Mundo Político&lt;/titulo&gt;
+          &lt;descricao&gt;Reprise&lt;/descricao&gt;
+          &lt;diaInicial class="sql-timestamp"&gt;2011-12-07&lt;/diaInicial&gt;
+          &lt;diaFinal class="sql-timestamp"&gt;2011-12-07&lt;/diaFinal&gt;
+          &lt;horaInicial&gt;13:00&lt;/horaInicial&gt;
+          &lt;horaFinal&gt;13:30&lt;/horaFinal&gt;
+          &lt;categoria&gt;
+            &lt;id&gt;29&lt;/id&gt;
+            &lt;nome&gt;Programação TV&lt;/nome&gt;
+            &lt;origemConteudo&gt;CADASTRO&lt;/origemConteudo&gt;
+            &lt;parametrosBusca&gt;
+              &lt;secoesPortal&gt;tv&lt;/secoesPortal&gt;
+            &lt;/parametrosBusca&gt;
+            &lt;idsCategoriasSuperiores&gt;27&lt;/idsCategoriasSuperiores&gt;
+          &lt;/categoria&gt;
+          &lt;parametrosBusca&gt;
+            &lt;secoesPortal&gt;tv&lt;/secoesPortal&gt;
+          &lt;/parametrosBusca&gt;
+          &lt;situacao&gt;OK&lt;/situacao&gt;
+        &lt;/itemCadastrado&gt;
+        &lt;itemCadastrado&gt;
+          &lt;codigoInterno&gt;AA.2689&lt;/codigoInterno&gt;
+          &lt;titulo&gt;Repórter Assembleia&lt;/titulo&gt;
+          &lt;descricao&gt;Reprise&lt;/descricao&gt;
+          &lt;diaInicial class="sql-timestamp"&gt;2011-12-07&lt;/diaInicial&gt;
+          &lt;diaFinal class="sql-timestamp"&gt;2011-12-07&lt;/diaFinal&gt;
+          &lt;horaInicial&gt;22:00&lt;/horaInicial&gt;
+          &lt;horaFinal&gt;22:30&lt;/horaFinal&gt;
+          &lt;categoria&gt;
+            &lt;id&gt;29&lt;/id&gt;
+            &lt;nome&gt;Programação TV&lt;/nome&gt;
+            &lt;origemConteudo&gt;CADASTRO&lt;/origemConteudo&gt;
+            &lt;parametrosBusca&gt;
+              &lt;secoesPortal&gt;tv&lt;/secoesPortal&gt;
+            &lt;/parametrosBusca&gt;
+            &lt;idsCategoriasSuperiores&gt;27&lt;/idsCategoriasSuperiores&gt;
+          &lt;/categoria&gt;
+          &lt;parametrosBusca&gt;
+            &lt;secoesPortal&gt;tv&lt;/secoesPortal&gt;
+          &lt;/parametrosBusca&gt;
+          &lt;situacao&gt;OK&lt;/situacao&gt;
+        &lt;/itemCadastrado&gt;
+        &lt;itemCadastrado&gt;
+          &lt;codigoInterno&gt;AA.2692&lt;/codigoInterno&gt;
+          &lt;titulo&gt;Plenário&lt;/titulo&gt;
+          &lt;descricao&gt;Reprise&lt;/descricao&gt;
+          &lt;diaInicial class="sql-timestamp"&gt;2011-12-07&lt;/diaInicial&gt;
+          &lt;diaFinal class="sql-timestamp"&gt;2011-12-07&lt;/diaFinal&gt;
+          &lt;horaInicial&gt;23:15&lt;/horaInicial&gt;
+          &lt;horaFinal&gt;23:59&lt;/horaFinal&gt;
+          &lt;categoria&gt;
+            &lt;id&gt;29&lt;/id&gt;
+            &lt;nome&gt;Programação TV&lt;/nome&gt;
+            &lt;origemConteudo&gt;CADASTRO&lt;/origemConteudo&gt;
+            &lt;parametrosBusca&gt;
+              &lt;secoesPortal&gt;tv&lt;/secoesPortal&gt;
+            &lt;/parametrosBusca&gt;
+            &lt;idsCategoriasSuperiores&gt;27&lt;/idsCategoriasSuperiores&gt;
+          &lt;/categoria&gt;
+          &lt;parametrosBusca&gt;
+            &lt;secoesPortal&gt;tv&lt;/secoesPortal&gt;
+          &lt;/parametrosBusca&gt;
+          &lt;situacao&gt;OK&lt;/situacao&gt;
+        &lt;/itemCadastrado&gt;
+      &lt;/itens&gt;
+    &lt;/agendaDiaria&gt;
+  &lt;/dias&gt;
+&lt;/agendaPeriodo&gt;
+</div>
+
+
+</div> 
+
+
+<h3><a name="Ajuda"></a>Ajuda</h3>
+<p><b>Versão:</b> 1.0</p>
+<p>Retorna ajuda.</p>
+<table>
+<tbody>
+<tr><td>URL</td><td><code>http://dadosabertos.almg.gov.br/ws/agenda/ajuda</code></td></tr>
+<tr><td>Método</td><td> <code>GET</code></td></tr>
+<tr><td>Tipos de Consumo</td><td> <code>N.I.</code><br /> </td></tr>
+<tr><td>Tipos de Retorno</td><td> <code>text/html</code><br /> </td></tr>
+<tr><td>Resultados</td><td> <code>200 OK & HTML</code><br /></td></tr>
+</tbody>
+</table>
+<h4>Parâmetros</h4>
+<table>
+	<thead>
+		<tr>
+			<th>Nome</th>
+			<th>Descrição</th>
+			<th>Tipo</th>
+			<th>Valor Default</th>
+		</tr>
+	</thead>
+	<tbody>
+	<tr><td colspan="4">Sem parâmetros.</td></tr>
+	</tbody>
+</table>
+
+<h4>Headers</h4>
+<table>
+	<thead>
+		<tr>
+			<th>Nome</th>
+			<th>Descrição</th>
+			<th>Tipo</th>
+			<th>Valor Default</th>
+		</tr>
+	</thead>
+	<tbody>
+	<tr><td colspan="4">Sem headers.</td></tr>
+	</tbody>
+</table>
+
+<h4>Exemplos</h4>
+<div class="sanfona">
+Sem exemplos.
+</div> 
+
+
+
+</article>
+
+<aside>
+<h2>Mais referências</h2>
+<ul>
+	<li>Veja outros webservices em <a href="/ws/ajuda/sobre">Sobre o sistema...</a></li>
+</ul>
+</aside>
+<footer>
+&copy; ALMG | Escrito: Jul 26, 2010 | Última modificação: Mar 30, 2011 | <a href="http://www.almg.gov.br/">Voltar</a>
+</footer>
+</body>
+</html>

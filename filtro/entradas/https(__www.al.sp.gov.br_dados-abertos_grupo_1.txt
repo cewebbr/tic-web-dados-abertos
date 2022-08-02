@@ -1,0 +1,1029 @@
+
+
+
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="pt-br" xmlns:og="http://opengraphprotocol.org/schema/">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width">
+
+<meta name="keywords" content="alesp, dados abertos, projetos, proposições, processo, projeto de lei, estado, comissões, parlamento, legislativo, assembleia, deputado, parlamentar, legislação, lei, decreto, gestão, estadual, atos, artigo, Estado de São Paulo" /> 
+<meta name="description" content="Portal dos Dados Abertos da Assembleia Legislativa do Estado de S&atilde;o Paulo"/> 
+<meta property="og:title" content="Assembleia Legislativa do Estado de S&atilde;o Paulo" /> 
+<meta property="og:type" content="website" /> 
+<meta property="og:url" content="http://www.al.sp.gov.br/dados-abertos" /> 
+<meta property="og:image" content="http://www.al.sp.gov.br/_img/brasao_cabecalho.png" /> 
+<meta property="og:description" content="Portal dos Dados Abertos da Assembleia Legislativa do Estado de S&atilde;o Paulo" /> 
+
+<title>Portal dos Dados Abertos da Alesp</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="http://www.al.sp.gov.br/portal/_img/favicon.ico" />
+<link rel="stylesheet" href="/dados-abertos/assets/css/bootstrap.css">
+<link rel="stylesheet"	href="/dados-abertos/assets/css/bootstrap-responsive.css">
+<link rel="stylesheet" href="/dados-abertos/assets/css/jquery.dataTables.css">
+<link rel="stylesheet" href="/dados-abertos/assets/css/tabulous.css">
+<link rel="stylesheet"	href="/dados-abertos/assets/css/dadosabertos.css">
+	
+<style>
+body {
+	padding-top: 60px;
+	padding-bottom: 30px;
+}
+</style>
+<link rel="stylesheet" href="/dados-abertos/assets/css/main.css">
+
+
+<script src="/dados-abertos/assets/js/vendor/jquery-1.8.2.min.js"></script>
+
+<script
+	src="/dados-abertos/assets/js/vendor/modernizr-2.6.1-respond-1.1.0.min.js"></script>
+</head>
+<body>
+	<!--[if lt IE 7]>
+            <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+        <![endif]-->
+
+	<!-- This code is taken from http://twitter.github.com/bootstrap/examples/hero.html -->
+	
+
+	
+
+
+<script>
+	$(document).ready(function() {
+		$('ul.nav li.dropdown').hover(function() {
+			$(this).closest('.dropdown-menu').stop(true, true).show();
+			$(this).addClass('open');
+		}, function() {
+			$(this).closest('.dropdown-menu').stop(true, true).hide();
+			$(this).removeClass('open');
+		});
+	});
+</script>
+
+<style>
+<!--
+.dropdown-menu {
+	margin-top: 0px !important;
+	padding-top: 0px !important;
+ }
+-->
+</style>
+
+<div class="navbar navbar-fixed-top">
+	<div class="navbar-inner">
+		<div class="container-fluid">
+			<h1><img class="logo" src="http://www.al.sp.gov.br/_img/brasao_cabecalho.png" /> Portal dos Dados Abertos da Alesp
+				<a class="btn btn-navbar" data-toggle="collapse"
+				data-target=".nav-collapse" style="padding:4% 2.5%"> <span class="icon-bar"></span> <span
+				class="icon-bar"></span> <span class="icon-bar"></span>
+			</a> 
+			
+			</h1> <br />
+
+
+			<div class="nav-collapse collapse">
+				<ul class="nav navbar-nav">
+					<li><a href="/dados-abertos/">Home</a></li>
+					<li class="dropdown"><a class="dropdown-togle"
+						data-toggle="dropdown" href="/dados-abertos/sobre">Sobre o projeto <b
+							class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a style="margin-top:5px;padding:10px 20px;" href="/dados-abertos/sobre">Dados Abertos Alesp</a></li>						
+							<li><a style="margin-top:5px;padding:10px 20px;" href="/dados-abertos/lai">Lei de Acesso a
+									Informaç&atilde;o</a></li>
+							<li><a style="margin-top:5px;padding:10px 20px;" href="/dados-abertos/dadosabertos">Dados
+									Governamentais Abertos</a></li>
+							<li><a style="margin-top:5px;padding:10px 20px;" href="/dados-abertos/planejamento">Planejamento</a></li>									
+						</ul></li>
+					<li class="dropdown"><a class="dropdown-togle"
+						data-toggle="dropdown" href="/dados-abertos/catalogo">Catalogo de dados <b
+							class="caret"></b></a>
+						<ul class="dropdown-menu">
+							
+								<li><a style="margin-top:5px;padding:10px 20px;" href="/dados-abertos/grupo/1">Processo Legislativo</a></li>
+							
+								<li><a style="margin-top:5px;padding:10px 20px;" href="/dados-abertos/grupo/2">Deputados Estaduais</a></li>
+							
+								<li><a style="margin-top:5px;padding:10px 20px;" href="/dados-abertos/grupo/21">Administração</a></li>
+							
+								<li><a style="margin-top:5px;padding:10px 20px;" href="/dados-abertos/grupo/41">Legislação</a></li>
+							
+								<li><a style="margin-top:5px;padding:10px 20px;" href="/dados-abertos/grupo/61">Índices Paulistas - ILP</a></li>
+							
+								<li><a style="margin-top:5px;padding:10px 20px;" href="/dados-abertos/grupo/81">Agenda</a></li>
+							
+						</ul></li>
+					<li><a href="/dados-abertos/perguntas">Perguntas
+							frequentes</a></li>
+					<li><a href="/dados-abertos/contato">Contato</a></li>
+				</ul>
+			</div>
+
+
+			<!--/.nav-collapse -->
+		</div>
+	</div>
+</div>
+
+	<div class="container-fluid">
+
+		
+
+<meta name="description" content="Processo Legislativo" />
+<meta name="keywords" content="Processo Legislativo" />
+
+<!--BreadCrumb -->
+	<nav id="breadcrumb">
+		<ul>
+ 	        <li><a href="/dados-abertos">Início</a></li> 
+ 	         
+ 	        <li>Processo Legislativo</li> 
+ 	         
+		</ul>
+	</nav>
+	<!--Fim do BreadCrumb -->
+
+	<div class="titulo_grupo">
+		<h1>Processo Legislativo</h1>
+	</div>
+	
+	<div id="grupos">
+	
+	
+	<fieldset>
+		<legend><a href="../dataset/61">Autores</a></legend>
+		<p><p>Lista dos deputados autores e apoiadores das proposituras que tramitam no Processo Legislativo.</p></p>
+		<div id="tabela">
+			<table cellpadding="0" cellspacing="0" border="0" width="100%" class="table table-striped table-bordered" id="lista-atributos">
+				<thead>
+					<tr>
+						<th style="width:30%">Recursos</th>
+						<th style="width:35%">Responsável</th>
+						<th style="width:35%">Email Responsável</th>
+					</tr>
+				</thead>
+				<tbody class="grade">
+					<tr>
+						<td id="icones">
+						
+					
+				
+							<a href="../recurso/81" title="documento_autor.xml">										
+							
+								<img src="/dados-abertos/assets/img/xml.png">
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							</a>
+							
+							
+						</td>
+						<td>Secretaria Geral Parlamentar (SGP)</td>
+						<td></td>
+					</tr>
+
+				</tbody>
+			</table>
+			<div id="etiquetas" style="padding-top:20px">
+				Etiquetas: 
+				
+				
+    				<span class="etiqueta">propositura</span>
+				
+    				<span class="etiqueta"> autor</span>
+				
+    				<span class="etiqueta"> apoiador</span>
+				
+			</div>
+		</div>
+	</fieldset>
+	
+	
+	
+	<fieldset>
+		<legend><a href="../dataset/7">Comissões Permanentes</a></legend>
+		<p><p>Lista das atuais Comissões Permanentes da Alesp.</p></p>
+		<div id="tabela">
+			<table cellpadding="0" cellspacing="0" border="0" width="100%" class="table table-striped table-bordered" id="lista-atributos">
+				<thead>
+					<tr>
+						<th style="width:30%">Recursos</th>
+						<th style="width:35%">Responsável</th>
+						<th style="width:35%">Email Responsável</th>
+					</tr>
+				</thead>
+				<tbody class="grade">
+					<tr>
+						<td id="icones">
+						
+					
+				
+							<a href="../recurso/43" title="comissoes.xml">										
+							
+								<img src="/dados-abertos/assets/img/xml.png">
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							</a>
+							
+							
+						</td>
+						<td>Departamento de Comissões (DECO)</td>
+						<td>deco-diretoria@al.sp.gov.br</td>
+					</tr>
+
+				</tbody>
+			</table>
+			<div id="etiquetas" style="padding-top:20px">
+				Etiquetas: 
+				
+				
+    				<span class="etiqueta">comissão</span>
+				
+    				<span class="etiqueta"> comissão permanente</span>
+				
+    				<span class="etiqueta"> processo legislativo</span>
+				
+			</div>
+		</div>
+	</fieldset>
+	
+	
+	
+	<fieldset>
+		<legend><a href="../dataset/10">Deliberações nas Comissões</a></legend>
+		<p><p>Lista das deliberações sobre as matérias que tramitam nas Comissões Permanentes da Alesp.</p></p>
+		<div id="tabela">
+			<table cellpadding="0" cellspacing="0" border="0" width="100%" class="table table-striped table-bordered" id="lista-atributos">
+				<thead>
+					<tr>
+						<th style="width:30%">Recursos</th>
+						<th style="width:35%">Responsável</th>
+						<th style="width:35%">Email Responsável</th>
+					</tr>
+				</thead>
+				<tbody class="grade">
+					<tr>
+						<td id="icones">
+						
+					
+				
+							<a href="../recurso/52" title="comissoes_permanentes_deliberacoes.xml">										
+							
+								<img src="/dados-abertos/assets/img/xml.png">
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							</a>
+							
+							
+						</td>
+						<td>Departamento de Comissões (DECO)</td>
+						<td>deco-diretoria@al.sp.gov.br</td>
+					</tr>
+
+				</tbody>
+			</table>
+			<div id="etiquetas" style="padding-top:20px">
+				Etiquetas: 
+				
+				
+    				<span class="etiqueta">deliberação</span>
+				
+    				<span class="etiqueta"> propositura</span>
+				
+    				<span class="etiqueta"> comissão</span>
+				
+    				<span class="etiqueta"> comissão permanente</span>
+				
+    				<span class="etiqueta"> processo legislativo</span>
+				
+			</div>
+		</div>
+	</fieldset>
+	
+	
+	
+	<fieldset>
+		<legend><a href="../dataset/8">Membros de Comissões Permanentes</a></legend>
+		<p><p>Lista dos membros efetivos e suplentes das atuais Comissões Permanentes da Alesp.</p></p>
+		<div id="tabela">
+			<table cellpadding="0" cellspacing="0" border="0" width="100%" class="table table-striped table-bordered" id="lista-atributos">
+				<thead>
+					<tr>
+						<th style="width:30%">Recursos</th>
+						<th style="width:35%">Responsável</th>
+						<th style="width:35%">Email Responsável</th>
+					</tr>
+				</thead>
+				<tbody class="grade">
+					<tr>
+						<td id="icones">
+						
+					
+				
+							<a href="../recurso/45" title="comissoes_membros.xml">										
+							
+								<img src="/dados-abertos/assets/img/xml.png">
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							</a>
+							
+							
+						</td>
+						<td>Departamento de Comissões (DECO)</td>
+						<td>deco-diretoria@al.sp.gov.br</td>
+					</tr>
+
+				</tbody>
+			</table>
+			<div id="etiquetas" style="padding-top:20px">
+				Etiquetas: 
+				
+				
+    				<span class="etiqueta">membro</span>
+				
+    				<span class="etiqueta"> comissão</span>
+				
+    				<span class="etiqueta"> comissão permanente</span>
+				
+    				<span class="etiqueta"> processo legislativo</span>
+				
+			</div>
+		</div>
+	</fieldset>
+	
+	
+	
+	<fieldset>
+		<legend><a href="../dataset/2">Natureza do Documento</a></legend>
+		<p><p>Lista das naturezas (tipos) dos documentos que fazem parte do Processo Legislativo</p></p>
+		<div id="tabela">
+			<table cellpadding="0" cellspacing="0" border="0" width="100%" class="table table-striped table-bordered" id="lista-atributos">
+				<thead>
+					<tr>
+						<th style="width:30%">Recursos</th>
+						<th style="width:35%">Responsável</th>
+						<th style="width:35%">Email Responsável</th>
+					</tr>
+				</thead>
+				<tbody class="grade">
+					<tr>
+						<td id="icones">
+						
+					
+				
+							<a href="../recurso/44" title="naturezasSpl.xml">										
+							
+								<img src="/dados-abertos/assets/img/xml.png">
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							</a>
+							
+							
+						</td>
+						<td>Secretaria Geral Parlamentar (SGP)</td>
+						<td></td>
+					</tr>
+
+				</tbody>
+			</table>
+			<div id="etiquetas" style="padding-top:20px">
+				Etiquetas: 
+				
+				
+    				<span class="etiqueta">processo legislativo</span>
+				
+    				<span class="etiqueta"> propositura</span>
+				
+    				<span class="etiqueta"> natureza</span>
+				
+    				<span class="etiqueta"> documento</span>
+				
+			</div>
+		</div>
+	</fieldset>
+	
+	
+	
+	<fieldset>
+		<legend><a href="../dataset/6">Palavras-chave (indexação)</a></legend>
+		<p><p>Lista de palavras-chave que podem ser usadas para a indexação dos documentos e proposituras do Processo Legislativo.</p></p>
+		<div id="tabela">
+			<table cellpadding="0" cellspacing="0" border="0" width="100%" class="table table-striped table-bordered" id="lista-atributos">
+				<thead>
+					<tr>
+						<th style="width:30%">Recursos</th>
+						<th style="width:35%">Responsável</th>
+						<th style="width:35%">Email Responsável</th>
+					</tr>
+				</thead>
+				<tbody class="grade">
+					<tr>
+						<td id="icones">
+						
+					
+				
+							<a href="../recurso/42" title="documento_palavras.xml">										
+							
+								<img src="/dados-abertos/assets/img/xml.png">
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							</a>
+							
+							
+					
+				
+							<a href="../recurso/41" title="palavras_chave.xml">										
+							
+								<img src="/dados-abertos/assets/img/xml.png">
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							</a>
+							
+							
+						</td>
+						<td>Divisão de Pesquisa e Atualização de Atos Normativos (DPAAN)</td>
+						<td>dpaan@al.sp.gov.br</td>
+					</tr>
+
+				</tbody>
+			</table>
+			<div id="etiquetas" style="padding-top:20px">
+				Etiquetas: 
+				
+				
+    				<span class="etiqueta">palavra-chave</span>
+				
+    				<span class="etiqueta"> indexação</span>
+				
+    				<span class="etiqueta"> processo legislativo</span>
+				
+    				<span class="etiqueta"> documento</span>
+				
+    				<span class="etiqueta"> propositura</span>
+				
+			</div>
+		</div>
+	</fieldset>
+	
+	
+	
+	<fieldset>
+		<legend><a href="../dataset/81">Pareceres</a></legend>
+		<p><p>Conjunto de dados relacionados aos pareceres elaborados sobre as matérias que tramitam na Alesp.</p></p>
+		<div id="tabela">
+			<table cellpadding="0" cellspacing="0" border="0" width="100%" class="table table-striped table-bordered" id="lista-atributos">
+				<thead>
+					<tr>
+						<th style="width:30%">Recursos</th>
+						<th style="width:35%">Responsável</th>
+						<th style="width:35%">Email Responsável</th>
+					</tr>
+				</thead>
+				<tbody class="grade">
+					<tr>
+						<td id="icones">
+						
+					
+				
+							<a href="../recurso/103" title="propositura_parecer.xml">										
+							
+								<img src="/dados-abertos/assets/img/xml.png">
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							</a>
+							
+							
+					
+				
+							<a href="../recurso/102" title="tipo_parecer.xml">										
+							
+								<img src="/dados-abertos/assets/img/xml.png">
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							</a>
+							
+							
+						</td>
+						<td>Departamento de Comissões (DECO)</td>
+						<td></td>
+					</tr>
+
+				</tbody>
+			</table>
+			<div id="etiquetas" style="padding-top:20px">
+				Etiquetas: 
+				
+				
+    				<span class="etiqueta">comissão</span>
+				
+    				<span class="etiqueta"> parecer</span>
+				
+    				<span class="etiqueta"> propositura</span>
+				
+    				<span class="etiqueta"> processo legislativo</span>
+				
+			</div>
+		</div>
+	</fieldset>
+	
+	
+	
+	<fieldset>
+		<legend><a href="../dataset/12">Presença nas Comissões</a></legend>
+		<p><p>Presença dos Deputados Estaduais nas reuniões das Comissões Permanentes da Alesp.</p></p>
+		<div id="tabela">
+			<table cellpadding="0" cellspacing="0" border="0" width="100%" class="table table-striped table-bordered" id="lista-atributos">
+				<thead>
+					<tr>
+						<th style="width:30%">Recursos</th>
+						<th style="width:35%">Responsável</th>
+						<th style="width:35%">Email Responsável</th>
+					</tr>
+				</thead>
+				<tbody class="grade">
+					<tr>
+						<td id="icones">
+						
+					
+				
+							<a href="../recurso/53" title="comissoes_permanentes_presencas.xml">										
+							
+								<img src="/dados-abertos/assets/img/xml.png">
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							</a>
+							
+							
+						</td>
+						<td>Departamento de Comissões (DECO)</td>
+						<td>deco-diretoria@al.sp.gov.br</td>
+					</tr>
+
+				</tbody>
+			</table>
+			<div id="etiquetas" style="padding-top:20px">
+				Etiquetas: 
+				
+				
+    				<span class="etiqueta">presença</span>
+				
+    				<span class="etiqueta"> reunião</span>
+				
+    				<span class="etiqueta"> deputado</span>
+				
+    				<span class="etiqueta"> comissão</span>
+				
+    				<span class="etiqueta"> comissão permanente</span>
+				
+    				<span class="etiqueta"> processo legislativo</span>
+				
+			</div>
+		</div>
+	</fieldset>
+	
+	
+	
+	<fieldset>
+		<legend><a href="../dataset/13">Proposituras</a></legend>
+		<p><p>Lista de proposituras apresentadas pelo Deputados Estaduais e que tramitam ou tramitaram no Processo Legislativo.</p></p>
+		<div id="tabela">
+			<table cellpadding="0" cellspacing="0" border="0" width="100%" class="table table-striped table-bordered" id="lista-atributos">
+				<thead>
+					<tr>
+						<th style="width:30%">Recursos</th>
+						<th style="width:35%">Responsável</th>
+						<th style="width:35%">Email Responsável</th>
+					</tr>
+				</thead>
+				<tbody class="grade">
+					<tr>
+						<td id="icones">
+						
+					
+				
+							<a href="../recurso/56" title="proposituras.xml">										
+							
+								<img src="/dados-abertos/assets/img/xml.png">
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							</a>
+							
+							
+						</td>
+						<td>Secretaria Geral Parlamentar (SGP)</td>
+						<td></td>
+					</tr>
+
+				</tbody>
+			</table>
+			<div id="etiquetas" style="padding-top:20px">
+				Etiquetas: 
+				
+				
+    				<span class="etiqueta">propositura</span>
+				
+    				<span class="etiqueta"> processo legislativo</span>
+				
+			</div>
+		</div>
+	</fieldset>
+	
+	
+	
+	<fieldset>
+		<legend><a href="../dataset/62">Regimes de Tramitação das Proposituras</a></legend>
+		<p><p>Dados dos regimes de tramitação das proposituras.</p></p>
+		<div id="tabela">
+			<table cellpadding="0" cellspacing="0" border="0" width="100%" class="table table-striped table-bordered" id="lista-atributos">
+				<thead>
+					<tr>
+						<th style="width:30%">Recursos</th>
+						<th style="width:35%">Responsável</th>
+						<th style="width:35%">Email Responsável</th>
+					</tr>
+				</thead>
+				<tbody class="grade">
+					<tr>
+						<td id="icones">
+						
+					
+				
+							<a href="../recurso/82" title="documento_regime.xml">										
+							
+								<img src="/dados-abertos/assets/img/xml.png">
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							</a>
+							
+							
+						</td>
+						<td>Secretaria Geral Parlamentar (SGP)</td>
+						<td></td>
+					</tr>
+
+				</tbody>
+			</table>
+			<div id="etiquetas" style="padding-top:20px">
+				Etiquetas: 
+				
+				
+    				<span class="etiqueta">propositura</span>
+				
+    				<span class="etiqueta"> regime de tramitação</span>
+				
+    				<span class="etiqueta"> processo legislativo</span>
+				
+			</div>
+		</div>
+	</fieldset>
+	
+	
+	
+	<fieldset>
+		<legend><a href="../dataset/9">Reuniões de Comissão</a></legend>
+		<p><p>Lista das reuniões realizadas nas Comissões Permanentes da Alesp.</p></p>
+		<div id="tabela">
+			<table cellpadding="0" cellspacing="0" border="0" width="100%" class="table table-striped table-bordered" id="lista-atributos">
+				<thead>
+					<tr>
+						<th style="width:30%">Recursos</th>
+						<th style="width:35%">Responsável</th>
+						<th style="width:35%">Email Responsável</th>
+					</tr>
+				</thead>
+				<tbody class="grade">
+					<tr>
+						<td id="icones">
+						
+					
+				
+							<a href="../recurso/54" title="comissoes_permanentes_reunioes.xml">										
+							
+								<img src="/dados-abertos/assets/img/xml.png">
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							</a>
+							
+							
+						</td>
+						<td>Departamento de Comissões (DECO)</td>
+						<td>deco-diretoria@al.sp.gov.br</td>
+					</tr>
+
+				</tbody>
+			</table>
+			<div id="etiquetas" style="padding-top:20px">
+				Etiquetas: 
+				
+				
+    				<span class="etiqueta">reunião</span>
+				
+    				<span class="etiqueta"> comissão</span>
+				
+    				<span class="etiqueta"> comissão permanente</span>
+				
+    				<span class="etiqueta"> processo legislativo</span>
+				
+			</div>
+		</div>
+	</fieldset>
+	
+	
+	
+	<fieldset>
+		<legend><a href="../dataset/82">Tramitação</a></legend>
+		<p><p>Conjunto de dados sobre a tramitação e os andamentos das proposições no Processo Legislativo da Alesp.</p></p>
+		<div id="tabela">
+			<table cellpadding="0" cellspacing="0" border="0" width="100%" class="table table-striped table-bordered" id="lista-atributos">
+				<thead>
+					<tr>
+						<th style="width:30%">Recursos</th>
+						<th style="width:35%">Responsável</th>
+						<th style="width:35%">Email Responsável</th>
+					</tr>
+				</thead>
+				<tbody class="grade">
+					<tr>
+						<td id="icones">
+						
+					
+				
+							<a href="../recurso/221" title="documento_andamento_atual.xml">										
+							
+								<img src="/dados-abertos/assets/img/xml.png">
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							</a>
+							
+							
+					
+				
+							<a href="../recurso/101" title="documento_andamento.xml">										
+							
+								<img src="/dados-abertos/assets/img/xml.png">
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							</a>
+							
+							
+						</td>
+						<td>Secretaria Geral Parlamentar (SGP)</td>
+						<td></td>
+					</tr>
+
+				</tbody>
+			</table>
+			<div id="etiquetas" style="padding-top:20px">
+				Etiquetas: 
+				
+				
+    				<span class="etiqueta">processo legislativo</span>
+				
+    				<span class="etiqueta"> propositura</span>
+				
+    				<span class="etiqueta"> tramitação</span>
+				
+    				<span class="etiqueta"> andamento</span>
+				
+			</div>
+		</div>
+	</fieldset>
+	
+	
+	
+	<fieldset>
+		<legend><a href="../dataset/11">Votações nas Comissões</a></legend>
+		<p><p>Lista das votações nas deliberações das matérias que tramitam nas Comissões Permanentes da Alesp.</p></p>
+		<div id="tabela">
+			<table cellpadding="0" cellspacing="0" border="0" width="100%" class="table table-striped table-bordered" id="lista-atributos">
+				<thead>
+					<tr>
+						<th style="width:30%">Recursos</th>
+						<th style="width:35%">Responsável</th>
+						<th style="width:35%">Email Responsável</th>
+					</tr>
+				</thead>
+				<tbody class="grade">
+					<tr>
+						<td id="icones">
+						
+					
+				
+							<a href="../recurso/55" title="comissoes_permanentes_votacoes.xml">										
+							
+								<img src="/dados-abertos/assets/img/xml.png">
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							</a>
+							
+							
+						</td>
+						<td>Departamento de Comissões (DECO)</td>
+						<td>deco-diretoria@al.sp.gov.br</td>
+					</tr>
+
+				</tbody>
+			</table>
+			<div id="etiquetas" style="padding-top:20px">
+				Etiquetas: 
+				
+				
+    				<span class="etiqueta">votação</span>
+				
+    				<span class="etiqueta"> voto</span>
+				
+    				<span class="etiqueta"> deliberação</span>
+				
+    				<span class="etiqueta"> comissão</span>
+				
+    				<span class="etiqueta"> comissão permanente</span>
+				
+    				<span class="etiqueta"> processo legislativo</span>
+				
+    				<span class="etiqueta"> propositura</span>
+				
+			</div>
+		</div>
+	</fieldset>
+	
+	
+	</div>
+
+
+
+
+
+		<hr>
+
+		<footer>
+	<em>Assembleia Legislativa do Estado de S&atilde;o Paulo</em>
+</footer>
+
+	</div>
+	<!-- /container -->
+
+	<script src="/dados-abertos/assets/js/vendor/bootstrap.min.js"></script>
+
+	<script src="/dados-abertos/assets/js/main.js"></script>
+
+	<script>
+		/*
+		    var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+		    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+		    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+		    s.parentNode.insertBefore(g,s)}(document,'script'));
+		 */
+	</script>
+</body>
+</html>

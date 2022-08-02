@@ -1,0 +1,585 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="pt-br" xml:lang="pt-br" xmlns="http://www.w3.org/1999/xhtml">
+    <head>    
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta content="Portal da Transparência do Estado de Goiás, Transparência GO, Transparência, Contas Públicas, Receitas, Folha de Pagamento, Diárias, Benefícios Fiscais, Benefícios Sociais, Gestão Fiscal e Governamental, Patrimônio, Estado de Goiás, Acesso a Informação, Goiás Transparente" name="keywords" />
+        	<base href="http://www.transparencia.go.gov.br/portaldatransparencia/institucional/dados-abertos" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="Portal da Transparência do Estado de Goiás" />
+	<meta name="rights" content="Estado de Goiás" />
+	<meta name="author" content="Super User" />
+	<meta name="description" content="Portal da Transparência do Estado de Goiás" />
+	<title>Dados Abertos - Portal da Transparência do Estado de Goiás</title>
+	<link href="/portaldatransparencia/templates/portaldatransparencia/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+	<link href="http://www.transparencia.go.gov.br/portaldatransparencia/component/search/?Itemid=120&amp;format=opensearch" rel="search" title="Pesquisa Portal da Transparência do Estado de Goiás" type="application/opensearchdescription+xml" />
+	<link rel="stylesheet" href="/portaldatransparencia/templates/portaldatransparencia/css/template.css.php" type="text/css" />
+	<link rel="stylesheet" href="/portaldatransparencia/media/jui/css/bootstrap.min.css" type="text/css" />
+	<link rel="stylesheet" href="/portaldatransparencia/media/jui/css/font-awesome.min.css" type="text/css" />
+	<link rel="stylesheet" href="/portaldatransparencia/templates/portaldatransparencia/css/template.css?v=1" type="text/css" />
+	<link rel="stylesheet" href="/portaldatransparencia/templates/portaldatransparencia/css/jquery-ui.css" type="text/css" />
+	<link rel="stylesheet" href="http://www.transparencia.go.gov.br/portaldatransparencia/templates/portaldatransparencia/css/menuBoxInternas.css" type="text/css" />
+	<link rel="stylesheet" href="/portaldatransparencia/media/jfontsize/css/jfontsize.css" type="text/css" />
+	<script src="/portaldatransparencia/media/jui/js/jquery.min.js" type="text/javascript"></script><noscript>Seu browser não suporta JavaScript!</noscript>
+	<script src="/portaldatransparencia/media/jui/js/jquery-noconflict.js" type="text/javascript"></script><noscript>Seu browser não suporta JavaScript!</noscript>
+	<script src="/portaldatransparencia/media/jui/js/jquery-migrate.min.js" type="text/javascript"></script><noscript>Seu browser não suporta JavaScript!</noscript>
+	<script src="/portaldatransparencia/media/system/js/caption.js" type="text/javascript"></script><noscript>Seu browser não suporta JavaScript!</noscript>
+	<script src="/portaldatransparencia/media/jui/js/bootstrap.min.js" type="text/javascript"></script><noscript>Seu browser não suporta JavaScript!</noscript>
+	<script src="/portaldatransparencia/media/jfontsize/js/jquery.jfontsize-1.0.min.js" type="text/javascript"></script><noscript>Seu browser não suporta JavaScript!</noscript>
+	<script type="text/javascript">
+jQuery(window).on('load',  function() {
+				new JCaption('img.caption');
+			});
+jQuery(function($){ $(".hasTooltip").tooltip({"html": true,"container": "body"}); });
+	</script><noscript>Seu browser não suporta JavaScript!</noscript>
+	<meta property="og:site_name" content="Portal da Transparência do Estado de Goiás"/>
+	<meta property="og:title" content="Dados Abertos"/>
+	<meta property="og:type" content="article"/>
+	<meta property="og:url" content="http://www.transparencia.go.gov.br/portaldatransparencia/institucional/dados-abertos"/>
+	<noscript>Seu browser não suporta JavaScript!</noscript>
+	<script type="text/javascript">
+	(function ($) {
+		$(window).load(function () {
+			 $('body').jfontsize({
+			     btnMinusClasseId: '#jfontsize-minus',
+			     btnDefaultClasseId: '#jfontsize-default',
+			     btnPlusClasseId: '#jfontsize-plus',
+			     btnMinusMaxHits: 10,
+			     btnPlusMaxHits: 10,
+			     sizeChange: 1
+			 });
+		});
+	})(jQuery)
+</script>
+      
+                <noscript>Seu browser não suporta JavaScript!</noscript>
+        <script async defer src="/portaldatransparencia/templates/portaldatransparencia/js/logic.js?n=1" type="text/javascript"></script>
+        <noscript>Seu browser não suporta JavaScript!</noscript>
+        <script async defer src="/portaldatransparencia/templates/portaldatransparencia/js/iframeResizer.min.js" type="text/javascript"></script>
+        <noscript>Seu browser não suporta JavaScript!</noscript>
+        
+        <script async defer src="/portaldatransparencia/templates/portaldatransparencia/js/jquery-ui.js" type="text/javascript"></script>
+        <noscript>Seu browser não suporta JavaScript!</noscript>
+        
+        <script async defer src="/portaldatransparencia/templates/portaldatransparencia/js/jquery.cookie.js" type="text/javascript"></script>
+        <noscript>Seu browser não suporta JavaScript!</noscript>
+        
+        <script src="/portaldatransparencia/media/jui/js/bootstrap.min.js" type="text/javascript"></script>
+        <noscript>Seu browser não suporta JavaScript!</noscript>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />        
+        <link rel="shortcut icon" href="/templates/portaldatransparencia/favicon.ico" /> 
+
+
+
+  <!--<script src="https://code.jquery.com/jquery-1.12.4.js"></script>-->
+<!--<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>-->
+        <!--<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">-->
+
+
+
+
+
+        <!--<link rel="stylesheet" href="/portaldatransparencia/media/jui/css/font-awesome.min.css" />-->
+
+        <!--<script type = "text/javascript" src = "//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js" ></script>-->
+
+        <!--GOOGLE ANALYTICS--> 
+        <script async defer type="text/javascript">
+
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-34782147-1']);
+            _gaq.push(['_trackPageview']);
+
+            (function () {
+                var ga = document.createElement('script');
+                ga.type = 'text/javascript';
+                ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(ga, s);
+            })();
+
+        </script>
+        <noscript>Seu browser não suporta JavaScript!</noscript>
+        <script>
+              // console.log('%c Bem Vindo ao Portal Da Transparência!', 'Color:#126074;font-size:40px;');
+            // (function (i, s, o, g, r, a, m) {
+            //     i['GoogleAnalyticsObject'] = r;
+            //     i[r] = i[r] || function () {
+            //         (i[r].q = i[r].q || []).push(arguments)
+            //     }, i[r].l = 1 * new Date();
+            //     a = s.createElement(o),
+            //             m = s.getElementsByTagName(o)[0];
+            //     a.async = 1;
+            //     a.src = g;
+            //     m.parentNode.insertBefore(a, m)
+            // })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+            // ga('create', 'UA-34782147-1', 'auto');
+            // ga('send', 'pageview');
+
+            // function closeCookie() {
+            //     document.getElementById("containerCookie").remove();
+            // }
+
+        </script>
+        <!--FIM GOOGLE ANALYTICS--> 
+
+    </head>
+
+    
+    <body class="site dados-abertos ">  
+
+        <div class="containerBarraTopo" >
+            <div class="contentBarraTopo">           
+                <ul>
+                    <li><a href="/portaldatransparencia/acessibilidade" id="acessibilidade" tabindex="1">Acessibilidade</a></li>                    
+                    <li><a href="#" id="inverterCores" tabindex="1" onclick="window.toggleContrast()" >Contraste</a></li>
+                </ul>            
+                <div class="jfontsize" >
+
+    <!--<p>Tamanho do texto</p>-->
+    <ul>
+        <li><a class="jfontsize-button" id="jfontsize-minus" tabindex="1" >A-</a></li>
+        <li><a class="jfontsize-button" id="jfontsize-default" tabindex="1" onclick="javascript: fontSize(0)">A</a></li>
+        <li><a class="jfontsize-button" id="jfontsize-plus" tabindex="1" onclick="javascript: fontSize(1)" >A+</a></li>
+    </ul>
+</div><ul class="nav menumenuBarraTopoDireito" >
+<li class="item-174" tabindex="1"><a href="/portaldatransparencia/mapa-do-site" >Mapa do Site</a></li><li class="item-107" tabindex="1"><a href="/portaldatransparencia/manual-de-navegacao" >Manual de navegação</a></li><li class="item-172" tabindex="1"><a href="/portaldatransparencia/perguntas-frequentes" >Perguntas Frequentes</a></li><li class="item-173" tabindex="1"><a href="/portaldatransparencia/origem-dos-dados" >Origem dos Dados</a></li><li class="item-171" tabindex="1"><a href="/portaldatransparencia/glossario" >Glossário</a></li><li class="item-111" tabindex="1"><a href="/portaldatransparencia/contato" >Contato</a></li></ul>
+     
+
+            </div>
+        </div>
+        
+        <div class="containerTopo" >
+            <div class="contentTopo">
+                
+
+<div class="customGoiasTransparente"  >
+	<h1>
+<a href="/portaldatransparencia/" id="logoGoiasTransparente" tabindex="1">
+<img src="/portaldatransparencia/images/logoGoiasTransparente.png" alt="Logo Goi&aacute;s transparente " class="logoTransparencia" width="350" height="74" />
+<img src="/portaldatransparencia/images/logoTransparenciaContraste.png" class="logoContraste" alt="Logo Goi&aacute;s transparente " width="350" height="74" />
+</a>
+</h1>
+<div class="menuMobile"><img src="/portaldatransparencia/images/menuMobile.png" width="32" height="32" alt="Ícone Menu Mobile" /></div></div>
+
+
+<div class="customTopo"  >
+	<div id="logo" style="margin-left: 100px !important;" tabindex="1">
+<div style="width: 200px; display: block; float: left;"><a href="https://www.goias.gov.br/" target="_blank" title="Acessar o Portal Goi&aacute;s"><img src="/portaldatransparencia/images/template/logo_goias.png" alt="Governo de Goi&aacute;s" /></a></div>
+<div style="width: 430px; display: block; float: right; text-align: right;"><img src="/portaldatransparencia/images/template/logo_cge.png" alt="CGE" width="200" height="63" />&nbsp;&nbsp;&nbsp;<img src="/portaldatransparencia/images/template/brasao.png" alt="Bras&atilde;o do Estado" width="40" style="width: 40px; margin-top: -4px;" /></div>
+</div></div>
+     
+            </div>
+        </div>
+        
+                    <!-- <h3 style="text-align: center; padding: 350px 100px 200px 100px;">Estamos em manutenção para melhoria dos nossos servidores. Contamos com a sua compreensão, voltaremos em breve!</h3> -->
+        
+        <div class="containerMenuMobile">                
+            <br/><br/><a href="/portaldatransparencia/institucional" rel=>Institucional</a><br/><a href="/portaldatransparencia/institucional/acesso-a-informacao" rel=>Acesso à Informação</a><br/><a href="/portaldatransparencia/institucional/conselho-de-transparencia-publica-e-combate-a-corrupcao" rel=>Conselho de Transparência Pública e Combate a Corrupção</a><br/><a href="/portaldatransparencia/institucional/dados-abertos" rel=>Dados Abertos</a><br/><a href="/portaldatransparencia/institucional/downloads" rel=>Downloads</a><br/><a href="/portaldatransparencia/institucional/fale-conosco" rel=>Fale Conosco</a><br/><a href="/portaldatransparencia/institucional/glossario" rel=>Glossário</a><br/><a href="/portaldatransparencia/institucional/manual-de-navegacao" rel=>Manual de Navegação</a><br/><a href="/portaldatransparencia/institucional/origem-dos-dados" rel=>Origem dos Dados</a><br/><a href="http://www.cge.go.gov.br/ouvidoria/" rel=externo>Ouvidoria</a><br/><a href="/portaldatransparencia/institucional/perguntas-frequentes" rel=>Perguntas Frequentes</a><br/><a href="/portaldatransparencia/institucional/sobre-o-portal" rel=>Sobre o Portal</a><br/><a href="https://vaptvupt.go.gov.br/unidades" rel=externo>SIC</a><br/><a href="http://www.cge.go.gov.br/ouvidoria/frm_manifestacao.php?tipo_manifestacao=7" rel=externo>E-SIC</a><br/><a href="/portaldatransparencia/institucional/resultados-das-inspecoes-e-auditorias-realizadas" rel=>Resultados das Inspeções e Auditorias Realizadas</a><br/><a href="/portaldatransparencia/institucional/carta-servicos" rel=>Carta de Serviços ao Cidadão</a><br/><a href="/portaldatransparencia/institucional/sugestao-portal" rel=>Sugestão Portal da Transparência</a><br/><br/><a href="/portaldatransparencia/gastos-governamentais/advogados-dativos" rel=>Advogados Dativos</a><br/><a href="/portaldatransparencia/gastos-governamentais/contratos" rel=>Contratos</a><br/><a href="/portaldatransparencia/gastos-governamentais/empenhos-e-pagamentos" rel=>Empenhos e Pagamentos</a><br/><a href="/portaldatransparencia/gastos-governamentais/execucao-orcamentaria" rel=>Execução Orçamentária</a><br/><a href="/portaldatransparencia/gastos-governamentais/fornecedores" rel=>Fornecedores</a><br/><a href="/portaldatransparencia/gastos-governamentais/gastos-governamentais" rel=>Gastos Governamentais</a><br/><a href="/portaldatransparencia/gastos-governamentais/licitacoes" rel=>Licitações</a><br/><a href="/portaldatransparencia/gastos-governamentais/gastos-com-publicidade-e-propaganda" rel=>Gastos com Publicidade e Propaganda</a><br/><a href="/portaldatransparencia/gastos-governamentais/cronologia-de-despesas" rel=>Ordem Cronológica de Pagamentos</a><br/><br/><a href="/portaldatransparencia/pessoal/folha-de-pagamento" rel=>Folha de Pagamento</a><br/><a href="/portaldatransparencia/pessoal/diarias" rel=>Diárias</a><br/><a href="/portaldatransparencia/pessoal/procedimentos-disciplinares" rel=>Procedimentos Disciplinares</a><br/><a href="/portaldatransparencia/pessoal/folha-de-pagamento-busca-por-nome" rel=>Folha de Pagamento - Busca por Nome</a><br/><a href="/portaldatransparencia/pessoal/relatorio-de-servidores-dispensados-do-registro-de-ponto-eletronico" rel=>Servidores Dispensados do Registro de Ponto Eletrônico</a><br/><a href="/admin/uploaded/pessoal/Anexo_I_Tabelas_das_Estruturas_Remuneratorias_Efetivos.pdf" rel=externo>Tabelas das Estruturas Remuneratorias Efetivos</a><br/><a href="/admin/uploaded/pessoal/Anexo_II_Tabela_de_Cargos_Comissionados_Lei_20491_2019.pdf" rel=externo>Tabela de Cargos Comissionados Lei 20491-2019</a><br/><br/><a href="/portaldatransparencia/receitas/arrecadacao-estadual" rel=>Arrecadação Estadual</a><br/><a href="/portaldatransparencia/receitas/receita-estadual" rel=>Receita Estadual</a><br/><br/><a href="/portaldatransparencia/planejamento-e-orcamento/pecas-do-orcamento" rel=>Peças do Orçamento</a><br/><a href="/portaldatransparencia/planejamento-e-orcamento/programas-e-acoes" rel=>Plano Plurianual - PPA</a><br/><a href="/portaldatransparencia/planejamento-e-orcamento/programas-e-acoes/monitoramento-dos-programas-e-acoes-do-ppa" rel=>Monitoramento dos Programas e Ações do PPA</a><br/><a href="/portaldatransparencia/planejamento-e-orcamento/programas-e-acoes/programas-e-acoes-2016-2019" rel=>Programas e Ações 2016 - 2019</a><br/><a href="/portaldatransparencia/planejamento-e-orcamento/programas-e-acoes/monitoramento-dos-programas-e-acoes-do-ppa-2016" rel=>Monitoramento dos Programas e Ações do PPA 2016</a><br/><br/><a href="/portaldatransparencia/convenios-e-repasses/convenios" rel=>Convênios</a><br/><a href="/portaldatransparencia/convenios-e-repasses/convenios/convenios" rel=>Convênios</a><br/><a href="/portaldatransparencia/convenios-e-repasses/convenios/convenios-visao-geral" rel=>Convênios - Visão Geral</a><br/><a href="/portaldatransparencia/convenios-e-repasses/repasses-para-municipios" rel=>Repasse dos Tributos pelo Estado aos Municípios</a><br/><a href="/portaldatransparencia/convenios-e-repasses/repasses-para-municipios/repasse-dos-tributos-pelo-estado-aos-municipios-2005-2013" rel=>Repasse dos Tributos pelo Estado aos Municípios 2005 - 2013</a><br/><a href="/portaldatransparencia/convenios-e-repasses/repasses-para-municipios/repasse-dos-tributos-pelo-estado-aos-municipios-a-partir-de-2014" rel=>Repasse dos Tributos pelo Estado aos Municípios a partir de 2014</a><br/><a href="http://sisweb.tesouro.gov.br/apex/f?p=2600:1" rel=externo>Repasses da União</a><br/><br/><a href="/portaldatransparencia/demonstrativos-fiscais/beneficios-fiscais" rel=>Benefícios Fiscais</a><br/><a href="/portaldatransparencia/demonstrativos-fiscais/tare" rel=>TARE</a><br/><a href="/portaldatransparencia/demonstrativos-fiscais/beneficios-economicos" rel=>Benefícios Econômicos</a><br/><a href="/portaldatransparencia/demonstrativos-fiscais/beneficios-sociais" rel=>Benefícios Sociais</a><br/><a href="/portaldatransparencia/demonstrativos-fiscais/beneficios-fapeg" rel=>Benefícios FAPEG</a><br/><a href="/portaldatransparencia/demonstrativos-fiscais/gestao-fiscal" rel=>Gestão Fiscal - RREO e RGF</a><br/><a href="/portaldatransparencia/demonstrativos-fiscais/divida-publica" rel=>Dívida Pública</a><br/><a href="https://scgi.economia.go.gov.br/scgi/#!/6" rel=externo>Contas de Governo - Balanço do Estado</a><br/><a href="/portaldatransparencia/demonstrativos-fiscais/acoes-e-programas-dos-orgaos-e-entidades" rel=>Contas de Governo - Relatório do Órgão Central do Sistema de Controle Interno</a><br/><a href="/portaldatransparencia/demonstrativos-fiscais/audiencias-publicas" rel=>Audiências Públicas - Avaliação das Metas Fiscais</a><br/><a href="/portaldatransparencia/demonstrativos-fiscais/patrimonio-mobiliario" rel=>Patrimônio Mobiliário</a><br/><a href="/admin/uploaded/controleDeRegistrosDosImoveisDePropriedadeDoEstadoDeGoias.pdf" rel=externo>Matrícula dos Imóveis do Estado de Goiás</a><br/><a href="https://www.economia.go.gov.br/noticias/6542-secretaria-da-economia-lan%C3%A7a-boletim-de-an%C3%A1lise-dos-resultados-fiscais.html" rel=externo>Boletim de Análise dos Resultados Fiscais</a><br/><br/><a href="http://diariooficial.abc.go.gov.br/" rel=externo>Diário Oficial</a><br/><a href="http://www.vaptvupt.go.gov.br/" rel=externo>Vapt Vupt Digital</a><br/><a href="/hotsite_tce.php" rel=externo>TCE / Obras Públicas</a><br/><a href="http://www.casacivil.go.gov.br" rel=externo>Legislação Estadual</a><br/><br/><a href="https://transparencia.al.go.leg.br/" rel=externo>Assembléia Legislativa</a><br/><a href="http://www.acessoainformacao.gov.br/" rel=externo>CGU</a><br/><a href="http://www.transparencia.mpf.mp.br/" rel=externo>Ministério Público Federal</a><br/><a href="http://www.mpgo.mp.br/transparencia/" rel=externo>Ministério Público / GO</a><br/><a href="https://www.tce.go.gov.br/" rel=externo>TCE</a><br/><a href="https://www.tcm.go.gov.br/site/" rel=externo>TCM</a><br/><a href="https://portal.tcu.gov.br/transparencia/" rel=externo>TCU</a><br/><a href="https://www.tjgo.jus.br/index.php/apresentacao-transparencia" rel=externo>Tribunal de Justiça / GO</a><br/><a href="https://vaptvupt.go.gov.br/unidades" rel=externo>SIC</a><br/><a href="http://www.cge.go.gov.br/ouvidoria/frm_manifestacao.php?tipo_manifestacao=7" rel=externo>E-SIC</a><br/><a href="http://www.casacivil.go.gov.br" rel=externo>Legislação Estadual</a><br/><br/><a href="/portaldatransparencia/outros/fornecedores-impedidos" rel=>Fornecedores Impedidos</a><br/><a href="/portaldatransparencia/outros/fornecedores-impedidos/fornecedores-impedidos-decisoes-encaminhadas-a-cge" rel=>Fornecedores Impedidos - Decisões Encaminhadas à CGE</a><br/><a href="https://www.tjgo.jus.br/index.php/37-tribunal/transparencia/precatorios" rel=externo>Precatórios</a><br/><a href="/portaldatransparencia/outros/empresas-publicas-e-sociedades-de-economia-mista" rel=>Empresas Públicas e Sociedades de Economia Mista </a><br/><a href="http://wwwold.imb.go.gov.br/indicadores/indicadores.asp?caberoda=0&logoimb=1​" rel=externo>Indicadores Socioeconômicos</a><br/><a href="http://www.prgo.mpf.mp.br/focco-go/" rel=externo>FOCCO</a><br/><ul class="nav menuitensDoFimDoMenuMobile" >
+<li class="item-174" tabindex="1"><a href="/portaldatransparencia/mapa-do-site" >Mapa do Site</a></li><li class="item-107" tabindex="1"><a href="/portaldatransparencia/manual-de-navegacao" >Manual de navegação</a></li><li class="item-172" tabindex="1"><a href="/portaldatransparencia/perguntas-frequentes" >Perguntas Frequentes</a></li><li class="item-173" tabindex="1"><a href="/portaldatransparencia/origem-dos-dados" >Origem dos Dados</a></li><li class="item-171" tabindex="1"><a href="/portaldatransparencia/glossario" >Glossário</a></li><li class="item-111" tabindex="1"><a href="/portaldatransparencia/contato" >Contato</a></li></ul>
+     
+        </div>
+
+        <div class="containerHome">
+            <div class="contentHome" tabindex="-1">
+                
+
+                <div class="contentMenuTopo" >
+                    
+                </div>
+                
+
+                
+
+                <div class="containerBannerBusca233" tabindex="1">
+                    <!-- <a href="https://app.powerbi.com/view?r=eyJrIjoiYTFlZGQxNmUtOGE5Zi00NTAzLThmNmYtNjNjMWNlNjM0ZDJjIiwidCI6IjE4MzNkNDljLTQzZGItNGRmYy1hNDE3LWJjMDk4YjE0OGQ2MSJ9" target="_blank"><img src="/portaldatransparencia/templates/portaldatransparencia/images/corona_info.jpeg" alt="Corona informações" height="360" width="400" style="float: left; padding: 20px 0;"></a> 
+                        <a href="https://app.powerbi.com/view?r=eyJrIjoiNjM2MjQ2YTItMDQ0Mi00NmY0LTljYjEtNTExMTFlNDA5ZjYzIiwidCI6IjE4MzNkNDljLTQzZGItNGRmYy1hNDE3LWJjMDk4YjE0OGQ2MSJ9" target="_blank"><img src="/portaldatransparencia/templates/portaldatransparencia/images/corona_transp.jpeg?id=1" alt="Corona Transparência" height="320" width="750" style="padding: 20px 0;"></a>
+                    -->
+                    <center>
+                    <a href="http://www.transparencia.go.gov.br/portaldatransparencia/corona.html" target="_blank"><img src="/portaldatransparencia/templates/portaldatransparencia/images/corona_transp.jpeg?id=1" alt="Corona Transparência" height="320" width="750" style="padding: 20px 0;"></a>
+
+                </center>
+                </div>
+
+                <div class="menuBoxPaineis" tabindex="1">
+                    
+                </div>
+
+                <!-- Aqui -->
+                <div class="containerLinksUteisPreRodape">  
+                    <div class="contentLinksUteisPreRodape">
+                        
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+                    <div class="containerInternas" > 
+                <div class="contentInternas">
+                    <div class="contentEsquerdaInternas">
+                        <p><strong>
+                        Prezado Usuário, <br/>
+                        ORIENTAÇÕES GERAIS:<br>
+                        Atenção para o fato de que a seleção de um filtro limita os dados a serem exibidos nos demais filtros. Por exemplo: Caso seja selecionado o ano de 2020, as opções existentes nos demais filtros corresponderão à existência de informações relacionadas ao filtro anteriormente escolhido (Ano 2020). Desse modo, a ausência de opção nos demais filtros, após a seleção de um filtro anterior, demonstra a inexistência de informação para o filtro selecionado.</strong>
+                        </p>
+                        		<div class="moduletableBoxGastosGovernamentaisInternas">
+							<h3>Despesas </h3>
+						<div class="menu BoxGastosGovernamentaisInternas" tabindex="1">
+        <div  class="item_painel dropdown">
+        
+
+
+        <div  class="barraDegrade">    <a href="#" class="fa fa-question-circle" aria-hidden="true" data-toggle="popover" title="Despesas " data-content="Demonstração das Despesas do Poder Executivo em Licitações, Empenhos, Pagamentos, Contratos e Afins." data-placement="top" data-trigger="focus"><p style="display:none;">Ícone de dúvida</p></a></div><div class="iconeBox"><div class="tituloBox">Despesas </div></div>
+
+
+
+
+        <div class="dropdown-content">            
+            <ul>                                
+<li  class="subItemPessoa18"><a href='http://www.transparencia.go.gov.br/portaldatransparencia/gastos-governamentais/advogados-dativos' tabindex='1'>Advogados Dativos</a></li><li  class="subItemPessoa19"><a href='http://www.transparencia.go.gov.br/portaldatransparencia/gastos-governamentais/contratos' tabindex='1'>Contratos</a></li><li  class="subItemPessoa20"><a href='http://www.transparencia.go.gov.br/portaldatransparencia/gastos-governamentais/empenhos-e-pagamentos' tabindex='1'>Empenhos e Pagamentos</a></li><li  class="subItemPessoa21"><a href='http://www.transparencia.go.gov.br/portaldatransparencia/gastos-governamentais/execucao-orcamentaria' tabindex='1'>Execução Orçamentária</a></li><li  class="subItemPessoa22"><a href='http://www.transparencia.go.gov.br/portaldatransparencia/gastos-governamentais/fornecedores' tabindex='1'>Fornecedores</a></li><li  class="subItemPessoa23"><a href='http://www.transparencia.go.gov.br/portaldatransparencia/gastos-governamentais/gastos-governamentais' tabindex='1'>Gastos Governamentais</a></li><li  class="subItemPessoa24"><a href='http://www.transparencia.go.gov.br/portaldatransparencia/gastos-governamentais/licitacoes' tabindex='1'>Licitações</a></li><li  class="subItemPessoa25"><a href='http://www.transparencia.go.gov.br/portaldatransparencia/gastos-governamentais/gastos-com-publicidade-e-propaganda' tabindex='1'>Gastos com Publicidade e Propaganda</a></li><li  class="subItemPessoa26"><a href='http://www.transparencia.go.gov.br/portaldatransparencia/gastos-governamentais/cronologia-de-despesas' tabindex='1'>Ordem Cronológica de Pagamentos</a></li>                               
+            </ul>
+        </div>
+    </div>  
+</div>		</div>
+			<div class="moduletableBoxReceitasInternas">
+							<h3>Receitas </h3>
+						<div class="menu BoxReceitasInternas" tabindex="1">
+        <div  class="item_painel dropdown">
+        
+
+
+        <div  class="barraDegrade">    <a href="#" class="fa fa-question-circle" aria-hidden="true" data-toggle="popover" title="Receitas " data-content="Demonstração das receitas líquidas e realizadas, provenientes de impostos, transferências e deduções." data-placement="top" data-trigger="focus"><p style="display:none;">Ícone de dúvida</p></a></div><div class="iconeBox"><div class="tituloBox">Receitas </div></div>
+
+
+
+
+        <div class="dropdown-content">            
+            <ul>                                
+<li  class="subItemPessoa36"><a href='http://www.transparencia.go.gov.br/portaldatransparencia/receitas/arrecadacao-estadual' tabindex='1'>Arrecadação Estadual</a></li><li  class="subItemPessoa37"><a href='http://www.transparencia.go.gov.br/portaldatransparencia/receitas/receita-estadual' tabindex='1'>Receita Estadual</a></li>                               
+            </ul>
+        </div>
+    </div>  
+</div>		</div>
+			<div class="moduletableBoxConveniosERepassesInternas">
+							<h3>Convênios e Repasses </h3>
+						<div class="menu BoxConveniosERepassesInternas" tabindex="1">
+        <div  class="item_painel dropdown">
+        
+
+
+        <div  class="barraDegrade">    <a href="#" class="fa fa-question-circle" aria-hidden="true" data-toggle="popover" title="Convênios e Repasses " data-content="Demonstração dos convênios firmados pelo Estado de Goiás e dos repasses dos tributos aos municípios." data-placement="top" data-trigger="focus"><p style="display:none;">Ícone de dúvida</p></a></div><div class="iconeBox"><div class="tituloBox">Convênios e Repasses </div></div>
+
+
+
+
+        <div class="dropdown-content">            
+            <ul>                                
+<li  class="subItemPessoa45"><a href='http://www.transparencia.go.gov.br/portaldatransparencia/convenios-e-repasses/convenios' tabindex='1'>Convênios</a></li><li  class="subItemPessoa48"><a href='http://www.transparencia.go.gov.br/portaldatransparencia/convenios-e-repasses/repasses-para-municipios' tabindex='1'>Repasse dos Tributos pelo Estado aos Municípios</a></li><li  class="subItemPessoa51"><a href='http://sisweb.tesouro.gov.br/apex/f?p=2600:1' rel='externo' tabindex='1'>Repasses da União</a></li>                               
+            </ul>
+        </div>
+    </div>  
+</div>		</div>
+			<div class="moduletableBoxPessoalInternas">
+							<h3>Pessoal </h3>
+						<div class="menu BoxPessoalInternas" tabindex="1">
+        <div  class="item_painel dropdown">
+        
+        <div  class="barraDegrade">    <a href="#" class="fa fa-question-circle" aria-hidden="true" data-toggle="popover" title="Pessoal " data-content="Demonstração de Gastos com a folha de pagamento do Poder Executivo, diárias, informações sobre os procedimentos disciplinares e relação de servidores dispensados de registro de ponto eletrônico." data-placement="top" data-trigger="focus"><p style="display:none;">Ícone de dúvida</p></a></div><div class="iconeBox"><div class="tituloBox">Pessoal </div></div>
+
+
+
+        <div class="dropdown-content">
+            <ul>         
+                <li>
+                    <div class="boxBuscaPorNome" style="margin-top: 0px;">        
+                        <form action="/portaldatransparencia/pessoal/folha-de-pagamento-busca-por-nome?url=http://www.transparencia.go.gov.br/analytics/saw.dll?PortalPages" name="form_pessoal" target="_self" method="post">
+                            <fieldset> <legend style="display: none;">Folha de Pagamento - Busca por nome:</legend>
+                                
+<!--                             <label for="form_pessoal_PortalPath" >
+                                 <p style="display: none;">PortalPath</p>
+                                <input id="form_pessoal_PortalPath" type="hidden" name="PortalPath" value="/shared/Transparencia2/Pessoal/Paineis/Detalhamento de Pessoal">
+                             </label>
+                            
+                            
+                                
+                                
+                            <input type="hidden" value="Detalhamento de Pessoal" id="form_pessoal_page" name="Page" onchange="iniciaCamposPessoal()">
+                            
+                            
+                            
+                            <input type="hidden" name="nqUser" value="usrPortalTransp">
+                            <input type="hidden" name="nqPassword" value="15PgoT08Dz">
+                            <input type="hidden" name="Action" value="Navigate">
+                            <input type="hidden" name="P0" value="1">
+                            <input type="hidden" name="P1" value="cany">
+                            <input type="hidden" name="P2" value='&quot;Servidor&quot;.&quot;Servidor&quot;'>            -->
+                            <!--<div>-->
+                                <label for="inputBuscaPorNomeInterna" class="labelBuscaPorNomeInterna" >Folha de Pagamento - Busca por Nome:</label>
+                                    <input type="text" class="input" id="inputBuscaPorNomeInterna" name="P3">
+                                    
+                                    <label for="btnBuscarPorNomeInterna" style="display: none;">Botão pesquisar</label>
+                                    <input type="submit" alt="Botão Enviar" id="btnBuscarPorNomeInterna" title="Botão Enviar"  class="btnBuscarPorNomeInterna" name="botao" value=""  />
+                                
+                            <!--</div>-->
+                            </fieldset>
+                        </form>
+                    </div>
+
+
+                </li>
+
+
+                <li  class="subItemPessoa28"><a href='http://www.transparencia.go.gov.br/portaldatransparencia/pessoal/folha-de-pagamento' tabindex='1'>Folha de Pagamento</a></li><li  class="subItemPessoa29"><a href='http://www.transparencia.go.gov.br/portaldatransparencia/pessoal/diarias' tabindex='1'>Diárias</a></li><li  class="subItemPessoa30"><a href='http://www.transparencia.go.gov.br/portaldatransparencia/pessoal/procedimentos-disciplinares' tabindex='1'>Procedimentos Disciplinares</a></li><li  class="subItemPessoa31"><a href='http://www.transparencia.go.gov.br/portaldatransparencia/pessoal/folha-de-pagamento-busca-por-nome' tabindex='1'>Folha de Pagamento - Busca por Nome</a></li><li  class="subItemPessoa32"><a href='http://www.transparencia.go.gov.br/portaldatransparencia/pessoal/relatorio-de-servidores-dispensados-do-registro-de-ponto-eletronico' tabindex='1'>Servidores Dispensados do Registro de Ponto Eletrônico</a></li><li  class="subItemPessoa33"><a href='/admin/uploaded/pessoal/Anexo_I_Tabelas_das_Estruturas_Remuneratorias_Efetivos.pdf' rel='externo' tabindex='1'>Tabelas das Estruturas Remuneratorias Efetivos</a></li><li  class="subItemPessoa34"><a href='/admin/uploaded/pessoal/Anexo_II_Tabela_de_Cargos_Comissionados_Lei_20491_2019.pdf' rel='externo' tabindex='1'>Tabela de Cargos Comissionados Lei 20491-2019</a></li>                               
+            </ul>
+        </div>
+    </div>  
+</div>
+
+
+<style>
+    li.subItemPessoa31 {
+        display: none;
+    }
+</style>		</div>
+			<div class="moduletableBoxPlanejamentoeOrcamentoInternas">
+							<h3>Planejamento e Orçamento </h3>
+						<div class="menu BoxPlanejamentoeOrcamentoInternas" tabindex="1">
+        <div  class="item_painel dropdown">
+        
+
+
+        <div  class="barraDegrade">    <a href="#" class="fa fa-question-circle" aria-hidden="true" data-toggle="popover" title="Planejamento e Orçamento " data-content="Demonstração do Plano Plurianual do Estado de Goiás, peças do orçamento." data-placement="top" data-trigger="focus"><p style="display:none;">Ícone de dúvida</p></a></div><div class="iconeBox"><div class="tituloBox">Planejamento e Orçamento </div></div>
+
+
+
+
+        <div class="dropdown-content">            
+            <ul>                                
+<li  class="subItemPessoa39"><a href='http://www.transparencia.go.gov.br/portaldatransparencia/planejamento-e-orcamento/pecas-do-orcamento' tabindex='1'>Peças do Orçamento</a></li><li  class="subItemPessoa40"><a href='http://www.transparencia.go.gov.br/portaldatransparencia/planejamento-e-orcamento/programas-e-acoes' tabindex='1'>Plano Plurianual - PPA</a></li>                               
+            </ul>
+        </div>
+    </div>  
+</div>		</div>
+			<div class="moduletableBoxPrestacaoDeContasInternas">
+							<h3>Gestão Fiscal e Governamental </h3>
+						<div class="menu BoxPrestacaoDeContasInternas" tabindex="1">
+        <div  class="item_painel dropdown">
+        
+
+
+        <div  class="barraDegrade">    <a href="#" class="fa fa-question-circle" aria-hidden="true" data-toggle="popover" title="Gestão Fiscal e Governamental " data-content="Demonstração de patrimônio móvel e imóvel, benefícios, balanços do Estado, relatórios de gestão fiscal e governamental e audiências públicas." data-placement="top" data-trigger="focus"><p style="display:none;">Ícone de dúvida</p></a></div><div class="iconeBox"><div class="tituloBox">Gestão Fiscal e Governamental </div></div>
+
+
+
+
+        <div class="dropdown-content">            
+            <ul>                                
+<li  class="subItemPessoa53"><a href='http://www.transparencia.go.gov.br/portaldatransparencia/demonstrativos-fiscais/beneficios-fiscais' tabindex='1'>Benefícios Fiscais</a></li><li  class="subItemPessoa54"><a href='http://www.transparencia.go.gov.br/portaldatransparencia/demonstrativos-fiscais/tare' tabindex='1'>TARE</a></li><li  class="subItemPessoa55"><a href='http://www.transparencia.go.gov.br/portaldatransparencia/demonstrativos-fiscais/beneficios-economicos' tabindex='1'>Benefícios Econômicos</a></li><li  class="subItemPessoa56"><a href='http://www.transparencia.go.gov.br/portaldatransparencia/demonstrativos-fiscais/beneficios-sociais' tabindex='1'>Benefícios Sociais</a></li><li  class="subItemPessoa57"><a href='http://www.transparencia.go.gov.br/portaldatransparencia/demonstrativos-fiscais/beneficios-fapeg' tabindex='1'>Benefícios FAPEG</a></li><li  class="subItemPessoa58"><a href='http://www.transparencia.go.gov.br/portaldatransparencia/demonstrativos-fiscais/gestao-fiscal' tabindex='1'>Gestão Fiscal - RREO e RGF</a></li><li  class="subItemPessoa59"><a href='http://www.transparencia.go.gov.br/portaldatransparencia/demonstrativos-fiscais/divida-publica' tabindex='1'>Dívida Pública</a></li><li  class="subItemPessoa60"><a href='https://scgi.economia.go.gov.br/scgi/#!/6' rel='externo' tabindex='1'>Contas de Governo - Balanço do Estado</a></li><li  class="subItemPessoa61"><a href='http://www.transparencia.go.gov.br/portaldatransparencia/demonstrativos-fiscais/acoes-e-programas-dos-orgaos-e-entidades' tabindex='1'>Contas de Governo - Relatório do Órgão Central do Sistema de Controle Interno</a></li><li  class="subItemPessoa62"><a href='http://www.transparencia.go.gov.br/portaldatransparencia/demonstrativos-fiscais/audiencias-publicas' tabindex='1'>Audiências Públicas - Avaliação das Metas Fiscais</a></li><li  class="subItemPessoa63"><a href='http://www.transparencia.go.gov.br/portaldatransparencia/demonstrativos-fiscais/patrimonio-mobiliario' tabindex='1'>Patrimônio Mobiliário</a></li><li  class="subItemPessoa64"><a href='/admin/uploaded/controleDeRegistrosDosImoveisDePropriedadeDoEstadoDeGoias.pdf' rel='externo' tabindex='1'>Matrícula dos Imóveis do Estado de Goiás</a></li><li  class="subItemPessoa65"><a href='https://www.economia.go.gov.br/noticias/6542-secretaria-da-economia-lan%C3%A7a-boletim-de-an%C3%A1lise-dos-resultados-fiscais.html' rel='externo' tabindex='1'>Boletim de Análise dos Resultados Fiscais</a></li>                               
+            </ul>
+        </div>
+    </div>  
+</div>		</div>
+	
+
+                        <!--<div id="system-message-container">
+	</div>
+-->
+                        <div tabindex="1">
+                            
+<ul itemscope itemtype="https://schema.org/BreadcrumbList" class="breadcrumb">
+			<li class="active">
+			<span class="divider icon-location"></span>
+		</li>
+	
+				<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+									<a itemprop="item" href="/portaldatransparencia/" class="pathway"><span itemprop="name">Início</span></a>
+				
+									<span class="divider">
+						&gt;					</span>
+								<meta itemprop="position" content="1">
+			</li>
+					<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+									<a itemprop="item" href="/portaldatransparencia/institucional" class="pathway"><span itemprop="name">Institucional</span></a>
+				
+									<span class="divider">
+						&gt;					</span>
+								<meta itemprop="position" content="2">
+			</li>
+					<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="active">
+				<span itemprop="name">
+					Dados Abertos				</span>
+				<meta itemprop="position" content="3">
+			</li>
+		</ul>
+
+                        </div>
+                                                    <div>
+                                <div class="item-page" itemscope itemtype="https://schema.org/Article">
+	<meta itemprop="inLanguage" content="pt-BR" />
+	
+		
+			<div class="page-header">
+					<h2 itemprop="name">
+				Dados Abertos			</h2>
+									</div>
+					
+	
+	
+				
+							                <div itemprop="articleBody" class="corpoDoArtigo">
+		<div style="clear:both;"></div><div class="socialbuttons" style="padding-top: 5px;padding-bottom:5px; overflow: hidden; float: left;"><div style="width: 80px !important; height: 20px; float: left; border: none;"><iframe title="Curtir Facebook" src="https://www.facebook.com/plugins/like.php?locale=pt_BR&href=http%3A%2F%2Fwww.transparencia.go.gov.br%2Fportaldatransparencia%2Finstitucional%2Fdados-abertos&amp;layout=button_count&amp;show_faces=true&amp;action=like&amp;colorscheme=dark&amp;font=arial&amp;height=20" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width: 80px; height :20px;" allowTransparency="true"></iframe></div><div style="width: 90px !important; height: 20px; float: left; margin-left: 10px; border: none;"><a rel="nofollow" href="http://twitter.com/share" class="twitter-share-button" data-url="http://www.transparencia.go.gov.br/portaldatransparencia/institucional/dados-abertos" data-count="horizontal" data-lang="en">Twitter</a><noscript>Seu browser não suporta JavaScript!</noscript><script src="https://platform.twitter.com/widgets.js" type="text/javascript"></script></div></div><div style="clear:both;"></div><h2><a href="https://dadosabertos.go.gov.br/" target="_blank">Novo Portal de Dados Abertos do Governo de Goi&aacute;s</a></h2>
+<p>&nbsp;</p>
+<p style="text-align: justify;"><span>A se&ccedil;&atilde;o de Dados Abertos do Portal de Transpar&ecirc;ncia do Estado de Goi&aacute;s permite que pessoas interessadas obtenham todas as informa&ccedil;&otilde;es que s&atilde;o apresentadas nos pain&eacute;is anal&iacute;ticos do Portal. Estas informa&ccedil;&otilde;es s&atilde;o disponibilizadas aqui de forma tabular simples para tratamento em planilhas, bancos de dados, ferramentas anal&iacute;ticas ou programas pr&oacute;prios, permitindo assim a realiza&ccedil;&atilde;o de an&aacute;lises complementares &agrave;s an&aacute;lises apresentadas nas outras se&ccedil;&otilde;es do Portal.</span></p>
+<p style="text-align: justify;"><span>Os dados aqui dispon&iacute;veis tem origem nos sistemas transacionais, utilizados pelo Estado de Goi&aacute;s para executar suas demandas, e podem ser obtidas atrav&eacute;s de duas formas a depender do objetivo do usu&aacute;rio: Atrav&eacute;s de arquivos texto no formato CSV dispon&iacute;veis logo abaixo.</span><span><br /></span><strong><span><br /><br /><span style="font-size: large;">FTP</span></span></strong></p>
+<p style="text-align: justify;">Para obter um arquivo CSV no servidor FTP do Estado de Goi&aacute;s, basta navegar nos diret&oacute;rios abaixo e selecionar o arquivo desejado. No <span style="color: #0000ff;"><a href="/dadosabertos/Manual_de_uso.pdf"><span style="color: #0000ff;">Manual_de_uso.pdf</span></a> </span> s&atilde;o apresentadas informa&ccedil;&otilde;es gerais sobre como os arquivos est&atilde;o dispon&iacute;veis al&eacute;m de &nbsp;instru&ccedil;&otilde;es de como importar os arquivos CSV para uma planilha.</p>
+<div id="iframeDadosAbertos">&nbsp;</div> 	</div>
+
+	
+							</div>
+
+<!--<script>
+//
+//jQuery(document).ready(function(){    
+//    jQuery('#iframeDadosAbertos').append('<iframe id="dadosAbertosIFrame" src="/dadosabertos" frameborder="0" scrolling="auto"></iframe>');
+//});
+
+</script>-->
+                            </div>                        
+                                            </div>
+                    <div class="contentDireitaInternas" >
+                        		<div class="moduletablebuscaDireitaInterna">
+						<div class="searchbuscaDireitaInterna" >
+
+    <form action="/portaldatransparencia/institucional/dados-abertos" method="post" class="form-inline">  
+            
+            <label for="mod-search-searchword" style="display: none;">Busca Direita</label>
+            <input tabindex="1" name="searchword" id="mod-search-searchword" maxlength="200" class="inputbox search-query" type="search" placeholder="Busca em todo o Portal" />    
+
+            <label for="btnPesquisaInterna" style="display: none;">Botão Pesquisar</label>
+            <input type="image" id="btnPesquisaInterna" name="pesquisar" alt="Botão Pesquisar" class="button" src="/portaldatransparencia/templates/portaldatransparencia/images/searchButton.png" title="Botão Pesquisar" />
+
+            <div style="display:none;">
+                <input type="hidden" name="task" value="search" />
+            </div>
+            <div style="display:none;">
+                <input type="hidden" name="option" value="com_search" />
+            </div>
+            <div style="display:none;">
+                <input type="hidden" name="Itemid" value="120" />
+            </div>
+            
+            <input type="submit" style="display: none;" />
+        
+    </form>
+
+</div>
+		</div>
+			<div class="moduletablemenuDireitaInterna">
+						
+
+<div class="custommenuDireitaInterna"  >
+	<div tabindex="1"><a href="http://www.cge.go.gov.br/ouvidoria/" target="_blank"><img src="/portaldatransparencia/images/ouvidoria.png" alt="ouvidoria" width="160" height="46" /></a></div>
+<div tabindex="1"><a href="/portaldatransparencia/institucional/acesso-a-informacao"><img src="/portaldatransparencia/images/acessoInformacao.png" alt="acessoInformacao" width="160" height="37" /></a></div>
+<div tabindex="1"><a href="https://vaptvupt.go.gov.br/unidades" target="_blank"><img src="/portaldatransparencia/images/SIC.png" alt="SIC" width="160" height="33" /></a></div>
+<div tabindex="1"><a href="http://www.cge.go.gov.br/ouvidoria/frm_manifestacao.php?tipo_manifestacao=7" rel="externo"><img src="/portaldatransparencia/images/E-SIC.png" alt="Servi&ccedil;o Eletr&ocirc;nico de atendimento ao cidad&atilde;o" width="130" height="43" /></a></div></div>
+		</div>
+	
+                    </div>
+
+                </div>
+
+                            </div>
+            
+            <style>
+                .containerHome{
+                    display: none;
+                }
+            </style>
+
+        
+         
+
+        <div class="containerRodape">
+            <div class="contentRodape" tabindex="-1">
+                		<div class="moduletable">
+						
+
+<div class="custom"  >
+	<div class="govEsquerdo" tabindex="1">Governo de Goi&aacute;s - Controladoria Geral do Estado</div>
+<div class="govCenter" tabindex="1">
+<p>Em todas as plataformas</p>
+</div>
+<div class="govDireito" tabindex="1">
+<div>Pal&aacute;cio Pedro Ludovico Teixeira - Rua 82, N&ordm; 400, 3&ordm; andar</div>
+<div>Setor Sul - Goi&acirc;nia / GO - CEP: 74015-908</div>
+</div>
+<div id="gtx-trans" style="position: absolute; left: 1216px; top: 84px;">&nbsp;</div></div>
+		</div>
+	
+
+
+            </div>
+            <!--            <div class="btnVoltarAoTopo">
+                                <img alt="Imagem voltar ao topo" src="/portaldatransparencia/templates/portaldatransparencia/images/top.png" />
+                            </div>-->
+            
+            
+        </div>
+
+        <div class="barraAzulBottom">
+
+             © 2022 - PORTAL DA TRANSPARÊNCIA DO ESTADO DE GOIÁS - Todos os direitos reservados - licenciados sob <a target="_blank" style="color: white;" href="https://creativecommons.org/licenses/by-sa/4.0/deed.pt_BR"><u>Licença Creative Commons 4.0</u></a>
+
+        <!-- Selo Acessibilidade Brasil --> 
+            <!-- <script language="javascript" type="text/javascript" src="http://www.dasilva.org.br/js/sign/sign.js"></script>  -->
+            <script type="text/javascript"> 
+            //var seloAcessib = seloAcessibilidade("1391",""); seloAcessib.insertSign();
+             </script> 
+        <!-- / Selo Acessibilidade Brasil -->            
+        </div>
+
+
+    <!--<main id="content" role="main" class="
+Notice: Undefined variable: span in /var/www/html/wwwtranspare/portaldatransparencia/templates/portaldatransparencia/index.php on line 430
+">-->
+        <!-- Begin Content -->
+        <!---->
+        <!--<div id="system-message-container">
+	</div>
+-->
+
+        <!---->
+        <!-- End Content -->
+        <!--</main>-->
+
+        <!---->
+        
+
+    </body>
+
+</html>
+<script type="text/javascript">
+    // CARROSSEL DO BANNER SE VOLTAR BANNER DESCOMENTAR
+    // document.querySelectorAll('#vt_nivo_slider136 li a img')[0].classList.add('nivo-main-image');
+
+    // function stop() {
+    //     clearInterval(rodar);
+    // }
+
+    // var rodar = setInterval(function(){ 
+    //     console.log('deu bom!');
+    //     var x = document.querySelectorAll('.nivo-main-image')[1];
+    //     if (x != undefined) {
+    //         document.querySelectorAll('.nivo-main-image')[1].remove();
+    //         stop();
+    //     }}, 100);
+</script>
+
